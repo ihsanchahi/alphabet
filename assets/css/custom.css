@@ -3322,7 +3322,13 @@ div#Titleval {
     height: auto;
     margin-top: 10vh;
 }
-
+@media (max-width:414px) {
+    .footer-content img {
+        max-width: 40%;
+        height: auto;
+        margin-top: 10vh;
+    }
+}
 .footer-content p {
     margin-top: 5vh;
     line-height: 2vh;
