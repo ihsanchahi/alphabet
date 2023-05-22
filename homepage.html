@@ -1626,7 +1626,7 @@
                         </div>
                         <div class="inqdata">
                             <div class="inquery-details">
-                                <div class="inqtitle">
+                                <div class="inqtitle" onclick="showinq()">
                                     <div class="titlesytle"> <span style="font-size: 13px; color: gray;">[common]</span>
                                         Please Conatct us.</div>
                                     <div style="cursor: pointer;"><input type="checkbox"></div>
@@ -1719,6 +1719,10 @@
                                 <div class="textarea">
                                     <input type="text" class="text context" placeholder="Write Context.">
                                 </div>
+                                <div class="closebtn">
+                                    <button id="cancelbtn" onclick="showcancel()">cancel</button>
+                                    <button id="submitbtn" onclick="submit()">submit</button>
+                                </div>
                             </div>
 
 
@@ -1767,6 +1771,28 @@
                                 </div>
                             </div>
                         </div>
+                               <!-- Write Inquiry-->
+
+                               <div id="writeInq" style="display: none;">
+                                <div class="question">
+                                    <img src="./assets/images/questionMark.png" alt="#" width="70px" height="70px">
+                                </div>
+                                <p class="question-delete">Do you want to write an inquiry?</p>
+                                <div class="question-button">
+                                    <button id="yes-no" onclick="yes()">Yes</button>
+                                    <button id="yes-no" onclick="no()">No</button>
+                                </div>
+                                <div id="Titleval" style="display: none;">
+                                    <div class="cancel">
+                                        X
+                                    </div>
+                                    <p class="no-history">Title is a required value..</p>
+                                    <div class="check">
+                                        <button id="chk-btn" onclick="check()">Check</button>
+                                    </div>
+                                </div>
+                            </div> 
+
                     </div>
 
                 </div>
@@ -2404,6 +2430,75 @@
             }
             else {
                 document.getElementById("msg").style.display = "none"
+                return d = 1;
+            }
+        }
+        var d;
+        function showcancel() {
+            if (d == 1) {
+                document.getElementById("close").style.display = "inline"
+                return d = 0;
+            }
+            else {
+                document.getElementById("close").style.display = "none"
+                return d = 1;
+            }
+        }
+        var d;
+        function submit() {
+            if (d == 1) {
+                document.getElementById("writeInq").style.display = "inline"
+                return d = 0;
+            }
+            else {
+                document.getElementById("writeInq").style.display = "none"
+                return d = 1;
+            }
+        }
+        var d;
+        function no() {
+            if (d == 1) {
+                document.getElementById("writeInq").style.display = "inline"
+                return d = 0;
+            }
+            else {
+                document.getElementById("writeInq").style.display = "none"
+                return d = 1;
+            }
+        }
+        var d;
+        function yes() {
+            if (d == 1) {
+                document.getElementById("Titleval").style.display = "inline"
+
+                return d = 0;
+            }
+            else {
+                document.getElementById("Titleval").style.display = "none"
+                return d = 1;
+            }
+        }
+        var d;
+        function check() {
+            if (d == 1) {
+                document.getElementById("Titleval").style.display = "none"
+                return d = 0;
+            }
+            else {
+                document.getElementById("Titleval").style.display = "none"
+                
+                return d = 1;
+            }
+        }
+        var d;
+        function showinq() {
+            if (d == 1) {
+                document.getElementById("Titleval").style.display = "none"
+                return d = 0;
+            }
+            else {
+                document.getElementById("Titleval").style.display = "none"
+                
                 return d = 1;
             }
         }
