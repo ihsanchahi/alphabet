@@ -1138,7 +1138,20 @@ body {
     display: none;
 
 }
-
+@media (max-width:768px) {
+    .inquerycontainer {
+        position: absolute;
+        margin-left: 5pc;
+        margin-top: 6pc;
+    }
+}
+@media (max-width:480px) {
+    .inquerycontainer {
+        position: absolute;
+        margin-left: 5pc;
+        margin-top: 6pc;
+    }
+}
 .customercontainer {
     width: 50%;
     height: auto;
@@ -1240,11 +1253,11 @@ body {
         position: relative;
     }
 }
-@media (max-width:375px) {
+@media (max-width:480px) {
     .inqdata {
         margin-top: 4px;
         background-color: #27303a;
-        height: calc(100vh - 350px);
+        height: calc(100vh - 300px);
         overflow-y: scroll;
         position: relative;
     }
@@ -1342,13 +1355,14 @@ button#butn {
 
     }
 }
-@media (max-width:414px) {
+@media (max-width:480px) {
     #close {
         position: absolute;
         background-color: rgb(39, 48, 58);
-        width: 57%;
+        width: 67%;
         height: 35vh;
-        margin-top: -208px;
+        margin-top: -478px;
+        
     }
 }
 
@@ -1374,18 +1388,18 @@ button#butn {
     }
 }
 
-@media (max-width: 414px) {
+@media (max-width: 480px) {
     #delete {
         position: absolute;
         background-color: #1f262f !important;
-        width: 57%;
+        width: 60%;
         height: 20vh;
-        margin-top: 60px;
-        margin-left: 1px;
+        margin-top: 210px;
+        margin-left: 20px;
         border-radius: 2px;
     }
 }
-@media (max-width: 375px) {
+/* @media (max-width: 375px) {
     #delete {
         position: absolute;
         background-color: #1f262f !important;
@@ -1395,7 +1409,7 @@ button#butn {
         margin-left: 1px;
         border-radius: 2px;
     }
-}
+} */
 
 button#dlte {
     background-color: rgb(39, 48, 58);
@@ -1431,7 +1445,7 @@ button#dlte {
         background-color: #1f262f !important;
         width: 100%;
         height: 20vh;
-        margin-top: -170px;
+        margin-top: -165px;
         border-radius: 2px;
     }
 }
@@ -2183,9 +2197,11 @@ border-right: 1px solid #1e242c; */
         font-size: 14px;
         font-weight: 300;
         padding: 10px;
-        width: 100%;
-        height: 40vh;
+        width: 70%;
+        height: 60vh;
         margin-top: 8px;
+        margin-left: -90px;
+
     }
     .closeicone {
         margin-right: 0vh;
@@ -3101,20 +3117,20 @@ button#bck-btn {
         margin: 300px 10px;
     }
 }
-@media (max-width:414px) {
+@media (max-width:480px) {
     .closebtn {
         display: flex;
         justify-content: space-between;
-        margin: 150px 10px;
+        margin: 300px 10px;
     }
 }
-@media (max-width:414px) {
+/* @media (max-width:414px) {
     .closebtn {
         display: flex;
         justify-content: space-between;
         margin: 75px 10px;
     }
-}
+} */
 button#cancelbtn {
     padding: 7px 10px;
     font-size: 13px;
@@ -3149,14 +3165,14 @@ button#submitbtn {
         border-radius: 5px;
     }
 }
-@media (max-width:414px) {
+@media (max-width:480px) {
     #writeInq{
         position: absolute;
-        margin-top: 85px;
+        margin-top: 220px;
         background-color: #000;
         width: 340px;
         padding: 7px;
-        margin-left: 3px;
+        margin-left: 25px;
         border-radius: 5px;
     }
 }
@@ -3167,14 +3183,15 @@ div#Titleval {
     padding: 8px;
     margin-top: -165px;
 }
-@media (max-width:414px) {
+@media (max-width:480px) {
     div#Titleval {
         position: absolute;
         background-color: #000;
-        width: 340px;
+        width: 350px;
         padding: 8px;
         margin-top: -175px;
-        margin-left: -9px;
+        margin-left: -7px;
+        border-radius: 4px;
     }  
 }
 .box1 {
