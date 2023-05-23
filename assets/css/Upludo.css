@@ -2365,6 +2365,8 @@ height: 200px; */
     background-color: #27303a;
     height: 50vh;
     margin-top: 2vh;
+    position: absolute;
+    width: 100%;
 
 }
 
@@ -2393,24 +2395,24 @@ height: 200px; */
         padding: 0 2vh;
     }
 
-    .footer {
+    /* .footer {
         margin-top: 0px !important;
 
-    }
+    } */
 
 }
 
 @media (max-width:768px) {
     .footer-content p {
         font-weight: 300;
-        font-size: 12px;
+        font-size: 11px;
         padding: 0 3vh;
     }
 }
-@media (max-width:1400px) {
+/* @media (max-width:1400px) {
     .footer-content p {
         font-weight: 300;
         font-size: 15px;
         padding: 0 3vh;
     }
-}
+} */

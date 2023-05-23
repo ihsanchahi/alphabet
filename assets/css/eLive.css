@@ -1115,6 +1115,9 @@ padding: 5px;
     margin-left: 5px;
     cursor: pointer;
 }
+.betOdds:hover{
+    color: #000;
+}
 
 .handiOdds,
 .ouOdds {
@@ -1149,7 +1152,7 @@ padding: 5px;
 
 .extraOdd:hover {
     background-color: #F8FF13;
-    ;
+    color: #000;
 }
 
 .extraOdd {
@@ -2073,7 +2076,10 @@ height: 200px; */
 .footer {
     background-color: #27303a;
     height: 50vh;
+    width: 100%;
     margin-top: 2vh;
+    position: absolute;
+
 
 }
 
@@ -2102,10 +2108,10 @@ height: 200px; */
         padding: 0 2vh;
     }
 
-    .footer {
+    /* .footer {
         margin-top: 0px !important;
 
-    }
+    } */
     .column4{
        
         max-width: 100%;
@@ -2116,14 +2122,14 @@ height: 200px; */
 @media (max-width:768px) {
     .footer-content p {
         font-weight: 300;
-        font-size: 12px;
+        font-size: 11px;
         padding: 0 3vh;
     }
 }
-@media (max-width:1400px) {
+/* @media (max-width:1400px) {
     .footer-content p {
         font-weight: 300;
         font-size: 15px;
         padding: 0 3vh;
     }
-}
+} */

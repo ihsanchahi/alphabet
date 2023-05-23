@@ -7,7 +7,7 @@
 body {
     font-family: 'Noto Sans', sans-serif;
     background-color: rgb(23, 28, 34);
-    overflow: scroll;
+   overflow: scroll;
 }
 .depositeHistory{
      display: none;
@@ -2098,8 +2098,8 @@ height: 200px; */
 .footer {
     background-color: #27303a;
     height: 50vh;
-    margin-top: 12vh;
-    position: fixed;
+    margin-top: 120vh !important;
+    position: absolute;
     width: 100%;
 }
 
@@ -2130,10 +2130,10 @@ height: 200px; */
     }
 
 
-    .footer {
+    /* .footer {
         margin-top: 0px !important;
 
-    }
+    } */
 
 }
 
@@ -2145,17 +2145,18 @@ height: 200px; */
     }
 }
 
-@media (max-width:1400px) {
+/* @media (max-width:1400px) {
 
     .footer-content p {
         font-weight: 300;
         font-size: 15px;
         padding: 0 3vh;
     }
-}
+} */
 @media (min-width:1401px) {
 
     .footer{
-        position: relative;
+        position: absolute;
+        margin-top: 50vh !important;
     }
 }
