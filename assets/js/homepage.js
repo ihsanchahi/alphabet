@@ -84,10 +84,99 @@ const messagepopup= document.querySelector(".message-popup")
 const closeicone = document.querySelector(".closeicone")
 const closeIcon = document.querySelector(".closeicone1")
 const close = document.querySelector(".close")
-
-
 const sliderMenu1  = document.querySelector(".sliderMenu ")
-const NoticeWrapper2 = document.querySelector(".noticeBodyNew")
+
+const depositeapplication1 = document.querySelector(".depositeapplication1")
+const withdrawldetailscontainer = document.querySelector(".withdrawldetailscontainer")
+const closeicone1 = document.querySelector(".closeicone")
+const NoticeWrapper2 = document.querySelector(".NoticeWrapper2")
+const mainHeaderBtn1 = document.querySelector(".mainHeaderBtn1")
+const mainHeaderBtn2 = document.querySelector(".mainHeaderBtn2")
+const deletebox = document.querySelector(".deletebox")
+const questionmarkbox = document.querySelector(".questionmarkbox")
+const nobtn = document.querySelector(".nobtn")
+const yesbtn = document.querySelector(".yesbtn")
+const checkbox = document.querySelector(".checkbox")
+const checkbtn = document.querySelector(".checkbtn")
+const depositdetails  = document.querySelector(".depositdetails")
+const depositeUpHeader2 = document.querySelector(".depositeUpHeader3")
+const Withdrawformcontainer = document.querySelector(".Withdrawformcontainer")
+const deletebox1 = document.querySelector(".deletebox1")
+const questionmarkbox1 = document.querySelector(".questionmarkbox1")
+const nobtn1 = document.querySelector(".nobtn1")
+const yesbtn1 = document.querySelector(".yesbtn1")
+const checkbox1 = document.querySelector(".checkbox1")
+const checkbtn1 = document.querySelector(".checkbtn1")
+const depositeUpHeader3 = document.querySelector(".depositeUpHeader3")
+const removedrwalcontainer = document.querySelector(".removedrwalcontainer")
+
+
+
+
+removedrwalcontainer.addEventListener("click",function(){
+    Withdrawformcontainer.style.display = "none";
+})
+ 
+depositeUpHeader3.addEventListener("click",function(){
+    Withdrawformcontainer.style.display = "none";
+})
+
+checkbtn1.addEventListener("click",function(){
+    checkbox1.style.display = "none";
+    questionmarkbox1.style.display = "none";
+})
+
+nobtn1.addEventListener("click",function(){
+    questionmarkbox1.style.display = "none";  
+})
+yesbtn1.addEventListener("click",function(){
+    checkbox1.style.display = "block";
+    checkbox1.style.display =  "flex";     
+})
+
+deletebox1.addEventListener("click",function(){
+    questionmarkbox1.style.display = "block";
+    questionmarkbox1.style.display = "flex";
+})
+
+depositeUpHeader2.addEventListener("click",function(){
+    Withdrawformcontainer.style.display = "block";
+})
+
+
+deletebox.addEventListener("click",function(){
+    questionmarkbox.style.display = "block";
+    questionmarkbox.style.display = "flex";
+})
+
+depositeapplication1.addEventListener("click",function(){
+        withdrawldetailscontainer.style.display = "block";
+        mainHeaderBtn2.classList.add('depositeActive')
+
+        mainHeaderBtn1.classList.remove('depositeActive')
+})
+depositdetails.addEventListener("click",function(){
+    NoticeWrapper2.style.display = "block";
+    withdrawldetailscontainer.style.display = "none";
+})
+closeicone1.addEventListener("click",function(){
+    withdrawldetailscontainer.style.display = "none";
+    NoticeWrapper2.style.display = "none";
+})
+nobtn.addEventListener("click",function(){
+    questionmarkbox.style.display = "none";
+})
+yesbtn.addEventListener("click",function(){
+    checkbox.style.display = "block";
+    checkbox.style.display =  "flex";
+})
+checkbtn.addEventListener("click",function(){
+        checkbox.style.display = "none";
+        questionmarkbox.style.display = "none";
+})
+
+
+
 
 
 
@@ -127,22 +216,16 @@ const NoticeWrapper2 = document.querySelector(".noticeBodyNew")
           else{
             sliderMenu1.style.display = "block";
           }
-
           let attend = document.querySelector('.attend')
         attend.addEventListener('click', function() {
             attendBtn.style.display = 'flex'
             })
-
             let closePopup = document.querySelector('.noBtn1')
             closePopup.addEventListener('click', function() {
                 attendBtn.style.display = 'none'
-                
-
             })
-
     })
-
-
+    
     closeIcon.addEventListener("click",function(){
         attandececontainer.style.display = "none";
     })
@@ -1589,7 +1672,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             mainHeaderBtn2.classList.add('depositeActive')
 
-            mainHeaderBtn1.classList.remove('depositeActive')
+            mainHeaderBtn1.classList.remove('depositeActive1')
             let noticeBody = document.querySelector('.noticeBodyNew')
             let nextWindow = document.createElement('div')
             nextWindow.classList.add('withdrawlItem')
