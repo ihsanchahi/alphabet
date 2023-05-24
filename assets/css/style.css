@@ -307,7 +307,7 @@ textarea {
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-    /* width: 80%; */
+     color: black;
 }
 
 .customOtpBtn:hover {
@@ -358,6 +358,7 @@ textarea {
     align-items: center;
     display: flex;
     flex-direction: column;
+    color: black;
 }
 
 .credInfo {
@@ -376,6 +377,7 @@ textarea {
     padding: 10px;
     border-radius: 10px;
     width: 45%;
+    color: black;
 }
 
 .credControl {
@@ -394,10 +396,13 @@ textarea {
 .credUsername {
     border-right: 1px solid rgb(41, 41, 41);
     width: 50%;
+    text-align: center;
+    
 }
 
 .btnMrg {
     margin-left: 2px;
+    color: black;
 }
 
 
@@ -411,6 +416,7 @@ textarea {
     }
     .credPassword {
         width: 50%;
+        color: black;
     }
     .savedCred {
         padding: 10;
