@@ -259,9 +259,8 @@ body {
 }
 
 .customUl {
-    color: rgb(218, 218, 218) !important;
-    font-size: 11px !important;
-    white-space: nowrap;
+    color: rgb(218, 218, 218)!important;
+    font-size: 14px !important;
 }
 
 .customUl1 {
@@ -2100,18 +2099,6 @@ height: 200px; */
     font-weight: 300;
     font-size: 18px;
     padding: 0 3vh;
-}
-@media (min-width:1400px) {
-    .footer {
-        background-color: #27303a;
-        height: 50vh;
-        width: 77%;
-        margin-top: 2vh;
-        position: absolute;
-    
-    
-    }
-
 }
 
 @media (max-width:480px) {
