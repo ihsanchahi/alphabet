@@ -115,6 +115,7 @@ button#signbtn {
     font-size: 18px;
     color: white;
     padding: 12px 80px;
+    color: black;
 }
 @media (max-width:375px) {
     button#signbtn {
@@ -129,6 +130,7 @@ button#logbtn {
     font-size: 18px;
     color: white;
     padding: 12px 80px;
+    color: black;
 }
 @media (max-width:375px) {
     button#logbtn {
@@ -316,6 +318,12 @@ div#Register-popup {
     justify-content: center;
     cursor: pointer;
     position: absolute;
-    margin-top: -1pc;
-    
+    margin-top: -1pc;   
+}
+input[type="password"] {
+    height: 38px;
+    background-color: rgb(34, 42, 51);
+    font-size: 12px;
+    padding-left: 6px;
+    color: white;
 }
