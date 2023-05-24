@@ -109,6 +109,8 @@ const checkbox1 = document.querySelector(".checkbox1")
 const checkbtn1 = document.querySelector(".checkbtn1")
 const depositeUpHeader3 = document.querySelector(".depositeUpHeader3")
 const removedrwalcontainer = document.querySelector(".removedrwalcontainer")
+const closeIconCustom = document.querySelector(".closeIconCustom")
+
 
 
 
@@ -321,7 +323,7 @@ checkbtn.addEventListener("click",function(){
                     sliderMenu1.style.display = "block";
                   }
             })
-            closeicone.addEventListener("click",function(){
+            closeIconCustom.addEventListener("click",function(){
                 customercontainer.style.display = "none";
             })
             //    My Page popup 

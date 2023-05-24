@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="assets/css/pagination.css">
     <link rel="stylesheet" href="assets/css/messages.css">
     <link rel="stylesheet" href="assets/css/clients.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+
     <link href="assets/vendor/aos/aos.css" rel="stylesheet">
     <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
@@ -124,7 +126,7 @@
                         aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body customMainColour">
-                    <ul class="navbar-nav " style="margin-left:15%">
+                    <ul class="navbar-nav " style="margin-left:5%">
 
 
                         <li class="nav-item  mx-2">
@@ -210,7 +212,7 @@
         <div class="message-popup">
             <div class="noticeBodyNew">
                 <div class="close">
-                    <i class="bi bi-x-lg" style="color: black;"></i>
+                    <i class="bi bi-x-lg "></i>
                 </div>
                 <div class="noticeHeader">
                     <div class="historyUpHeader fontBlue" style="border-bottom: 1px solid#5897fb; ">
@@ -238,7 +240,7 @@
                         <div class="read">Read</div>
                     </div>
                 </div>
-                <div class="footerItem" id="footer5" style="margin-top: 10px; display: flex; flex-direction: column;" onclick="show22()">
+                <div class="footerItem" id="footer5" style="margin-top: 10px; display: flex; flex-direction: column;" onclick="show22 ()">
 
                     <div class="match" style="display:flex;justify-content: space-between;">
                         <div class="notification"> [notification] <span class="prediction">Match prediction event up to
@@ -309,7 +311,7 @@
         </div>
         <div id="msg" style="display: none;">
             <div class="close">
-                <i class="bi bi-x-lg" onclick="show123 ()" style="color: black;"></i>
+                <i class="bi bi-x-lg" onclick="show123 ()"></i>
             </div>
             <p class="msg-head">Message</p>
             <div class="msg-details">
@@ -898,7 +900,7 @@
         <div class="customercontainer">
             <div class="custom1">
                 <div class="noticeBodyNew1">
-                    <div class="closeicone">
+                    <div class="closeIconCustom">
                         <i class="bi bi-x-lg " style="color: black;"></i>
                     </div>
                     <div class="noticeHeader">
@@ -1131,30 +1133,11 @@
                         </div>
                         <div class="pageRight">
                             <div class="ExchangeApplicationBtn">
-                                <div class="noticeBtn" onclick="showpoint()">Application For Exchange</div>
+                                <div class="noticeBtn ">Application For Exchange</div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-    <div id="exchangpoint" style="position: absolute; display: none;">
-        <div class="question">
-            <img src="./assets/images/questionMark.png" alt="#" width="70px" height="70px">
-        </div>
-        <p class="question-delete">Do you want to exchange points for cash?</p>
-        <div class="question-button">
-            <button id="yes-no" onclick="showpop()">Yes</button>
-            <button id="yes-no" onclick="closepoint()">No</button>
-        </div>
-        <div id="yespoint" style="display: none; ">
-            <div class="cancel">
-                X
-            </div>
-            <p class="no-history">Please enter a valid amount.</p>
-            <div class="check">
-                <button id="chk-btn" onclick="closechk ()">Check</button>
             </div>
         </div>
     </div>
@@ -1948,7 +1931,7 @@
                 </div>
             </div>
             <div class="inquerycontainer">
-                <div class="NoticeWrapper2">
+                <div class="NoticeWrapperInq">
                     <div class="noticeBody">
                         <div class="infoCancel121">
                             <i class="bi bi-x-lg " style="color: black;"></i>
@@ -2949,53 +2932,6 @@
             }
             else {
                 document.getElementById("inqmsg").style.display = "none"
-
-                return d = 1;
-            }
-        }
-        var d;
-        function showpoint() {
-            if (d == 1) {
-                document.getElementById("exchangpoint").style.display = "inline"
-                return d = 0;
-            }
-            else {
-                document.getElementById("exchangpoint").style.display = "none"
-                return d = 1;
-            }
-        }
-        var d;
-        function closepoint() {
-            if (d == 1) {
-                document.getElementById("exchangpoint").style.display = "none"
-
-                return d = 0;
-            }
-            else {
-                document.getElementById("exchangpoint").style.display = "none"
-
-                return d = 1;
-            }
-        }
-        var d;
-        function showpop() {
-            if (d == 1) {
-                document.getElementById("yespoint").style.display = "inline"
-                return d = 0;
-            }
-            else {
-                document.getElementById("yespoint").style.display = "none"
-                return d = 1;
-            }
-        }
-        var d;
-        function closechk() {
-            if (d == 1) {
-                document.getElementById("yespoint").style.display = "none"
-                return d = 0;
-            }
-            else {
-                document.getElementById("yespoint").style.display = "none"
 
                 return d = 1;
             }
