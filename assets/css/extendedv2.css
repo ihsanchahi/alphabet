@@ -93,7 +93,7 @@
 @media (min-width: 1400px) {
     /* Add additional styles as needed */
     .betSlip {
-        position: fixed;
+        position: absolute;
         width: 350px;
         /* left: 150vh !important; */
         height: 90%;
@@ -104,9 +104,6 @@
    
     .slipHeader {
         justify-content: space-between;
-    }
-    .clients{
-        max-width: 76%;
     }
 }
 
