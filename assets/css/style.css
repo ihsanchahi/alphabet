@@ -312,7 +312,7 @@ textarea {
 
 .customOtpBtn:hover {
     background-color: rgb(15, 101, 133) !important;
-    color: #ffffff
+    color:black;
 }
 
 .bottomController {
@@ -365,6 +365,7 @@ textarea {
     display: flex;
     flex-direction: column;
     padding: 20px;
+    color: black;
 }
 
 .credBtn {
@@ -385,6 +386,7 @@ textarea {
     justify-content: space-between;
     width: 80%;
     padding: 10px;
+    text-align: center;
 }
 
 .blueFont {
@@ -398,6 +400,7 @@ textarea {
 
 .btnMrg {
     margin-left: 2px;
+    color: black;
 }
 
 
@@ -411,6 +414,7 @@ textarea {
     }
     .credPassword {
         width: 50%;
+        color: black;
     }
     .savedCred {
         padding: 10;

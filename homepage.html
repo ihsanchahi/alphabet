@@ -1133,11 +1133,30 @@
                         </div>
                         <div class="pageRight">
                             <div class="ExchangeApplicationBtn">
-                                <div class="noticeBtn ">Application For Exchange</div>
+                                <div class="noticeBtn" onclick="showpoint() "> Application For Exchange</div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+    <div id="exchangpoint" style="position: absolute; display: none;">
+        <div class="question">
+            <img src="./assets/images/questionMark.png" alt="#" width="70px" height="70px">
+        </div>
+        <p class="question-delete">Do you want to exchange points for cash?</p>
+        <div class="question-button">
+            <button id="yes-no" onclick="showpop()">Yes</button>
+            <button id="yes-no" onclick="closepoint()">No</button>
+        </div>
+        <div id="yespoint" style="display: none; ">
+            <div class="cancel">
+                X
+            </div>
+            <p class="no-history">Please enter a valid amount.</p>
+            <div class="check">
+                <button id="chk-btn" onclick="closechk ()">Check</button>
             </div>
         </div>
     </div>
@@ -2932,6 +2951,53 @@
             }
             else {
                 document.getElementById("inqmsg").style.display = "none"
+
+                return d = 1;
+            }
+        }
+        var d;
+        function showpoint() {
+            if (d == 1) {
+                document.getElementById("exchangpoint").style.display = "inline"
+                return d = 0;
+            }
+            else {
+                document.getElementById("exchangpoint").style.display = "none"
+                return d = 1;
+            }
+        }
+        var d;
+        function closepoint() {
+            if (d == 1) {
+                document.getElementById("exchangpoint").style.display = "none"
+
+                return d = 0;
+            }
+            else {
+                document.getElementById("exchangpoint").style.display = "none"
+
+                return d = 1;
+            }
+        }
+        var d;
+        function showpop() {
+            if (d == 1) {
+                document.getElementById("yespoint").style.display = "inline"
+                return d = 0;
+            }
+            else {
+                document.getElementById("yespoint").style.display = "none"
+                return d = 1;
+            }
+        }
+        var d;
+        function closechk() {
+            if (d == 1) {
+                document.getElementById("yespoint").style.display = "none"
+                return d = 0;
+            }
+            else {
+                document.getElementById("yespoint").style.display = "none"
 
                 return d = 1;
             }
