@@ -23,7 +23,8 @@ const loginBtn = document.querySelector('.loginBtn')
 const sliderMenu = document.querySelector('.sliderMenu')
 const sliderBackDrop = document.querySelector('.sliderMenuBackDrop')
 const depositeDrop = document.querySelector('.depositeDrop')
-
+const footer = document.querySelector('.footer')
+const clients = document.querySelector('.clients')
 
 
 
@@ -1313,6 +1314,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
             // noticeDownHeader.style.display = 'none'
+            footer.style.marginTop = "0vh"
+            clients.style.marginTop = "140vh"
+
 
 
 

@@ -2152,7 +2152,7 @@ height: 200px; */
     display: flex;
     position: absolute;
     top: 10px;
-    right: 5px;
+    right: 15px;
     font-size: 14px;
 }
 
@@ -2424,6 +2424,24 @@ height: 200px; */
         font-weight: 300;
         font-size: 15px;
         padding: 0 3vh;
+    }
+    .cartWrapper {
+        background-color: #f8ff13;
+        padding: 20px;
+        position: fixed;
+        border-radius: 10px;
+        bottom: 50px;
+        right: 15px;
+        cursor: pointer;
+        margin: auto !important;
+        z-index: 1;
+    }
+    .cart-icon {
+        display: none !important;
+    }
+    .cartNumber {
+        font-weight: 600;
+        color: black;
     }
 
 }

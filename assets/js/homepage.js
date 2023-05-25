@@ -24,7 +24,7 @@ const holdings = document.querySelector('.holdings')
 
 const infoDrop = document.querySelector('.my-backdrop4')
 const customerDrop1 = document.querySelector('.my-backdrop5')
-const customerDrop2 = document.querySelector('.my-backdrop6')
+const backDrop6 = document.querySelector('.my-backdrop6')
 const betsDrop = document.querySelector('.my-backdrop7')
 const changeInfoBtn = document.querySelector('.changeBtn')
 const holdingsbtn = document.querySelector('.holdingsbtn')
@@ -65,7 +65,7 @@ const custrbtn = document.querySelector(".custrbtn ")
 const messsagebtn = document.querySelector(".messsagebtn ")
 
 const openpopup = document.querySelector(".changepopup")
-const inputfieldcontainer = document.querySelector(".inputfieldcontainer")
+// const inputfieldcontainer = document.querySelector(".inputfieldcontainer")
 const custompopupcontainer = document.querySelector(".custompopupcontainer")
 const closepopup = document.querySelector(".closepopup")
 const submitReportBtn  = document.querySelector(".submitReportBtn")
@@ -110,6 +110,10 @@ const checkbtn1 = document.querySelector(".checkbtn1")
 const depositeUpHeader3 = document.querySelector(".depositeUpHeader3")
 const removedrwalcontainer = document.querySelector(".removedrwalcontainer")
 const closeIconCustom = document.querySelector(".closeIconCustom")
+const submitReportBtn1 = document.querySelector(".submitReportBtn1")
+const closePopUpCustomer = document.querySelector(".customerCancel2")
+
+
 
 
 
@@ -200,11 +204,22 @@ checkbtn.addEventListener("click",function(){
     inputfieldcontainer.style.display = "block";
   })
 
+  deletepopup.addEventListener("click",function(){
+    custompopupcontainer.style.display = "block";
+    inputfieldcontainer.style.display = "none";         
+})
   
   changepopup1.addEventListener("click",function(){
         custompopupcontainer.style.display = "block";
         inputfieldcontainer.style.display = "none";         
   })
+  submitReportBtn1.addEventListener("click",function(){
+    backDrop6.style.display = "flex";
+    inputfieldcontainer.style.display = "none";         
+})
+closePopUpCustomer.addEventListener("click",function(){
+    backDrop6.style.display = "none";         
+})
 
 
     //   Attendancebtn popup

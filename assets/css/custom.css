@@ -18,9 +18,9 @@ body {
 .custompopupcontainer {
     width: 65%;
     height: 270px;
-    position: absolute;
+    position: fixed;
     background-color: #1D232A;
-    top: 200px;
+    top: 20vh;
     display: none;
 
 }
@@ -610,7 +610,7 @@ body {
     background-color: rgb(29, 35, 42);
     margin-top: 400px;
     padding: 0px 10px;
-    margin-left: 200px;
+    /* margin-left: 200px; */
 }
 @media (max-width:820px) {
     .noticeBodyNewpoint {
@@ -640,31 +640,44 @@ body {
 .pointTrans{
     position: absolute;
     width: 100%;
-    margin-left: 90px;
     margin-top: 80px;
 }
-@media (max-width:820px) {
+@media (min-width:1410px) {
     .pointTrans{
     
-        margin-top: 110px;
-        margin-left: 1px;
+        width: 50%;
+        position: absolute;
+        left: 25vh;
+    }
+}
+
+@media (max-width:1400px) {
+    .pointTrans{
+    
+        width: 60%;
+        position: absolute;
+        left: 25vh;
     }
 }
 @media (max-width:768px) {
     .pointTrans{
-        margin-left: 10px;
-        margin-top: 95px;
+        /* margin-top: 540px; */
+        width: 70%;
+        position: absolute;
+        margin-left: -21vh;
+
     }
+
 }
 @media (max-width:480px) {
     .pointTrans{
         position: absolute;
         width: 410px;
-        margin-left: -155px;
-        width: 100%;
-        margin-left: -100px;
+        width: 95%;
         margin-top: 100px;
+        margin-left: -21vh;
     }
+
 }
 .NoticeWrapper{
         background-color: #1f262f;
@@ -1273,12 +1286,11 @@ body {
 }
 
 .pointexchcontainer {
-    width: 50%;
+    width: 100%;
     height: auto;
     background-color: #1f262f !important;
     position: absolute;
     top: 150px;
-    left: 200px;
 }
 
 #exchangpoint{
@@ -1347,17 +1359,6 @@ border-radius: 5px;
     }
 }
 
-
-.noticeBodyNew {
-    background-color: #1F262F;
-    display: flex;
-    flex-direction: column;
-    font-size: 14px;
-    font-weight: 300;
-    padding: 10px;
-    width: 100%;
-    margin-top: 20px;
-}
 
 .slectlea {
     background-color: #27303a;
@@ -2424,7 +2425,7 @@ border-right: 1px solid #1e242c; */
 .my-backdrop3,
 .my-backdrop4,
 .my-backdrop5,
-.my-backdrop6,
+
 .my-backdrop7,
 .my-backdropPointExchange,
 .my-backdropExchangeApplication,
@@ -2444,6 +2445,18 @@ border-right: 1px solid #1e242c; */
     align-items: center;
     display: none;
 }
+.my-backdrop6{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
 
 
 .inputLeague {
@@ -2461,7 +2474,7 @@ border-right: 1px solid #1e242c; */
     font-weight: 300;
     padding: 10px;
     width: 100%;
-    z-index: 1;
+    /* z-index: 1; */
 
 }
 @media (max-width:480px) {
@@ -2763,7 +2776,7 @@ border-right: 1px solid #1e242c; */
 }
 
 .noticeBtn,
-.submitReportBtn {
+.submitReportBtn1 {
     background-color: rgb(39, 48, 58);
     padding: 5px;
     cursor: pointer;
@@ -2771,41 +2784,6 @@ border-right: 1px solid #1e242c; */
 
 .depositeHistory {
     margin-top: 10px;
-}
-
-.noticeBodyNewpoint {
-    position: absolute;
-    width: 80%;
-    background-color: #1D232A;
-    margin-top: 482px;
-    padding: 7px 10px;
-}
-
-@media (max-width:820px) {
-    .noticeBodyNewpoint {
-        margin-left: -255px;
-        margin-top: 500px;
-        width: 60%;
-        position: absolute;
-    }
-}
-
-@media (max-width:768px) {
-    .noticeBodyNewpoint {
-        margin-left: -255px;
-        margin-top: 470px;
-        width: 60%;
-        position: absolute;
-    }
-}
-
-@media (max-width:480px) {
-    .noticeBodyNewpoint {
-        margin-left: -665px;
-        margin-top: 540px;
-        width: 50%;
-        position: absolute;    
-    }
 }
 
 .historyHeader {

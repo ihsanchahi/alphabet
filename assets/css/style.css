@@ -307,6 +307,7 @@ textarea {
     justify-content: center;
     align-items: center;
     border-radius: 10px;
+    color: #000;
     /* width: 80%; */
 }
 
@@ -377,6 +378,7 @@ textarea {
     padding: 10px;
     border-radius: 10px;
     width: 45%;
+    color: #000;
 }
 
 .credControl {
