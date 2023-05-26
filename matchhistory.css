@@ -1,9 +1,10 @@
 * {
     padding: 0;
     margin: 0;
- box-sizing: border-box;
+    box-sizing: border-box;
 
 }
+
 .matchhistorybuttons button {
     padding: 12px 30px;
     background-color: #394552;
@@ -13,22 +14,86 @@
     margin-top: 20px;
 
 }
-.matchhistorybuttons button:hover{
+
+.matchhistorybuttons button:hover {
     background-color: #F8FF13;
 }
+
+@media (max-width:1400px) {
+    .matchhistorybuttons button {
+        padding: 10px 20px;
+        font-size: 10px;
+        width: 14vh;
+    }
+    p.liga{
+        font-size: 10px !important;
+    } 
+    .tableRow{
+        font-size: 10px;
+    }
+    .tableData{
+        font-size: 10px;
+        white-space: nowrap;
+        text-align: justify;
+    }
+    
+}
+
+@media (max-width:768px) {
+    .matchhistorybuttons button {
+        padding: 10px 15px;
+        font-size: 5px;
+        width: 8vh;
+    }
+    p.liga{
+        font-size: 10px !important;
+    } 
+    .tableRow{
+        font-size: 7px;
+    }
+    .tableData{
+        font-size: 7px;
+        white-space: nowrap;
+    }
+    
+}
+
+@media (max-width:480px) {
+    .matchhistorybuttons button {
+        padding: 10px 15px;
+        font-size: 5px;
+        width: 8vh;
+    }
+    p.liga{
+        font-size: 8px !important;
+    } 
+    .tableRow{
+        font-size: 5px;
+    }
+    .tableData{
+        font-size: 4px;
+        white-space: nowrap;
+        text-align: center;
+    }
+    
+}
+
 .noticeBodyNew {
     width: 90%;
     margin: 0 auto;
 }
+
 .depositeHistory {
     margin-top: 20px;
 }
+
 .pagination {
     display: flex;
     width: 100%;
     justify-content: space-between;
     margin-top: 200px;
 }
+
 p.liga {
     font-size: 13px;
     font-weight: 600;

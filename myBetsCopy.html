@@ -11,15 +11,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200;300;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/board.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
     <link rel="stylesheet" href="assets/css/overall.css">
-    <link rel="stylesheet" href="assets/css/extended.css">
-    <link rel="stylesheet" href="assets/css/messages.css">
+    <link rel="stylesheet" href="assets/css/myBets1.css">
     <link rel="stylesheet" href="assets/css/pagination.css">
-    <link rel="stylesheet" href="assets/css/clients.css">
-    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-    <title>Notice Board</title>
+
+    <title>Bets Copy
+
+    </title>
 </head>
 
 <body>
@@ -74,7 +73,7 @@
                             <div class="impBtns changeBtn ">
                                 Changing Information
                             </div>
-                            <div class="impBtns  ">
+                            <div class="impBtns ">
                                 <a href="myBetsCopy.html" style="color: white; text-decoration: none;">My Bets</a>
                             </div>
                             <div class="impBtns customerBtn">
@@ -94,12 +93,12 @@
                             </div>
 
 
-
                             <div class="impBtns fontRed">
                                 Logout
                             </div>
 
                         </div>
+                        
                     </div>
                 </div>
             </div>
@@ -185,28 +184,6 @@
     <div class="bodyWrapper">
         <div class="sliderMenuBackDrop">
 
-        </div>
-        <div class="my-backdrop0">
-            <div class="NoticeWrapper">
-                <div class="noticeBody" id="msgBody">
-                    <div class="noticeCancel" id="msgCancel">
-                        <i class="bi bi-x-lg " style="color: black;"></i>
-
-                    </div>
-                    <div class="noticeHeader">
-                        <div class="noticeUpHeader fontBlue">
-                            Message
-                        </div>
-                        <div class="noticeDownHeader">
-                            <div class="noticeBtn">Mark all messages as read</div>
-                            <div class="noticeBtn">Delete selected messages</div>
-                        </div>
-                    </div>
-
-
-                </div>
-
-            </div>
         </div>
         <div class="my-backdrop depositeDrop">
 
@@ -535,7 +512,7 @@
             <div class="NoticeWrapper2">
                 <div class="noticeBodyNew">
                     <div class="customerCancel1">
-                        <i class="bi bi-x-lg " style="color: black;"></i>
+                        <i class="bi bi-x-lg " style="color: black;"> </i>
 
                     </div>
                     <div class="noticeHeader">
@@ -559,7 +536,7 @@
                             <div class="footerItem" id="footer5">
 
                                 <div class="hd3">Wait</div>
-                                <div class="hd2  changepopup">Application for changing username</div>
+                                <div class="hd2 changepopup">Application for changing username</div>
                                 <div class="hd4">Helios</div>
                                 <div class="hd1s">2023-03-18
                                     <div>
@@ -861,245 +838,441 @@
             </div>
         </div>
 
-        <div class="column2">
+
+
+
+
+
+        <div class="column2" style="display: none !important;">
             <div class="BoardnoticeWrapper">
                 <div class="boardBody">
 
 
                 </div>
+                <br>
+                <button class="btn btn-primary"
+                    style="background-color: #222a33; color: white; border: none; width: 100%;">See More</button>
             </div>
         </div>
         <div class="column4">
-            <div class="noticeViewWrapper">
+            <div class="noticeViewWrapper" style="display: none !important;">
 
             </div>
         </div>
-        <div class="column3">
-            <div class="betSlip">
-                <div class="slipWrapper">
-                    <div class="slipHeaderWrapper">
-                        <div class="slipHeader">
-                            <div class="HeaderTop">Events</div>
-
-                        </div>
-                        <div class="eventsWrapper">
-                            <div class="eventsBody">
-                                <div class="singleEvent">
-                                    <a href="event.html">
-                                        <img src="assets/images/event2.png" class="d-inline-block align-text-top"
-                                            width="310" height="105">
-
-                                    </a>
-                                </div>
-                                <div class="singleEvent">
-                                    <a href="event.html">
-                                        <img src="assets/images/event3.png" class="d-inline-block align-text-top"
-                                            width="310" height="105">
-
-                                    </a>
-                                </div>
-                                <div class="singleEvent">
-                                    <a href="event.html">
-                                        <img src="assets/images/event4.png" class="d-inline-block align-text-top"
-                                            width="310" height="105">
-
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
 
-                </div>
-            </div>
-        </div>
-
-        <div class="popup" style="width: 45%;">
-            <div class="noticeBodyNew">
-                <div class="close">
-                    <i class="bi bi-x-lg " style="color: black;"></i>
-
-                </div>
-                <div class="noticeHeader">
-                    <div class="historyUpHeader fontBlue" style="border-bottom: 1px solid#5897fb; ">
-                        Message
-                    </div>
-                    <div class="depositeItem depositeBill"
-                        style="display: flex; justify-content: space-between; margin-top: 10px;">
-
-                        <div class="markmes">Mark all message as read</div>
-                        <div class="markmes">Delete Select message</div>
-                    </div>
-                </div>
-                <div class="footerItem" id="footer5" style="margin-top: 10px; display: flex; flex-direction: column;">
-
-                    <div class="match" style="display:flex;justify-content: space-between;">
-                        <div class="notification"> [notification] <span class="prediction">Match prediction event up to
-                                5 million won </span> </div>
-                        <div class="check"> <input type="checkbox" id="vehicle1" name="v ehicle1" value="Bike"></div>
-                    </div>
-
-
-                    <div class="date-details" style="display: flex; justify-content: space-between;">
-                        <div class="date"> 2023-05-13 06:19:18</div>
-                        <div class="read">Read</div>
-                    </div>
-                </div>
-                <div class="footerItem" id="footer5" style="margin-top: 10px; display: flex; flex-direction: column;">
-
-                    <div class="match" style="display:flex;justify-content: space-between;">
-                        <div class="notification"> [notification] <span class="prediction">Match prediction event up to
-                                5 million won </span> </div>
-                        <div class="check"> <input type="checkbox" id="vehicle1" name="v ehicle1" value="Bike"></div>
-                    </div>
-
-
-                    <div class="date-details" style="display: flex; justify-content: space-between;">
-                        <div class="date"> 2023-05-13 06:19:18</div>
-                        <div class="read">Read</div>
-                    </div>
-                </div>
-                <div class="footerItem" id="footer5" style="margin-top: 10px; display: flex; flex-direction: column;">
-
-                    <div class="match" style="display:flex;justify-content: space-between;">
-                        <div class="notification"> [notification] <span class="prediction">Match prediction event up to
-                                5 million won </span> </div>
-                        <div class="check"> <input type="checkbox" id="vehicle1" name="v ehicle1" value="Bike"></div>
-                    </div>
-
-
-                    <div class="date-details" style="display: flex; justify-content: space-between;">
-                        <div class="date"> 2023-05-13 06:19:18</div>
-                        <div class="read">Read</div>
-                    </div>
-                </div>
-                <div class="footerItem" id="footer5" style="margin-top: 10px; display: flex; flex-direction: column;">
-
-                    <div class="match" style="display:flex;justify-content: space-between;">
-                        <div class="notification"> [notification] <span class="prediction">Match prediction event up to
-                                5 million won </span> </div>
-                        <div class="check"> <input type="checkbox" id="vehicle1" name="v ehicle1" value="Bike"></div>
-                    </div>
-
-
-                    <div class="date-details" style="display: flex; justify-content: space-between;">
-                        <div class="date"> 2023-05-13 06:19:18</div>
-                        <div class="read">Read</div>
-                    </div>
-                </div>
-                <div class="pagination">
-                    <div class="pageLeft">
-                        <div class="pageLimiter">
-                            <select name="oddsType" class="selectOptions2" id="mini1">
-                                <option value="10">10</option>
-                                <option value="20">20</option>
-                                <option value="30">30</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="pageRight">
-                        <div class="pageNo" id="miniPN1">1</i>
-                        </div>
-                        <div class="pageController">
-                            <div class="pLeft " id="lbtn1"><i class="bi bi-chevron-left chevronLogo "></i></div>
-                            <div class="pLeft" id="rbtn1"><i class="bi bi-chevron-right chevronLogo"></i></div>
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
-        </div>
     </div>
-    <section id="clients" class="clients" style="margin-top: 5vh;">
-        <div class="container" data-aos="fade-up">
 
-            <div class="clients-slider swiper">
-                <div class="swiper-wrapper align-items-center">
-                    <div class="swiper-slide"><img src="assets/images/clients/client-1.png" class="img-fluid" alt=""
-                            title="Bread and Beyond"></div>
-                    <div class="swiper-slide"><img src="assets/images/clients/client-2.png" class="img-fluid" alt=""
-                            title="Blue Group of Companies"></div>
-                    <div class="swiper-slide"><img src="assets/images/clients/client-3.png" class="img-fluid" alt=""
-                            title="JWD Group"></div>
-                    <div class="swiper-slide"><img src="assets/images/clients/client-4.png" class="img-fluid" alt=""
-                            title="Kamal Zamindar Pvt Ltd"></div>
-                    <div class="swiper-slide"><img src="assets/images/clients/client-5.png" class="img-fluid" alt=""
-                            title="Pakistan Cricket Board Ltd"></div>
-                    <div class="swiper-slide"><img src="assets/images/clients/client-6.png" class="img-fluid" alt=""
-                            title="ZKB RELIABLE JV"></div>
-                    <div class="swiper-slide"><img src="assets/images/clients/client-7.png" class="img-fluid" alt=""
-                            title="Rays"></div>
-                    <div class="swiper-slide"><img src="assets/images/clients/client-8.png" class="img-fluid" alt=""
-                            title="Ihsan Cotton Product Pvt Ltd"></div>
-                    <!-- <div class="swiper-slide"><img src="assets/images/clients/client-9.png" class="img-fluid" alt="" title="Aerospace Baykee Pakistan"></div> -->
-                    <div class="swiper-slide"><img src="assets/images/clients/client-10.png" class="img-fluid" alt=""
-                            title="Baba Food Processing Co. Ltd"></div>
-                    <div class="swiper-slide"><img src="assets/images/clients/client-11.png" class="img-fluid" alt=""
-                            title="A.J Coperation"></div>
-                    <div class="swiper-slide"><img src="assets/images/clients/client-12.png" class="img-fluid" alt=""
-                            title="Dynamic Equipment & Controls Pvt Ltd"></div>
-                    <div class="swiper-slide"><img src="assets/images/clients/client-13-old.png" class="img-fluid" alt=""
-                            title="New Kings Packages"></div>
-                    <!-- <div class="swiper-slide"><img src="assets/images/clients/client-14.png" class="img-fluid" alt=""
-                            title="Chashma Sugar Mills"></div>
-                    <div class="swiper-slide"><img src="assets/images/clients/client-15.png" class="img-fluid" alt=""
-                            title="Simple Sufi"></div>
-                    <div class="swiper-slide"><img src="assets/images/clients/client-16.png" class="img-fluid" alt=""
-                            title="Dynamic Packaging"></div>
-                    <div class="swiper-slide"><img src="assets/images/clients/client-17.png" class="img-fluid" alt=""
-                            title="Dot Print Pvt Ltd"></div>
-                    <div class="swiper-slide"><img src="assets/images/clients/client-18.png" class="img-fluid" alt=""
-                            title="AL Khalifa Foods"></div>
-                    <div class="swiper-slide"><img src="assets/images/clients/client-19.png" class="img-fluid" alt=""
-                            title="Maria Zunnorain"></div>
-                    <div class="swiper-slide"><img src="assets/images/clients/client-20.png" class="img-fluid" alt=""
-                            title="Sindh Abadgarh Sugar Mills Ltd."></div>
-                    <div class="swiper-slide"><img src="assets/images/clients/client-21.png" class="img-fluid" alt=""
-                            title="Ashraf Sugar Mills Ltd"></div> -->
-                </div> 
-                <div class="swiper-pagination"></div>
-                <!-- <div class="text-center more-btn">
-                    <a href="clients.html" class="more-btn">More Clients <i class="bi bi-chevron-double-right"></i></a>
+    <h2 class="page-title">My Bets</h2>
+
+    <div class="maincontainerbets">
+        <div class="HistoryWrap">
+            <div class="minicontainer">
+                <div class="container mx-auto tab-trot-container">
+                    <div class="table-responsive  minicontainer1">
+                        <table class="table table-bordered" style="width: 100%; text-align: center;">
+                            <thead>
+                                <tr>
+                                    <th style="width: 10%; text-align: center;" scope="col">Time</th>
+                                    <th style="width: 16%; text-align: center;" scope="col">Bet type</th>
+                                    <th style="width: 15%;" scope="col">League</th>
+                                    <th style="width: 15%;" scope="col">Home</th>
+                                    <th style="width: 5%;" scope="col">Draw</th>
+                                    <th style="width: 20%" scope="col">Away</th>
+                                    <th style="width: 5%;" scope="col">Score</th>
+                                    <th style="width: 20%;" scope="col">Result</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr class="rowcenter">
+                                    <td style="color: gray;">05/05 14:02</td>
+                                    <td style="margin-left: 200px;">Bonus</td>
+                                    <td>Bonus 4 Folder</td>
+                                    <td class="col-3"
+                                        style="background-color: #F8FF13; color:  white; text-align: start;">Bonus 4
+                                        Folder <p
+                                            style="color: white; position: absolute; margin-left: 230px; margin-top: -20px;">
+                                        </p>
+                                    </td>
+                                    <td>Bonus</td>
+                                    <td style="text-align: right;">Manchester</td>
+                                    <td>7:7</td>
+                                    <td style="color: gray;">PROCEED</td>
+                                </tr>
+                                <tr>
+                                    <td style="color: gray;">02/10 02:00</td>
+                                    <td>Both Team To Score</td>
+                                    <td>Cyprus Division 1</td>
+                                    <td
+                                        style="width: 20%;  color: white; text-align: start; background-color: #1A96CD;">
+                                        Nea Salamis Famagusta Yes <p
+                                            style="color: white; position: absolute; margin-left: 230px; margin-top: -20px;">
+                                        </p>
+                                    </td>
+                                    <td>0</td>
+                                    <td style="text-align: right; background-color: #1A96CD;"> Barcelona</td>
+                                    <td style="color: white;">0:0</td>
+                                    <td style="color: gray;">PROCEED</td>
+                                </tr>
+                                <tr>
+                                    <td style="color: gray;">02/10 02:00</td>
+                                    <td>Double Chance</td>
+                                    <td>Cyprus Division 1</td>
+                                    <td style="width: 20%;  color: white; text-align: start; ">Nea Salamis Famagusta Yes
+                                        <p style="color: white;">
+                                        </p>
+                                    </td>
+                                    <td>-1.5</td>
+                                    <td style="text-align: right;">Draw/Away</td>
+                                    <td style=" color: white;">0:0</td>
+                                    <td style="color: gray;">PROCEED</td>
+                                </tr>
+                                <tr>
+                                    <td style="color: gray;">02/10 02:45</td>
+                                    <td>Handicap Total</td>
+                                    <td>Serie A</td>
+                                    <td style=" color: white; text-align: start;">FC Twenta <p
+                                            style=" color: white; position: absolute; margin-left: 230px; margin-top: -20px;">
+                                        </p>
+                                    </td>
+                                    <td>0</td>
+                                    <td style="text-align: right;">Ajax</td>
+                                    <td style=" color: white;">0:0</td>
+                                    <td style="color: gray;">PROCEED</td>
+                                </tr>
+
+                                <tr>
+                                    <td style="color: gray;">02/10 02:45</td>
+                                    <td>Handicap Total</td>
+                                    <td>Serie A</td>
+                                    <td style=" color: white; text-align: start;">FC Twenta <p
+                                            style=" color: white; position: absolute; margin-left: 230px; margin-top: -20px;">
+                                        </p>
+                                    </td>
+                                    <td>0</td>
+                                    <td style="text-align: right; background-color: #1A96CD;">Anorthosis Famagusta</td>
+                                    <td style=" color: white;">0:0</td>
+                                    <td style="color: gray;">PROCEED</td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="row" style="margin-top: 10px;">
+                        <div class="col-12" style="font-size: small; display: flex;">
+                            <p><span style="color: gray;">Bet Time</span>: 2023-03-08 23:57:22</p>
+                            <p style="color:#1A96CD; margin-left: 5px;"> <span style="color: gray;">Amount:</span> 1,000
+                            </p>
+                            <p style="color: #1A96CD; margin-left: 5px;"> <span style="color: gray;">Ratio:</span> 15.36
+                            </p>
+                            <p style="color: #1A96CD; margin-left: 5px;"> <span
+                                    style="color: gray; text-align: center;">Win Prediction
+                                    Amount:</span> 15.360</p>
+                            <p style="color: #1A96CD; margin-left: 5px;"> <span style="color: gray;">Win Ratio</span> 0
+                            </p>
+                            <p style="color: #1A96CD; margin-left: 5px;"> <span style="color: gray;">Win Amount</span> 0
+                            </p>
+                            </p>
+                            <p style="color: gray; margin-left: 5px;">Status : PROCEED</p>
+                        </div>
+
+
+                    </div>
+                    <div class="row" style="margin: 10px auto;">
+
+                        <div class="col">
+                            <button type="button" class=" impBtns btbt">Cancel Bet</button>
+
+                        </div>
+                        <div class="col">
+
+                            <button type="button" class="impBtns btbt">Add Board</button>
+
+                        </div>
+                        <div class="col">
+
+                            <button type="button" class="impBtns btbt">Add CS</button>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+                <!-- Another mybetspage -->
+
+
+                <!-- <thead>
+                            <tr>
+                                <th style="width: 15%;" scope="col">Time</th>
+                                <th style="width: 25%;" scope="col">Bet type</th>
+                                <th style="width: 20%;" scope="col">League</th>
+                                <th style="width: 40%;" scope="col">Home</th>
+                                <th style="width: 20%;" scope="col">Draw/Hancicap</th>
+                                <th scope="col">Away</th>
+                                <th style="width: 20%;" scope="col">Score</th>
+                                <th style="width: 20%;" scope="col">Result</th>
+                            </tr>
+                        </thead> -->
+                <!-- <div class="container mx-auto tab-trot-container">
+                    <div class="table-responsive">
+                        <table class="table table-bordered">
+
+                            <tbody>
+                                <tr class="rowcenter">
+                                    <td style="color: gray;">05/05 14:02</td>
+                                    <td style="margin-left: 200px;">Bonus</td>
+                                    <td>Bonus 4 Folder</td>
+                                    <td class="col-3" style="background-color: #EFCA00; color: black;">Bonus 4 Folder <p
+                                            style="color: black; position: absolute; margin-left: 230px; margin-top: -20px;">
+                                            1.05</p>
+                                    </td>
+                                    <td>Bonus</td>
+                                    <td>Manchester</td>
+                                    <td>7:7</td>
+                                    <td style="color: #00C5A9;">Win</td>
+                                </tr>
+                                <tr>
+                                    <td style="color: gray;">02/10 02:00</td>
+                                    <td>Both Team To Score</td>
+                                    <td>Cyprus Division 1</td>
+                                    <td style="width: 20%; background-color: #EFCA00; color: black;">Nea Salamis
+                                        Famagusta Yes <p
+                                            style="color: black; position: absolute; margin-left: 230px; margin-top: -20px;">
+                                            1.05</p>
+                                    </td>
+                                    <td>0</td>
+                                    <td>Barcelona</td>
+                                    <td style="color: white;">0:0</td>
+                                    <td style="color: gray;">PROCEED</td>
+                                </tr>
+                                <tr>
+                                    <td style="color: gray;">02/10 02:00</td>
+                                    <td>Double Chance</td>
+                                    <td>Cyprus Division 1</td>
+                                    <td style="width: 20%;  background-color: #EFCA00; color: black;">Nea Salamis
+                                        Famagusta Yes <p
+                                            style="color: black; position: absolute; margin-left: 230px; margin-top: -20px;">
+                                            1.44</p>
+                                    </td>
+                                    <td>-1.5</td>
+                                    <td>Draw/Away</td>
+                                    <td style=" color: white;">0:0</td>
+                                    <td style="color: gray;">PROCEED</td>
+                                </tr>
+                                <tr>
+                                    <td style="color: gray;">02/10 02:45</td>
+                                    <td>Handicap Total Match</td>
+                                    <td>Serie A</td>
+                                    <td style=" color: white;">FC Twenta <p
+                                            style=" color: white; position: absolute; margin-left: 230px; margin-top: -20px;">
+                                            1.85</p>
+                                    </td>
+                                    <td>0</td>
+                                    <td>Ajax</td>
+                                    <td style=" color: white;">0:0</td>
+                                    <td style="color: gray;">PROCEED</td>
+                                </tr>
+                                <tr>
+                                    <td style="color: gray;">02/10 02:00</td>
+                                    <td>1x2</td>
+                                    <td>Cyprus Division 1</td>
+                                    <td>Juventus</td>
+                                    <td>0</td>
+                                    <td>Famagusta</td>
+                                    <td style="background-color: #EFCA00; color: black;">0:0</td>
+                                    <td style="color: gray;">PROCEED</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="row" style="margin-top: 10px;">
+                        <div class="col-12" style="font-size: small; display: flex;">
+                            <p><span style="color: gray;">Bet Time</span>: 2023-03-08 23:57:22</p>
+                            <p style="color:#1A96CD; margin-left: 5px;"> <span style="color: gray;">Amount:</span> 1,000
+                            </p>
+                            <p style="color: #1A96CD; margin-left: 5px;"> <span style="color: gray;">Ratio:</span> 15.36
+                            </p>
+                            <p style="color: #1A96CD; margin-left: 5px;"> <span style="color: gray;">Win Prediction
+                                    Amount:</span> 15.360</p>
+                            <p style="color: #1A96CD; margin-left: 5px;"> <span style="color: gray;">Win Ratio</span> 0
+                            </p>
+                            <p style="color: #EFCA00; margin-left: 5px;"> <span style="color: gray;">Win Amount</span> 0
+                            </p>
+                            <p style="color: gray; margin-left: 5px;">Status : PROCEED</p>
+                        </div>
+                        <div class="col-1">
+                            <button type="button" class=" impBtns btbt">Cancel Bet</button>
+
+                        </div>
+                        <div class="col-1">
+
+                            <button type="button" class="impBtns btbt">Add Board</button>
+
+                        </div>
+                        <div class="col-1">
+
+                            <button type="button" class="impBtns btbt">Add CS</button>
+                        </div>
+                    </div>
                 </div> -->
-            </div>
+                <div class="container mx-auto tab-trot-container">
+                    <div class="table-responsive  minicontainer1">
+                        <table class="table table-bordered" style="width: 100%; text-align: center;">
+                            <tr>
+                                <td style="width: 10%; text-align: center; color: gray;" scope="col">05/05 14:02</td>
+                                <td style="width: 16%; text-align: center;" scope="col">Bonus</td>
+                                <td style="width: 15%;" scope="col">Netherland Cup</td>
+                                <td style="width: 15%; text-align: start; background-color: #1A96CD;" scope="col">
+                                    Estoril</td>
+                                <td style="width: 5%;" scope="col">Bonus</td>
+                                <td style="width: 20%; text-align: right;" scope="col">bonus 4 folder</td>
+                                <td style="width: 5%;" scope="col">7:7</td>
+                                <td style="width: 20%; color:  #00C5A9;" scope="col">Win</td>
+                            </tr>
+                            <tbody>
+                                <tr class="rowcenter">
+                                    <td style="color: gray;">05/05 14:02</td>
+                                    <td style="margin-left: 200px;">Bonus</td>
+                                    <td>Bonus 4 Folder</td>
+                                    <td class="col-3"
+                                        style="background-color: #F8FF13; color:  white; text-align: start;">Bonus 4
+                                        Folder <p
+                                            style="color: white; position: absolute; margin-left: 230px; margin-top: -20px;">
+                                        </p>
+                                    </td>
+                                    <td>Bonus</td>
+                                    <td style="text-align: right;">Manchester</td>
+                                    <td>0:0</td>
+                                    <td style="color: gray;">PROCEED</td>
+                                </tr>
+                                <tr>
+                                    <td style="color: gray;">02/10 02:00</td>
+                                    <td>Both Team To Score</td>
+                                    <td>Cyprus Division 1</td>
+                                    <td
+                                        style="width: 20%;  color: white; text-align: start; background-color: #1A96CD;">
+                                        Nea Salamis Famagusta Yes <p
+                                            style="color: white; position: absolute; margin-left: 230px; margin-top: -20px;">
+                                        </p>
+                                    </td>
+                                    <td>0</td>
+                                    <td style="text-align: right;"> Barcelona</td>
+                                    <td style="color: white;">0:0</td>
+                                    <td style="color: gray;">PROCEED</td>
+                                </tr>
+                                <tr>
+                                    <td style="color: gray;">02/10 02:00</td>
+                                    <td>Double Chance</td>
+                                    <td>Cyprus Division 1</td>
+                                    <td style="width: 20%;  color: white; text-align: start; ">Nea Salamis Famagusta Yes
+                                        <p style="color: white;">
+                                        </p>
+                                    </td>
+                                    <td>-1.5</td>
+                                    <td style="text-align: right; background-color: #1A96CD;">Draw/Away</td>
+                                    <td style=" color: white;">0:0</td>
+                                    <td style="color: gray;">PROCEED</td>
+                                </tr>
+                                <tr>
+                                    <td style="color: gray;">02/10 02:45</td>
+                                    <td>Handicap Total</td>
+                                    <td>Serie A</td>
+                                    <td style=" color: white; text-align: start;">FC Twenta <p
+                                            style=" color: white; position: absolute; margin-left: 230px; margin-top: -20px;">
+                                        </p>
+                                    </td>
+                                    <td>0</td>
+                                    <td style="text-align: right; background-color: #1A96CD;">Ajax</td>
+                                    <td style=" color: white;">0:0</td>
+                                    <td style="color: gray;">PROCEED</td>
+                                </tr>
 
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="row" style="margin-top: 10px;">
+                        <div class="col-12" style="font-size: small; display: flex;">
+                            <p><span style="color: gray;">Bet Time</span>: 2023-03-08 23:57:22</p>
+                            <p style="color:#1A96CD; margin-left: 5px;"> <span style="color: gray;">Amount:</span> 1,000
+                            </p>
+                            <p style="color: #1A96CD; margin-left: 5px;"> <span style="color: gray;">Ratio:</span> 15.36
+                            </p>
+                            <p style="color: #1A96CD; margin-left: 5px;"> <span style="color: gray;">Win Prediction
+                                    Amount:</span> 15.360</p>
+                            <p style="color: #1A96CD; margin-left: 5px;"> <span style="color: gray;">Win Ratio</span> 0
+                            </p>
+                            <p style="color: #1A96CD; margin-left: 5px;"> <span style="color: gray;">Win Amount</span> 0
+                            </p>
+                            <p style="color: gray; margin-left: 5px;">Status : PROCEED</p>
+                        </div>
+
+
+                    </div>
+                    <div class="row" style="margin: 10px auto;">
+
+                        <div class="col">
+                            <button type="button" class=" impBtns btbt">Cancel Bet</button>
+
+                        </div>
+                        <div class="col">
+
+                            <button type="button" class="impBtns btbt">Add Board</button>
+
+                        </div>
+                        <div class="col">
+
+                            <button type="button" class="impBtns btbt">Add CS</button>
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
         </div>
-    </section>
-    <div class="footer">
-        <div class="col-12 footer-content">
-            <img src="assets/images/logo (1).png" alt="logo">
-            <p>By accessing, continuing to use or navigating throughout this site you accept that we will use certain browser cookies to improve your customer experience with us. </p>
-            <p>ALPHABET only uses cookies which will improve your experience with us and will not interfere with your privacy.</p>
-            <p>COPYRIGHT (c) ALPHABET ALL RIGHTS RESERVED.</p>
+
+    </div>
+    <div class="delRow">
+        <button class="deletebts" id="delbtn">Delete All Bets</button>
+    </div>
+
+
+    <!-- <h2>Active and Hoverable Pagination</h2> -->
+
+    <!-- <p>Move the mouse over the numbers.</p> -->
+
+    <div class="pagination">
+        <div class="pageLeft">
+            <div class="pageLimiter">
+                <select name="oddsType" class="selectOptions2" id="mini1">
+                    <option value="10">10</option>
+                    <option value="20">20</option>
+                    <option value="30">30</option>
+                </select>
+
+
+            </div>
+        </div>
+        <div class="pageRight">
+            <div class="pageNo" id="miniPN1"><span style="font-size: 12px; font-weight: 500;">1<i
+                        class="bi bi-chevron-down" style="font-size: 10px; padding: 5px;"></i></span>
+            </div>
+            <div class="pageController">
+                <div class="pLeft " id="lbtn1"><i class="bi bi-chevron-left chevronLogo "></i></div>
+                <div class="pLeft" id="rbtn1"><i class="bi bi-chevron-right chevronLogo"></i></div>
+            </div>
         </div>
     </div>
+    <br>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         crossorigin="anonymous"></script>
 
-    <script src="assets/js/board.js"></script>
+    <script src="assets/js/event.js"></script>
     <script src="assets/js/extended.js"></script>
     <script src="assets/js/messages.js"></script>
-    <script src="assets/vendor/aos/aos.js"></script>
-    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-
-    <script src="assets/js/client.js"></script>
-    <!-- <script>
-        const popup = document.querySelector('.popup');
-
-        const close = document.querySelector('.close');
-
-        window.onload = function () {
-            setTimeout(function () {
-                popup.style.display = "block";
-            }, 500)
-
-        }
-        close.addEventListener('click', () => {
-            popup.style.display = "none"
-        })
-    </script> -->
 </body>
 
 </html>

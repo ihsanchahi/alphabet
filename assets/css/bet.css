@@ -147,7 +147,7 @@ body {
 .column4 {
     flex-grow: 1;
     display: flex;
-    max-width: 77%;
+    max-width: 100%;
 }
 
 .sidebar {
@@ -2041,7 +2041,8 @@ height: 200px; */
         padding: 0 3vh;
     }
     .gamesWrapper{
-        width: 85%;
+        width: 72%;
+        margin: 0vh 5vh;
     }
 }
 

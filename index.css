@@ -358,10 +358,11 @@ div#Register-popup {
 }
 input[type="password"] {
     height: 38px;
-    background-color: rgb(34, 42, 51);
+    background-color:#1f262f;
     font-size: 12px;
     padding-left: 6px;
     color: white;
+    border: 1px solid white;
 }
 .customContainer2{
     position: absolute;

@@ -42,6 +42,12 @@
     text-align: center !important;
 
 }
+.delRow{
+    display: flex;
+    justify-content: flex-end;
+    width: 90%;
+    margin: 2vh 0vh;
+}
 
 .deletebts {
     width: 15%;
@@ -50,9 +56,8 @@
     background-color: #303a46;
     padding: 15px;
     border-radius: 5px;
-    margin-left: auto;
-    right: 10vh;
-    position: relative;
+    
+    
 }
 
 .deletebts:hover {
@@ -89,6 +94,28 @@
         width:45px;
         }
 } */
+@media (max-width: 1400px) {
+    .deletebts {
+        width: 20%;
+        font-size: 13px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .deletebts {
+        width: 15%;
+        font-size: 6px;
+    }
+    .minicontainer1 {
+        font-size: 8px;
+        overflow: hidden;
+    }
+    .col-12 {
+        font-size: 8px !important;
+    }
+
+}
 
 @media (max-width: 480px){
 
@@ -108,7 +135,7 @@
     }
 
     .col-12 {
-        font-size: 8px !important;
+        font-size: 6px !important;
     }
 
     .deletebts {
@@ -123,22 +150,5 @@
     }
 }
 
-@media (max-width: 768px) {
-    .deletebts {
-        width: 15%;
-        font-size: 13px;
-    }
-    .minicontainer1 {
-        font-size: 8px;
-        overflow: hidden;
-    }
 
-}
 
-@media (max-width: 1400px) {
-    .deletebts {
-        width: 20%;
-        font-size: 15px;
-    }
-
-}

@@ -16,7 +16,9 @@ const cartBackdrop = document.querySelector('.cartBackdrop');
 const noticeCancelBtn = document.querySelector('.noticeCancel');
 const slideDeposite = document.querySelector('.slideDeposite')
 const depositeDrop = document.querySelector('.depositeDrop')
+const slipCancel = document.querySelector('.slipCancel');
 
+const slipWrapper = document.querySelector('.slipWrapper');
 
 
 
@@ -493,8 +495,15 @@ cartWrapper.addEventListener('click', function() {
     cartBackdrop.style.display = 'flex'
     col3.style.display = 'flex'
     col3.style.zIndex = 3
-
+    const betSlip = document.querySelector('.betSlip')
+    betSlip.classList.add('betSlipActive')
+    slipCancel.addEventListener('click', () => {
+        cartBackdrop.style.display = 'none'
+        col3.style.display = ''
+        col3.style.zIndex = 1
+    })
 })
+
 
 
 cartBackdrop.addEventListener('click', function() {
@@ -726,6 +735,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const selectAmount = document.querySelectorAll('.amount1');
     const maxAmnt = document.querySelector('.maxAmnt');
     const resetAmnt = document.querySelector('.resetAmnt');
+    
+
 
 
 

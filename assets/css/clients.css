@@ -29,3 +29,10 @@
     filter: none;
     opacity: 1;
   }
+
+  @media (min-width:1401px){
+    .clients{
+      width: 75%;
+      padding: 0vh 5vh;
+    }
+  }

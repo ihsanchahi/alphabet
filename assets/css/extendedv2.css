@@ -58,8 +58,6 @@
     }
 }
 
-    
-
 @media (max-width: 1400px) {
     .betSlip {
         position: fixed;
@@ -84,8 +82,6 @@
         }
       }
 
-      
-    
     .slipHeader {
         justify-content: space-between;
     }
