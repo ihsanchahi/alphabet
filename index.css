@@ -2,44 +2,22 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow: hidden;
 }
+
 ul.tab {
-  position: absolute;
-  bottom: 0;
+    position: absolute;
+    bottom: 0;
+    display: none !important;
 }
 @media (max-width:820px) {
-    .tab{
+    ul.tab{
+        display: block !important;
         margin-right: 110px;
 
     }
 }
-@media (max-width:480px) {
-    ul.tab {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-right: -15px;
-        gap: 10px;
-    }
-}
-@media (max-width:414px) {
-    ul.tab {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-right: -50px;
-        gap: 6px;
-    }
-}
-@media (max-width:375px) {
-    ul.tab {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-right: 1px;
-        
-    }
-}
+
 div#signup-popup {
     background: rgb(31, 38, 47);
     max-width: 600px;
@@ -113,31 +91,63 @@ h1{
 button#signbtn {
     background-color: yellow;
     font-size: 18px;
-    color: white;
     padding: 12px 80px;
     color: black;
+    font-weight: 400;
+}
+@media (max-width:768px) {
+    button#signbtn {
+        background-color: yellow;
+        font-size: 20px;
+        padding: 20px 70px;
+        font-weight: 400;
+    }
+}
+@media (max-width:480px) {
+    button#signbtn {
+     background-color: yellow;
+    font-size: 13px;
+    color: #000;
+    padding: 13px 40px;
+    }
 }
 @media (max-width:375px) {
     button#signbtn {
      background-color: yellow;
     font-size: 13px;
     color: white;
-    padding: 13px 50px;
+    padding: 13px 40px;
     }
 }
 button#logbtn {
     background-color: yellow;
     font-size: 18px;
-    color: white;
-    padding: 12px 80px;
     color: black;
+    padding: 12px 80px;
+    font-weight: 400;
+
+}
+@media (max-width:768px) {
+    button#logbtn {
+     background-color: yellow;
+    font-size: 20px;
+    padding: 20px 70px;
+    font-weight: 400;
+    }
+}
+@media (max-width:480px) {
+    button#logbtn {
+     background-color: yellow;
+    font-size: 13px;
+    padding: 13px 40px;
+    }
 }
 @media (max-width:375px) {
     button#logbtn {
      background-color: yellow;
     font-size: 13px;
     color: white;
-    padding: 13px 50px;
+    padding: 13px 40px;
     }
 }
 div#login-popup {
@@ -230,6 +240,14 @@ div#Register-popup {
         animation: slideIn 0.5s forwards;
     }
 }
+@media (max-width:820px) {
+    ul.tab{
+        display: block !important;
+    }
+    .customContainer2{
+        display: none;
+    }
+}
 @media (max-width:768px) {
     div#Register-popup {
         background: rgb(31, 38, 47);
@@ -242,6 +260,24 @@ div#Register-popup {
         padding: 10px;
         animation: slideIn 0.5s forwards;
     }
+    ul.tab{
+        display: block !important;
+    }
+    .customContainer2{
+        display: none;
+    }
+}
+@media (max-width:480px) {
+    ul.tab{
+        display: block !important;
+        margin-right: 50px;
+    } 
+}
+@media (max-width:414px) {
+    ul.tab{
+        display: block !important;
+        margin-right: 5px;
+    } 
 }
 @media (max-width:480px) {
     div#Register-popup {
@@ -295,7 +331,7 @@ div#Register-popup {
     justify-content: center;
     cursor: pointer;
     position: absolute;
-    margin-top: -2pc;
+    margin-top: -1pc;
 }
 .close2{
     background-color: #F8FF13;
@@ -306,7 +342,7 @@ div#Register-popup {
     justify-content: center;
     cursor: pointer;
     position: absolute;
-    margin-top: -1pc;
+    /* margin-top: -1pc; */
     margin-left: 1pc;
 }
 .close3{
@@ -326,4 +362,96 @@ input[type="password"] {
     font-size: 12px;
     padding-left: 6px;
     color: white;
+}
+.customContainer2{
+    position: absolute;
+    background-color: rgb(34, 42, 51);
+    right: 0;
+    width: 500px;
+    margin-right:80px;
+    margin-top: -50px;
+    
+}
+.tab-group{
+    display: flex;
+    width: 100%;
+}
+.tab-group .active a {
+    background-color: rgb(26, 153, 199) !important;
+    color:#000;
+    width: 250px;
+   
+}
+.tab-group .active a:hover {
+    background-color: transparent !important;
+    
+   
+}
+.tab-group li a {
+    background-color: #F8FF13 !important;
+    color:#000;
+    width: 250px;
+}
+div#signupp {
+    background-color: rgb(34, 42, 51);
+    width: 500px;
+    padding: 10px;
+    margin-top: -40px;
+}
+h1 {
+    font-size: 18px;
+    font-weight: 400;
+    padding-top: 20px;
+}
+input[type="text"] {
+    background-color: rgb(31, 38, 47)!important;
+    color: #ffffff;
+    border: 1px solid white;
+}
+#login {
+    background-color: rgb(34, 42, 51);
+    width: 500px;
+    padding: 10px;
+    margin-top: -40px;
+}
+.username {
+    margin: 0px 100px;
+}
+.password.formInput {
+    margin: 0px 100px;
+}
+.field {
+    margin: 0px 100px;
+}
+h3 {
+    font-size: 18px;
+    font-weight: 400;
+    padding-top: 30px;
+}
+.customLogin {
+    background-color: #F8FF13 !important;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 20px;
+    color: black;
+}
+.notes {
+    color: #ffffff;
+    font-size: 12px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+}
+#afterSignUp{
+    background-color: rgb(34, 42, 51);
+    width: 500px;
+    padding: 10px;
+    margin-top: -40px;
+    height: 70vh;
 }
