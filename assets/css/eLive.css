@@ -2155,3 +2155,110 @@ height: 200px; */
     }
 
 }
+.noticeBody, .noticeBodyNew {
+    background-color: #1F262F;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    font-weight: 300;
+    padding: 10px;
+    width: 100%;
+    margin-left: -30pc;
+    position: absolute;
+    margin-top: 20pc;
+    z-index: 2;
+}
+@media (max-width:1400px) {
+    .noticeBody, .noticeBodyNew {
+        background-color: #1F262F;
+        display: flex;
+        flex-direction: column;
+        font-size: 14px;
+        font-weight: 300;
+        padding: 10px;
+        width: 100%;
+        margin-left: -25pc;
+        position: absolute;
+        margin-top: 30pc;
+        z-index: 2;
+    }
+}
+@media (max-width:820px) {
+    .noticeBody, .noticeBodyNew {
+    background-color: #1F262F;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    font-weight: 300;
+    padding: 10px;
+    width: 100%;
+    margin-left: -55pc;
+    position: absolute;
+    margin-top: 45pc;
+    z-index: 2;
+    }
+}
+@media (max-width:768px) {
+    .noticeBody, .noticeBodyNew {
+    background-color: #1F262F;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    font-weight: 300;
+    padding: 10px;
+    width: 100%;
+    margin-left: -55pc;
+    position: absolute;
+    margin-top: 45pc;
+    z-index: 2;
+    }
+}
+@media (max-width:480px) {
+    .noticeBody, .noticeBodyNew {
+    background-color: #1F262F;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    font-weight: 300;
+    padding: 10px;
+    width: 60%;
+    margin-left: -58pc;
+    position: absolute;
+    margin-top: 45pc;
+    z-index: 2;
+    }
+}
+@media (max-width:375px) {
+    .noticeBody, .noticeBodyNew {
+    background-color: #1F262F;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    font-weight: 300;
+    padding: 10px;
+    width: 58%;
+    margin-left: -58pc;
+    position: absolute;
+    margin-top: 45pc;
+    z-index: 2;
+    }
+}
+.slectlea1 {
+    height: 50vh;
+    overflow: scroll;
+}
+@media (max-width:1400px) {
+    .slectlea1 {
+        height: 40vh;
+        overflow: scroll;
+    }
+}
+.leaguePopupCancel {
+    background-color: yellow;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    font-weight: 400;
+}

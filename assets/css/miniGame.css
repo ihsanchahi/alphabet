@@ -544,7 +544,15 @@ height: 200px; */
     overflow-x: hidden;
     padding: 5px;
 }
-
+@media (max-width:480px) {
+    .gamesContainer {
+        display: flex;
+        overflow-y: auto;
+        overflow-x: hidden;
+        padding: 5px;
+        flex-wrap: nowrap;
+    }
+}
 .miniGamesWrapper {
     width: 100%;
 }
@@ -656,7 +664,17 @@ height: 200px; */
     margin: 10px;
     cursor: pointer;
 }
-
+@media (max-width:480px) {
+    .singleGame {
+        background-color: #1F262F;
+        display: flex;
+        border-radius: 10px;
+        height: 140px;
+        align-items: center;
+        margin: 1px;
+        cursor: pointer;
+    }
+}
 .depositeUpHeader1,
 .depositeUpHeader2,
 .historyUpHeader3,

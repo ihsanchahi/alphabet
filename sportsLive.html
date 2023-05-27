@@ -1050,7 +1050,7 @@
                 <div class="sortWrapper">
                     <div class="sortButtons d-flex justify-content-between">
                         <div class="d-flex">
-                            <div class="btn1 modal-header"><i class="bi bi-bookmark "></i>Select league</div>
+                            <div class="btn1 modal-header" onclick="openleag()"><i class="bi bi-bookmark "></i>Select league</div>
                             <div class="btn2 active"><i class="bi bi-sort-down"></i>Sort time</div>
                             <div class="btn3"><i class="bi bi-sort-up"></i>Sort league</div>
                         </div>
@@ -1061,7 +1061,10 @@
                                 class="fa-solid fa-arrows-rotate" id="refresh-btn"></i>
                         </div>
                     </div>
-
+                   <!-- Select League  -->
+                   <div id="infoDrop" style="display: none; position: absolute;">
+                    <!-- ranza -->
+                   </div>
 
                     <div class="displayTable">
                         <div class="selectWrapper">
@@ -1268,6 +1271,19 @@
 
     <script src="assets/js/live.js"></script>
     <script src="assets/js/extended.js"></script>
+    <script>
+  var a;
+        function openleag() {
+            if (a== 1) {
+                document.getElementById("infoDrop").style.display = "inline"
+                return a = 0;
+            }
+            else {
+                document.getElementById("infoDrop").style.display = "none"
+                return a = 1;
+            }
+        }
+    </script>
 
 
 

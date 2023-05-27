@@ -638,7 +638,7 @@
                 </div>
                 <div class="sortWrapper">
                     <div class="sortButtons">
-                        <div class="btn1"><i class="bi bi-bookmark"></i>Select league</div>
+                        <div class="btn1" ><i class="bi bi-bookmark"></i>Select league</div>
                         <div class="btn2 active"><i class="bi bi-sort-down"></i>Sort time</div>
                         <div class="btn3"><i class="bi bi-sort-up"></i>Sort league</div>
                     </div>
@@ -655,13 +655,15 @@
                 <div class="gamesWrapper">
                     <div class="gamesTable">
                         <div class="leagueTable">
-
-
-
-
                         </div>
                     </div>
                 </div>
+    
+    <!-- <i class="fa fa-retweet mt-3 me-3" aria-hidden="true"  id="refresh-btn" style="cursor: pointer;"></i> -->
+
+    <i style="color: white;  cursor: pointer; margin: 14px; position: absolute;"
+        class="fa-solid fa-arrows-rotate" id="refresh-btn"></i>
+</div>
                 <div class="pagination" style="width: 90%; margin: auto; background-color: #1b2228;">
                     <div class="pageLeft">
                         <div class="pageLimiter">
@@ -775,6 +777,20 @@
 
         <script src="assets/js/esports.js"></script>
         <script src="assets/js/extended.js"></script>
+        <script>
+            var a;
+             function openleag () {
+                 if (a== 1) {
+                     document.getElementById("ram").style.display = "inline"
+                     return a = 0;
+                 }
+                 else {
+                     document.getElementById("ram").style.display = "none"
+                     return a = 1;
+                 }
+             }
+         
+         </script>
 </body>
 
 </html>
