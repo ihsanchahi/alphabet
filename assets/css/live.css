@@ -1932,3 +1932,19 @@
             display: flex !important;
         }
     }
+    .noticeBodyNew {
+        position: absolute;
+        margin-top: 3pc;
+        margin-left: 7pc;
+       
+    }
+    @media (max-width: 480px){
+    .noticeBodyNew {
+        font-size: 14px;
+        width: 82%;
+        z-index: 1;
+        position: fixed;
+        top: 30vh;
+        margin-left: 2px;
+    }
+}

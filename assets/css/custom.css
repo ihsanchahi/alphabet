@@ -2716,15 +2716,9 @@ border-right: 1px solid #1e242c; */
     width: 90%;
     margin-top: 8vh;
     height: 42vh;
-    margin-left: 2px;
+    margin-left: 15px;
     }
 }
-
-
-
-
-
-
 
 @media (max-width:1024px) {
     .closeicone {
