@@ -8,6 +8,261 @@
         font-family: 'Noto Sans', sans-serif;
         background-color: rgb(23, 28, 34);
     }
+
+     /* Start deposite & withdrwal css */
+
+
+    .checkboxwithin{
+        width: 500px;
+        height: 200px;
+        background-color: #303A46;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        top: 40px;
+        right: 120px;
+        display: none;
+    }
+    .crosscheck12{
+       width: 500px;
+       height: 200px;
+       background-color: #303A46;
+       position: absolute;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-direction: column;
+       top: 40px;
+       right: 130px;
+       display: none;
+    }
+    
+    .crosscheck {
+       width: 480px;
+       height: 200px;
+       background-color: #303A46;
+       position: absolute;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-direction: column;
+       top: 80px;
+       right: 150px;
+       display: none;
+    }
+    
+    .holingsbox {
+       width: 550px;
+       height: 200px;
+       background-color: #1F262F;
+       position: absolute;
+       right: 120px;
+       top: 70px;
+       display: none;
+    }
+    
+    .holingsbox2 {
+       width: 550px;
+       height: 200px;
+       background-color: #1F262F;
+       position: absolute;
+       top: 50px;
+       left: 100px;
+       display: none;
+    
+    }
+    
+    .withdrawaldrop {
+       width: 55%;
+       background-color: #1F262F;
+       position: absolute;
+       z-index: 100;
+       margin-top: 40px;
+       margin-right: -112px;
+       display: none;
+       position: fixed;
+    }
+    
+    .depositeHistory {
+       display: none;
+    }
+    
+    .depositebox {
+       width: 100%;
+       height: 30px;
+       /* border: 1px solid white; */
+       display: flex;
+       justify-content: center;
+       justify-content: space-around;
+    }
+    
+    .depositeapplication {
+       width: 200px;
+       height: auto;
+       /* border: 1px solid; */
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       color: #F8FF13;
+       cursor: pointer;
+    }
+    
+    .depositeapplication1 {
+       color: #999987;
+    }
+    
+    .depositeapplication1:hover {
+       color: #F8FF13;
+    }
+    
+    .withdrawldetailscontainer {
+       width: 100%;
+       height: 450px;
+       background-color: #1F262F;
+       position: absolute;
+       display: flex;
+       justify-content: center;
+       display: none;
+       top: -25px;
+       right: 2px;
+       /* left: 380px; */
+    }
+    
+    .crossicone {
+       width: 35px;
+       height: 35px;
+       background-color: #F8FF13;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       position: absolute;
+       right: 0;
+       top: -20px;
+       cursor: pointer;
+    
+    
+    }
+    
+    .closeicone4 {
+       width: 35px;
+       height: 35px;
+       background-color: #F8FF13;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       position: absolute;
+       right: 0;
+       top: -20px;
+       cursor: pointer;
+    
+    }
+    
+    .depositeUpHeader10 {
+       color: #F8FF13;
+    
+    }
+    
+    .nodatabox {
+       width: 100%;
+       height: 5vh;
+       background-color: #232B34;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       /* margin-top: 10px; */
+    }
+    
+    .nodatabox p {
+       margin-top: 7px;
+    }
+    
+    .deletebox {
+       width: 25%;
+       height: 5vh;
+       background-color: #394552;
+       position: absolute;
+       bottom: 60px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       cursor: pointer;
+    
+    }
+    
+    .deletebox p {
+       align-items: center;
+       position: absolute;
+       top: 5px;
+    }
+    
+    .pagination2 {
+       position: absolute;
+       bottom: 10px;
+    }
+    
+    .questionmarkbox {
+       width: 480px;
+       height: 300px;
+       background-color: #1F262F;
+       position: absolute;
+       top: 80px;
+       right: 120px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-direction: column;
+       display: none;
+    }
+    
+    .buttongroups button {
+       padding: 10px 40px;
+       color: white;
+       background-color: #394552;
+       border: none;
+       font-size: 14px;
+    
+    }
+    
+    .checkbox {
+       width: 480px;
+       height: 300px;
+       background-color: #1F262F;
+       position: absolute;
+       top: 80px;
+       right: 130px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-direction: column;
+       display: none;
+    }
+    
+    .checkbox1 {
+       display: none;
+    }
+    
+    .circlebox {
+       width: 80px;
+       height: 80px;
+       border: 2px solid #FF4646;
+       border-radius: 50%;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       font-size: 15px;
+    }
+    
+    .Withdrawformcontainer {
+       display: none;
+    }
+    
+    .questionmarkbox1 {
+       display: none;
+    }
+
+    /* Close deposite & withdrwal css */
     .attandececontainer{
         width: 50%;
         height: auto;
@@ -1469,14 +1724,13 @@
     .noticeBody,
     .noticeBodyNew {
         background-color: #1F262F;
-        /* width: 500px;
-    height: 200px; */
         display: flex;
         flex-direction: column;
         font-size: 14px;
         font-weight: 300;
         padding: 10px;
         width: 100%;
+        display: none   ;
     }
     
     .noticeCancel,

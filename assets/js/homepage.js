@@ -85,10 +85,15 @@ const closeicone = document.querySelector(".closeicone")
 const closeIcon = document.querySelector(".closeicone1")
 const close = document.querySelector(".close")
 const sliderMenu1  = document.querySelector(".sliderMenu ")
+const closeIconCustom = document.querySelector(".closeIconCustom")
+const submitReportBtn1 = document.querySelector(".submitReportBtn1")
+const closePopUpCustomer = document.querySelector(".customerCancel2")
+
+//    Start deposite & withdrwal js
 
 const depositeapplication1 = document.querySelector(".depositeapplication1")
 const withdrawldetailscontainer = document.querySelector(".withdrawldetailscontainer")
-const closeicone1 = document.querySelector(".closeicone")
+const closeicone1 = document.querySelector(".closeiconeee")
 const NoticeWrapper2 = document.querySelector(".NoticeWrapper2")
 const mainHeaderBtn1 = document.querySelector(".mainHeaderBtn1")
 const mainHeaderBtn2 = document.querySelector(".mainHeaderBtn2")
@@ -98,7 +103,7 @@ const nobtn = document.querySelector(".nobtn")
 const yesbtn = document.querySelector(".yesbtn")
 const checkbox = document.querySelector(".checkbox")
 const checkbtn = document.querySelector(".checkbtn")
-const depositdetails  = document.querySelector(".depositdetails")
+const depositdetails = document.querySelector(".depositdetails")
 const depositeUpHeader2 = document.querySelector(".depositeUpHeader3")
 const Withdrawformcontainer = document.querySelector(".Withdrawformcontainer")
 const deletebox1 = document.querySelector(".deletebox1")
@@ -109,12 +114,192 @@ const checkbox1 = document.querySelector(".checkbox1")
 const checkbtn1 = document.querySelector(".checkbtn1")
 const depositeUpHeader3 = document.querySelector(".depositeUpHeader3")
 const removedrwalcontainer = document.querySelector(".removedrwalcontainer")
-const closeIconCustom = document.querySelector(".closeIconCustom")
-const submitReportBtn1 = document.querySelector(".submitReportBtn1")
-const closePopUpCustomer = document.querySelector(".customerCancel2")
+const checkwithdrwal = document.querySelector(".checkwithdrwal")
+const withdrawaldrop = document.querySelector(".withdrawaldrop")
+const withdrawdetailebtn = document.querySelector(".withdrawdetailebtn")
+const WithdrawlApplicationformbtn = document.querySelector(".WithdrawlApplicationformbtn")
+const Depositebtn = document.querySelector(".Depositebtn")
+// const backwithdrawbtn = document.querySelector(".backwithdrawbtn")
+const withdrawnonshow = document.querySelector(".withdrawnonshow")
+const showcheckbox = document.querySelector(".showcheckbox")
+const checkbox3 = document.querySelector(".checkbox3")
+const deepositactivebtn = document.querySelector(".deepositactivebtn")
+const holdingsbtn1 = document.querySelector(".holdingsbtn1")
+const holingsbox = document.querySelector(".holingsbox")
+const holdingclose1 = document.querySelector(".holdingclose1")
+const holdingsbtn2 = document.querySelector(".holdingsbtn2")
+const holingsbox2 = document.querySelector(".holingsbox2")
+const holdingclose2 = document.querySelector(".holdingclose2")
+const noticeBtn = document.querySelector(".noticeBtn")
+const crosscheck = document.querySelector(".crosscheck")
+const checkbtn5 = document.querySelector(".checkbtn5")
+const applicationbtn = document.querySelector(".applicationbtn")
+const notbtn = document.querySelector(".notbtn")
+const checkboxwithin = document.querySelector(".checkboxwithin")
+const yesthisbtn = document.querySelector(".yesthisbtn")
+const crosscheck12 = document.querySelector(".crosscheck12")
+const checkbtn6 = document.querySelector(".checkbtn6")
+const withdrwalposition = document.querySelector(".withdrwalposition")
+const withdrawlbtn = document.querySelector(".withdrawlbtn")
+const backwithdrawbtn = document.querySelector(".backwithdrawbtn")
+const depositeCancel = document.querySelector(".depositeCancel")
+
+depositeCancel.addEventListener("click",function(){
+    withdrawaldrop.style.display = "none";
+})
 
 
+backwithdrawbtn.addEventListener("click",function(){
+    withdrawldetailscontainer.style.display = "none";
+    withdrawnonshow.style.display = "none";
+       
+})
 
+withdrwalposition.addEventListener("click",function(){
+    withdrawaldrop.style.position = "fixed"; 
+})
+
+
+// withdrawlbtn.addEventListener("click",function(){
+//        console.log("Ali ajdhskjdhskhfdjk");
+// })
+
+
+checkbtn6.addEventListener("click", function () {
+    crosscheck12.style.display = "none";
+})
+yesthisbtn.addEventListener("click", function () {
+    checkboxwithin.style.display = "none";
+    crosscheck12.style.display = "block";
+    crosscheck12.style.display = "flex";
+})
+notbtn.addEventListener("click", function () {
+    checkboxwithin.style.display = "none";
+})
+applicationbtn.addEventListener("click", function () {
+    checkboxwithin.style.display = "block";
+    checkboxwithin.style.display = "flex";
+})
+checkbtn5.addEventListener("click", function () {
+    crosscheck.style.display = "none";
+
+})
+
+noticeBtn.addEventListener("click", function () {
+    crosscheck.style.display = "block";
+    crosscheck.style.display = "flex";
+})
+holdingclose2.addEventListener("click", function () {
+    holingsbox2.style.display = "none";
+})
+
+holdingsbtn2.addEventListener("click", function () {
+    holingsbox2.style.display = "block";
+})
+holdingclose1.addEventListener("click", function () {
+    holingsbox.style.display = "none";
+})
+holdingsbtn1.addEventListener("click", function () {
+    holingsbox.style.display = "block";
+})
+deepositactivebtn.addEventListener("click", function () {
+    mainHeaderBtn2.classList.remove('depositeActive')
+})
+
+showcheckbox.addEventListener("click", function () {
+    checkbox3.style.display = "block";
+})
+
+// backwithdrawbtn.addEventListener("click", function () {
+//   withdrawaldrop.style.display = "none";
+// })
+
+Depositebtn.addEventListener("click", function () {
+    NoticeWrapper2.style.display = "block";
+    withdrawaldrop.style.display = "none";
+})
+
+WithdrawlApplicationformbtn.addEventListener("click", function () {
+    withdrawaldrop.style.display = "block";
+    Withdrawformcontainer.style.display = "none";
+})
+
+withdrawdetailebtn.addEventListener("click", function () {
+    Withdrawformcontainer.style.display = "block";
+    withdrawaldrop.style.display = "none";
+})
+
+checkwithdrwal.addEventListener("click", function () {
+    withdrawaldrop.style.display = "block";
+
+})
+
+removedrwalcontainer.addEventListener("click", function () {
+    Withdrawformcontainer.style.display = "none";
+    NoticeWrapper2.style.display = "block";
+})
+
+depositeUpHeader3.addEventListener("click", function () {
+    Withdrawformcontainer.style.display = "none";
+    withdrawldetailscontainer.style.display = "none";
+})
+
+checkbtn1.addEventListener("click", function () {
+    checkbox1.style.display = "none";
+    questionmarkbox1.style.display = "none";
+})
+
+nobtn1.addEventListener("click", function () {
+    questionmarkbox1.style.display = "none";
+})
+yesbtn1.addEventListener("click", function () {
+    checkbox1.style.display = "block";
+    checkbox1.style.display = "flex";
+})
+
+deletebox1.addEventListener("click", function () {
+    questionmarkbox1.style.display = "block";
+    questionmarkbox1.style.display = "flex";
+})
+
+depositeUpHeader2.addEventListener("click", function () {
+    // Withdrawformcontainer.style.display = "block";
+    withdrawaldrop.style.display = "block";
+})
+
+deletebox.addEventListener("click", function () {
+    questionmarkbox.style.display = "block";
+    questionmarkbox.style.display = "flex";
+})
+
+depositeapplication1.addEventListener("click", function () {
+    withdrawldetailscontainer.style.display = "block";
+    // mainHeaderBtn2.classList.add('depositeActive')
+
+    // mainHeaderBtn1.classList.remove('depositeActive')
+})
+depositdetails.addEventListener("click", function () {
+    NoticeWrapper2.style.display = "block";
+    withdrawldetailscontainer.style.display = "none";
+})
+// closeicone1.addEventListener("click", function () {
+//     withdrawldetailscontainer.style.display = "none";
+//     NoticeWrapper2.style.display = "none";
+// })
+nobtn.addEventListener("click", function () {
+    questionmarkbox.style.display = "none";
+})
+yesbtn.addEventListener("click", function () {
+    checkbox.style.display = "block";
+    checkbox.style.display = "flex";
+})
+checkbtn.addEventListener("click", function () {
+    checkbox.style.display = "none";
+    questionmarkbox.style.display = "none";
+})
+
+
+// close deposite withdrwal js
 
 
 
@@ -157,18 +342,18 @@ deletebox.addEventListener("click",function(){
 
 depositeapplication1.addEventListener("click",function(){
         withdrawldetailscontainer.style.display = "block";
-        mainHeaderBtn2.classList.add('depositeActive')
+        // mainHeaderBtn2.classList.add('depositeActive')
 
-        mainHeaderBtn1.classList.remove('depositeActive')
+        // mainHeaderBtn1.classList.remove('depositeActive')
 })
 depositdetails.addEventListener("click",function(){
     NoticeWrapper2.style.display = "block";
     withdrawldetailscontainer.style.display = "none";
 })
-closeicone1.addEventListener("click",function(){
-    withdrawldetailscontainer.style.display = "none";
-    NoticeWrapper2.style.display = "none";
-})
+// closeicone1.addEventListener("click",function(){
+//     withdrawldetailscontainer.style.display = "none";
+//     NoticeWrapper2.style.display = "none";
+// })
 nobtn.addEventListener("click",function(){
     questionmarkbox.style.display = "none";
 })
@@ -353,9 +538,9 @@ closePopUpCustomer.addEventListener("click",function(){
                     sliderMenu1.style.display = "block";
                   }
             })
-            closeicone.addEventListener("click",function(){
-                customercontainer.style.display = "none";
-            })
+            // closeicone.addEventListener("click",function(){
+            //     customercontainer.style.display = "none";
+            // })
 
 
 
