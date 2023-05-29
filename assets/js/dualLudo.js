@@ -41,26 +41,6 @@ const wrapper1 = document.querySelector('.bodyWrapper')
 const wrapper2 = document.querySelector('.bodyWrapper2')
 const slipCancel = document.querySelector('.slipCancel')
 const slipCancel2 = document.querySelector('.slipCancel2')
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 let consecutiveHighNumber = 0;
 let consecutiveLowNumber = 0;
 let consecutiveOdd = 0;

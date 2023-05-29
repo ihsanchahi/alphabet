@@ -66,25 +66,6 @@ custompopupcontainer.style.display = "none";
         inputfieldcontainer.style.display = "none";
     } 
   })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 let consecutiveHighNumber = 0;
 let consecutiveLowNumber = 0;
 let consecutiveOdd = 0;
@@ -107,12 +88,6 @@ let ludoData2 = {
     dice5: 1,
     dice6: 2,
 }
-
-
-
-
-
-
 let dataArray = [];
 let cartItem = null;
 let diceHistory = [];
@@ -205,6 +180,8 @@ function replaceSidebar(leagueIndx, gameIndx) {
 
 }
 
+
+
 function generateHistoryTable(number) {
 
     let historyBody = document.querySelector('.historyBody')
@@ -238,7 +215,6 @@ function generateHistoryTable1(number) {
     if (number < 4) {
         // if the number is less than 4 and there have been less than 6 consecutive low numbers, append it to the last element
         consecutiveHighNumber = 0
-
         if (consecutiveLowNumber == 0) {
             const element = document.createElement('div');
             element.className = 'element';
@@ -247,8 +223,10 @@ function generateHistoryTable1(number) {
             item.innerHTML = `
             <div class='oddsCollector collectUnder'>
            ${number}
+           
             </div>
             `;
+            
             element.appendChild(item);
             box.appendChild(element);
             consecutiveLowNumber++;
@@ -1166,3 +1144,5 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
 });
+
+
