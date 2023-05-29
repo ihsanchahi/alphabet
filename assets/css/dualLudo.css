@@ -42,6 +42,58 @@ body {
     font-size: 11px !important;
     white-space: nowrap;
 }
+@media (max-width:1400px) {
+    .customUl {
+        color: rgb(218, 218, 218) !important;
+        font-size: 8px !important;
+        white-space: nowrap;
+        /* position: relative; */
+    }
+
+}
+
+
+@media (max-width:1250px) {
+    .navbar-nav {
+        color: rgb(218, 218, 218) !important;
+        font-size: 9px !important;
+        white-space: nowrap;
+        margin-left: 1px !important;
+    }
+
+    .customUl {
+        color: rgb(218, 218, 218) !important;
+        font-size: 7px !important;
+        white-space: nowrap;
+        /* position: relative; */
+    }
+}
+
+@media (max-width:1100px) {
+    .navbar-nav {
+        color: rgb(218, 218, 218) !important;
+        font-size: 7px !important;
+        white-space: nowrap;
+        margin-left: 1px !important;
+    }
+
+    .customUl {
+        color: rgb(218, 218, 218) !important;
+        font-size: 5px !important;
+        white-space: nowrap;
+        /* position: relative; */
+    }
+}
+
+@media (max-width:991px) {
+    .customUl {
+        color: rgb(218, 218, 218) !important;
+        font-size: 8px !important;
+        white-space: nowrap;
+        /* position: relative; */
+    }
+}
+
 
 .customUl1 {
     color: #F8FF13 !important
@@ -509,7 +561,7 @@ height: 200px; */
     padding-top: 10px;
     position: absolute;
     left: 25%;
-    width: 90%;
+    width: 75%;
 }
 
 .gameListWrapper {
@@ -517,7 +569,7 @@ height: 200px; */
     display: flex;
     width: 30%;
     justify-content: space-around;
-    padding: 10px;
+    padding: 0px;
 }
 
 .gameMode {
@@ -2327,9 +2379,9 @@ height: 200px; */
         flex-basis: 0px;
     }
 
-    .customUl {
+    /* .customUl {
         font-size: 10px !important;
-    }
+    } */
 
     .customUl1 {
         font-size: 10px !important;
@@ -2513,20 +2565,20 @@ height: 200px; */
     }
     .cartWrapper, .cartWrapper2{
        
-        right: 5vh;
+        right: 13vh;
     }
 
 }
 @media (max-width: 1200px) {
     .cartWrapper, .cartWrapper2{
        
-        right: 20vh;
+        right: 5vh;
     }
 }
 @media (max-width: 900px) {
     .cartWrapper, .cartWrapper2{
        
-        right: 17vh;
+        right: 5vh;
     }
 }
 
@@ -2545,14 +2597,14 @@ height: 200px; */
     }
     .cartWrapper, .cartWrapper2{
         background-color: #f8ff13;
-        right: 15vh;
+        right: 4vh;
     }
 
 }
 @media (max-width: 550px) {
     .cartWrapper, .cartWrapper2{
         background-color: #f8ff13;
-        right: 10vh;
+        right: 5vh;
     }
 }
 

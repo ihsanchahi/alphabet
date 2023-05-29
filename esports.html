@@ -9,13 +9,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200;300;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/custom.css">
     <link rel="stylesheet" href="assets/css/overall.css">
     <link rel="stylesheet" href="assets/css/pagination.css">
     <link rel="stylesheet" href="assets/css/footer.css">
     <link rel="stylesheet" href="assets/css/extendedv2.css">
+    <link rel="stylesheet" href="assets/css/clients.css">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
 
 
@@ -27,12 +31,15 @@
 
     <nav class="navbar navbar-expand-lg bg-body-tertiary customNav sticky-top">
         <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNav" aria-controls="offcanvasNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNav"
+                aria-controls="offcanvasNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navBarToggler"><i class="bi bi-list"></i></span>
-              </button>
-            <a class="navbar-brand" href="#"><img src="assets/images/logo (1).png" class="d-inline-block align-text-top" width="200" height="23" style="margin-left:7%;"></a>
+            </button>
+            <a class="navbar-brand" href="#"><img src="assets/images/logo (1).png" class="d-inline-block align-text-top"
+                    width="200" height="23" style="margin-left:7%;"></a>
             <div class="nav-item mx-2 ms-auto me-2 half-top order-lg-last " style="list-style-type: none">
-                <a class="nav-link customUl loginBtn" href="#"><i class="bi bi-person" style="font-size:1.2rem;"></i></a>
+                <a class="nav-link customUl loginBtn" href="#"><i class="bi bi-person"
+                        style="font-size:1.2rem;"></i></a>
             </div>
             <div class="sliderMenu">
                 <div class="menuWrapper">
@@ -91,37 +98,48 @@
                             <div class="impBtns fontRed">
                                 Logout
                             </div>
-                            
+
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="offcanvas offcanvas-start customMainColour" tabindex="-1" id="offcanvasNav" aria-labelledby="offcanvasNavLabel">
+            <div class="offcanvas offcanvas-start customMainColour" tabindex="-1" id="offcanvasNav"
+                aria-labelledby="offcanvasNavLabel">
                 <div class="offcanvas-header">
                     <h5 class="offcanvas-title" id="offcanvasNavLabel">Menu</h5>
-                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body customMainColour">
                     <ul class="navbar-nav " style="margin-left:5%">
 
 
                         <li class="nav-item  mx-2">
-                            <a class="nav-link customUl" href="homepage.html"> <i class="bi bi-dribbble navLogo1"></i> Sports</a>
+                            <a class="nav-link customUl" href="homepage.html"> <i class="bi bi-dribbble navLogo1"></i>
+                                Sports</a>
                         </li>
 
                         <li class="nav-item  mx-2">
-                            <a class="nav-link customUl" href="sportsLive.html"><i class="bi bi-broadcast navLogo1"></i> Sports Live</a>
+                            <a class="nav-link customUl" href="sportsLive.html"><i class="bi bi-broadcast navLogo1"></i>
+                                Sports Live</a>
                         </li>
 
 
 
                         <li class="nav-item  mx-2">
-                            <a class="nav-link customUl" href="esportsLive.html"><i class="bi bi-controller navLogo1"></i>eSports</a>
+                            <a class="nav-link customUl" href="esports.html"><i
+                                    class="bi bi-controller navLogo1"></i>eSports</a>
+                        </li>
+
+                        <li class="nav-item  mx-2">
+                            <a class="nav-link customUl" href="esportsLive.html"><i
+                                    class="bi bi-controller navLogo1"></i>eSports Live</a>
                         </li>
 
                         <li class="nav-item dropdown mx-2">
-                            <a class="nav-link dropdown-toggle customUl" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle customUl" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
                                 <i class="bi bi-dice-6-fill navLogo1"></i>Ludo
                             </a>
                             <ul class="dropdown-menu customDrop">
@@ -132,24 +150,30 @@
                             </ul>
                         </li>
                         <li class="nav-item  mx-2">
-                            <a class="nav-link customUl" href="miniGames.html"><i class="bi bi-ladder navLogo1"></i>Snake and Ladder</a>
+                            <a class="nav-link customUl" href="miniGames.html"><i
+                                    class="bi bi-ladder navLogo1"></i>Snake and Ladder</a>
                         </li>
                         <li class="nav-item  mx-2">
-                            <a class="nav-link customUl" href="dualLudo.html"><i class="bi bi-dice-6-fill navLogo1"></i><i class="bi bi-ladder navLogo1"></i>Dual</a>
+                            <a class="nav-link customUl" href="dualLudo.html"><i
+                                    class="bi bi-dice-6-fill navLogo1"></i><i class="bi bi-ladder navLogo1"></i>Dual</a>
                         </li>
                         <li class="nav-item  mx-2">
-                            <a class="nav-link customUl" href="bet365.html"><img src="assets/images/navLogo.png" alt="" width="18" height="15">&nbsp;Bet365</a>
+                            <a class="nav-link customUl" href="bet365.html"><img src="assets/images/navLogo.png" alt=""
+                                    width="18" height="15">&nbsp;Bet365</a>
                         </li>
                         <li class="nav-item  mx-2">
-                            <a class="nav-link customUl matchHistory" href="#"><i class="bi bi-graph-up-arrow navLogo1"></i>Match History</a>
+                            <a class="nav-link customUl matchHistory" href="#"><i
+                                    class="bi bi-graph-up-arrow navLogo1"></i>Match History</a>
                         </li>
 
                         <li class="nav-item dropdown mx-2">
-                            <a class="nav-link dropdown-toggle customUl" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle customUl" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
                                 <i class="bi bi-clipboard-data-fill navLogo1"></i>Board
                             </a>
                             <ul class="dropdown-menu customDrop">
-                                <li><a class=" dropdown-item customDropper py-2 " href="board.html">Notice Board</a></li>
+                                <li><a class=" dropdown-item customDropper py-2 " href="board.html">Notice Board</a>
+                                </li>
                                 <li><a class=" dropdown-item customDropper py-2 " href="event.html">Even Board</a></li>
                                 <!-- <li><a class="dropdown-item customDropper py-2" href="#">Another action</a></li>
                             <li><a class="dropdown-item customDropper py-2" href="#">Something else here</a></li> -->
@@ -200,15 +224,16 @@
                         </div>
                         <div class="menuItem">
                             <div class="dispIcon specDisp">Amount</div>
-                            <div class="dispIcon inputSports"><input type="text" name="amount" id="" placeholder="Please type in the deposite amount" class="inputLeague"></div>
+                            <div class="dispIcon inputSports"><input type="text" name="amount" id=""
+                                    placeholder="Please type in the deposite amount" class="inputLeague"></div>
                         </div>
                         <div class="menuItem">
                             <div class="dispIcon specDisp">Apply for Bonus</div>
                             <div class="dispIcon"> <select name="options" id="" class="selectOptions2">
-                                <option value="">Cash</option>
-                                <option value="">Bitcoin</option>
-                                <option value="">Wireless</option>
-                            </select></div>
+                                    <option value="">Cash</option>
+                                    <option value="">Bitcoin</option>
+                                    <option value="">Wireless</option>
+                                </select></div>
                         </div>
                         <div class="depositeBtn2">
                             <div class="noticeBtn">Deposite Bill</div>
@@ -243,7 +268,7 @@
 
             </div>
         </div>
-        
+
         <div class="my-backdrop3 historyDrop">
             <div class="NoticeWrapper2">
                 <div class="noticeBodyNew">
@@ -328,18 +353,21 @@
                                 <div class="dispIcon specDisp">ID</div>
                                 <div class="dispIcon">Helios Predator</div>
                             </div>
-                            
+
                             <div class="menuItem">
                                 <div class="dispIcon specDisp">Old password</div>
-                                <div class="dispIcon inputSports"><input type="password" name="password1" id="22" placeholder="password" class="inputLeague"></div>
+                                <div class="dispIcon inputSports"><input type="password" name="password1" id="22"
+                                        placeholder="password" class="inputLeague"></div>
                             </div>
                             <div class="menuItem">
                                 <div class="dispIcon specDisp">New password</div>
-                                <div class="dispIcon inputSports"><input type="password" name="password2" id="33" placeholder="password" class="inputLeague"></div>
+                                <div class="dispIcon inputSports"><input type="password" name="password2" id="33"
+                                        placeholder="password" class="inputLeague"></div>
                             </div>
                             <div class="menuItem">
                                 <div class="dispIcon specDisp">Confirm password</div>
-                                <div class="dispIcon inputSports"><input type="password" name="password3" id="44" placeholder="password" class="inputLeague"></div>
+                                <div class="dispIcon inputSports"><input type="password" name="password3" id="44"
+                                        placeholder="password" class="inputLeague"></div>
                             </div>
 
 
@@ -434,14 +462,16 @@
                         <div class="menuItem" style="margin-top: 40px;">
                             <!-- <div class="dispIcon2 specDisp2">Title</div> -->
                             <div class="dispIcon inputSports3">
-                                <input type="text" name="" id="" placeholder="Title" style="padding-left: 10px; padding-top: 5px;">
+                                <input type="text" name="" id="" placeholder="Title"
+                                    style="padding-left: 10px; padding-top: 5px;">
                                 <!-- <p style="margin-left: -340px; margin-top: 20px;">foraccountnunmber</p> -->
                             </div>
 
                         </div>
                         <div class="menuItem">
 
-                            <div class="dispIcon inputSports3"><input type="textfield" name="password1" id="2222" placeholder="Write an issue" class="inputLeague"></div>
+                            <div class="dispIcon inputSports3"><input type="textfield" name="password1" id="2222"
+                                    placeholder="Write an issue" class="inputLeague"></div>
                         </div>
 
 
@@ -593,35 +623,43 @@
 
                         <div class="topSideSports">
                             <div class="singleSport">
-                                <div class="sportLogo"><img src="assets/SVGs/esvg8.svg" alt="" width="40" height="20"></div>
+                                <div class="sportLogo"><img src="assets/SVGs/esvg8.svg" alt="" width="40" height="20">
+                                </div>
                                 <div class="sportName">Valorant</div>
                             </div>
                             <div class="singleSport">
-                                <div class="sportLogo"><img src="assets/SVGs/esvg7.svg" alt="" width="40" height="20"></div>
+                                <div class="sportLogo"><img src="assets/SVGs/esvg7.svg" alt="" width="40" height="20">
+                                </div>
                                 <div class="sportName">World of Warcraft</div>
                             </div>
                             <div class="singleSport">
-                                <div class="sportLogo"><img src="assets/SVGs/esvg6.svg" alt="" width="40" height="20"></div>
+                                <div class="sportLogo"><img src="assets/SVGs/esvg6.svg" alt="" width="40" height="20">
+                                </div>
                                 <div class="sportName">NBA 2K</div>
                             </div>
                             <div class="singleSport">
-                                <div class="sportLogo"><img src="assets/SVGs/esvg5.svg" alt="" width="40" height="20"></div>
+                                <div class="sportLogo"><img src="assets/SVGs/esvg5.svg" alt="" width="40" height="20">
+                                </div>
                                 <div class="sportName">Arena of Valor</div>
                             </div>
                             <div class="singleSport">
-                                <div class="sportLogo"><img src="assets/SVGs/esvg4.svg" alt="" width="40" height="20"></div>
+                                <div class="sportLogo"><img src="assets/SVGs/esvg4.svg" alt="" width="40" height="20">
+                                </div>
                                 <div class="sportName">StarCraft Boodwar</div>
                             </div>
                             <div class="singleSport">
-                                <div class="sportLogo"><img src="assets/SVGs/esvg3.svg" alt="" width="40" height="20"></div>
+                                <div class="sportLogo"><img src="assets/SVGs/esvg3.svg" alt="" width="40" height="20">
+                                </div>
                                 <div class="sportName">Dota 2</div>
                             </div>
                             <div class="singleSport">
-                                <div class="sportLogo"><img src="assets/SVGs/esvg2.svg" alt="" width="40" height="20"></div>
+                                <div class="sportLogo"><img src="assets/SVGs/esvg2.svg" alt="" width="40" height="20">
+                                </div>
                                 <div class="sportName">CSGO</div>
                             </div>
                             <div class="singleSport">
-                                <div class="sportLogo"><img src="assets/SVGs/esvg1.svg" alt="" width="40" height="20"></div>
+                                <div class="sportLogo"><img src="assets/SVGs/esvg1.svg" alt="" width="40" height="20">
+                                </div>
                                 <div class="sportName">League of Legends</div>
                             </div>
 
@@ -631,14 +669,15 @@
 
                         <div class="downSideSports">
                             <div class="inputSports">
-                                <input type="text" name="Sport" id="" placeholder="Please enter team name or league name" class="inputLeague">
+                                <input type="text" name="Sport" id=""
+                                    placeholder="Please enter team name or league name" class="inputLeague">
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="sortWrapper">
                     <div class="sortButtons">
-                        <div class="btn1" ><i class="bi bi-bookmark"></i>Select league</div>
+                        <div class="btn1"><i class="bi bi-bookmark" style="color: #000;"></i>Select league</div>
                         <div class="btn2 active"><i class="bi bi-sort-down"></i>Sort time</div>
                         <div class="btn3"><i class="bi bi-sort-up"></i>Sort league</div>
                     </div>
@@ -655,15 +694,13 @@
                 <div class="gamesWrapper">
                     <div class="gamesTable">
                         <div class="leagueTable">
+
+
+
+
                         </div>
                     </div>
                 </div>
-    
-    <!-- <i class="fa fa-retweet mt-3 me-3" aria-hidden="true"  id="refresh-btn" style="cursor: pointer;"></i> -->
-
-    <i style="color: white;  cursor: pointer; margin: 14px; position: absolute;"
-        class="fa-solid fa-arrows-rotate" id="refresh-btn"></i>
-</div>
                 <div class="pagination" style="width: 90%; margin: auto; background-color: #1b2228;">
                     <div class="pageLeft">
                         <div class="pageLimiter">
@@ -673,7 +710,7 @@
                                 <option value="30">30</option>
                             </select>
                         </div>
-    
+
                     </div>
                     <div class="pageRight">
                         <div class="pageNo" id="miniPN1">1</i>
@@ -686,12 +723,69 @@
                 </div>
 
             </div>
+            <section id="clients" class="clients" style="margin-top: 5vh;">
+                <div class="container" data-aos="fade-up">
+
+                    <div class="clients-slider swiper">
+                        <div class="swiper-wrapper align-items-center">
+                            <div class="swiper-slide"><img src="assets/images/clients/client-1.png" class="img-fluid"
+                                    alt="" title="Bread and Beyond"></div>
+                            <div class="swiper-slide"><img src="assets/images/clients/client-2.png" class="img-fluid"
+                                    alt="" title="Blue Group of Companies"></div>
+                            <div class="swiper-slide"><img src="assets/images/clients/client-3.png" class="img-fluid"
+                                    alt="" title="JWD Group"></div>
+                            <div class="swiper-slide"><img src="assets/images/clients/client-4.png" class="img-fluid"
+                                    alt="" title="Kamal Zamindar Pvt Ltd"></div>
+                            <div class="swiper-slide"><img src="assets/images/clients/client-5.png" class="img-fluid"
+                                    alt="" title="Pakistan Cricket Board Ltd"></div>
+                            <div class="swiper-slide"><img src="assets/images/clients/client-6.png" class="img-fluid"
+                                    alt="" title="ZKB RELIABLE JV"></div>
+                            <div class="swiper-slide"><img src="assets/images/clients/client-7.png" class="img-fluid"
+                                    alt="" title="Rays"></div>
+                            <div class="swiper-slide"><img src="assets/images/clients/client-8.png" class="img-fluid"
+                                    alt="" title="Ihsan Cotton Product Pvt Ltd"></div>
+                            <!-- <div class="swiper-slide"><img src="assets/images/clients/client-9.png" class="img-fluid" alt="" title="Aerospace Baykee Pakistan"></div> -->
+                            <div class="swiper-slide"><img src="assets/images/clients/client-10.png" class="img-fluid"
+                                    alt="" title="Baba Food Processing Co. Ltd"></div>
+                            <div class="swiper-slide"><img src="assets/images/clients/client-11.png" class="img-fluid"
+                                    alt="" title="A.J Coperation"></div>
+                            <div class="swiper-slide"><img src="assets/images/clients/client-12.png" class="img-fluid"
+                                    alt="" title="Dynamic Equipment & Controls Pvt Ltd"></div>
+                            <div class="swiper-slide"><img src="assets/images/clients/client-13-old.png"
+                                    class="img-fluid" alt="" title="New Kings Packages"></div>
+                            <!-- <div class="swiper-slide"><img src="assets/images/clients/client-14.png" class="img-fluid" alt=""
+                                    title="Chashma Sugar Mills"></div>
+                            <div class="swiper-slide"><img src="assets/images/clients/client-15.png" class="img-fluid" alt=""
+                                    title="Simple Sufi"></div>
+                            <div class="swiper-slide"><img src="assets/images/clients/client-16.png" class="img-fluid" alt=""
+                                    title="Dynamic Packaging"></div>
+                            <div class="swiper-slide"><img src="assets/images/clients/client-17.png" class="img-fluid" alt=""
+                                    title="Dot Print Pvt Ltd"></div>
+                            <div class="swiper-slide"><img src="assets/images/clients/client-18.png" class="img-fluid" alt=""
+                                    title="AL Khalifa Foods"></div>
+                            <div class="swiper-slide"><img src="assets/images/clients/client-19.png" class="img-fluid" alt=""
+                                    title="Maria Zunnorain"></div>
+                            <div class="swiper-slide"><img src="assets/images/clients/client-20.png" class="img-fluid" alt=""
+                                    title="Sindh Abadgarh Sugar Mills Ltd."></div>
+                            <div class="swiper-slide"><img src="assets/images/clients/client-21.png" class="img-fluid" alt=""
+                                    title="Ashraf Sugar Mills Ltd"></div> -->
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <!-- <div class="text-center more-btn">
+                            <a href="clients.html" class="more-btn">More Clients <i class="bi bi-chevron-double-right"></i></a>
+                        </div> -->
+                    </div>
+
+                </div>
+            </section>
             <div class="footer">
                 <div class="col-12 footer-content">
                     <img src="assets/images/logo (1).png" alt="logo">
-                    <p>By accessing, continuing to use or navigating throughout this site you accept that we will use certain
+                    <p>By accessing, continuing to use or navigating throughout this site you accept that we will use
+                        certain
                         browser cookies to improve your customer experience with us. </p>
-                    <p>ALPHABET only uses cookies which will improve your experience with us and will not interfere with your
+                    <p>ALPHABET only uses cookies which will improve your experience with us and will not interfere with
+                        your
                         privacy.</p>
                     <p>COPYRIGHT (c) ALPHABET ALL RIGHTS RESERVED.</p>
                 </div>
@@ -772,25 +866,17 @@
             </div>
         </div>
 
-        
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+            crossorigin="anonymous"></script>
 
         <script src="assets/js/esports.js"></script>
         <script src="assets/js/extended.js"></script>
-        <script>
-            var a;
-             function openleag () {
-                 if (a== 1) {
-                     document.getElementById("ram").style.display = "inline"
-                     return a = 0;
-                 }
-                 else {
-                     document.getElementById("ram").style.display = "none"
-                     return a = 1;
-                 }
-             }
-         
-         </script>
+        <script src="assets/vendor/aos/aos.js"></script>
+        <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+        <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+        <script src="assets/js/client.js"></script>
 </body>
 
 </html>

@@ -10,7 +10,7 @@ body {
 }
 
 /* start deposite&withdrwal css */
-.checkboxwithin{
+.checkboxwithin {
     width: 500px;
     height: 200px;
     background-color: #303A46;
@@ -23,259 +23,262 @@ body {
     right: 120px;
     display: none;
 }
-.crosscheck12{
-   width: 500px;
-   height: 200px;
-   background-color: #303A46;
-   position: absolute;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   flex-direction: column;
-   top: 40px;
-   right: 130px;
-   display: none;
+
+.crosscheck12 {
+    width: 500px;
+    height: 200px;
+    background-color: #303A46;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    top: 40px;
+    right: 130px;
+    display: none;
 }
 
 .crosscheck {
-   width: 480px;
-   height: 200px;
-   background-color: #303A46;
-   position: absolute;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   flex-direction: column;
-   top: 80px;
-   right: 150px;
-   display: none;
+    width: 480px;
+    height: 200px;
+    background-color: #303A46;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    top: 80px;
+    right: 150px;
+    display: none;
 }
 
 .holingsbox {
-   width: 550px;
-   height: 200px;
-   background-color: #1F262F;
-   position: absolute;
-   right: 120px;
-   top: 70px;
-   display: none;
+    width: 550px;
+    height: 200px;
+    background-color: #1F262F;
+    position: absolute;
+    right: 120px;
+    top: 70px;
+    display: none;
 }
 
 .holingsbox2 {
-   width: 550px;
-   height: 200px;
-   background-color: #1F262F;
-   position: absolute;
-   top: 50px;
-   left: 100px;
-   display: none;
+    width: 550px;
+    height: 200px;
+    background-color: #1F262F;
+    position: absolute;
+    top: 50px;
+    left: 100px;
+    display: none;
 
 }
 
 .withdrawaldrop {
-   width: 55%;
-   background-color: #1F262F;
-   position: absolute;
-   z-index: 100;
-   top: 150px;
-   right: 306px;
-   /* left: 380px; */
-   display: none;
-   position: fixed;
+    width: 55%;
+    background-color: #1F262F;
+    position: absolute;
+    z-index: 100;
+    top: 150px;
+    right: 306px;
+    /* left: 380px; */
+    display: none;
+    position: fixed;
 }
 
 .depositeHistory {
-   display: none;
+    display: none;
 }
 
 .depositebox {
-   width: 100%;
-   height: 30px;
-   /* border: 1px solid white; */
-   display: flex;
-   justify-content: center;
-   justify-content: space-around;
+    width: 100%;
+    height: 30px;
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
 }
 
 .depositeapplication {
-   width: 200px;
-   height: auto;
-   /* border: 1px solid; */
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   color: #F8FF13;
-   cursor: pointer;
+    width: 200px;
+    height: auto;
+    /* border: 1px solid; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #F8FF13;
+    cursor: pointer;
 }
 
 .depositeapplication1 {
-   color: #999987;
+    color: #999987;
 }
 
 .depositeapplication1:hover {
-   color: #F8FF13;
+    color: #F8FF13;
 }
 
 .withdrawldetailscontainer {
-   width: 100%;
-   height: 450px;
-   background-color: #1F262F;
-   position: absolute;
-   display: flex;
-   justify-content: center;
-   display: none;
-   top: -25px;
-   right: 2px;
-   /* left: 380px; */
+    width: 100%;
+    height: 450px;
+    background-color: #1F262F;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    display: none;
+    top: -25px;
+    right: 2px;
+    /* left: 380px; */
 }
 
 .crossicone {
-   width: 35px;
-   height: 35px;
-   background-color: #F8FF13;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   position: absolute;
-   right: 0;
-   top: -20px;
-   cursor: pointer;
+    width: 35px;
+    height: 35px;
+    background-color: #F8FF13;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    top: -20px;
+    cursor: pointer;
 
 
 }
 
 .closeicone4 {
-   width: 35px;
-   height: 35px;
-   background-color: #F8FF13;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   position: absolute;
-   right: 0;
-   top: -20px;
-   cursor: pointer;
+    width: 35px;
+    height: 35px;
+    background-color: #F8FF13;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    top: -20px;
+    cursor: pointer;
 
 }
 
 .depositeUpHeader10 {
-   color: #F8FF13;
+    color: #F8FF13;
 
 }
 
 .nodatabox {
-   width: 100%;
-   height: 5vh;
-   background-color: #232B34;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   /* margin-top: 10px; */
+    width: 100%;
+    height: 5vh;
+    background-color: #232B34;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 10px; */
 }
 
 .nodatabox p {
-   margin-top: 7px;
+    margin-top: 7px;
 }
 
 .deletebox {
-   width: 25%;
-   height: 5vh;
-   background-color: #394552;
-   position: absolute;
-   bottom: 60px;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   cursor: pointer;
+    width: 25%;
+    height: 5vh;
+    background-color: #394552;
+    position: absolute;
+    bottom: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
 
 }
 
 .deletebox p {
-   align-items: center;
-   position: absolute;
-   top: 5px;
+    align-items: center;
+    position: absolute;
+    top: 5px;
 }
 
 .pagination2 {
-   position: absolute;
-   bottom: 10px;
+    position: absolute;
+    bottom: 10px;
 }
 
 .questionmarkbox {
-   width: 480px;
-   height: 300px;
-   background-color: #1F262F;
-   position: absolute;
-   top: 80px;
-   right: 120px;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   flex-direction: column;
-   display: none;
+    width: 480px;
+    height: 300px;
+    background-color: #1F262F;
+    position: absolute;
+    top: 80px;
+    right: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: none;
 }
 
 .buttongroups button {
-   padding: 10px 40px;
-   color: white;
-   background-color: #394552;
-   border: none;
-   font-size: 14px;
+    padding: 10px 40px;
+    color: white;
+    background-color: #394552;
+    border: none;
+    font-size: 14px;
 
 }
 
 .checkbox {
-   width: 480px;
-   height: 300px;
-   background-color: #1F262F;
-   position: absolute;
-   top: 80px;
-   right: 130px;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   flex-direction: column;
-   display: none;
+    width: 480px;
+    height: 300px;
+    background-color: #1F262F;
+    position: absolute;
+    top: 80px;
+    right: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: none;
 }
 
 .checkbox1 {
-   display: none;
+    display: none;
 }
 
 .circlebox {
-   width: 80px;
-   height: 80px;
-   border: 2px solid #FF4646;
-   border-radius: 50%;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   font-size: 15px;
+    width: 80px;
+    height: 80px;
+    border: 2px solid #FF4646;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
 }
 
 .Withdrawformcontainer {
-   display: none;
+    display: none;
 }
 
 .questionmarkbox1 {
-   display: none;
+    display: none;
 }
 
 
 /* with drwal media qure */
 
-@media screen and (max-width : 756px){
-    .withdrawaldrop{
-       position: absolute;
-       right: 78px;
-       top: 235px;
-       position: fixed;
+@media screen and (max-width : 756px) {
+    .withdrawaldrop {
+        position: absolute;
+        right: 78px;
+        top: 235px;
+        position: fixed;
     }
-    .withdrawldetailscontainer{
+
+    .withdrawldetailscontainer {
         position: absolute;
         left: 76px;
     }
-    .crosscheck{
+
+    .crosscheck {
         position: absolute;
         left: 140px;
         top: 230px;
@@ -283,141 +286,161 @@ body {
 }
 
 @media screen and (max-width : 615px) {
-      .withdrawaldrop{
-       position: absolute;
-       right: 0;
-       top: 230px;
-       /* position: fixed; */
-      }
-      .withdrawldetailscontainer{
-       position: absolute;
-       left: 5px;
-      }
-      .crosscheck{
+    .withdrawaldrop {
+        position: absolute;
+        right: 0;
+        top: 230px;
+        /* position: fixed; */
+    }
+
+    .withdrawldetailscontainer {
+        position: absolute;
+        left: 5px;
+    }
+
+    .crosscheck {
         position: absolute;
         left: 70px;
-      }
+    }
 }
 
 @media screen and (max-width : 503px) {
-   .withdrawaldrop{
-       width: 100%;
-    position: absolute;
-   }
-   .withdrawldetailscontainer{
-       width: 100%;
-    position: absolute;
-    left: 5px;
-   }
-   .crosscheck{
-     position: absolute;
-     left: 70px;
-   }
-   .holingsbox{
-       position: absolute;
-      top: 290px;
-      left: 12px;
-       width: 100%;
-   }
+    .withdrawaldrop {
+        width: 100%;
+        position: absolute;
+    }
+
+    .withdrawldetailscontainer {
+        width: 100%;
+        position: absolute;
+        left: 5px;
+    }
+
+    .crosscheck {
+        position: absolute;
+        left: 70px;
+    }
+
+    .holingsbox {
+        position: absolute;
+        top: 290px;
+        left: 12px;
+        width: 100%;
+    }
 }
 
 @media screen and (max-width : 414px) {
-    .withdrawaldrop{
+    .withdrawaldrop {
         margin-left: -160px;
     }
-    .NoticeWrapper2{
-       width: 100%;
+
+    .NoticeWrapper2 {
+        width: 100%;
     }
-    
+
 }
 
 @media screen and (max-width : 375px) {
-   .withdrawaldrop{
-       margin-left: -160px;
-       width: 100%;        
-   }
-   .depositeCancel{
+    .withdrawaldrop {
+        margin-left: -160px;
+        width: 100%;
+    }
+
+    .depositeCancel {
         position: absolute;
         left: 30px;
-   }
-   .withdrawldetailscontainer{
-       width: 100%;
-     position: absolute;
-    left: 5px;
-   }
-   .holdingsbtn1{
-       position: absolute;
-       left: 20px;
-   }
-   .crosscheck{
-       width: 100%;
-     position: absolute;
-     left: 0;
-     top: 190px;
-   }
-   .checkboxwithin{
-       width: 100%;
-       position: absolute;
-       right: 0;
-   }
-   .crosscheck12{
-       position: absolute;
-       right: 0;
-       width: 100%;
-   }
-   .holingsbox{
-       position: absolute;
-      top: 290px;
-      left: 12px;
-       width: 100%;
-   }
+    }
+
+    .withdrawldetailscontainer {
+        width: 100%;
+        position: absolute;
+        left: 5px;
+    }
+
+    .holdingsbtn1 {
+        position: absolute;
+        left: 20px;
+    }
+
+    .crosscheck {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 190px;
+    }
+
+    .checkboxwithin {
+        width: 100%;
+        position: absolute;
+        right: 0;
+    }
+
+    .crosscheck12 {
+        position: absolute;
+        right: 0;
+        width: 100%;
+    }
+
+    .holingsbox {
+        position: absolute;
+        top: 290px;
+        left: 12px;
+        width: 100%;
+    }
 }
+
 @media screen and (max-width : 820px) {
-   .NoticeWrapper2{
+    .NoticeWrapper2 {
         position: absolute;
         top: 200px;
-   }
-   .withdrawaldrop{
-       position: absolute;
-       right: 110px;
-       top: 240px;
-   }
-   .withdrawldetailscontainer{
-       position: absolute;
-       left: 0;
-       top: -20px;
-   }
-   .crosscheck{
-       position: absolute;
-       left: 50px;
-       top: 40px;
-   }
-   .holingsbox{
-       position: absolute;
-       top: 90px;
-   }
+    }
+
+    .withdrawaldrop {
+        position: absolute;
+        right: 110px;
+        top: 240px;
+    }
+
+    .withdrawldetailscontainer {
+        position: absolute;
+        left: 0;
+        top: -20px;
+    }
+
+    .crosscheck {
+        position: absolute;
+        left: 50px;
+        top: 40px;
+    }
+
+    .holingsbox {
+        position: absolute;
+        top: 90px;
+    }
 }
 
 @media screen and (max-width : 768px) {
-   .withdrawaldrop{
-       position: absolute;
-       left: 83px;
-       }
-}
-@media screen and (max-width : 912px) {
-    .NoticeWrapper2{
-       position: absolute;
-       top: 170px;
-    }
-    .withdrawaldrop{
-       position: absolute;
-       position: fixed;
-       left: 157px;
-       top: 220px;
+    .withdrawaldrop {
+        position: absolute;
+        left: 83px;
     }
 }
 
- /* close deposite & withdrwal css */
+@media screen and (max-width : 912px) {
+    .NoticeWrapper2 {
+        position: absolute;
+        top: 170px;
+    }
+
+    .withdrawaldrop {
+        position: absolute;
+        position: fixed;
+        left: 157px;
+        top: 220px;
+    }
+}
+
+/* close deposite & withdrwal css */
 
 
 .custompopupcontainer {
@@ -790,14 +813,59 @@ body {
     /* position: relative; */
 }
 
+
+@media (max-width:1400px) {
+    .customUl {
+        color: rgb(218, 218, 218) !important;
+        font-size: 8px !important;
+        white-space: nowrap;
+        /* position: relative; */
+    }
+
+}
+
+
 @media (max-width:1250px) {
     .navbar-nav {
         color: rgb(218, 218, 218) !important;
-        font-size: 11px !important;
+        font-size: 9px !important;
         white-space: nowrap;
         margin-left: 1px !important;
     }
+
+    .customUl {
+        color: rgb(218, 218, 218) !important;
+        font-size: 7px !important;
+        white-space: nowrap;
+        /* position: relative; */
+    }
 }
+
+@media (max-width:1100px) {
+    .navbar-nav {
+        color: rgb(218, 218, 218) !important;
+        font-size: 7px !important;
+        white-space: nowrap;
+        margin-left: 1px !important;
+    }
+
+    .customUl {
+        color: rgb(218, 218, 218) !important;
+        font-size: 5px !important;
+        white-space: nowrap;
+        /* position: relative; */
+    }
+}
+
+@media (max-width:991px) {
+    .customUl {
+        color: rgb(218, 218, 218) !important;
+        font-size: 8px !important;
+        white-space: nowrap;
+        /* position: relative; */
+    }
+}
+
 
 .customUl1 {
     color: #F8FF13 !important
@@ -1017,6 +1085,7 @@ body {
     margin-top: 400px;
     padding: 0px 10px;
     /* margin-left: 200px; */
+    z-index: 1;
 }
 
 @media (max-width:820px) {
@@ -1026,6 +1095,7 @@ body {
         width: 60%;
         position: absolute;
         border-right: 1px solid #1e242c;
+        z-index: 1;
     }
 }
 
@@ -1035,15 +1105,17 @@ body {
         margin-top: 500px;
         width: 60%;
         position: absolute;
+        z-index: 1;
     }
 }
 
 @media (max-width:480px) {
     .noticeBodyNewpoint {
         margin-left: -665px;
-        margin-top: 590px;
+        margin-top: 443px;
         width: 50%;
         position: absolute;
+        z-index: 1;
     }
 }
 
@@ -1716,6 +1788,7 @@ body {
     padding: 7px;
     margin-left: 450px;
     border-radius: 5px;
+    z-index: 1;
 }
 
 @media (max-width:820px) {
@@ -1727,6 +1800,7 @@ body {
         padding: 7px;
         margin-left: 220px;
         border-radius: 5px;
+        z-index: 1;
     }
 }
 
@@ -1739,18 +1813,20 @@ body {
         padding: 7px;
         margin-left: 250px;
         border-radius: 5px;
+        z-index: 1;
     }
 }
 
 @media (max-width:480px) {
     #exchangpoint {
-        margin-top: 270px;
+        margin-top: 110px;
         background-color: #1f262f !important;
         box-shadow: 0 0 10px #000;
         width: 300px;
         padding: 7px;
         margin-left: 55px;
         border-radius: 5px;
+        z-index: 1;
     }
 }
 
@@ -2107,13 +2183,13 @@ button#butn {
 
 @media (max-width:1401px) {
     #delete {
-    position: absolute;
-    background-color: #1f262f !important;
-    width: 50%;
-    height: 21vh;
-    margin-top: -15px;
-    margin-left: 200px;
-    border-radius: 2px;
+        position: absolute;
+        background-color: #1f262f !important;
+        width: 50%;
+        height: 21vh;
+        margin-top: -15px;
+        margin-left: 200px;
+        border-radius: 2px;
     }
 }
 
@@ -2947,7 +3023,31 @@ border-right: 1px solid #1e242c; */
     padding: 10px;
     width: 100%;
     /* z-index: 1; */
+}
 
+.noticeBodyExchange {
+
+    background-color: #1F262F;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 300;
+    padding: 10px;
+    width: 100%;
+    /* z-index: 1; */
+}
+
+.noticeBodyMessages {
+    background-color: #1F262F;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 300;
+    padding: 10px;
+    width: 100%;
+    /* z-index: 1; */
 }
 
 
@@ -2972,12 +3072,14 @@ border-right: 1px solid #1e242c; */
         margin-top: 6vh;
         z-index: 2;
     }
+
     .listbtn1 {
         font-size: 8px !important;
         text-align: center !important;
         width: 10vh;
         position: initial;
     }
+
     .noticeBodyNew {
         font-size: 14px;
         width: 45%;
@@ -2985,9 +3087,39 @@ border-right: 1px solid #1e242c; */
         position: fixed;
         top: 20vh;
     }
+
+    .noticeBodyExchange {
+        font-size: 14px;
+        width: 45%;
+        z-index: 1;
+        position: fixed;
+        top: 20vh;
+    }
+
+    .noticeBodyMessages {
+        font-size: 14px;
+        width: 60%;
+        z-index: 1;
+        position: absolute;
+        top: 0;
+        left: 10vh;
+        right: 0;
+    }
+
+    #msg {
+        position: absolute;
+        background-color: #1f262f;
+        /* box-shadow: 0 0 10px #000; */
+        width: 40% !important;
+        top: 25vh;
+        left: 20vh;
+        right: 0;
+        z-index: 1;
+    }
+
     .custompopupcontainer {
-        width: 35%;
-        margin-top: 10vh;
+        width: 40%;
+        margin-top: 8vh;
         height: 35vh;
         margin-left: 50px;
     }
@@ -3009,12 +3141,14 @@ border-right: 1px solid #1e242c; */
         margin-top: 6vh;
         z-index: 2;
     }
+
     .listbtn1 {
         font-size: 8px !important;
         text-align: center !important;
         width: 10vh;
         position: initial;
     }
+
     .noticeBodyNew {
         font-size: 14px;
         width: 55%;
@@ -3022,13 +3156,42 @@ border-right: 1px solid #1e242c; */
         position: fixed;
         top: 20vh;
     }
-    
-        /* .custompopupcontainer {
-            width: 35%;
-            margin-top: 15vh;
-            height: 35vh;
-            margin-left: 45px;
-        } */
+
+    .noticeBodyExchange {
+        font-size: 14px;
+        width: 55%;
+        z-index: 1;
+        position: fixed;
+        top: 20vh;
+    }
+
+    #msg {
+        position: absolute;
+        background-color: #1f262f;
+        /* box-shadow: 0 0 10px #000; */
+        width: 40% !important;
+        top: 25vh;
+        left: 60vh;
+        right: 0;
+        z-index: 1;
+    }
+
+    .noticeBodyMessages {
+        font-size: 14px;
+        width: 50%;
+        z-index: 1;
+        position: absolute;
+        top: 0;
+        left: 50vh;
+        right: 0;
+    }
+
+    .custompopupcontainer {
+        width: 45%;
+        margin-top: 3vh;
+        height: 40vh;
+        margin-left: 45px;
+    }
 
 }
 
@@ -3039,12 +3202,14 @@ border-right: 1px solid #1e242c; */
         margin-top: 6vh;
         z-index: 2;
     }
+
     .listbtn1 {
         font-size: 8px !important;
         text-align: center !important;
         width: 10vh;
         position: initial;
     }
+
     .noticeBodyNew {
         font-size: 14px;
         width: 75%;
@@ -3052,11 +3217,42 @@ border-right: 1px solid #1e242c; */
         position: fixed;
         top: 20vh;
     }
-    .custompopupcontainer {
+
+    .noticeBodyExchange {
+        font-size: 14px;
+        width: 75%;
+        z-index: 1;
+        position: fixed;
+        top: 20vh;
+    }
+
+    .noticeBodyMessages {
+        font-size: 14px;
+        width: 100%;
+        z-index: 1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+
+    #msg {
+        position: absolute;
+        background-color: #1f262f;
+        /* box-shadow: 0 0 10px #000; */
+        width: 60% !important;
+        top: 25vh;
+        left: 12vh;
+        right: 0;
+        z-index: 1;
+    }
+
+    /* .custompopupcontainer {
         width: 50%;
         margin-top: 4vh;
         height: 40vh;
-    }
+    } */
+
     .noticeBody {
         width: 90%;
 
@@ -3065,27 +3261,29 @@ border-right: 1px solid #1e242c; */
 }
 
 
-@media (max-width:1400px) {
+/* @media (max-width:1400px) {
     .custompopupcontainer {
         width: 50%;
         margin-top: 15vh;
         height: 30vh;
         margin-left: 15px;
     }
-}
-@media (max-width:820px) {
+} */
+
+/* @media (max-width:820px) {
     .custompopupcontainer {
         width: 50%;
         margin-top: 5vh;
         height: 22vh;
         margin-left: 12px;
     }
-}
+} */
+
 @media (max-width:768px) {
     .custompopupcontainer {
         width: 65%;
         margin-top: 6vh;
-        height: 27vh;
+        height: 40vh;
         margin-left: 30px;
     }
 }
@@ -3114,14 +3312,49 @@ border-right: 1px solid #1e242c; */
         top: 20vh;
     }
 
+    .noticeBodyExchange {
+        font-size: 14px;
+        width: 85%;
+        z-index: 1;
+        position: fixed;
+        top: 20vh;
+    }
+
+    .noticeBodyMessages {
+        font-size: 14px;
+        width: 100%;
+        z-index: 1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+
+    #msg {
+        position: absolute;
+        background-color: #1f262f;
+        /* box-shadow: 0 0 10px #000; */
+        width: 60% !important;
+        top: 20vh;
+        left: 8vh;
+        right: 0;
+        z-index: 1;
+    }
+
+}
+
+@media (max-width:300px) {
+    .noticeBodyNew {
+        width: 70%;
+    }
 }
 
 @media (max-width:480px) {
     .custompopupcontainer {
-    width: 90%;
-    margin-top: 8vh;
-    height: 42vh;
-    margin-left: 15px;
+        width: 90%;
+        margin-top: 8vh;
+        height: 42vh;
+        margin-left: 15px;
     }
 }
 
@@ -3648,9 +3881,9 @@ border-right: 1px solid #1e242c; */
     /* .column2 {
         flex-basis: 1300px;
     } */
-    .customUl {
+    /* .customUl {
         font-size: 10px !important;
-    }
+    } */
 
     .customUl1 {
         font-size: 10px !important;
@@ -3864,11 +4097,11 @@ input {
 }
 
 .message-popup {
-    width: 45%;
+    width: 100%;
     display: none;
     position: absolute;
     display: flex;
-    margin-left: 300px;
+    /* margin-left: 300px; */
     margin-top: 80px;
 
 }
@@ -3900,18 +4133,8 @@ input {
     }
 }
 
-#msg {
-    position: absolute;
-    background-color: #1f262f;
-    /* box-shadow: 0 0 10px #000; */
-    width: 500px;
-    margin-left: 370px;
-    margin-top: 166px;
-    z-index: 1;
 
-}
-
-@media (max-width:820px) {
+/* @media (max-width:820px) {
     #msg {
         position: absolute;
         background-color: #1f262f;
@@ -3920,9 +4143,9 @@ input {
         margin-left: 155px;
         margin-top: 245px;
     }
-}
+} */
 
-@media (max-width:480px) {
+/* @media (max-width:480px) {
     #msg {
         position: absolute;
         background-color: rgb(31, 38, 47);
@@ -3932,30 +4155,31 @@ input {
         margin-top: 185px;
 
     }
-}
+} */
 
-@media (max-width:414px) {
- #msg {
-position: absolute;
-background-color: rgb(31, 38, 47);
-box-shadow: rgb(0, 0, 0) 0px 0px 10px;
-width: 300px;
-margin-left: 35px;
-margin-top: 185px;
-
-    }
-}
-@media (max-width:375px) {
- #msg {
-position: absolute;
-background-color: rgb(31, 38, 47);
-box-shadow: rgb(0, 0, 0) 0px 0px 10px;
-width: 300px;
-margin-left: 25px;
-margin-top: 185px;
+/* @media (max-width:414px) {
+    #msg {
+        position: absolute;
+        background-color: rgb(31, 38, 47);
+        box-shadow: rgb(0, 0, 0) 0px 0px 10px;
+        width: 300px;
+        margin-left: 35px;
+        margin-top: 185px;
 
     }
-}
+} */
+
+/* @media (max-width:375px) {
+    #msg {
+        position: absolute;
+        background-color: rgb(31, 38, 47);
+        box-shadow: rgb(0, 0, 0) 0px 0px 10px;
+        width: 300px;
+        margin-left: 25px;
+        margin-top: 185px;
+
+    }
+} */
 
 /* @media (max-width:480px) {
     .noticeHeader {
@@ -4057,9 +4281,9 @@ button#bck-btn {
 
 @media (max-width:480px) {
     .closebtn {
-     display: flex;
-     justify-content: space-between;
-     margin-top: 270px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 270px;
     }
 }
 
@@ -4152,6 +4376,7 @@ button#submitbtn {
         border-radius: 5px;
     }
 }
+
 @media (max-width:414px) {
     #writeInq {
         position: absolute;
@@ -4415,6 +4640,7 @@ div#Titleval {
     margin-bottom: 20px;
     margin-left: 50px;
 }
+
 @media (max-width:820px) {
     .box2 {
         width: 300px;
@@ -4427,6 +4653,7 @@ div#Titleval {
         margin-left: -90px;
     }
 }
+
 @media (max-width:768px) {
     .box2 {
         width: 300px;

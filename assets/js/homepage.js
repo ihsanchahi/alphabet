@@ -21,6 +21,8 @@ const depositeDrop = document.querySelector('.depositeDrop')
 const infoHistory = document.querySelector('.infoHistory')
 const historyDrop = document.querySelector('.my-backdrop3')
 const holdings = document.querySelector('.holdings')
+const exchangeBody = document.querySelector('.noticeBodyExchange')
+
 
 const infoDrop = document.querySelector('.my-backdrop4')
 const customerDrop1 = document.querySelector('.my-backdrop5')
@@ -499,7 +501,8 @@ closePopUpCustomer.addEventListener("click",function(){
         holdings.style.display = "none";
         holdingsbtn.addEventListener("click",function(){
               if(holdings.style.display == "none"){
-                holdings.style.display = "block";
+                holdings.style.display = 'flex'
+                exchangeBody.style.display='none'
                 sliderBackDrop.style.display = 'none'
                 sliderMenu.classList.remove('sliderMenuActive')
               }
