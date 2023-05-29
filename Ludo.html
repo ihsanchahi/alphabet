@@ -861,7 +861,7 @@
                                             <div class="diceNumber">
                                                 Click ROLL to start
                                             </div>
-                                            <div class="diceGenerator">
+                                            <div class="diceGenerator" onclick="scrollWindow()">
                                                 ROLL ON!
                                             </div>
                                         </div>
@@ -897,10 +897,14 @@
                                                     </div>
                                                 </div>
                                                 <div class="oddsFooter2">
-                                                    <div class="box">
+                                                     
 
-                                                    </div>
-
+                                                         <div class="box">
+                                                             
+                                                             
+                                                        </div>
+                                                        
+                                                    
 
 
                                                 </div>
@@ -1099,6 +1103,16 @@
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
     <script src="assets/js/client.js"></script>
+    <script>
+   var selectedPosition = $(".box").offset().left;
+$(".box").scrollRight(selectedPosition); // without animation.
+
+$('.box').animate({scrollLeft: selectedPosition}, 400) 
+
+
+
+    </script>
+  
 </body>
 
 </html>

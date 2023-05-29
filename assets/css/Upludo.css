@@ -27,6 +27,19 @@ body {
      margin-top: 20px;
 
 }
+table, td, th {  
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    padding: 15px;
+  }
 .nert1{
     margin-top: -24px;
     margin-left: 50px;
@@ -611,11 +624,16 @@ height: 200px; */
 
 .box {
     display: flex;
+    position: relative;
+    
 }
 
 
 .boxOU {
     display: flex;
+    width: 100%;
+    height: 300px;
+    border: 1px solid gray;
 }
 
 .diceNumber,
@@ -1595,6 +1613,10 @@ padding: 5px;
 .oddsFooterActive {
     height: 100%;
     transition: 0.5s all; 
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    
 }
 
 .finalOddWrapper {
@@ -1611,10 +1633,12 @@ padding: 5px;
     justify-content: space-around;
     height: 30px;
     font-weight: 800;
-    border: 2px solid #6f6f6f;
+    /* border: 2px solid #6f6f6f; */
     align-items: center;
-    /* padding: 10px; */
     cursor: pointer;
+    display: grid;
+    margin: 6px;
+ 
 }
 
 .oddsCollector {
@@ -1642,6 +1666,7 @@ padding: 5px;
     /* border-bottom: 1px solid #1e242c; */
     border-right: 1px solid #1e242c;
     cursor: pointer;
+    
 }
 
 .oddsSelect:hover {
@@ -1669,9 +1694,24 @@ padding: 5px;
 .oddsOver {
     color: #ff0000;
 }
+.box{
+     width: 100%;
+     height: 300px;
+     border: 1px solid gray;
+}
+.element{
+    width: 50px;
+    height: 100%;
+    border: 1px solid gray;
+}
 
 .oddsUnder {
-    color: #1900ff;
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid gray;
+    margin-left: 0px;
+    /* border: 1px solid black; */
+
 }
 
 .oddsEven {
@@ -1684,18 +1724,30 @@ padding: 5px;
 
 .collectOdd {
     background-color: #e4eb22;
+    padding: 5px 10px;
 }
 
 .collectEven {
     background-color: green;
+    padding: 5px 10px;
 }
 
 .collectOver {
     background-color: #ff0000;
+    padding: 3px 10px;
+    width: 100%;
+    border: 1px solid gray;
+}
+.oddsOver{
+    width: 100%;
+    border-bottom: 1px solid gray;
+    margin-left: 0px;
 }
 
 .collectUnder {
     background-color: #1900ff;
+    padding: 3px 10px;
+    border: 1px solid gray;
 }
 
 .incHeight1 {}

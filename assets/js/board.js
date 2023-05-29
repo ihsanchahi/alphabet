@@ -173,6 +173,5 @@ setInterval(function () {
       location.href = "http://127.0.0.1:5500/promo.html";
     };
   }
-  
 }, 1000);
 
