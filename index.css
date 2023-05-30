@@ -358,7 +358,7 @@ div#Register-popup {
 }
 input[type="password"] {
     height: 38px;
-    background-color:#1f262f;
+    background-color:#1f262f !important;
     font-size: 12px;
     padding-left: 6px;
     color: white;

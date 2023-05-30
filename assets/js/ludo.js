@@ -1063,6 +1063,18 @@ document.addEventListener('DOMContentLoaded', function() {
         // Check if the clicked element is a button with the desired class
         if (event.target.classList.contains('oddsSelect')) {
             // Handle the button click here
+            if(event.target.style.backgroundColor==="rgb(54, 60, 68)")
+        {
+            event.target.style.backgroundColor="rgb(48 59 71)"
+            event.target.style.border = "none";
+            // console.log('Hello Umar');
+
+        }else{
+            event.target.style.backgroundColor="rgb(54, 60, 68)"
+            event.target.style.border = "1px solid #F8FF13";
+
+
+        }
             console.log('Button clicked:', event.target);
             setActiveButton(event.target);
             // event.target.classList.toggle('betActive');

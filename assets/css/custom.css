@@ -2545,7 +2545,11 @@ input.text.context {
     width: 100%;
 }
 
-.betActive {}
+.betActive {
+
+    /* background-color: rgb(54, 60, 68);
+    border: 1px solid #F8FF13; */
+}
 
 .cartItemsWrapper {}
 
@@ -4772,4 +4776,9 @@ div#Titleval {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.removeBorder {
+    border: none !important;
+    background: #27303a !important;
 }

@@ -2134,3 +2134,7 @@ height: 200px; */
     }
 
 }
+.historyUpHeaderActive {
+    color: #F8FF13;
+    /* font-weight: 500 !important; */
+}

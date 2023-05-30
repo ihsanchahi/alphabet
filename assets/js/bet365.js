@@ -29,48 +29,6 @@ const slipCancel = document.querySelector('.slipCancel')
 
 
 
-const openpopup = document.querySelector(".changepopup")
-const inputfieldcontainer = document.querySelector(".inputfieldcontainer")
-const Attendancebtn = document.querySelector(".Attendancebtn")
-const custompopupcontainer = document.querySelector(".custompopupcontainer")
-const closepopup = document.querySelector(".closepopup")
-const submitReportBtn  = document.querySelector(".submitReportBtn")
-const changepopup1 = document.querySelector(".changepopup1")
-
-
-custompopupcontainer.style.display = "none";
- openpopup.addEventListener("click",function(){
-     if(custompopupcontainer.style.display == "none"){
-        custompopupcontainer.style.display = "block";
-        inputfieldcontainer.style.display = "none";
-    }  
-
-
-  })
-  closepopup.addEventListener("click",function(){
-       if( custompopupcontainer.style.display == "block"){
-        custompopupcontainer.style.display = "none";
-       }
-       
-  })
-
-  submitReportBtn.addEventListener("click",function(){
-    inputfieldcontainer.style.display = "block";
-  })
-
-  
-  custompopupcontainer.style.display = "none";
-  changepopup1.addEventListener("click",function(){
-    if(custompopupcontainer.style.display == "none"){
-        custompopupcontainer.style.display = "block";
-        inputfieldcontainer.style.display = "none";
-    } 
-  })
-
-
-
-
-
 
 
 
@@ -1240,15 +1198,15 @@ document.addEventListener('DOMContentLoaded', function() {
         game.addEventListener('click', (e) => {
             const gameIndex = e.target.id.split('-')[0]
             const leagueIndex = e.target.id.split('-')[1]
-                // setActiveGame(e.target)
+                setActiveGame(e.target)
             console.log(gameIndex, leagueIndex)
             replaceSidebar(gameIndex, leagueIndex)
         })
     })
     selectLeague.forEach((league) => {
         league.addEventListener('click', (e) => {
-            // const child = e.target.querySelector('.LmodeName');
-            // child.classList.add('fontBlue')
+            const child = e.target.querySelector('.LmodeName');
+            child.classList.add('fontBlue')
             setActive(e.target);
             console.log('clicked')
             activeLeague = e.target.id;
@@ -1261,10 +1219,9 @@ document.addEventListener('DOMContentLoaded', function() {
         // remove active class from all buttons
         const buttons = document.querySelectorAll('.LmodeName')
         buttons.forEach(btn => btn.classList.remove('fontBlue'));
-        
 
         // add active class to the clicked button
-        buttons.querySelector('.LmodeName').classList.add('fontBlue');
+        button.querySelector('.LmodeName').classList.add('fontBlue');
     }
 
     function setActiveById(button) {
@@ -1276,14 +1233,14 @@ document.addEventListener('DOMContentLoaded', function() {
         button.classList.add('fontBlue');
     }
 
-    // function setActiveGame(button) {
-    //     // remove active class from all buttons
-    //     const buttons = document.querySelectorAll('.modeName')
-    //     buttons.forEach(btn => btn.classList.remove('fontBlue'));
+    function setActiveGame(button) {
+        // remove active class from all buttons
+        const buttons = document.querySelectorAll('.modeName')
+        buttons.forEach(btn => btn.classList.remove('fontBlue'));
 
-    //     // add active class to the clicked button
-    //     button.querySelector('.modeName').classList.add('fontBlue');
-    // }
+        // add active class to the clicked button
+        button.querySelector('.modeName').classList.add('fontBlue');
+    }
     selectLeaguebyId.forEach((league) => {
         league.addEventListener('click', (e) => {
             console.log('clicked')
@@ -1935,7 +1892,7 @@ document.addEventListener('DOMContentLoaded', function() {
             // event.target.classList.toggle('betActive');
             // Toggle the 'button-active' class on the clicked button element
             if(event.target.style.backgroundColor==="rgb(54, 60, 68)"){
-                event.target.style.backgroundColor="#F8FF13"
+                event.target.style.backgroundColor="#16bdf9"
             }else{
                 event.target.style.backgroundColor="rgb(54, 60, 68)"
             }

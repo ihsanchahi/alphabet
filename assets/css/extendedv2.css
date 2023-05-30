@@ -29,6 +29,7 @@
 .slipBody {
     flex-grow: 3;
 }
+
 @media (max-width: 480px) {
     .betSlip {
         /* position: fixed; */
@@ -40,23 +41,42 @@
         z-index: 2;
         position: relative;
         animation: slideIn 0.5s forwards;
-        
+
     }
+
     @keyframes slideIn {
         0% {
-          opacity: 1;
-          transform: translateY(0);
+            opacity: 1;
+            transform: translateY(0);
         }
+
         100% {
-          opacity: 1;
-          transform: translateY(30%);
+            opacity: 1;
+            transform: translateY(30%);
         }
-      }
-    
+
+    }
+
     .slipHeader {
         justify-content: space-between;
     }
 }
+
+.closeCol3 {
+    -webkit-animation: bar 7s ease;
+}
+
+@keyframes bar {
+    0% {
+        top: 0%;
+    }
+
+    100% {
+        top: 100%;
+        ;
+    }
+}
+
 
 @media (max-width: 1400px) {
     .betSlip {
@@ -69,24 +89,28 @@
         margin: auto;
         /* position: relative; */
         animation: slideIn 0.5s forwards;
-        
+
     }
+
     @keyframes slideIn {
         0% {
-          opacity: 1;
-          transform: translateY(30%);
+            opacity: 1;
+            transform: translateY(30%);
         }
+
         100% {
-          opacity: 1;
-          transform: translateY(0);
+            opacity: 1;
+            transform: translateY(0);
         }
-      }
+    }
 
     .slipHeader {
         justify-content: space-between;
     }
 }
+
 @media (min-width: 1400px) {
+
     /* Add additional styles as needed */
     .betSlip {
         position: fixed;
@@ -95,13 +119,14 @@
         height: 90%;
         z-index: 2;
         /* right: 0; */
-        
+
     }
-   
+
     .slipHeader {
         justify-content: space-between;
     }
-    .clients{
+
+    .clients {
         max-width: 76%;
     }
 }
@@ -109,6 +134,7 @@
 
 
 @media (max-width: 1050px) {
+
     /* Add additional styles as needed */
     .slipHeader {
         justify-content: space-between;
@@ -116,10 +142,12 @@
 }
 
 @media (max-width: 850px) {
+
     /* Add additional styles as needed */
     .nestedRow {
         font-size: 8px;
     }
+
     .nestedRow1 {
         font-size: 8px;
     }
