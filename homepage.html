@@ -511,34 +511,49 @@
     
                         <div class="depositeItem depositeBill">
                             <div class="menuItem">
-                                <div class="dispIcon specDisp">Type</div>
-                                <div class="dispIcon" style="width: 60%;">
-                                    <select name="options" id="" class="selectOptions2">
-                                        <option value="">Cash</option>
-                                        <option value="">Bitcoin</option>
-                                        <option value="">Wireless</option>
-                                    </select>
+                                <div class="dispIcon specDisp depositebtn">Deposit method</div>
+                                <div class="dispIcon" style="width: 60%;"> 
+                                     <select name="options" id="greet" class="selectOptions2" onchange="myget(this.value)">
+                                              <option value="Esewa">Esewa</option>
+                                              <option value="Bank">Bank</option>
+                                              <option value="Khalti">Khalti</option>
+                                    </select> 
                                 </div>
                             </div>
+
+                               <div class="bankpop" style="display: flex; justify-content: center; flex-direction: column; align-items: center; justify-content: space-evenly; display: none; background-color: #1f262f;">
+                                <h4>Bank</h4>
+                                 <button class="closebtndeposite" style="padding: 10px 50px; color: black; font-size: 20px;background-color: #394552; color: white;">Close</button>
+                               </div>
+
+                               <div class="bankpop1" style="display: flex; justify-content: center; flex-direction: column; align-items: center; justify-content: space-evenly; display: none;  background-color: #1f262f">
+                                <h4>Khalti</h4>
+                                 <button class="closebtndeposite1" style="padding: 10px 50px; color: black; font-size: 20px;background-color: #394552; color: white;">Close</button>
+                               </div>
+                               
                             <div class="menuItem">
                                 <div class="dispIcon specDisp">Home of Depositor</div>
                                 <div class="dispIcon" style="text-align: center; width: 60%;">Helios Predator</div>
                             </div>
                             <div class="menuItem">
-                                <div class="dispIcon specDisp">Amount</div>
+                                <div class="dispIcon specDisp">Depositor name</div>
                                 <div class="dispIcon inputSports"><input type="text" name="amount" id=""
-                                        placeholder="Please type in the deposite amount" class="inputLeague"></div>
+                                        placeholder="Please type in the deposite name" class="inputLeague"></div>
                             </div>
                             <div class="menuItem">
-                                <div class="dispIcon specDisp" >Apply for Bonus</div>
-                                <div class="dispIcon" style="width: 60%;"> <select name="options" id="" class="selectOptions2">
-                                        <option value="">Cash</option>
-                                        <option value="">Bitcoin</option>
-                                        <option value="">Wireless</option>
-                                    </select></div>
+                                <div class="dispIcon specDisp" >amount</div>
+                                <div class="dispIcon inputSports"><input type="text" name="amount" id=""
+                                    placeholder="Please type in the deposite amount" class="inputLeague"></div>
                             </div>
+
+                            <div class="menuItem">
+                                <div class="dispIcon specDisp" >upload screenshot</div>
+                                <div class="dispIcon inputSports"><input type="image" name="amount" id=""
+                                     class="inputLeague"></div>
+                            </div>
+
                             <div class="depositeBtn2">
-                                <div class="noticeBtn">Deposite Bill</div>
+                                <div class="noticeBtn">submit</div>
     
                                 <div class="crosscheck">
                                     <div class="circlebox">X</div>
@@ -601,7 +616,7 @@
     
                 <div class="depositeItem depositeBill">
                     <div class="menuItem">
-                        <div class="dispIcon specDisp">holding amount</div>
+                        <div class="dispIcon specDisp">Balance</div>
                         <div class="dispIcon" style="width: 60%; text-align: center;">
                             <p>12,000</p>
                             <!-- <select name="options" id="" class="selectOptions2">
@@ -616,15 +631,49 @@
                         <div class="dispIcon" style="width: 60%; text-align: center ;">Helios Predator</div>
                     </div>
                     <div class="menuItem">
-                        <div class="dispIcon specDisp">Withdrawl information</div>
+                        <div class="dispIcon specDisp">Amount</div>
                         <div class="dispIcon inputSports"><input type="text" name="amount" id=""
                                 placeholder="Please type in the Withdrawl information" class="inputLeague"></div>
                     </div>
                     <div class="menuItem">
-                        <div class="dispIcon specDisp">Withdrawl amount</div>
-                        <div class="dispIcon inputSports"><input type="text" name="amount" id=""
-                                placeholder="Please type in the Withdrawl amount" class="inputLeague"></div>
+                        <div class="dispIcon specDisp">Withdrawl method</div>
+                        <div class="smartlist" style="width: 60%; margin-top: 4px;">
+                            <select name="options" id="allsubmitvalue" class="selectOptions2" onchange="bankpage(this.value)">
+                                <option value="Esewa">Esewa</option>
+                                <option value="Bank">Bank</option>
+                                <option value="Khalti">Khalti</option>
+                            </select>
+                        </div>
                     </div>
+                      
+                      <!-- bank field -->
+                         <div class="mainbankfieldcontainer">
+                            <div class="menuItem">
+                                <div class="dispIcon specDisp">Bank acc number</div>
+                                <div class="dispIcon inputSports"><input type="number" name="amount" id=""
+                                        placeholder="Please type in the Bank acc number" class="inputLeague"></div>
+                            </div>
+
+                            <div class="menuItem">
+                                <div class="dispIcon specDisp">Bank acc holder name</div>
+                                <div class="dispIcon inputSports"><input type="name" name="amount" id=""
+                                        placeholder="Please type in the Bank acc holder name" class="inputLeague"></div>
+                            </div>
+
+                            <div class="menuItem">
+                                <div class="dispIcon specDisp">Bank name</div>
+                                <div class="dispIcon inputSports"><input type="name" name="amount" id=""
+                                        placeholder="Please type in the Bank name" class="inputLeague"></div>
+                            </div>
+                         </div>
+
+
+                    <div class="menuItem">
+                        <div class="dispIcon specDisp">Withdraw password</div>
+                        <div class="dispIcon inputSports"><input type="password" name="amount" id=""
+                                placeholder="Please type in the Withdrawl password" class="inputLeague"></div>
+                    </div>
+
                     <div class="depositeBtn2">
                         <div class="noticeBtn applicationbtn">Withdrawl Application</div>
                           

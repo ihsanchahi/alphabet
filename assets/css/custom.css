@@ -8,6 +8,45 @@ body {
     font-family: 'Noto Sans', sans-serif;
     background-color: rgb(23, 28, 34);
 }
+.mainbankfieldcontainer{
+     display: none;
+}
+
+.bankpop{
+     width: 60%;
+     height: 200px;
+     background-color: red;
+     position: absolute;
+     left: 130px;
+     top: 78px;
+}
+.bankpop1{
+    width: 60%;
+    height: 200px;
+    background-color: red;
+    position: absolute;
+    left: 130px;
+    top: 78px;
+}
+.depositename{
+    width: 30%;
+    height: 6.3vh;
+    padding: 15px 15px;
+     background-color: #303A46;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-top: -50px;
+}
+.smartlist{ 
+     margin-top: -50px;
+}
+.cloaebtbndeposite{
+     position: absolute;
+     padding: 10px 30px;
+     background-color: #303A46;
+     top: 130px;
+}
 
 /* start deposite&withdrwal css */
 .checkboxwithin {
@@ -19,7 +58,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    top: 40px;
+    top: 70px;
     right: 120px;
     display: none;
 }
@@ -33,7 +72,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    top: 40px;
+    top: 100px;
     right: 130px;
     display: none;
 }
@@ -67,7 +106,7 @@ body {
     height: 200px;
     background-color: #1F262F;
     position: absolute;
-    top: 50px;
+    top: 80px;
     left: 100px;
     display: none;
 
@@ -75,10 +114,11 @@ body {
 
 .withdrawaldrop {
     width: 55%;
+    height: auto;
     background-color: #1F262F;
     position: absolute;
     z-index: 100;
-    top: 150px;
+    top: 120px;
     right: 306px;
     /* left: 380px; */
     display: none;
@@ -441,6 +481,7 @@ body {
 }
 
 /* close deposite & withdrwal css */
+
 
 
 .custompopupcontainer {
@@ -1701,6 +1742,7 @@ body {
 
 }
 
+
 .betOdds:hover {
     background-color: #F8FF13;
     color: #000;
@@ -2503,10 +2545,7 @@ input.text.context {
     width: 100%;
 }
 
-.betActive {
-    /* background-color: #F8FF13;
-    color: white!important; */
-}
+.betActive {}
 
 .cartItemsWrapper {}
 
@@ -3388,7 +3427,7 @@ border-right: 1px solid #1e242c; */
 .closeIconCustom {
     position: relative;
     right: 0;
-    margin-top: -35px;
+    margin-top: -54px;
     background-color: #F8FF13;
     padding: 10px;
     display: block;

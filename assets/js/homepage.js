@@ -145,22 +145,32 @@ const withdrwalposition = document.querySelector(".withdrwalposition")
 const withdrawlbtn = document.querySelector(".withdrawlbtn")
 const backwithdrawbtn = document.querySelector(".backwithdrawbtn")
 const depositeCancel = document.querySelector(".depositeCancel")
+const cloaebtbndeposite = document.querySelector(".cloaebtbndeposite")
+const depositebtn = document.querySelector(".depositebtn")
+const demo = document.querySelector("#demo")
+   
+// const allsubmitvalue = document.querySelector("#allsubmitvalue")
+
+// allsubmitvalue.addEventListener("click",function(){
+    
+// });
+
+
+
+
+
 
 depositeCancel.addEventListener("click",function(){
     withdrawaldrop.style.display = "none";
 })
 
-
 backwithdrawbtn.addEventListener("click",function(){
     withdrawldetailscontainer.style.display = "none";
-    withdrawnonshow.style.display = "none";
-       
+    withdrawnonshow.style.display = "none";       
 })
-
 withdrwalposition.addEventListener("click",function(){
     withdrawaldrop.style.position = "fixed"; 
 })
-
 
 // withdrawlbtn.addEventListener("click",function(){
 //        console.log("Ali ajdhskjdhskhfdjk");
@@ -1098,7 +1108,7 @@ function initApp() {
         </div>
 
     </div>
-    <div class="gameCol2">
+    <div class="gameCol2  betodsdsd">
         <div class="betOdds" id="${indx}-${key}-1-1-wl">${val.bets[0]} </div>
         <div class="betOdds" id="${indx}-${key}-1-2-wl">${val.bets[1]}</div>
         <div class="betOdds" id="${indx}-${key}-1-3-wl">${val.bets[2]}</div>
@@ -1207,8 +1217,41 @@ function initApp() {
     // console.log(handiOdds)
     // handiOdds.addEventListener('click', selectOdds);
 }
+{/* <p>ali gohar</p> */}
 initApp();
+const bankpop = document.querySelector(".bankpop")
+const closebtndeposite = document.querySelector(".closebtndeposite")
+const bankpop1 = document.querySelector(".bankpop1")
+const closebtndeposite1 = document.querySelector(".closebtndeposite1")
+const mainbankfieldcontainer = document.querySelector(".mainbankfieldcontainer")
 
+closebtndeposite.addEventListener("click",function(){
+    bankpop.style.display = "none";
+})
+closebtndeposite1.addEventListener("click",function(){
+    bankpop1.style.display = "none";
+})
+function myget(i){
+    if(i =="Bank"){
+        console.log("Bank");
+        bankpop.style.display = "block";
+        bankpop.style.display = "flex";
+    }
+    else if(i == "Khalti"){
+        console.log("Khalti");
+        bankpop1.style.display = "block";
+        bankpop1.style.display = "flex";
+    }
+ }
+ function bankpage(i){
+      if(i == "Bank"){
+        mainbankfieldcontainer.style.display = "block";
+      }
+      else{
+        mainbankfieldcontainer.style.display = "none";
+        
+      }
+ }
 function addToCard(key) {
     if (listCards[key] == null) {
         listCards[key] = products[key];
@@ -1388,7 +1431,6 @@ function setActiveOdd(button) {
 function setActiveOdd2(button) {
     // remove active class from all buttons
     const buttons = document.querySelectorAll('.betOdds')
-
     const buttons2 = document.querySelectorAll('.handiOdds')
     const buttons3 = document.querySelectorAll('.ouOdds')
     buttons.forEach(btn => btn.classList.remove('betActive'));
@@ -2217,7 +2259,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             const id = gameIndex + leagueIndex + sameOdd + oddIndex + event.target.id.split('-')[4]
             const uniqueIndex = gameIndex + leagueIndex + event.target.id.split('-')[4]
-            console.log(selectedOdd)
+            // console.log(selectedOdd)
             let newObject = {
 
                 id: id, // generate unique id 
@@ -2230,15 +2272,15 @@ document.addEventListener('DOMContentLoaded', function() {
                 matchType: matchType,
                 matchTime: matchTime
             };
-            console.log('unq', uniqueIndex)
+            // console.log('unq', uniqueIndex)
 
             let popup = document.querySelector('.limitPopUp')
             let totalOdds = selectedOdd;
 
             dataArray.forEach((value, key) => {
                 totalOdds = totalOdds * parseFloat(value.odds);
+            });
 
-            })
             if (totalOdds < 100) {
                 popup.style.display = 'none'
                 if (dataArray.some(obj => obj.sameOdd === uniqueIndex)) {
@@ -2251,15 +2293,16 @@ document.addEventListener('DOMContentLoaded', function() {
                 popup.style.display = 'flex'
             }
 
+
             // if (dataArray.some(obj => obj.sameOdd === sameOdd)) {
             //     dataArray = dataArray.filter(obj => obj.sameOdd !== sameOdd)
             //     dataArray.push(newObject)
             // }
 
+
             reloadCard();
             // push the new object into the array
             console.log(dataArray)
-
             // const exitLogo = document.querySelectorAll('.exitLogo')
             // exitLogo.forEach((exit) => {
             //     exit.addEventListener('click', (event) => {
@@ -2274,18 +2317,15 @@ document.addEventListener('DOMContentLoaded', function() {
 
         });
     });
+    
     extraOdd.forEach(function(extraOdd) {
         extraOdd.addEventListener('click', function(event) {
             // Toggle the 'button-active' class on the clicked button element
             extraOdd.classList.toggle('betActive')
             let id = event.target.id.split('-').join('')
             setActiveButton(id)
-
-
-
         });
     });
-
 });
 
 
