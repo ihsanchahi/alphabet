@@ -155,44 +155,14 @@ const depositeCancel = document.querySelector(".depositeCancel")
 const cloaebtbndeposite = document.querySelector(".cloaebtbndeposite")
 const depositebtn = document.querySelector(".depositebtn")
 const demo = document.querySelector("#demo")
-   
-// const allsubmitvalue = document.querySelector("#allsubmitvalue")
-
-// allsubmitvalue.addEventListener("click",function(){
-    
-// });
+const depositeCancel1 = document.querySelector(".depositeCancel1")
 
 
-
-
-
-// const withdrawnonshow = document.querySelector(".withdrawnonshow");
-// const showcheckbox = document.querySelector(".showcheckbox");
-// const checkbox3 = document.querySelector(".checkbox3");
-// const deepositactivebtn = document.querySelector(".deepositactivebtn");
-// const holdingsbtn1 = document.querySelector(".holdingsbtn1");
-// const holingsbox = document.querySelector(".holingsbox");
-// const holdingclose1 = document.querySelector(".holdingclose1");
-// const holdingsbtn2 = document.querySelector(".holdingsbtn2");
-// const holingsbox2 = document.querySelector(".holingsbox2");
-// const holdingclose2 = document.querySelector(".holdingclose2");
-// const noticeBtn = document.querySelector(".noticeBtn");
-// const crosscheck = document.querySelector(".crosscheck");
-// const checkbtn5 = document.querySelector(".checkbtn5");
-// const applicationbtn = document.querySelector(".applicationbtn");
-// const notbtn = document.querySelector(".notbtn");
-// const checkboxwithin = document.querySelector(".checkboxwithin");
-// const yesthisbtn = document.querySelector(".yesthisbtn");
-// const crosscheck12 = document.querySelector(".crosscheck12");
-// const checkbtn6 = document.querySelector(".checkbtn6");
-// const withdrwalposition = document.querySelector(".withdrwalposition");
-// const withdrawlbtn = document.querySelector(".withdrawlbtn");
-// const backwithdrawbtn = document.querySelector(".backwithdrawbtn");
-// const depositeCancel = document.querySelector(".depositeCancel");
-
-depositeCancel.addEventListener("click", function () {
+depositeCancel1.addEventListener("click", function () {
   withdrawaldrop.style.display = "none";
+  depositeDrop.style.display = 'none';
 });
+
 
 backwithdrawbtn.addEventListener("click",function(){
     withdrawldetailscontainer.style.display = "none";
