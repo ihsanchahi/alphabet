@@ -17,6 +17,7 @@
 
 .matchhistorybuttons button:hover {
     background-color: #F8FF13;
+    color: black;
 }
 
 @media (max-width:1400px) {
@@ -100,4 +101,8 @@ p.liga {
     color: #F8FF13;
     background-color: #394552;
     padding: 10px 20px;
+}
+.buttonClicks{
+    background-color: #F8FF13 !important;
+    color: #000 !important;
 }

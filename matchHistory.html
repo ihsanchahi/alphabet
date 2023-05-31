@@ -788,11 +788,11 @@
 
             <div class="depositeItem ">
                 <div class="matchhistorybuttons">
-                    <button onclick="show1 ()">1X2</button>
-                    <button onclick="show ()">Handicap</button>
-                    <button onclick="show1 ()">Under/Over</button>
-                    <button onclick="show1 ()">Special</button>
-                    <button onclick="show1 ()">Live</button>
+                    <button id="btnHandi2" onclick="show1 ()">1X2</button>
+                    <button id="btnHandi1" onclick="show ()">Handicap</button>
+                    <button id="btnHandi3" onclick="show2 ()">Under/Over</button>
+                    <button id="btnHandi4" onclick="show3 ()">Special</button>
+                    <button id="btnHandi5" onclick="show4 ()">Live</button>
                 </div>
 
 
@@ -875,24 +875,42 @@
     <script>
         var a;
         function show() {
-            if (a == 1) {
-                document.getElementById("handicap").style.display = "inline"
-                return a = 0;
-            }
-            else {
-                document.getElementById("handicap").style.display = "inline"
-                return a = 1;
-            }
+            document.getElementById("handicap").style.display = "inline"
+            document.getElementById("btnHandi1").classList.add('buttonClicks')
+            document.getElementById("btnHandi2").classList.remove('buttonClicks')
+            document.getElementById("btnHandi3").classList.remove('buttonClicks')
+            document.getElementById("btnHandi4").classList.remove('buttonClicks')
+            document.getElementById("btnHandi5").classList.remove('buttonClicks')
+
         }
         function show1() {
-            if (a == 1) {
-                document.getElementById("handicap").style.display = "none"
-                return a = 0;
-            }
-            else {
-                document.getElementById("handicap").style.display = "none"
-                return a = 1;
-            }
+            document.getElementById("btnHandi1").classList.remove('buttonClicks')
+            document.getElementById("btnHandi2").classList.add('buttonClicks')
+            document.getElementById("btnHandi3").classList.remove('buttonClicks')
+            document.getElementById("btnHandi4").classList.remove('buttonClicks')
+            document.getElementById("btnHandi5").classList.remove('buttonClicks')
+
+        }
+        function show2() {
+            document.getElementById("btnHandi1").classList.remove('buttonClicks')
+            document.getElementById("btnHandi2").classList.remove('buttonClicks')
+            document.getElementById("btnHandi3").classList.add('buttonClicks')
+            document.getElementById("btnHandi4").classList.remove('buttonClicks')
+            document.getElementById("btnHandi5").classList.remove('buttonClicks')
+        }
+        function show3() {
+            document.getElementById("btnHandi1").classList.remove('buttonClicks')
+            document.getElementById("btnHandi2").classList.remove('buttonClicks')
+            document.getElementById("btnHandi3").classList.remove('buttonClicks')
+            document.getElementById("btnHandi4").classList.add('buttonClicks')
+            document.getElementById("btnHandi5").classList.remove('buttonClicks')
+        }
+        function show4() {
+            document.getElementById("btnHandi1").classList.remove('buttonClicks')
+            document.getElementById("btnHandi2").classList.remove('buttonClicks')
+            document.getElementById("btnHandi3").classList.remove('buttonClicks')
+            document.getElementById("btnHandi4").classList.remove('buttonClicks')
+            document.getElementById("btnHandi5").classList.add('buttonClicks')
         }
     </script>
 </body>
