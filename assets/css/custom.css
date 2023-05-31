@@ -1150,36 +1150,52 @@ body {
     background-color: rgb(29, 35, 42);
     padding: 0px 10px;
     z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 
-@media (max-width:820px) {
+@media (min-width:1401px) {
     .noticeBodyNewpoint {
-        margin-left: -200px;
-        margin-top: 320px;
-        width: 60%;
-        position: absolute;
-        border-right: 1px solid #1e242c;
+        width: 50%;
+        position: fixed;
         z-index: 1;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+}
+
+@media (max-width:1400px) {
+    .noticeBodyNewpoint {
+        width: 60%;
+        position: fixed;
+        z-index: 1;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
     }
 }
 
 @media (max-width:768px) {
     .noticeBodyNewpoint {
-        margin-left: -245px;
-        margin-top: 500px;
-        width: 60%;
-        position: absolute;
+        width: 70%;
+        position: fixed;
         z-index: 1;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
     }
 }
 
 @media (max-width:480px) {
     .noticeBodyNewpoint {
-        margin-left: -665px;
-        margin-top: 443px;
-        width: 50%;
-        position: absolute;
+        width: 80%;
+        position: fixed;
         z-index: 1;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
     }
 }
 
@@ -1924,7 +1940,6 @@ body {
 #yespoint {
     position: absolute;
     background-color: #1f262f !important;
-    box-shadow: 0 0 10px #000;
     width: 360px;
     padding: 7px;
     border-radius: 5px;
@@ -1936,7 +1951,7 @@ body {
     #yespoint {
         position: absolute;
         background-color: #1f262f !important;
-        box-shadow: 0 0 10px #000;
+
         width: 295px;
         padding: 7px;
         border-radius: 5px;
@@ -2686,18 +2701,15 @@ input.text.context {
 }
 
 .infoCancel1211 {
-    /* background-color: #1a99c7; */
-    /* width: 35px; */
-    /* height: 31px; */
-    background-color: #F8FF13;
-    width: 30px;
-    height: 30px;
+    right: 15px;
+    margin-top: -28vh;
     position: absolute;
-    text-align: center;
-    margin-top: -195px;
+    background-color: #F8FF13;
+    padding: 10px;
+    display: block;
+    width: 35px;
     cursor: pointer;
-    font-size: 18px;
-    font-weight: 400;
+    z-index: 1;
 }
 
 .extraOddsBody {
