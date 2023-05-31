@@ -1315,7 +1315,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             // noticeDownHeader.style.display = 'none'
             footer.style.marginTop = "0vh"
-            clients.style.marginTop = "140vh"
+            clients.style.marginTop = "150vh"
 
 
 
