@@ -97,9 +97,7 @@ const closePopUpCustomer = document.querySelector(".customerCancel2");
 //    Start deposite & withdrwal js
 
 const depositeapplication1 = document.querySelector(".depositeapplication1");
-const withdrawldetailscontainer = document.querySelector(
-  ".withdrawldetailscontainer"
-);
+const withdrawldetailscontainer = document.querySelector(".withdrawldetailscontainer");
 const closeicone1 = document.querySelector(".closeiconeee");
 const NoticeWrapper2 = document.querySelector(".NoticeWrapper2");
 const mainHeaderBtn1 = document.querySelector(".mainHeaderBtn1");
