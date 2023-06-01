@@ -3244,7 +3244,7 @@ border-right: 1px solid #1e242c; */
         position: fixed;
         /* top: 20vh; */
         /* position: absolute; */
-        top: 40%;
+        top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
@@ -3256,7 +3256,7 @@ border-right: 1px solid #1e242c; */
         position: fixed;
         /* top: 20vh; */
         /* position: absolute; */
-        top: 40%;
+        top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
