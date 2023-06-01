@@ -63,7 +63,7 @@ body {
 
 /* start deposite&withdrwal css */
 .checkboxwithin {
-    width: 70%;
+    width: 90%;
     height: auto;
     background-color: #303A46;
     position: absolute;
@@ -173,7 +173,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #F8FF13;
+    color: white;
     cursor: pointer;
 }
 
@@ -435,6 +435,7 @@ body {
     .holdingsbtn1 {
         position: absolute;
         left: 20px;
+        z-index: -1;
     }
 
     /* .crosscheck {
@@ -5123,5 +5124,10 @@ div#Titleval {
 @media(max-width:350px){
     .withdrawText{
         font-size: 8px !important;
+    }
+}
+@media(max-width:400px){
+    .dispIcon {
+        font-size: 10px !important;
     }
 }
