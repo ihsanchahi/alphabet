@@ -97,6 +97,8 @@ const closePopUpCustomer = document.querySelector(".customerCancel2");
 //    Start deposite & withdrwal js
 
 const depositeapplication1 = document.querySelector(".depositeapplication1");
+const deposit111 = document.querySelector(".deposit111");
+
 const withdrawldetailscontainer = document.querySelector(
   ".withdrawldetailscontainer"
 );
@@ -277,6 +279,14 @@ deletebox.addEventListener("click", function () {
 
 depositeapplication1.addEventListener("click", function () {
   withdrawldetailscontainer.style.display = "block";
+  // mainHeaderBtn1.classList.add('active')
+  
+  // mainHeaderBtn2.classList.add('depositeActive')
+
+  // mainHeaderBtn1.classList.remove('depositeActive')
+});
+deposit111.addEventListener("click", function () {
+  withdrawldetailscontainer.style.display = "none";
   // mainHeaderBtn2.classList.add('depositeActive')
 
   // mainHeaderBtn1.classList.remove('depositeActive')
