@@ -3695,13 +3695,13 @@ border-right: 1px solid #1e242c; */
 .depositeCancel {
     position: absolute;
     right: 15px;
-    margin-top: -36vh;
+    margin-top: -31vh;
     background-color: #F8FF13;
     padding: 10px;
     display: block;
     width: 35px;
     cursor: pointer;
-    z-index: 2;
+    /* z-index: 2; */
 }
 
 .depositeCancel1 {
