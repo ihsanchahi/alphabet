@@ -151,11 +151,11 @@ const checkbtn6 = document.querySelector(".checkbtn6");
 const withdrwalposition = document.querySelector(".withdrwalposition");
 const withdrawlbtn = document.querySelector(".withdrawlbtn");
 const backwithdrawbtn = document.querySelector(".backwithdrawbtn");
-const depositeCancel = document.querySelector(".depositeCancel");
+// const depositeCancel = document.querySelector(".depositeCancel");
 
-depositeCancel.addEventListener("click", function () {
-  withdrawaldrop.style.display = "none";
-});
+// depositeCancel.addEventListener("click", function () {
+//   withdrawaldrop.style.display = "none";
+// });
 
 backwithdrawbtn.addEventListener("click", function () {
   withdrawldetailscontainer.style.display = "none";

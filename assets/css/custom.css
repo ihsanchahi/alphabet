@@ -3251,7 +3251,7 @@ border-right: 1px solid #1e242c; */
 
     .withdrawaldrop {
         font-size: 14px;
-        width: 50%;
+        width: 51%;
         z-index: 2;
         position: fixed;
         /* top: 20vh; */
@@ -3352,7 +3352,7 @@ border-right: 1px solid #1e242c; */
 
     .withdrawaldrop {
         font-size: 14px;
-        width: 75%;
+        width: 76%;
         z-index: 2;
         position: fixed;
         /* top: 20vh; */
@@ -3445,7 +3445,7 @@ border-right: 1px solid #1e242c; */
 
     .withdrawaldrop {
         font-size: 14px;
-        width: 75%;
+        width: 76%;
         z-index: 2;
         /* position: fixed; */
         /* top: 20vh; */
@@ -3569,19 +3569,19 @@ border-right: 1px solid #1e242c; */
         /* position: fixed; */
         /* top: 20vh; */
         /* position: absolute; */
-        top: 40%;
+        top: 52%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
 
     .withdrawaldrop {
         font-size: 14px;
-        width: 75%;
+        width: 76%;
         z-index: 2;
         /* position: fixed; */
         /* top: 20vh; */
         /* position: absolute; */
-        top: 40%;
+        top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
@@ -3625,7 +3625,7 @@ border-right: 1px solid #1e242c; */
     }
 
     .withdrawaldrop {
-        width: 70%;
+        width: 71%;
         z-index: 2;
     }
 }
@@ -3695,7 +3695,7 @@ border-right: 1px solid #1e242c; */
 .depositeCancel {
     position: absolute;
     right: 15px;
-    margin-top: -31vh;
+    margin-top: -31vh !important;
     background-color: #F8FF13;
     padding: 10px;
     display: block;
