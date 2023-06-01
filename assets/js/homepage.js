@@ -97,7 +97,9 @@ const closePopUpCustomer = document.querySelector(".customerCancel2");
 //    Start deposite & withdrwal js
 
 const depositeapplication1 = document.querySelector(".depositeapplication1");
-const withdrawldetailscontainer = document.querySelector(".withdrawldetailscontainer");
+const withdrawldetailscontainer = document.querySelector(
+  ".withdrawldetailscontainer"
+);
 const closeicone1 = document.querySelector(".closeiconeee");
 const NoticeWrapper2 = document.querySelector(".NoticeWrapper2");
 const mainHeaderBtn1 = document.querySelector(".mainHeaderBtn1");
@@ -127,52 +129,38 @@ const WithdrawlApplicationformbtn = document.querySelector(
 );
 const Depositebtn = document.querySelector(".Depositebtn");
 // const backwithdrawbtn = document.querySelector(".backwithdrawbtn")
-const withdrawnonshow = document.querySelector(".withdrawnonshow")
-const showcheckbox = document.querySelector(".showcheckbox")
-const checkbox3 = document.querySelector(".checkbox3")
-const deepositactivebtn = document.querySelector(".deepositactivebtn")
-const holdingsbtn1 = document.querySelector(".holdingsbtn1")
-const holingsbox = document.querySelector(".holingsbox")
-const holdingclose1 = document.querySelector(".holdingclose1")
-const holdingsbtn2 = document.querySelector(".holdingsbtn2")
-const holingsbox2 = document.querySelector(".holingsbox2")
-const holdingclose2 = document.querySelector(".holdingclose2")
-const noticeBtn = document.querySelector(".noticeBtn")
-const crosscheck = document.querySelector(".crosscheck")
-const checkbtn5 = document.querySelector(".checkbtn5")
-const applicationbtn = document.querySelector(".applicationbtn")
-const notbtn = document.querySelector(".notbtn")
-const checkboxwithin = document.querySelector(".checkboxwithin")
-const yesthisbtn = document.querySelector(".yesthisbtn")
-const crosscheck12 = document.querySelector(".crosscheck12")
-const checkbtn6 = document.querySelector(".checkbtn6")
-const withdrwalposition = document.querySelector(".withdrwalposition")
-const withdrawlbtn = document.querySelector(".withdrawlbtn")
-const backwithdrawbtn = document.querySelector(".backwithdrawbtn")
-const depositeCancel = document.querySelector(".depositeCancel")
-const cloaebtbndeposite = document.querySelector(".cloaebtbndeposite")
-const depositebtn = document.querySelector(".depositebtn")
-const demo = document.querySelector("#demo")
-const depositeCancel1 = document.querySelector(".depositeCancel1")
+const withdrawnonshow = document.querySelector(".withdrawnonshow");
+const showcheckbox = document.querySelector(".showcheckbox");
+const checkbox3 = document.querySelector(".checkbox3");
+const deepositactivebtn = document.querySelector(".deepositactivebtn");
+const holdingsbtn1 = document.querySelector(".holdingsbtn1");
+const holingsbox = document.querySelector(".holingsbox");
+const holdingclose1 = document.querySelector(".holdingclose1");
+const holdingsbtn2 = document.querySelector(".holdingsbtn2");
+const holingsbox2 = document.querySelector(".holingsbox2");
+const holdingclose2 = document.querySelector(".holdingclose2");
+const noticeBtn = document.querySelector(".noticeBtn");
+const crosscheck = document.querySelector(".crosscheck");
+const checkbtn5 = document.querySelector(".checkbtn5");
+const applicationbtn = document.querySelector(".applicationbtn");
+const notbtn = document.querySelector(".notbtn");
+const checkboxwithin = document.querySelector(".checkboxwithin");
+const yesthisbtn = document.querySelector(".yesthisbtn");
+const crosscheck12 = document.querySelector(".crosscheck12");
+const checkbtn6 = document.querySelector(".checkbtn6");
+const withdrwalposition = document.querySelector(".withdrwalposition");
+const withdrawlbtn = document.querySelector(".withdrawlbtn");
+const backwithdrawbtn = document.querySelector(".backwithdrawbtn");
+const depositeCancel = document.querySelector(".depositeCancel");
 
-
-depositeCancel1.addEventListener("click", function () {
+depositeCancel.addEventListener("click", function () {
   withdrawaldrop.style.display = "none";
-  depositeDrop.style.display = 'none';
 });
 
-
-backwithdrawbtn.addEventListener("click",function(){
-    withdrawldetailscontainer.style.display = "none";
-    withdrawnonshow.style.display = "none";       
-})
-withdrwalposition.addEventListener("click",function(){
-    withdrawaldrop.style.position = "fixed"; 
-})
-// backwithdrawbtn.addEventListener("click", function () {
-//   withdrawldetailscontainer.style.display = "none";
-//   withdrawnonshow.style.display = "none";
-// });
+backwithdrawbtn.addEventListener("click", function () {
+  withdrawldetailscontainer.style.display = "none";
+  withdrawnonshow.style.display = "none";
+});
 
 withdrwalposition.addEventListener("click", function () {
   withdrawaldrop.style.position = "fixed";
@@ -1087,7 +1075,7 @@ function initApp() {
         </div>
 
     </div>
-    <div class="gameCol2  betodsdsd">
+    <div class="gameCol2">
         <div class="betOdds" id="${indx}-${key}-1-1-wl">${val.bets[0]} </div>
         <div class="betOdds" id="${indx}-${key}-1-2-wl">${val.bets[1]}</div>
         <div class="betOdds" id="${indx}-${key}-1-3-wl">${val.bets[2]}</div>
@@ -1182,8 +1170,8 @@ function initApp() {
   // console.log(handiOdds)
   // handiOdds.addEventListener('click', selectOdds);
 }
-{/* <p>ali gohar</p> */}
 initApp();
+
 const bankpop = document.querySelector(".bankpop")
 const closebtndeposite = document.querySelector(".closebtndeposite")
 const bankpop1 = document.querySelector(".bankpop1")
@@ -1197,26 +1185,27 @@ closebtndeposite1.addEventListener("click",function(){
     bankpop1.style.display = "none";
 })
 function myget(i){
-    if(i =="Bank"){
-        console.log("Bank");
-        bankpop.style.display = "block";
-        bankpop.style.display = "flex";
-    }
-    else if(i == "Khalti"){
-        console.log("Khalti");
-        bankpop1.style.display = "block";
-        bankpop1.style.display = "flex";
-    }
- }
- function bankpage(i){
-      if(i == "Bank"){
-        mainbankfieldcontainer.style.display = "block";
-      }
-      else{
-        mainbankfieldcontainer.style.display = "none";
-        
-      }
- }
+  if(i =="Bank"){
+      console.log("Bank");
+      bankpop.style.display = "block";
+      bankpop.style.display = "flex";
+  }
+  else if(i == "Khalti"){
+      console.log("Khalti");
+      bankpop1.style.display = "block";
+      bankpop1.style.display = "flex";
+  }
+}
+function bankpage(i){
+  if(i == "Bank"){
+    mainbankfieldcontainer.style.display = "block";
+  }
+  else{
+    mainbankfieldcontainer.style.display = "none";
+    
+  }
+}
+
 function addToCard(key) {
   if (listCards[key] == null) {
     listCards[key] = products[key];
@@ -1370,13 +1359,6 @@ function setActiveOdd(button) {
 }
 
 function setActiveOdd2(button) {
-    // remove active class from all buttons
-    // const buttons = document.querySelectorAll('.betOdds')
-    // const buttons2 = document.querySelectorAll('.handiOdds')
-    // const buttons3 = document.querySelectorAll('.ouOdds')
-    buttons.forEach(btn => btn.classList.remove('betActive'));
-    buttons2.forEach(btn => btn.classList.remove('betActive'));
-    buttons3.forEach(btn => btn.classList.remove('betActive'));
   // remove active class from all buttons
   const buttons = document.querySelectorAll(".betOdds");
 
@@ -2240,95 +2222,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
       });
     });
-    betOdds.forEach(function(betOdds) {
-        betOdds.addEventListener('click', function(event) {
-            // Toggle the 'button-active' class on the clicked button element
-            setActiveOdd(event.target);
-            const gameIndex = event.target.id.split('-')[0]
-            const leagueIndex = event.target.id.split('-')[1]
-            const sameOdd = gameIndex + leagueIndex + event.target.id.split('-')[2]
-            const oddIndex = event.target.id.split('-')[3]
-
-
-            const teamName = oddIndex == 1 ? soccerData[leagueIndex].League.Game[gameIndex].home : oddIndex == 3 ? soccerData[leagueIndex].League.Game[gameIndex].away : 'draw';
-            const leagueName = soccerData[leagueIndex].League.leagueName;
-            const leagueLogo = soccerData[leagueIndex].League.leagueFlag;
-            const fullGame = soccerData[leagueIndex].League.Game[gameIndex].home + ' vs ' + soccerData[leagueIndex].League.Game[gameIndex].away;
-            const matchType = '1x2';
-            const matchTime = 'Prematch';
-            const selectedOdd = betOdds.textContent
-
-            const id = gameIndex + leagueIndex + sameOdd + oddIndex + event.target.id.split('-')[4]
-            const uniqueIndex = gameIndex + leagueIndex + event.target.id.split('-')[4]
-            // console.log(selectedOdd)
-            let newObject = {
-
-                id: id, // generate unique id 
-                sameOdd: uniqueIndex,
-                leagueLogo: leagueLogo,
-                leagueName: leagueName,
-                odds: selectedOdd,
-                teamName: teamName,
-                fullGame: fullGame,
-                matchType: matchType,
-                matchTime: matchTime
-            };
-            // console.log('unq', uniqueIndex)
-
-            let popup = document.querySelector('.limitPopUp')
-            let totalOdds = selectedOdd;
-
-            dataArray.forEach((value, key) => {
-                totalOdds = totalOdds * parseFloat(value.odds);
-            });
-
-            if (totalOdds < 100) {
-                popup.style.display = 'none'
-                if (dataArray.some(obj => obj.sameOdd === uniqueIndex)) {
-                    dataArray = dataArray.filter(obj => obj.sameOdd !== uniqueIndex);
-                    dataArray.push(newObject)
-                } else {
-                    dataArray.push(newObject)
-                }
-            } else {
-                popup.style.display = 'flex'
-            }
-
-
-            // if (dataArray.some(obj => obj.sameOdd === sameOdd)) {
-            //     dataArray = dataArray.filter(obj => obj.sameOdd !== sameOdd)
-            //     dataArray.push(newObject)
-            // }
-
-
-            reloadCard();
-            // push the new object into the array
-            console.log(dataArray)
-            // const exitLogo = document.querySelectorAll('.exitLogo')
-            // exitLogo.forEach((exit) => {
-            //     exit.addEventListener('click', (event) => {
-            //         let index = event.target.parentNode.id;
-            //         dataArray.splice(index, 1)
-            //         reloadCard();
-            //         console.log(dataArray)
-            //     })
-            // })
-
-
-
-        });
-    });
-    
-    extraOdd.forEach(function(extraOdd) {
-        extraOdd.addEventListener('click', function(event) {
-            // Toggle the 'button-active' class on the clicked button element
-            extraOdd.classList.toggle('betActive')
-            let id = event.target.id.split('-').join('')
-            setActiveButton(id)
-        });
-    });
   });
-
   extraOdd.forEach(function (extraOdd) {
     extraOdd.addEventListener("click", function (event) {
       // Toggle the 'button-active' class on the clicked button element
