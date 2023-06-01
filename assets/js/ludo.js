@@ -527,6 +527,8 @@ function reloadCard() {
   const diceBtn = document.querySelector('.diceGenerator')
    diceBtn.addEventListener('click',
    function() {             
+       oddsFooter.scrollBy(50,0);
+       oddsFooter2.scrollBy(50,0);
         var randomNumber = Math.floor(Math.random() * 6) + 1;
         var dice = document.querySelector('.dice')
         dice.innerHTML = `
