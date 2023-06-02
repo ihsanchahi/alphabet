@@ -153,18 +153,18 @@ const checkbtn6 = document.querySelector(".checkbtn6");
 const withdrwalposition = document.querySelector(".withdrwalposition");
 const withdrawlbtn = document.querySelector(".withdrawlbtn");
 const backwithdrawbtn = document.querySelector(".backwithdrawbtn");
-const unfoldAll = document.querySelector(".unfoldAll");
-const showDiv = document.querySelector(".showDiv");
+// const unfoldAll = document.querySelector(".unfoldAll");
+// const showDiv = document.querySelector(".showDiv");
 
-// const depositeCancel = document.querySelector(".depositeCancel");
+// // const depositeCancel = document.querySelector(".depositeCancel");
 
-// depositeCancel.addEventListener("click", function () {
-//   withdrawaldrop.style.display = "none";
+// // depositeCancel.addEventListener("click", function () {
+// //   withdrawaldrop.style.display = "none";
+// // });
+// unfoldAll.addEventListener("click", function () {
+//   // showDiv.style.display = "none";
+//   showDiv.classList.add("hideAll");
 // });
-unfoldAll.addEventListener("click", function () {
-  // showDiv.style.display = "none";
-  showDiv.classList.add("hideAll");
-});
 backwithdrawbtn.addEventListener("click", function () {
   withdrawldetailscontainer.style.display = "none";
   withdrawnonshow.style.display = "none";
