@@ -70,6 +70,11 @@ body {
     justify-content: space-between;
     padding: 60px;
 }
+@media (max-width:768px){
+    .customContainer{
+        display: none;
+    }
+}
 
 .form {
     background: rgb(31, 38, 47);
@@ -345,12 +350,12 @@ textarea {
 }
 
 .savedCred {
-    padding: 5;
+    padding: 0px 20px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     background-color: #F8FF13 !important;
-    width: 80%;
+    width: 95%;
     height: 70px;
 }
 
@@ -392,7 +397,7 @@ textarea {
 }
 
 .blueFont {
-    color: white;
+    color: black;
 }
 
 .credUsername {
@@ -408,23 +413,25 @@ textarea {
 
 /* Styles for small screens (up to 576px) */
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
     /* Add additional styles as needed */
     .credUsername {
-        border: none;
+        border-right: 1px solid rgb(41, 41, 41);
+
         width: 50%;
     }
     .credPassword {
         width: 50%;
         color: black;
+        margin-left: 3vh;
     }
     .savedCred {
-        padding: 10;
+        padding: 0px 20px;
         display: flex;
         justify-content: center;
         align-items: center;
         background-color: #F8FF13 !important;
-        width: 80%;
+        width: 95%;
         height: 70px;
     }
 }
