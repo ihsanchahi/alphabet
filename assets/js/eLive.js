@@ -37,6 +37,18 @@ const changepopup1 = document.querySelector(".changepopupsportslive1")
 const attandececontainer = document.querySelector(".attandececontainer")
 const closeicone = document.querySelector(".closeicone")
 const sliderMenu1  = document.querySelector(".sliderMenu ")
+const selectLeaguePopUp = document.querySelector('.selectLeaguePopUp');
+const openLeague = document.querySelector('.openLeague');
+const leaguePopupCancel = document.querySelector('.leaguePopupCancel');
+
+
+openLeague.addEventListener('click', () => {
+    selectLeaguePopUp.style.display = 'inline'
+});
+leaguePopupCancel.addEventListener('click', () => {
+    selectLeaguePopUp.style.display = 'none'
+});
+
 
 custompopupcontainer.style.display = "none";
  openpopup.addEventListener("click",function(){

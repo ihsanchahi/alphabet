@@ -11,24 +11,27 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200;300;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/event.css">
-    <link rel="stylesheet" href="assets/css/overall.css">
+    <link rel="stylesheet" href="assets/css/miniGame.css">
     <link rel="stylesheet" href="assets/css/extended.css">
-    <link rel="stylesheet" href="assets/css/messages.css">
+    <link rel="stylesheet" href="assets/css/overall.css">
     <link rel="stylesheet" href="assets/css/pagination.css">
-    <link rel="stylesheet" href="assets/css/promo.css">
-    <link rel="stylesheet" href="matchhistory.css">
-    <title>Match History</title>
+    <link rel="stylesheet" href="assets/css/messages.css">
+    <link rel="stylesheet" href="assets/css/clients.css">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    
+    <title>Mini Games</title>
 </head>
 
 <body>
+
     <nav class="navbar navbar-expand-lg bg-body-tertiary customNav sticky-top">
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNav"
                 aria-controls="offcanvasNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navBarToggler"><i class="bi bi-list"></i></span>
             </button>
-            <a class="navbar-brand" href="#"><img src="assets/images/logo (1).png" class="d-inline-block align-text-top"
+            <a class="navbar-brand" href="#"><img src="assets/images/logo (1).png" class="d-inline-block align-text-top logo-img"
                     width="200" height="23" style="margin-left:7%;"></a>
             <div class="nav-item mx-2 ms-auto me-2 half-top order-lg-last " style="list-style-type: none">
                 <a class="nav-link customUl loginBtn" href="#"><i class="bi bi-person"
@@ -191,14 +194,12 @@
     </nav>
     <div class="bodyWrapper">
         <div class="sliderMenuBackDrop">
-
         </div>
         <div class="my-backdrop0">
             <div class="NoticeWrapper">
                 <div class="noticeBody" id="msgBody">
                     <div class="noticeCancel" id="msgCancel">
                         <i class="bi bi-x-lg " style="color: black;"></i>
-
                     </div>
                     <div class="noticeHeader">
                         <div class="noticeUpHeader fontBlue">
@@ -209,15 +210,13 @@
                             <div class="noticeBtn">Delete selected messages</div>
                         </div>
                     </div>
-
-
                 </div>
 
             </div>
         </div>
-        <div class="my-backdrop depositeDrop">
 
-            <div class="NoticeWrapper">
+          <div class="my-backdrop2 depositeDrop">
+            <div class="NoticeWrapper2">
                 <div class="noticeBodyNew">
                     <div class="depositeCancel">
                         <i class="bi bi-x-lg " style="color: black;"></i>
@@ -228,13 +227,84 @@
                             <div class="depositeUpHeader1 depositeActive ">Deposite</div>
                             <div class="depositeUpHeader2">Withdrawl</div>
                         </div>
-
+                         <div class="depositebox">
+                               <div class="depositeapplication">Deposit Application</div>
+                               <div class="depositeapplication  depositeapplication1">Withdrawl details</div>
+                         </div>
                     </div>
+
+
+                      <div class="withdrawldetailscontainer">
+                          <div class="closeicone" onclick="location.reload()">X</div>
+                          <div class="noticeHeader">
+                            <div class="depositeUpHeader fontBlue">
+                                <div class="depositeUpHeader1">Deposite</div>
+                                <div class="depositeUpHeader2 depositeActive">Withdrawl</div>
+                            </div>
+                             <div class="depositebox">
+                                   <div class="depositeapplication">Deposit Application</div>
+                                   <div class="depositeapplication  depositeapplication1 depositeUpHeader10">Withdrawl details</div>
+                             </div>
+                        </div>
+                        <div class="headerItem">
+                            <div class="hd1">Select</div>
+                            <div class="hd2">Date</div>
+                            <div class="hd3">Type</div>
+                            <div class="hd4">Amount</div>
+                            <div class="hd5">Status</div>
+                        </div>
+                             <div class="nodatabox">
+                                 <p>No data</p>
+                             </div>
+                               <div class="deletebox">
+                                 <p>Delete Slection details</p>
+                               </div>
+                                   <div class="questionmarkbox">
+                                    <img src="./assets/images/questionMark.png" width="100" height="100" />
+                                    <p>Are you sure you want to delete your selections?</p>
+                                    <div class="buttongroups">
+                                        <button class="yesbtn">yes</button>
+                                        <button class="nobtn">No</button>
+                                       </div>
+                                   </div>
+
+                                   <div class="checkbox">
+                                    <div class="circlebox">X</div>
+                                    <p>Are you sure you want to delete your selections?</p>
+                                    <div class="buttongroups">
+                                        <button class="checkbtn">check</button>
+                                       </div>
+                                   </div>
+                                   
+                               <div class="pagination  pagination2">
+                                <div class="pageLeft">
+                                    <div class="pageLimiter">
+                                        <select name="oddsType" class="selectOptions2" id="mini1">
+                                            <option value="10">10</option>
+                                            <option value="20">20</option>
+                                            <option value="30">30</option>
+                                        </select>
+                                    </div>
+    
+                                </div>
+                                <div class="pageRight">
+                                    <div class="pageNo" id="miniPN1">1</i>
+                                    </div>
+                                    <div class="pageController">
+                                        <div class="pLeft " id="lbtn1"><i class="bi bi-chevron-left chevronLogo "></i></div>
+                                        <div class="pLeft" id="rbtn1"><i class="bi bi-chevron-right chevronLogo"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                      </div>
+
+
                     <div class="depositeItem depositeBill">
                         <div class="menuItem">
                             <div class="dispIcon specDisp">Type</div>
                             <div class="dispIcon">
-                                <select name="options" id="" class="selectOptions">
+                                <select name="options" id="" class="selectOptions2">
                                     <option value="">Cash</option>
                                     <option value="">Bitcoin</option>
                                     <option value="">Wireless</option>
@@ -252,7 +322,7 @@
                         </div>
                         <div class="menuItem">
                             <div class="dispIcon specDisp">Apply for Bonus</div>
-                            <div class="dispIcon"> <select name="options" id="" class="selectOptions">
+                            <div class="dispIcon"> <select name="options" id="" class="selectOptions2">
                                     <option value="">Cash</option>
                                     <option value="">Bitcoin</option>
                                     <option value="">Wireless</option>
@@ -261,7 +331,8 @@
                         <div class="depositeBtn2">
                             <div class="noticeBtn">Deposite Bill</div>
                         </div>
-                        <div class="depositeHistory">
+
+                        <!-- <div class="depositeHistory">
                             <div class="historyHeader">Deposite History</div>
                             <div class="headerItem">
                                 <div class="hd1">Select</div>
@@ -284,13 +355,15 @@
                                 <div class="hd4">30,000</div>
                                 <div class="hd5 fontRed">Rejected</div>
                             </div>
-                        </div>
+                        </div> -->
+
                     </div>
 
                 </div>
 
             </div>
         </div>
+        
         <div class="my-backdrop2 depositeDrop">
             <div class="NoticeWrapper2">
                 <div class="noticeBodyNew">
@@ -336,7 +409,8 @@
                         <div class="depositeBtn2">
                             <div class="noticeBtn">Deposite Bill</div>
                         </div>
-                        <div class="depositeHistory">
+                        </div>
+                        <!-- <div class="depositeHistory">
                             <div class="historyHeader">Deposite History</div>
                             <div class="headerItem">
                                 <div class="hd1">Select</div>
@@ -359,6 +433,132 @@
                                 <div class="hd4">30,000</div>
                                 <div class="hd5 fontRed">Rejected</div>
                             </div>
+                        </div> -->
+
+                    <!-- </div> -->
+
+                </div>
+
+            </div>
+
+            
+        </div>
+        <div class="my-backdrop3 historyDrop">
+            <div class="NoticeWrapper2" style="width: 80%;">
+                <div class="noticeBodyNew">
+                    <div class="historyCancel">
+                        <i class="bi bi-x-lg " style="color: black;"></i>
+
+                    </div>
+                    <div class="noticeHeader">
+                        <div class="historyUpHeader fontBlue">
+                            <!-- <div class="historyUpHeader1 depositeActive ">1x2</div>
+                            <div class="historyUpHeader2  ">Handicap</div>
+                            <div class="historyUpHeader3  ">Under/Over</div>
+                            <div class="historyUpHeader4">Live</div> -->
+                            Match History
+                        </div>
+
+                    </div>
+
+                    <div class="depositeItem depositeBill">
+                        <div class="matchhistorybtns">
+                            <button>1X2</button>
+                            <button>Handicap</button>
+                            <button>Under/Over</button>
+                            <button>Special</button>
+                            <button>Live</button>
+                        </div>
+
+                        <div class="depositeHistory">
+                            <table class="table table-bordered"
+                                style="width: 100%; text-align: center; border: #394552;">
+                                <thead>
+                                    <tr>
+                                        <th style="width: 15%; text-align: center;" scope="col">Time</th>
+                                        <th style="width: 16%; text-align: center;" scope="col">Type</th>
+                                        <th style="width: 20%;" scope="col">Home/Under</th>
+                                        <th style="width: 10%;" scope="col">Draw</th>
+                                        <th style="width: 20%;" scope="col">Away/Over</th>
+                                        <th style="width: 10%" scope="col">Score</th>
+                                        <th style="width: 5%;" scope="col">Result</th>
+                                    </tr>
+                                </thead>
+
+                                <tr class="rowcenter">
+                                    <td style="color: gray;">
+                                        <div class="hd1s">2023-03-18
+                                            <div>
+                                                19:32:56</div>
+                                        </div>
+                                    </td>
+                                    <td style="margin-left: 200px;">Soccer</td>
+                                    <td style=" background-color: #F8FF13;">FC Barcelona</td>
+                                    <td style=" color:  white;">-0.5 <p
+                                            style="color: white; position: absolute; margin-left: 230px; margin-top: -20px;">
+                                        </p>
+                                    </td>
+                                    <td>-1.8</td>
+                                    <td>Real Madrid</td>
+                                    <td>2:1</td>
+                                    <!-- <td style="color: gray;">PROCEED</td> -->
+                                </tr>
+                            </table>
+                            <!-- <div class="headerItem" style="text-align: center;">
+                                <div class="hd1" style="margin-left: 10px;">Time</div>
+                                <div class="hd2" style="margin-left: 6px;">Type</div>
+                                <div class="hd3" style="margin-left: 10px;">Home/Under</div>
+                                <div class="hd4" style="margin-left: -10px;">Draw</div>
+                                <div class="hd5" style="margin-left: -10px;">Away/Over</div>
+                                <div class="hd5" style="margin-left: -10px;">Score</div>
+                                <div class="hd5">Result</div>
+                            </div> -->
+                            <!-- <div class="footerItem">
+                                <div class="hd1s">2023-03-18
+                                    <div>
+                                        19:32:56</div>
+                                </div>
+                                <div class="hd2">Soccer</div>
+                                <div class="hd3" style=" background-color: #F8FF13;">FC Barcelona</div>
+                                <div class="hd4">-0.5</div>
+                                <div class="hd4">-1.8</div>
+                                <div class="hd4">Real Madrid</div>
+                                <div class="hd4">2:1</div>
+                            </div> -->
+                            <!-- <div class="footerItem">
+                                <div class="hd1s">2023-03-18
+                                    <div>
+                                        19:32:56</div>
+                                </div>
+                                <div class="hd2">Soccer</div>
+                                <div class="hd3">FC Barcelona</div>
+                                <div class="hd4">-0.5</div>
+                                <div class="hd4">-1.8</div>
+                                <div class="hd4">Real Madrid</div>
+                                <div class="hd4">2:1</div>
+                            </div> -->
+
+                        </div>
+
+                        <div class="pagination">
+                            <div class="pageLeft">
+                                <div class="pageLimiter">
+                                    <select name="oddsType" class="selectOptions2" id="mini1">
+                                        <option value="10">10</option>
+                                        <option value="20">20</option>
+                                        <option value="30">30</option>
+                                    </select>
+                                </div>
+
+                            </div>
+                            <div class="pageRight">
+                                <div class="pageNo" id="miniPN1">1</i>
+                                </div>
+                                <div class="pageController">
+                                    <div class="pLeft " id="lbtn1"><i class="bi bi-chevron-left chevronLogo "></i></div>
+                                    <div class="pLeft" id="rbtn1"><i class="bi bi-chevron-right chevronLogo"></i></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
@@ -366,7 +566,6 @@
 
             </div>
         </div>
-
 
         <div class="my-backdrop4 infoDrop">
             <div class="NoticeWrapper2">
@@ -419,7 +618,7 @@
             <div class="NoticeWrapper2">
                 <div class="noticeBodyNew">
                     <div class="customerCancel1">
-                        <i class="bi bi-x-lg " style="color: black;"> </i>
+                        <i class="bi bi-x-lg " style="color: black;"></i>
 
                     </div>
                     <div class="noticeHeader">
@@ -617,303 +816,138 @@
                 </div>
             </div>
         </div>
-        <div class="my-backdrop7 historyDrop">
-            <div class="NoticeWrapper2">
-                <div class="noticeBodyNew">
-                    <div class="historyCancel" id="cancel7">
-                        <i class="bi bi-x-lg " style="color: black;"></i>
-
-                    </div>
-                    <div class="noticeHeader">
-                        <div class="historyUpHeader fontBlue">
-                            <!-- <div class="historyUpHeader1 depositeActive ">1x2</div>
-                            <div class="historyUpHeader2  ">Handicap</div>
-                            <div class="historyUpHeader3  ">Under/Over</div>
-                            <div class="historyUpHeader4">Live</div> -->
-                            Match History
-                        </div>
-
-                    </div>
-                    <div class="depositeItem depositeBill">
-
-                        <div class="depositeHistory">
-                            <!-- <div class="historyHeader">Deposite History</div> -->
-                            <div class="headerItem">
-                                <div class="hd2">Time</div>
-                                <div class="hd2">Bet Type</div>
-                                <div class="hd2">League</div>
-                                <div class="hd2">Home</div>
-                                <div class="hd2">Draw/Handicap</div>
-                                <div class="hd2">Away</div>
-                                <div class="hd2">Score</div>
-                                <div class="hd2">Result</div>
-                            </div>
-                            <div class="footerItem">
-                                <div class="hd1s hd2">2023-03-18
-                                    <div>
-
-                                        19:32:56</div>
-                                </div>
-                                <div class="hd2">Win</div>
-                                <div class="hd2">Premire League</div>
-                                <div class="hd2">Arsenal</div>
-                                <div class="hd2">-0.5</div>
-                                <div class="hd2">United</div>
-
-                                <div class="hd2">2:1</div>
-                                <div class="hd2 fontBlue">Lost</div>
-                            </div>
 
 
-                        </div>
-                    </div>
-                    <div class="pagination">
-                        <div class="pageLeft">
-                            <div class="pageLimiter">
-                                <select name="oddsType" class="selectOptions" id="mini1">
-                                    <option value="10">10</option>
-                                    <option value="20">20</option>
-                                    <option value="30">30</option>
-                                </select>
-                            </div>
-
-                        </div>
-                        <div class="pageRight">
-                            <div class="pageNo" id="miniPN1">1</i>
-                            </div>
-                            <div class="pageController">
-                                <div class="pLeft " id="lbtn1"><i class="bi bi-chevron-left chevronLogo "></i></div>
-                                <div class="pLeft" id="rbtn1"><i class="bi bi-chevron-right chevronLogo"></i></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="betInfo">
-                        <div class="betBtns">
-                            <div class="extraBtns">
-                                <div class="noticeBtn">Cancel Btn</div>
-                            </div>
-                            <div class="extraBtns">
-                                <div class="noticeBtn">Add Board</div>
-                            </div>
-                            <div class="extraBtns">
-                                <div class="noticeBtn">Add CS</div>
-                            </div>
-                        </div>
-                        <div class="additionalInfo">
-                            <div class="info1">Bet Time:
-
-                                <div class="answer1">
-                                    2023-03-18
-                                </div>
-                            </div>
-                            <div class="info1">Amount :
-                                <div class="answer1">
-                                    1,000
-                                </div>
-                            </div>
-                            <div class="info1">Ratio:
-                                <div class="answer1">
-                                    15.36
-                                </div>
-                            </div>
-                            <div class="info1">Win Prediction Amount :
-                                <div class="answer1">
-                                    15,360
-                                </div>
-                            </div>
-                            <div class="info1">Win Ratio:
-                                <div class="answer1">
-                                    0
-                                </div>
-                            </div>
-                            <div class="info1">Win Amount :
-                                <div class="answer1">
-                                    0
-                                </div>
-                            </div>
-                            <div class="info1">Status:
-                                <div class="answer1">
-                                    PROCEED
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-        </div>
-
-
-
-
-
-
-        <div class="column2" style="display: none !important;">
-            <div class="BoardnoticeWrapper">
-                <div class="boardBody">
-
-
-                </div>
-                <br>
-                <button class="btn btn-primary"
-                    style="background-color: #222a33; color: white; border: none; width: 100%;">See More</button>
-            </div>
-        </div>
         <div class="column4">
-            <div class="noticeViewWrapper" style="display: none !important;">
+            <div class="gamesWrapper">
+                <div class="gamesContainer">
 
+
+                </div>
             </div>
         </div>
+        
 
+        <div class="column3">
+            <div class="betSlip">
+                <div class="slipWrapper">
+                    <div class="slipHeaderWrapper">
+                        <div class="slipHeader">
+                            <div class="HeaderTop">Events</div>
 
-    </div>
-    <div class="matchHistory" style="margin-top: 50px;">
-        <div class="noticeBodyNew">
+                        </div>
+                        <div class="eventsWrapper">
+                            <div class="eventsBody">
+                                <div class="singleEvent">
+                                    <a href="event.html">
+                                        <img src="assets/images/event2.png" class="d-inline-block align-text-top"
+                                            width="310" height="105">
 
-            <div class="noticeHeader">
-                <div class="historyUpHeader fontBlue">
-                    Match Result History
+                                    </a>
+                                </div>
+                                <div class="singleEvent">
+                                    <a href="event.html">
+                                        <img src="assets/images/event3.png" class="d-inline-block align-text-top"
+                                            width="310" height="105">
+
+                                    </a>
+                                </div>
+                                <div class="singleEvent">
+                                    <a href="event.html">
+                                        <img src="assets/images/event4.png" class="d-inline-block align-text-top"
+                                            width="310" height="105">
+
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
 
                 </div>
-
             </div>
+        </div>
+    </div>
+ 
+    <section id="clients" class="clients" style="margin-top: 18vh !important;">
+        <div class="container" data-aos="fade-up">
 
-            <div class="depositeItem ">
-                <div class="matchhistorybuttons">
-                    <button id="btnHandi2" onclick="show1 ()">1X2</button>
-                    <button id="btnHandi1" onclick="show ()">Handicap</button>
-                    <button id="btnHandi3" onclick="show2 ()">Under/Over</button>
-                    <button id="btnHandi4" onclick="show3 ()">Special</button>
-                    <button id="btnHandi5" onclick="show4 ()">Live</button>
-                </div>
-
-
-                <div class="depositeHistory">
-                    <table class="table table-bordered" style="width: 100%; text-align: center; border: #394552;">
-                        <thead>
-                            <tr class="tableRow">
-                                <th style="width: 15%; text-align: center;" scope="col">Time</th>
-                                <th style="width: 16%; text-align: center;" scope="col">Type</th>
-                                <th style="width: 20%;" scope="col">Home/Under</th>
-                                <th style="width: 10%;" scope="col">Draw</th>
-                                <th style="width: 20%;" scope="col">Away/Over</th>
-                                <th style="width: 10%" scope="col">Score</th>
-                                <th style="width: 5%;" scope="col">Result</th>
-                            </tr>
-                        </thead>
-                    </table>
-                    <div id="handicap" style="display: none;">
-                        <p class="liga">Indonesia Liga 1</p>
-                        <div>
-                            <table class="table table-bordered"
-                                style="width: 100%; text-align: center; border: #394552;">
-                                <thead>
-                                    <tr>
-                                        <td class="tableData" style="width: 10%; text-align: center; font-weight: 400;"
-                                            scope="col">2023-02-13 19:19:47</td>
-                                        <td class="tableData" style="width: 10%; text-align: left; font-weight: 400;"
-                                            scope="col">soccers</td>
-                                        <td class="tableData"
-                                            style="width: 20%;height: 10px; text-align: left; font-weight: 400; background-color: #f8ff13; color: #000;"
-                                            scope="col;">PSM Makassar <span style="display: flex;
-                            justify-content: end; margin-top: -15px; color: #000;"> 2.00</span></td>
-                                        <td class="tableData" style="width: 10%; font-weight: 400;" scope="col">-0.5
-                                        </td>
-                                        <td class="tableData" style="width: 20%; text-align: left; font-weight: 400;"
-                                            scope="col">1.80 <span style="display: flex;
-                                justify-content: end; margin-top: -18px;">1.80PS Barito Putera</span></td>
-                                        <td class="tableData" style="width: 5%; font-weight: 400;" scope="col">2 : 1
-                                        </td>
-                                        <td class="tableData" style="width: 10% ;font-weight: 400" scope="col">Home</td>
-
-                                    </tr>
-                                </thead>
-                            </table>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="pagination">
-                    <div class="pageLeft">
-                        <div class="pageLimiter">
-                            <select name="oddsType" class="selectOptions2" id="mini1">
-                                <option value="10">10</option>
-                                <option value="20">20</option>
-                                <option value="30">30</option>
-                            </select>
-                        </div>
-
-                    </div>
-                    <div class="pageRight">
-                        <div class="pageNo" id="miniPN1">1</i>
-                        </div>
-                        <div class="pageController">
-                            <div class="pLeft " id="lbtn1"><i class="bi bi-chevron-left chevronLogo "></i></div>
-                            <div class="pLeft" id="rbtn1"><i class="bi bi-chevron-right chevronLogo"></i></div>
-                        </div>
-                    </div>
-                </div>
+            <div class="clients-slider swiper">
+                <div class="swiper-wrapper align-items-center">
+                    <div class="swiper-slide"><img src="assets/images/clients/client-1.png" class="img-fluid" alt=""
+                            title="Bread and Beyond"></div>
+                    <div class="swiper-slide"><img src="assets/images/clients/client-2.png" class="img-fluid" alt=""
+                            title="Blue Group of Companies"></div>
+                    <div class="swiper-slide"><img src="assets/images/clients/client-3.png" class="img-fluid" alt=""
+                            title="JWD Group"></div>
+                    <div class="swiper-slide"><img src="assets/images/clients/client-4.png" class="img-fluid" alt=""
+                            title="Kamal Zamindar Pvt Ltd"></div>
+                    <div class="swiper-slide"><img src="assets/images/clients/client-5.png" class="img-fluid" alt=""
+                            title="Pakistan Cricket Board Ltd"></div>
+                    <div class="swiper-slide"><img src="assets/images/clients/client-6.png" class="img-fluid" alt=""
+                            title="ZKB RELIABLE JV"></div>
+                    <div class="swiper-slide"><img src="assets/images/clients/client-7.png" class="img-fluid" alt=""
+                            title="Rays"></div>
+                    <div class="swiper-slide"><img src="assets/images/clients/client-8.png" class="img-fluid" alt=""
+                            title="Ihsan Cotton Product Pvt Ltd"></div>
+                    <!-- <div class="swiper-slide"><img src="assets/images/clients/client-9.png" class="img-fluid" alt="" title="Aerospace Baykee Pakistan"></div> -->
+                    <div class="swiper-slide"><img src="assets/images/clients/client-10.png" class="img-fluid" alt=""
+                            title="Baba Food Processing Co. Ltd"></div>
+                    <div class="swiper-slide"><img src="assets/images/clients/client-11.png" class="img-fluid" alt=""
+                            title="A.J Coperation"></div>
+                    <div class="swiper-slide"><img src="assets/images/clients/client-12.png" class="img-fluid" alt=""
+                            title="Dynamic Equipment & Controls Pvt Ltd"></div>
+                    <div class="swiper-slide"><img src="assets/images/clients/client-13-old.png" class="img-fluid" alt=""
+                            title="New Kings Packages"></div>
+                    <!-- <div class="swiper-slide"><img src="assets/images/clients/client-14.png" class="img-fluid" alt=""
+                            title="Chashma Sugar Mills"></div>
+                    <div class="swiper-slide"><img src="assets/images/clients/client-15.png" class="img-fluid" alt=""
+                            title="Simple Sufi"></div>
+                    <div class="swiper-slide"><img src="assets/images/clients/client-16.png" class="img-fluid" alt=""
+                            title="Dynamic Packaging"></div>
+                    <div class="swiper-slide"><img src="assets/images/clients/client-17.png" class="img-fluid" alt=""
+                            title="Dot Print Pvt Ltd"></div>
+                    <div class="swiper-slide"><img src="assets/images/clients/client-18.png" class="img-fluid" alt=""
+                            title="AL Khalifa Foods"></div>
+                    <div class="swiper-slide"><img src="assets/images/clients/client-19.png" class="img-fluid" alt=""
+                            title="Maria Zunnorain"></div>
+                    <div class="swiper-slide"><img src="assets/images/clients/client-20.png" class="img-fluid" alt=""
+                            title="Sindh Abadgarh Sugar Mills Ltd."></div>
+                    <div class="swiper-slide"><img src="assets/images/clients/client-21.png" class="img-fluid" alt=""
+                            title="Ashraf Sugar Mills Ltd"></div> -->
+                </div> 
+                <div class="swiper-pagination"></div>
+                <!-- <div class="text-center more-btn">
+                    <a href="clients.html" class="more-btn">More Clients <i class="bi bi-chevron-double-right"></i></a>
+                </div> -->
             </div>
 
         </div>
+    </section>
+    <div class="footer">
+        <div class="col-12 footer-content">
+            <img src="assets/images/logo (1).png" alt="logo">
+            <p>By accessing, continuing to use or navigating throughout this site you accept that we will use certain
+                browser cookies to improve your customer experience with us. </p>
+            <p>ALPHABET only uses cookies which will improve your experience with us and will not interfere with your
+                privacy.</p>
+            <p>COPYRIGHT (c) ALPHABET ALL RIGHTS RESERVED.</p>
+        </div>
     </div>
+
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         crossorigin="anonymous"></script>
 
-    <script src="assets/js/event.js"></script>
+    <script src="assets/js/casino.js"></script>
     <script src="assets/js/extended.js"></script>
     <script src="assets/js/messages.js"></script>
-    <script>
-        var a;
-        function show() {
-            document.getElementById("handicap").style.display = "inline"
-            document.getElementById("btnHandi1").classList.add('buttonClicks')
-            document.getElementById("btnHandi2").classList.remove('buttonClicks')
-            document.getElementById("btnHandi3").classList.remove('buttonClicks')
-            document.getElementById("btnHandi4").classList.remove('buttonClicks')
-            document.getElementById("btnHandi5").classList.remove('buttonClicks')
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
-        }
-        function show1() {
-            document.getElementById("handicap").style.display = "none"
-            document.getElementById("btnHandi1").classList.remove('buttonClicks')
-            document.getElementById("btnHandi2").classList.add('buttonClicks')
-            document.getElementById("btnHandi3").classList.remove('buttonClicks')
-            document.getElementById("btnHandi4").classList.remove('buttonClicks')
-            document.getElementById("btnHandi5").classList.remove('buttonClicks')
-
-        }
-        function show2() {
-            document.getElementById("handicap").style.display = "none"
-
-            document.getElementById("btnHandi1").classList.remove('buttonClicks')
-            document.getElementById("btnHandi2").classList.remove('buttonClicks')
-            document.getElementById("btnHandi3").classList.add('buttonClicks')
-            document.getElementById("btnHandi4").classList.remove('buttonClicks')
-            document.getElementById("btnHandi5").classList.remove('buttonClicks')
-        }
-        function show3() {
-            document.getElementById("handicap").style.display = "none"
-
-            document.getElementById("btnHandi1").classList.remove('buttonClicks')
-            document.getElementById("btnHandi2").classList.remove('buttonClicks')
-            document.getElementById("btnHandi3").classList.remove('buttonClicks')
-            document.getElementById("btnHandi4").classList.add('buttonClicks')
-            document.getElementById("btnHandi5").classList.remove('buttonClicks')
-        }
-        function show4() {
-            document.getElementById("handicap").style.display = "none"
-
-            document.getElementById("btnHandi1").classList.remove('buttonClicks')
-            document.getElementById("btnHandi2").classList.remove('buttonClicks')
-            document.getElementById("btnHandi3").classList.remove('buttonClicks')
-            document.getElementById("btnHandi4").classList.remove('buttonClicks')
-            document.getElementById("btnHandi5").classList.add('buttonClicks')
-        }
-    </script>
+    <script src="assets/js/client.js"></script>
 </body>
 
 </html>

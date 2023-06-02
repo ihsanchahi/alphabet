@@ -943,7 +943,7 @@
                 <div class="sortWrapper">
                     <div class="sortButtons d-flex justify-content-between">
                         <div class="d-flex">
-                            <div class="btn1 modal-header"><i class="bi bi-bookmark " style="color: black;"></i>Select
+                            <div class="btn1 openLeague"><i class="bi bi-bookmark " style="color: black;"></i>Select
                                 league</div>
                             <div class="btn2 active"><i class="bi bi-sort-down"></i>Sort time</div>
                             <div class="btn3"><i class="bi bi-sort-up"></i>Sort league</div>
@@ -955,7 +955,345 @@
                                 class="fa-solid fa-arrows-rotate" id="refresh-btn"></i>
                         </div>
                     </div>
-
+                    <!-- Select League PopUp Start -->
+                    <div id="infoDrop" class="selectLeaguePopUp" style="display: none; position: absolute;">
+                        <div class="NoticeWrapper2">
+                            <div class="noticeBodySelectLeague">
+                                <div class="leaguePopupCancel">
+                                    <i class="bi bi-x-lg " style="color: black;"></i>
+                                </div>
+                                <div class="input-group rounded mt-4">
+                                    <input type="search" class="form-control bg-dark border-0" placeholder="Search" aria-label="Search"
+                                        aria-describedby="search-addon" />
+                                    <span class="input-group-text border-0 bg-dark" id="search-addon">
+                                        <i class="fas fa-search"></i>
+                                    </span>
+                                </div>
+                                <div class="row mt-2">
+                                    <div class="col-2">
+                                        <a class="pt-2"
+                                            style="font-size: 12px;font-weight: 900; color: gray;text-decoration: none;cursor: pointer;">x
+                                            Uncheck all</a>
+                                    </div>
+                                    <div class="col-7">
+                                    </div>
+                                    <div class="col-3 text-end">
+                                        <button class="btn btn-primary border-0"
+                                            style="background: transparent; padding: 0%; font-size: 12px; font-weight: 700;color: gray;"
+                                            type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse"
+                                            aria-expanded="false" aria-controls="multiCollapseExample multiCollapseExample1">x Unfold
+                                            all</button>
+                                        <!-- <a class="pt-2" style="font-size: 12px;font-weight: 900; color: gray; text-decoration: none; cursor: pointer;" >x Unfold all</a> -->
+                                    </div>
+                                </div>
+                                <div class="slectlea">
+                                    <div class="selectLeague">
+                                        <p class="mt-2 d-flex justify-content-between">
+                                            <span style="font-size: 14px;
+                                            font-weight: 400;"><img src="assets/images/flags/england.png"
+                                                    style="width: 20px; height: auto;"> England</span>
+                
+                                            <i class="bi bi-chevron-down" onclick="myFunction()" style="cursor: pointer;"></i>
+                
+                                        </p>
+                                        <div id="myDIV" style="display: none;">
+                
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    &nbsp;<input type="checkbox"> League One
+                                                </div>
+                                                <div class="col-4">
+                                                    &nbsp;<input type="checkbox"> National League
+                                                </div>
+                                                <div class="col-4">
+                                                    &nbsp;<input type="checkbox"> Championship
+                                                </div>
+                                            </div>
+                                        </div>
+                
+                                    </div>
+                                    <div class="selectLeague">
+                                        <p class="mt-2 d-flex justify-content-between">
+                                            <span style="font-size: 14px;
+                                        font-weight: 400;"><img src="assets/images/flags/norway.png"
+                                                    style="width: 20px; height: auto;"> Norway</span>
+                                            <i class="bi bi-chevron-down" onclick="mFunction()" style="cursor: pointer;"></i>
+                
+                                        </p>
+                                        <div id="mDIV" style="display: none;">
+                
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    &nbsp;<input type="checkbox"> League One
+                                                </div>
+                                                <div class="col-4">
+                                                    &nbsp;<input type="checkbox"> National League
+                                                </div>
+                                                <div class="col-4">
+                                                    &nbsp;<input type="checkbox"> Championship
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="selectLeague">
+                                        <p class="mt-2 d-flex justify-content-between">
+                                            <span style="font-size: 14px;
+                                        font-weight: 400;"><img src="assets/images/flags/internation.png"
+                                                    style="width: 20px; height: auto;"> Internation</span>
+                                            <i class="bi bi-chevron-down" onclick="interFunction()" style="cursor: pointer;"></i>
+                
+                                        </p>
+                                        <div id="InterDIV" style="display: none;">
+                
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    &nbsp;<input type="checkbox"> League One
+                                                </div>
+                                                <div class="col-4">
+                                                    &nbsp;<input type="checkbox"> National League
+                                                </div>
+                                                <div class="col-4">
+                                                    &nbsp;<input type="checkbox"> Championship
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="selectLeague">
+                                        <p class="mt-2 d-flex justify-content-between">
+                                            <span style="font-size: 14px;
+                                        font-weight: 400;"><img src="assets/images/flags/france.png"
+                                                    style="width: 20px; height: auto;"> France</span>
+                                            <i class="bi bi-chevron-down" onclick="FranceFunction()" style="cursor: pointer;"></i>
+                
+                                        </p>
+                                        <div id="France" style="display: none;">
+                
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    &nbsp;<input type="checkbox"> League One
+                                                </div>
+                                                <div class="col-4">
+                                                    &nbsp;<input type="checkbox"> National League
+                                                </div>
+                                                <div class="col-4">
+                                                    &nbsp;<input type="checkbox"> Championship
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="selectLeague">
+                                        <p class="mt-2 d-flex justify-content-between">
+                                            <span style="font-size: 14px;
+                                        font-weight: 400;"><img src="assets/images/flags/denkmark.png"
+                                                    style="width: 20px; height: auto;"> Denmark</span>
+                                            <i class="bi bi-chevron-down" onclick="DenmarkFunction()" style="cursor: pointer;"></i>
+                
+                                        </p>
+                                        <div id="Denmark" style="display: none;">
+                
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    &nbsp;<input type="checkbox"> League One
+                                                </div>
+                                                <div class="col-4">
+                                                    &nbsp;<input type="checkbox"> National League
+                                                </div>
+                                                <div class="col-4">
+                                                    &nbsp;<input type="checkbox"> Championship
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="selectLeague">
+                                        <p class="mt-2 d-flex justify-content-between">
+                                            <span style="font-size: 14px;
+                                        font-weight: 400;"><img src="assets/images/flags/sweden.png"
+                                                    style="width: 20px; height: auto;"> Sweden</span>
+                                            <i class="bi bi-chevron-down" onclick="SwedenFunction()" style="cursor: pointer;"></i>
+                
+                                        </p>
+                                        <div id="Sweden" style="display: none;">
+                
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    &nbsp;<input type="checkbox"> League One
+                                                </div>
+                                                <div class="col-4">
+                                                    &nbsp;<input type="checkbox"> National League
+                                                </div>
+                                                <div class="col-4">
+                                                    &nbsp;<input type="checkbox"> Championship
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="selectLeague">
+                                        <p class="mt-2 d-flex justify-content-between">
+                                            <span style="font-size: 14px;
+                                        font-weight: 400;"><img src="assets/images/flags/iceland.png"
+                                                    style="width: 20px; height: auto;"> Iceland</span>
+                                            <i class="bi bi-chevron-down" onclick="IcelandFunction()" style="cursor: pointer;"></i>
+                
+                                        </p>
+                                        <div id="Iceland" style="display: none;">
+                
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    &nbsp;<input type="checkbox"> League One
+                                                </div>
+                                                <div class="col-4">
+                                                    &nbsp;<input type="checkbox"> National League
+                                                </div>
+                                                <div class="col-4">
+                                                    &nbsp;<input type="checkbox"> Championship
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                
+                                    <div class="selectLeague">
+                                        <p class="mt-2 d-flex justify-content-between">
+                                            <span style="font-size: 14px;
+                                        font-weight: 400;"><img src="assets/images/flags/hungry.png"
+                                                    style="width: 20px; height: auto;"> Hungary</span>
+                                            <i class="bi bi-chevron-down" onclick="HungaryFunction()" style="cursor: pointer;"></i>
+                
+                                        </p>
+                                        <div id="Hungary" style="display: none;">
+                
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    &nbsp;<input type="checkbox"> League One
+                                                </div>
+                                                <div class="col-4">
+                                                    &nbsp;<input type="checkbox"> National League
+                                                </div>
+                                                <div class="col-4">
+                                                    &nbsp;<input type="checkbox"> Championship
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="selectLeague">
+                                        <p class="mt-2 d-flex justify-content-between">
+                                            <span style="font-size: 14px;
+                                        font-weight: 400;"><img src="assets/images/flags/mex.png" style="width: 20px; height: auto;">
+                                                Mexico</span>
+                                            <i class="bi bi-chevron-down" onclick="MexicoFunction()" style="cursor: pointer;"></i>
+                
+                                        </p>
+                                        <div id="Mexico" style="display: none;">
+                
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    &nbsp;<input type="checkbox"> League One
+                                                </div>
+                                                <div class="col-4">
+                                                    &nbsp;<input type="checkbox"> National League
+                                                </div>
+                                                <div class="col-4">
+                                                    &nbsp;<input type="checkbox"> Championship
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="selectLeague">
+                                        <p class="mt-2 d-flex justify-content-between">
+                                            <span style="font-size: 14px;
+                                        font-weight: 400;"><img src="assets/images/flags/Brazil.png"
+                                                    style="width: 20px; height: auto;"> Brazil</span>
+                                            <i class="bi bi-chevron-down" onclick="BrazilFunction()" style="cursor: pointer;"></i>
+                
+                                        </p>
+                                        <div id="Brazil" style="display: none;">
+                
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    &nbsp;<input type="checkbox"> League One
+                                                </div>
+                                                <div class="col-4">
+                                                    &nbsp;<input type="checkbox"> National League
+                                                </div>
+                                                <div class="col-4">
+                                                    &nbsp;<input type="checkbox"> Championship
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="selectLeague">
+                                        <p class="mt-2 d-flex justify-content-between">
+                                            <span style="font-size: 14px;
+                                        font-weight: 400;"><img src="assets/images/flags/croatia.png"
+                                                    style="width: 20px; height: auto;"> Croatia</span>
+                                            <i class="bi bi-chevron-down" onclick="CroatiaFunction()" style="cursor: pointer;"></i>
+                
+                                        </p>
+                                        <div id="Croatia" style="display: none;">
+                
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    &nbsp;<input type="checkbox"> League One
+                                                </div>
+                                                <div class="col-4">
+                                                    &nbsp;<input type="checkbox"> National League
+                                                </div>
+                                                <div class="col-4">
+                                                    &nbsp;<input type="checkbox"> Championship
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="selectLeague">
+                                        <p class="mt-2 d-flex justify-content-between">
+                                            <span style="font-size: 14px;
+                                        font-weight: 400;"><img src="assets/images/flags/Repiblic.png"
+                                                    style="width: 20px; height: auto;"> Czech Republic</span>
+                                            <i class="bi bi-chevron-down" onclick="CzechFunction()" style="cursor: pointer;"></i>
+                
+                                        </p>
+                                        <div id="Czech" style="display: none;">
+                
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    &nbsp;<input type="checkbox"> League One
+                                                </div>
+                                                <div class="col-4">
+                                                    &nbsp;<input type="checkbox"> National League
+                                                </div>
+                                                <div class="col-4">
+                                                    &nbsp;<input type="checkbox"> Championship
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="selectLeague">
+                                        <p class="mt-2 d-flex justify-content-between">
+                                            <span style="font-size: 14px;
+                                        font-weight: 400;"><img src="assets/images/flags/Asreria.png"
+                                                    style="width: 20px; height: auto;">Austria</span>
+                                            <i class="bi bi-chevron-down" onclick="AustriaFunction()" style="cursor: pointer;"></i>
+                
+                                        </p>
+                                        <div id="Austria" style="display: none;">
+                
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    &nbsp;<input type="checkbox"> League One
+                                                </div>
+                                                <div class="col-4">
+                                                    &nbsp;<input type="checkbox"> National League
+                                                </div>
+                                                <div class="col-4">
+                                                    &nbsp;<input type="checkbox"> Championship
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                       </div>
+                       <!-- select League Popup End -->
                     <div class="displayTable">
                         <div class="selectWrapper">
                             <select name="oddsType" id="" class="selectOptions">

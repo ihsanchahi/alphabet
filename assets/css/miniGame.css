@@ -1094,7 +1094,8 @@ height: 200px; */
     align-items: center;
     height: 40px;
     width: 95%;
-    font-weight: 300;
+    font-weight: 500;
+    color: black;
 }
 
 .btnNew:hover {

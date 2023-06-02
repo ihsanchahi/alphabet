@@ -19,6 +19,18 @@ const depositeDrop = document.querySelector('.depositeDrop')
 const slipCancel = document.querySelector('.slipCancel');
 
 const slipWrapper = document.querySelector('.slipWrapper');
+const selectLeaguePopUp = document.querySelector('.selectLeaguePopUp');
+const openLeague = document.querySelector('.openLeague');
+const leaguePopupCancel = document.querySelector('.leaguePopupCancel');
+
+
+openLeague.addEventListener('click', () => {
+    selectLeaguePopUp.style.display = 'inline'
+})
+leaguePopupCancel.addEventListener('click', () => {
+    selectLeaguePopUp.style.display = 'none'
+})
+
 
 
 

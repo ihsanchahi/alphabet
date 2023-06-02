@@ -153,12 +153,18 @@ const checkbtn6 = document.querySelector(".checkbtn6");
 const withdrwalposition = document.querySelector(".withdrwalposition");
 const withdrawlbtn = document.querySelector(".withdrawlbtn");
 const backwithdrawbtn = document.querySelector(".backwithdrawbtn");
+const unfoldAll = document.querySelector(".unfoldAll");
+const showDiv = document.querySelector(".showDiv");
+
 // const depositeCancel = document.querySelector(".depositeCancel");
 
 // depositeCancel.addEventListener("click", function () {
 //   withdrawaldrop.style.display = "none";
 // });
-
+unfoldAll.addEventListener("click", function () {
+  // showDiv.style.display = "none";
+  showDiv.classList.add("hideAll");
+});
 backwithdrawbtn.addEventListener("click", function () {
   withdrawldetailscontainer.style.display = "none";
   withdrawnonshow.style.display = "none";
@@ -280,7 +286,7 @@ deletebox.addEventListener("click", function () {
 depositeapplication1.addEventListener("click", function () {
   withdrawldetailscontainer.style.display = "block";
   // mainHeaderBtn1.classList.add('active')
-  
+
   // mainHeaderBtn2.classList.add('depositeActive')
 
   // mainHeaderBtn1.classList.remove('depositeActive')
@@ -1182,38 +1188,38 @@ function initApp() {
 }
 initApp();
 
-const bankpop = document.querySelector(".bankpop")
-const closebtndeposite = document.querySelector(".closebtndeposite")
-const bankpop1 = document.querySelector(".bankpop1")
-const closebtndeposite1 = document.querySelector(".closebtndeposite1")
-const mainbankfieldcontainer = document.querySelector(".mainbankfieldcontainer")
+const bankpop = document.querySelector(".bankpop");
+const closebtndeposite = document.querySelector(".closebtndeposite");
+const bankpop1 = document.querySelector(".bankpop1");
+const closebtndeposite1 = document.querySelector(".closebtndeposite1");
+const mainbankfieldcontainer = document.querySelector(
+  ".mainbankfieldcontainer"
+);
 
-closebtndeposite.addEventListener("click",function(){
-    bankpop.style.display = "none";
-})
-closebtndeposite1.addEventListener("click",function(){
-    bankpop1.style.display = "none";
-})
-function myget(i){
-  if(i =="Bank"){
-      console.log("Bank");
-      bankpop.style.display = "block";
-      bankpop.style.display = "flex";
-  }
-  else if(i == "Khalti"){
-      console.log("Khalti");
-      bankpop1.style.display = "block";
-      bankpop1.style.display = "flex";
+closebtndeposite.addEventListener("click", function () {
+  bankpop.style.display = "none";
+});
+closebtndeposite1.addEventListener("click", function () {
+  bankpop1.style.display = "none";
+});
+function myget(i) {
+  if (i == "Bank") {
+    console.log("Bank");
+    bankpop.style.display = "block";
+    bankpop.style.display = "flex";
+  } else if (i == "Khalti") {
+    console.log("Khalti");
+    bankpop1.style.display = "block";
+    bankpop1.style.display = "flex";
   }
 }
-function bankpage(i){
-  if(i == "Bank"){
+function bankpage(i) {
+  if (i == "Bank") {
     mainbankfieldcontainer.style.display = "block";
-    withdrawaldrop.style.top = '58vh'
-  }
-  else{
+    withdrawaldrop.style.top = "58vh";
+  } else {
     mainbankfieldcontainer.style.display = "none";
-    withdrawaldrop.style.top = '50vh'
+    withdrawaldrop.style.top = "50vh";
   }
 }
 
@@ -2141,7 +2147,6 @@ document.addEventListener("DOMContentLoaded", function () {
           reloadCard();
           console.log(dataArray);
           betOdds.classList.add("removeBorder");
-
         });
       });
     });

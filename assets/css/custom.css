@@ -3664,13 +3664,23 @@ border-right: 1px solid #1e242c; */
 .infoCancel121,
 .customerCancel1,
 .customerCancel2,
-.leaguePopupCancel,
 .CancelMyPage,
 .closeicone,
 .closeIconCustom {
     position: relative;
     right: 0;
     margin-top: -54px;
+    background-color: #F8FF13;
+    padding: 10px;
+    display: block;
+    width: 35px;
+    cursor: pointer;
+    z-index: 1;
+}
+.leaguePopupCancel{
+    position: absolute;
+    right: 10px;
+    top: 0vh;
     background-color: #F8FF13;
     padding: 10px;
     display: block;
@@ -5129,4 +5139,7 @@ div#Titleval {
     .dispIcon {
         font-size: 10px !important;
     }
+}
+.hideAll{
+    display: none !important;
 }
