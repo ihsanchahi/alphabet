@@ -28,6 +28,7 @@ const mainHeaderBtn1 = document.querySelector('.depositeUpHeader1')
 const mainHeaderBtn2 = document.querySelector('.depositeUpHeader2')
 const slipCancel = document.querySelector('.slipCancel')
 
+const sliderMenu1 = document.querySelector(".sliderMenu ");
 
 const openpopup = document.querySelector(".changepopup")
 const inputfieldcontainer = document.querySelector(".inputfieldcontainer")
@@ -36,6 +37,26 @@ const custompopupcontainer = document.querySelector(".custompopupcontainer")
 const closepopup = document.querySelector(".closepopup")
 const submitReportBtn  = document.querySelector(".submitReportBtn")
 const changepopup1 = document.querySelector(".changepopup1")
+const messsagebtn = document.querySelector(".messsagebtn")
+const noticeBodyMessages = document.querySelector(".noticeBodyMessages")
+const close = document.querySelector(".close")
+const messagepopup = document.querySelector(".message-popup");
+
+
+messagepopup.style.display = "none";
+messsagebtn.addEventListener("click", function () {
+  if (messagepopup.style.display == "none") {
+    messagepopup.style.display = "flex";
+    sliderBackDrop.style.display = "none";
+    sliderMenu.classList.remove("sliderMenuActive");
+  } else {
+    sliderMenu.style.display = "flex";
+  }
+})
+
+close.addEventListener("click",function(){
+    messagepopup.style.display = "none";
+})
 
 
 custompopupcontainer.style.display = "none";

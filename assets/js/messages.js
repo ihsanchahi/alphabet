@@ -41,91 +41,91 @@ let messageData = [{
     },
 ]
 
-showMsg.addEventListener('click', () => {
-    console.log('hello')
-    backDrop0.style.display = 'flex'
-    sliderBackDrop.style.display = 'none'
-    sliderMenu.classList.remove('sliderMenuActive')
+// showMsg.addEventListener('click', () => {
+//     console.log('hello')
+//     backDrop0.style.display = 'flex'
+//     sliderBackDrop.style.display = 'none'
+//     sliderMenu.classList.remove('sliderMenuActive')
 
-    messageData.forEach((val, key) => {
-        let newsDiv = document.createElement('div')
-        newsDiv.classList.add('noticeItem')
-        newsDiv.innerHTML = `
+//     messageData.forEach((val, key) => {
+//         let newsDiv = document.createElement('div')
+//         newsDiv.classList.add('noticeItem')
+//         newsDiv.innerHTML = `
            
-            <div class="upperItem" id="${key}">
-                <div class="leftPart">
-                    <span class="fontSecondary">
+//             <div class="upperItem" id="${key}">
+//                 <div class="leftPart">
+//                     <span class="fontSecondary">
         
-                        [${val.msgType}] 
-                    </span> ${val.title}
-                </div>
+//                         [${val.msgType}] 
+//                     </span> ${val.title}
+//                 </div>
         
-                <input type="checkbox" name="read" id="">
-            </div>
-            <div class="lowerItem fontSecondary">
-                ${val.date}
-                <div class="noticeStatus font${val.color}">
-                    ${val.status}
-                </div>
-            </div>
+//                 <input type="checkbox" name="read" id="">
+//             </div>
+//             <div class="lowerItem fontSecondary">
+//                 ${val.date}
+//                 <div class="noticeStatus font${val.color}">
+//                     ${val.status}
+//                 </div>
+//             </div>
         
-            `
-            //remove this
-        msgBody.appendChild(newsDiv)
-    })
-    const noticeItem = document.querySelectorAll('.noticeItem');
-    const noticeCancelBtn = document.querySelector('#msgCancel');
+//             `
+//             //remove this
+//         msgBody.appendChild(newsDiv)
+//     })
+//     const noticeItem = document.querySelectorAll('.noticeItem');
+//     const noticeCancelBtn = document.querySelector('#msgCancel');
 
-    const upperItem = document.querySelectorAll('.upperItem');
-    const noticeDownHeader = document.querySelector('.noticeDownHeader');
-    console.log(upperItem)
-    upperItem.forEach(function(upperItem) {
-        upperItem.addEventListener('click', function(event) {
-            console.log('here')
+//     const upperItem = document.querySelectorAll('.upperItem');
+//     const noticeDownHeader = document.querySelector('.noticeDownHeader');
+//     console.log(upperItem)
+//     upperItem.forEach(function(upperItem) {
+//         upperItem.addEventListener('click', function(event) {
+//             console.log('here')
 
-            const msgIndex = event.target.id;
-            console.log(msgIndex)
-            for (let i = 0; i < noticeItem.length; i++) {
-                noticeItem[i].style.display = 'none'
-            }
-            noticeDownHeader.style.display = 'none'
-
-
-
-            const msgContent = messageData[msgIndex].message;
-            const msgType = messageData[msgIndex].msgType;
-            const msgTitle = messageData[msgIndex].title;
-            const msgDate = messageData[msgIndex].date;
-            messageData[msgIndex].status = 'Read'
-            messageData[msgIndex].color = 'Blue'
-
-            console.log(messageData[msgIndex])
-
-            let newDiv = document.createElement('div')
-            newDiv.classList.add('msgBody')
-            newDiv.innerHTML = `
-        <div class="msgHeader bbcolor">
-        <div class="up">[${msgType}] ${msgTitle}</div>
-        <div class="down fontSecondary">
-            ${msgDate}
-        </div>
-    </div>
-    <div class="msgContent btcolor">
-       ${msgContent}
-    </div>
-
-        `
-                //remove this comment
-            msgBody.appendChild(newDiv)
+//             const msgIndex = event.target.id;
+//             console.log(msgIndex)
+//             for (let i = 0; i < noticeItem.length; i++) {
+//                 noticeItem[i].style.display = 'none'
+//             }
+//             noticeDownHeader.style.display = 'none'
 
 
-        })
-    })
 
-    noticeCancelBtn.addEventListener('click', function() {
-        msgBody = document.querySelector('.msgBody');
-        backDrop0.style.display = 'none'
-        msgBody.innerHTML = ``
+//             const msgContent = messageData[msgIndex].message;
+//             const msgType = messageData[msgIndex].msgType;
+//             const msgTitle = messageData[msgIndex].title;
+//             const msgDate = messageData[msgIndex].date;
+//             messageData[msgIndex].status = 'Read'
+//             messageData[msgIndex].color = 'Blue'
 
-    })
-})
+//             console.log(messageData[msgIndex])
+
+//             let newDiv = document.createElement('div')
+//             newDiv.classList.add('msgBody')
+//             newDiv.innerHTML = `
+//         <div class="msgHeader bbcolor">
+//         <div class="up">[${msgType}] ${msgTitle}</div>
+//         <div class="down fontSecondary">
+//             ${msgDate}
+//         </div>
+//     </div>
+//     <div class="msgContent btcolor">
+//        ${msgContent}
+//     </div>
+
+//         `
+//                 //remove this comment
+//             msgBody.appendChild(newDiv)
+
+
+//         })
+//     })
+
+//     noticeCancelBtn.addEventListener('click', function() {
+//         msgBody = document.querySelector('.msgBody');
+//         backDrop0.style.display = 'none'
+//         msgBody.innerHTML = ``
+
+//     })
+// })

@@ -40,6 +40,24 @@ const sliderMenu1  = document.querySelector(".sliderMenu ")
 const selectLeaguePopUp = document.querySelector('.selectLeaguePopUp');
 const openLeague = document.querySelector('.openLeague');
 const leaguePopupCancel = document.querySelector('.leaguePopupCancel');
+const messsagebtn = document.querySelector(".messsagebtn")
+const noticeBodyMessages = document.querySelector(".noticeBodyMessages")
+const close = document.querySelector(".close")
+
+
+
+messsagebtn.addEventListener("click", function () {
+    if (noticeBodyMessages.style.display == "none") {
+        noticeBodyMessages.style.display = "flex";
+      sliderBackDrop.style.display = "none";
+      sliderMenu.classList.remove("sliderMenuActive");
+    } else {
+      sliderMenu1.style.display = "block";
+    }
+  });
+close.addEventListener("click",function(){
+    noticeBodyMessages.style.display = "none";
+})
 
 
 openLeague.addEventListener('click', () => {

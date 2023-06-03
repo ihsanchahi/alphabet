@@ -59,17 +59,17 @@
 
                         <div class="noticeInterface">
                             <div class="menuItem">
-                                <div class="dispIcon specDisp"><i class="bi bi-envelope"></i></div>
-                                <div class="dispIcon">3</div>
+                                <div class="dispIcon specDisp messsagebtn"><i class="bi bi-envelope"></i></div>
+                                <div class="dispIcon" style="width: 60%;">3</div>
                             </div>
                             <div class="menuItem">
                                 <div class="dispIcon specDisp">Balance</div>
-                                <div class="dispIcon">14000</div>
+                                <div class="dispIcon" style="width: 60%;">14000</div>
                             </div>
 
                             <div class="menuItem">
                                 <div class="dispIcon specDisp">Point</div>
-                                <div class="dispIcon">0</div>
+                                <div class="dispIcon" style="width: 60%;">0</div>
                             </div>
                         </div>
                         <div class="noticeMenus">
@@ -193,6 +193,125 @@
 
         </div>
         <div class="cartBackdrop"></div>
+        <!-- message popup start -->
+        <div class="message-popup">
+            <div class="noticeBodyMessages" style="display: none;">
+                <div class="close">
+                    <i class="bi bi-x-lg " style="color: black;"></i>
+                </div>
+                <div class="noticeHeader">
+                    <div class="historyUpHeader fontBlue" style="border-bottom: 1px solid#5897fb; ">
+                        Message
+                    </div>
+                    <div class="depositeItem depositeBill"
+                        style="display: flex; justify-content: space-between; margin-top: 10px;">
+
+                        <div class="markmes">Mark all message as read</div>
+                        <div class="markmes">Delete Select message</div>
+                    </div>
+                </div>
+                <div class="footerItem" id="footer5" style="margin-top: 10px; display: flex; flex-direction: column;"
+                    onclick="show22 ()">
+
+                    <div class="match" style="display:flex;justify-content: space-between;">
+                        <div class="notification"> [notification] <span class="prediction">Match prediction event up to
+                                5 million won </span> </div>
+                        <div class="check"> <input type="checkbox" id="vehicle1" name="v ehicle1" value="Bike"></div>
+                    </div>
+
+
+                    <div class="date-details" style="display: flex; justify-content: space-between;">
+                        <div class="date"> 2023-05-13 06:19:18</div>
+                        <div class="read">Read</div>
+                    </div>
+                </div>
+                <div class="footerItem" id="footer5" style="margin-top: 10px; display: flex; flex-direction: column;"
+                    onclick="show22 ()">
+
+                    <div class="match" style="display:flex;justify-content: space-between;">
+                        <div class="notification"> [notification] <span class="prediction">Match prediction event up to
+                                5 million won </span> </div>
+                        <div class="check"> <input type="checkbox" id="vehicle1" name="v ehicle1" value="Bike"></div>
+                    </div>
+
+
+                    <div class="date-details" style="display: flex; justify-content: space-between;">
+                        <div class="date"> 2023-05-13 06:19:18</div>
+                        <div class="read">Read</div>
+                    </div>
+                </div>
+                <div class="footerItem" id="footer5" style="margin-top: 10px; display: flex; flex-direction: column;"
+                    onclick="show22 ()">
+
+                    <div class="match" style="display:flex;justify-content: space-between;">
+                        <div class="notification"> [notification] <span class="prediction">Match prediction event up to
+                                5 million won </span> </div>
+                        <div class="check"> <input type="checkbox" id="vehicle1" name="v ehicle1" value="Bike"></div>
+                    </div>
+
+
+                    <div class="date-details" style="display: flex; justify-content: space-between;">
+                        <div class="date"> 2023-05-13 06:19:18</div>
+                        <div class="read">Read</div>
+
+                    </div>
+                </div>
+                <div class="footerItem" id="footer5" style="margin-top: 10px; display: flex; flex-direction: column;"
+                    onclick="show22 ()">
+
+                    <div class="match" style="display:flex;justify-content: space-between;">
+                        <div class="notification"> [notification] <span class="prediction">Match prediction event up to
+                                5 million won </span> </div>
+                        <div class="check"> <input type="checkbox" id="vehicle1" name="v ehicle1" value="Bike"></div>
+                    </div>
+
+
+                    <div class="date-details" style="display: flex; justify-content: space-between;">
+                        <div class="date"> 2023-05-13 06:19:18</div>
+                        <div class="read">Read</div>
+                    </div>
+                </div>
+                <div class="pagination">
+                    <div class="pageLeft">
+                        <div class="pageLimiter">
+                            <select name="oddsType" class="selectOptions2" id="mini1">
+                                <option value="10">10</option>
+                                <option value="20">20</option>
+                                <option value="30">30</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="pageRight">
+                        <div class="pageNo" id="miniPN1">1</i>
+                        </div>
+                        <div class="pageController">
+                            <div class="pLeft " id="lbtn1"><i class="bi bi-chevron-left chevronLogo "></i></div>
+                            <div class="pLeft" id="rbtn1"><i class="bi bi-chevron-right chevronLogo"></i></div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <div id="msg" style="display: none;">
+            <div class="close">
+                <i class="bi bi-x-lg" style="color: black;" onclick="show123 ()"></i>
+            </div>
+            <p class="msg-head">Message</p>
+            <div class="msg-details">
+                <span class="notfiction">[notification] Bet365 Maintenance Complete Announcement </span>
+                <p class="date2">2023-05-22 15:36:56</p>
+                <div>
+                    <p class="hlo">Hello member </p>
+                    <p class="bet365">Bet365 Maintenance Completed </p>
+                </div>
+            </div>
+            <div class="back">
+                <button id="bck-btn" onclick="show123()">Back</button>
+            </div>
+        </div>
+        <!-- message pop up end  -->
         <div class="my-backdrop2 depositeDrop">
             <div class="NoticeWrapper2">
                 <div class="noticeBodyNew">
@@ -677,7 +796,8 @@
                 </div>
                 <div class="sortWrapper">
                     <div class="sortButtons">
-                        <div class="btn1 openLeague"><i class="bi bi-bookmark" style="color: #000;"></i>Select league</div>
+                        <div class="btn1 openLeague"><i class="bi bi-bookmark" style="color: #000;"></i>Select league
+                        </div>
                         <div class="btn2 active"><i class="bi bi-sort-down"></i>Sort time</div>
                         <div class="btn3"><i class="bi bi-sort-up"></i>Sort league</div>
                     </div>
@@ -690,8 +810,8 @@
                                     <i class="bi bi-x-lg " style="color: black;"></i>
                                 </div>
                                 <div class="input-group rounded mt-4">
-                                    <input type="search" class="form-control bg-dark border-0" placeholder="Search" aria-label="Search"
-                                        aria-describedby="search-addon" />
+                                    <input type="search" class="form-control bg-dark border-0" placeholder="Search"
+                                        aria-label="Search" aria-describedby="search-addon" />
                                     <span class="input-group-text border-0 bg-dark" id="search-addon">
                                         <i class="fas fa-search"></i>
                                     </span>
@@ -708,7 +828,8 @@
                                         <button class="btn btn-primary border-0"
                                             style="background: transparent; padding: 0%; font-size: 12px; font-weight: 700;color: gray;"
                                             type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse"
-                                            aria-expanded="false" aria-controls="multiCollapseExample multiCollapseExample1">x Unfold
+                                            aria-expanded="false"
+                                            aria-controls="multiCollapseExample multiCollapseExample1">x Unfold
                                             all</button>
                                         <!-- <a class="pt-2" style="font-size: 12px;font-weight: 900; color: gray; text-decoration: none; cursor: pointer;" >x Unfold all</a> -->
                                     </div>
@@ -719,12 +840,13 @@
                                             <span style="font-size: 14px;
                                             font-weight: 400;"><img src="assets/images/flags/england.png"
                                                     style="width: 20px; height: auto;"> England</span>
-                
-                                            <i class="bi bi-chevron-down" onclick="myFunction()" style="cursor: pointer;"></i>
-                
+
+                                            <i class="bi bi-chevron-down" onclick="myFunction()"
+                                                style="cursor: pointer;"></i>
+
                                         </p>
                                         <div id="myDIV" style="display: none;">
-                
+
                                             <div class="row">
                                                 <div class="col-4">
                                                     &nbsp;<input type="checkbox"> League One
@@ -737,18 +859,19 @@
                                                 </div>
                                             </div>
                                         </div>
-                
+
                                     </div>
                                     <div class="selectLeague">
                                         <p class="mt-2 d-flex justify-content-between">
                                             <span style="font-size: 14px;
                                         font-weight: 400;"><img src="assets/images/flags/norway.png"
                                                     style="width: 20px; height: auto;"> Norway</span>
-                                            <i class="bi bi-chevron-down" onclick="mFunction()" style="cursor: pointer;"></i>
-                
+                                            <i class="bi bi-chevron-down" onclick="mFunction()"
+                                                style="cursor: pointer;"></i>
+
                                         </p>
                                         <div id="mDIV" style="display: none;">
-                
+
                                             <div class="row">
                                                 <div class="col-4">
                                                     &nbsp;<input type="checkbox"> League One
@@ -767,11 +890,12 @@
                                             <span style="font-size: 14px;
                                         font-weight: 400;"><img src="assets/images/flags/internation.png"
                                                     style="width: 20px; height: auto;"> Internation</span>
-                                            <i class="bi bi-chevron-down" onclick="interFunction()" style="cursor: pointer;"></i>
-                
+                                            <i class="bi bi-chevron-down" onclick="interFunction()"
+                                                style="cursor: pointer;"></i>
+
                                         </p>
                                         <div id="InterDIV" style="display: none;">
-                
+
                                             <div class="row">
                                                 <div class="col-4">
                                                     &nbsp;<input type="checkbox"> League One
@@ -790,11 +914,12 @@
                                             <span style="font-size: 14px;
                                         font-weight: 400;"><img src="assets/images/flags/france.png"
                                                     style="width: 20px; height: auto;"> France</span>
-                                            <i class="bi bi-chevron-down" onclick="FranceFunction()" style="cursor: pointer;"></i>
-                
+                                            <i class="bi bi-chevron-down" onclick="FranceFunction()"
+                                                style="cursor: pointer;"></i>
+
                                         </p>
                                         <div id="France" style="display: none;">
-                
+
                                             <div class="row">
                                                 <div class="col-4">
                                                     &nbsp;<input type="checkbox"> League One
@@ -813,11 +938,12 @@
                                             <span style="font-size: 14px;
                                         font-weight: 400;"><img src="assets/images/flags/denkmark.png"
                                                     style="width: 20px; height: auto;"> Denmark</span>
-                                            <i class="bi bi-chevron-down" onclick="DenmarkFunction()" style="cursor: pointer;"></i>
-                
+                                            <i class="bi bi-chevron-down" onclick="DenmarkFunction()"
+                                                style="cursor: pointer;"></i>
+
                                         </p>
                                         <div id="Denmark" style="display: none;">
-                
+
                                             <div class="row">
                                                 <div class="col-4">
                                                     &nbsp;<input type="checkbox"> League One
@@ -836,11 +962,12 @@
                                             <span style="font-size: 14px;
                                         font-weight: 400;"><img src="assets/images/flags/sweden.png"
                                                     style="width: 20px; height: auto;"> Sweden</span>
-                                            <i class="bi bi-chevron-down" onclick="SwedenFunction()" style="cursor: pointer;"></i>
-                
+                                            <i class="bi bi-chevron-down" onclick="SwedenFunction()"
+                                                style="cursor: pointer;"></i>
+
                                         </p>
                                         <div id="Sweden" style="display: none;">
-                
+
                                             <div class="row">
                                                 <div class="col-4">
                                                     &nbsp;<input type="checkbox"> League One
@@ -859,11 +986,12 @@
                                             <span style="font-size: 14px;
                                         font-weight: 400;"><img src="assets/images/flags/iceland.png"
                                                     style="width: 20px; height: auto;"> Iceland</span>
-                                            <i class="bi bi-chevron-down" onclick="IcelandFunction()" style="cursor: pointer;"></i>
-                
+                                            <i class="bi bi-chevron-down" onclick="IcelandFunction()"
+                                                style="cursor: pointer;"></i>
+
                                         </p>
                                         <div id="Iceland" style="display: none;">
-                
+
                                             <div class="row">
                                                 <div class="col-4">
                                                     &nbsp;<input type="checkbox"> League One
@@ -877,17 +1005,18 @@
                                             </div>
                                         </div>
                                     </div>
-                
+
                                     <div class="selectLeague">
                                         <p class="mt-2 d-flex justify-content-between">
                                             <span style="font-size: 14px;
                                         font-weight: 400;"><img src="assets/images/flags/hungry.png"
                                                     style="width: 20px; height: auto;"> Hungary</span>
-                                            <i class="bi bi-chevron-down" onclick="HungaryFunction()" style="cursor: pointer;"></i>
-                
+                                            <i class="bi bi-chevron-down" onclick="HungaryFunction()"
+                                                style="cursor: pointer;"></i>
+
                                         </p>
                                         <div id="Hungary" style="display: none;">
-                
+
                                             <div class="row">
                                                 <div class="col-4">
                                                     &nbsp;<input type="checkbox"> League One
@@ -904,13 +1033,15 @@
                                     <div class="selectLeague">
                                         <p class="mt-2 d-flex justify-content-between">
                                             <span style="font-size: 14px;
-                                        font-weight: 400;"><img src="assets/images/flags/mex.png" style="width: 20px; height: auto;">
+                                        font-weight: 400;"><img src="assets/images/flags/mex.png"
+                                                    style="width: 20px; height: auto;">
                                                 Mexico</span>
-                                            <i class="bi bi-chevron-down" onclick="MexicoFunction()" style="cursor: pointer;"></i>
-                
+                                            <i class="bi bi-chevron-down" onclick="MexicoFunction()"
+                                                style="cursor: pointer;"></i>
+
                                         </p>
                                         <div id="Mexico" style="display: none;">
-                
+
                                             <div class="row">
                                                 <div class="col-4">
                                                     &nbsp;<input type="checkbox"> League One
@@ -929,11 +1060,12 @@
                                             <span style="font-size: 14px;
                                         font-weight: 400;"><img src="assets/images/flags/Brazil.png"
                                                     style="width: 20px; height: auto;"> Brazil</span>
-                                            <i class="bi bi-chevron-down" onclick="BrazilFunction()" style="cursor: pointer;"></i>
-                
+                                            <i class="bi bi-chevron-down" onclick="BrazilFunction()"
+                                                style="cursor: pointer;"></i>
+
                                         </p>
                                         <div id="Brazil" style="display: none;">
-                
+
                                             <div class="row">
                                                 <div class="col-4">
                                                     &nbsp;<input type="checkbox"> League One
@@ -952,11 +1084,12 @@
                                             <span style="font-size: 14px;
                                         font-weight: 400;"><img src="assets/images/flags/croatia.png"
                                                     style="width: 20px; height: auto;"> Croatia</span>
-                                            <i class="bi bi-chevron-down" onclick="CroatiaFunction()" style="cursor: pointer;"></i>
-                
+                                            <i class="bi bi-chevron-down" onclick="CroatiaFunction()"
+                                                style="cursor: pointer;"></i>
+
                                         </p>
                                         <div id="Croatia" style="display: none;">
-                
+
                                             <div class="row">
                                                 <div class="col-4">
                                                     &nbsp;<input type="checkbox"> League One
@@ -975,11 +1108,12 @@
                                             <span style="font-size: 14px;
                                         font-weight: 400;"><img src="assets/images/flags/Repiblic.png"
                                                     style="width: 20px; height: auto;"> Czech Republic</span>
-                                            <i class="bi bi-chevron-down" onclick="CzechFunction()" style="cursor: pointer;"></i>
-                
+                                            <i class="bi bi-chevron-down" onclick="CzechFunction()"
+                                                style="cursor: pointer;"></i>
+
                                         </p>
                                         <div id="Czech" style="display: none;">
-                
+
                                             <div class="row">
                                                 <div class="col-4">
                                                     &nbsp;<input type="checkbox"> League One
@@ -998,11 +1132,12 @@
                                             <span style="font-size: 14px;
                                         font-weight: 400;"><img src="assets/images/flags/Asreria.png"
                                                     style="width: 20px; height: auto;">Austria</span>
-                                            <i class="bi bi-chevron-down" onclick="AustriaFunction()" style="cursor: pointer;"></i>
-                
+                                            <i class="bi bi-chevron-down" onclick="AustriaFunction()"
+                                                style="cursor: pointer;"></i>
+
                                         </p>
                                         <div id="Austria" style="display: none;">
-                
+
                                             <div class="row">
                                                 <div class="col-4">
                                                     &nbsp;<input type="checkbox"> League One
@@ -1019,8 +1154,8 @@
                                 </div>
                             </div>
                         </div>
-                       </div>
-                       <!-- select League Popup End -->
+                    </div>
+                    <!-- select League Popup End -->
                     <div class="displayTable">
                         <div class="selectWrapper">
                             <select name="oddsType" id="" class="selectOptions">
@@ -1217,6 +1352,16 @@
         <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
         <script src="assets/js/client.js"></script>
+        <script>
+            function show22() {
+
+                document.getElementById("msg").style.display = "inline"
+            }
+            function show123() {
+
+                document.getElementById("msg").style.display = "none"
+            }
+        </script>
 </body>
 
 </html>
