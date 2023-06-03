@@ -88,6 +88,27 @@ const withdrwalposition = document.querySelector(".withdrwalposition")
 const withdrawlbtn = document.querySelector(".withdrawlbtn")
 const backwithdrawbtn = document.querySelector(".backwithdrawbtn")
 const depositeCancel = document.querySelector(".depositeCancel")
+const messsagebtn = document.querySelector(".messsagebtn")
+const noticeBodyMessages = document.querySelector(".noticeBodyMessages")
+const close = document.querySelector(".close")
+
+
+
+messsagebtn.addEventListener("click", function () {
+    if (noticeBodyMessages.style.display == "none") {
+        noticeBodyMessages.style.display = "flex";
+      sliderBackDrop.style.display = "none";
+      sliderMenu.classList.remove("sliderMenuActive");
+    } else {
+      sliderMenu1.style.display = "block";
+    }
+  });
+close.addEventListener("click",function(){
+    noticeBodyMessages.style.display = "none";
+})
+
+
+
 
 depositeCancel.addEventListener("click",function(){
     withdrawaldrop.style.display = "none";

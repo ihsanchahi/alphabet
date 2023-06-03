@@ -3189,6 +3189,10 @@ border-right: 1px solid #1e242c; */
     padding: 10px;
     width: 100%;
     /* z-index: 1; */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 
@@ -3273,22 +3277,22 @@ border-right: 1px solid #1e242c; */
 
     .noticeBodyMessages {
         font-size: 14px;
-        width: 60%;
+        width: 50%;
         z-index: 1;
-        position: absolute;
-        top: 0;
-        left: 10vh;
-        right: 0;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 
     #msg {
-        position: absolute;
+        position: fixed;
         background-color: #1f262f;
         /* box-shadow: 0 0 10px #000; */
         width: 40% !important;
-        top: 25vh;
-        left: 20vh;
-        right: 0;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         z-index: 1;
     }
 
@@ -3373,13 +3377,12 @@ border-right: 1px solid #1e242c; */
     }
 
     #msg {
-        position: absolute;
+        position: fixed;
         background-color: #1f262f;
-        /* box-shadow: 0 0 10px #000; */
         width: 40% !important;
-        top: 25vh;
-        left: 60vh;
-        right: 0;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         z-index: 1;
     }
 
@@ -3387,10 +3390,10 @@ border-right: 1px solid #1e242c; */
         font-size: 14px;
         width: 50%;
         z-index: 1;
-        position: absolute;
-        top: 0;
-        left: 50vh;
-        right: 0;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 
     .custompopupcontainer {
@@ -3467,23 +3470,23 @@ border-right: 1px solid #1e242c; */
 
     .noticeBodyMessages {
         font-size: 14px;
-        width: 100%;
+        width: 70%;
         z-index: 1;
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 
     #msg {
-        position: absolute;
+        position: fixed;
         background-color: #1f262f;
-        /* box-shadow: 0 0 10px #000; */
         width: 60% !important;
-        top: 25vh;
-        left: 12vh;
-        right: 0;
         z-index: 1;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        
     }
 
     .custompopupcontainer {
@@ -3600,20 +3603,19 @@ border-right: 1px solid #1e242c; */
         font-size: 14px;
         width: 100%;
         z-index: 1;
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 
     #msg {
-        position: absolute;
+        position: fixed;
         background-color: #1f262f;
-        /* box-shadow: 0 0 10px #000; */
         width: 60% !important;
-        top: 20vh;
-        left: 8vh;
-        right: 0;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         z-index: 1;
     }
 
@@ -4466,52 +4468,6 @@ input {
 }
 
 
-/* @media (max-width:820px) {
-    #msg {
-        position: absolute;
-        background-color: #1f262f;
-        box-shadow: 0 0 10px #000;
-        width: 480px;
-        margin-left: 155px;
-        margin-top: 245px;
-    }
-} */
-
-/* @media (max-width:480px) {
-    #msg {
-        position: absolute;
-        background-color: rgb(31, 38, 47);
-        box-shadow: rgb(0, 0, 0) 0px 0px 10px;
-        width: 330px;
-        margin-left: 70px;
-        margin-top: 185px;
-
-    }
-} */
-
-/* @media (max-width:414px) {
-    #msg {
-        position: absolute;
-        background-color: rgb(31, 38, 47);
-        box-shadow: rgb(0, 0, 0) 0px 0px 10px;
-        width: 300px;
-        margin-left: 35px;
-        margin-top: 185px;
-
-    }
-} */
-
-/* @media (max-width:375px) {
-    #msg {
-        position: absolute;
-        background-color: rgb(31, 38, 47);
-        box-shadow: rgb(0, 0, 0) 0px 0px 10px;
-        width: 300px;
-        margin-left: 25px;
-        margin-top: 185px;
-
-    }
-} */
 
 /* @media (max-width:480px) {
     .noticeHeader {
