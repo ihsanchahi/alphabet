@@ -1963,17 +1963,38 @@ body {
 
 .slectlea {
     background-color: #27303a;
-    height: calc(100vh - 325px);
+    height: 30vh;
     overflow-y: scroll;
+    overflow-x: hidden;
     padding: 0px 10px;
     margin-top: 10px;
 }
-
-@media (max-width:1024px) {
+@media (min-width:1401px) {
     .slectlea {
         background-color: #27303a;
-        height: 30vh;
+        height: 50vh;
         overflow-y: scroll;
+        overflow-x: hidden;
+        padding: 0px 10px;
+        margin-top: 10px;
+    }
+}
+@media (max-width:1400px) {
+    .slectlea {
+        background-color: #27303a;
+        height: 45vh;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        padding: 0px 10px;
+        margin-top: 10px;
+    }
+}
+@media (max-width:768px) {
+    .slectlea {
+        background-color: #27303a;
+        height: 35vh;
+        overflow-y: scroll;
+        overflow-x: hidden;
         padding: 0px 10px;
         margin-top: 10px;
     }
@@ -1994,6 +2015,7 @@ body {
         background-color: #27303a;
         height: calc(100vh - 630px);
         overflow-y: scroll;
+        overflow-x: hidden;
         padding: 0px 10px;
         margin-top: 10px;
 
@@ -3344,7 +3366,7 @@ border-right: 1px solid #1e242c; */
 
     .noticeBodyNew {
         font-size: 14px;
-        width: 75%;
+        width: 60%;
         z-index: 1;
         position: fixed;
         /* top: 20vh; */
@@ -3567,7 +3589,7 @@ border-right: 1px solid #1e242c; */
 
     .noticeBodyNew {
         font-size: 14px;
-        width: 75%;
+        width: 100%;
         z-index: 1;
         /* position: fixed; */
         /* top: 20vh; */
@@ -3682,7 +3704,7 @@ border-right: 1px solid #1e242c; */
 .leaguePopupCancel{
     position: absolute;
     right: 10px;
-    top: 0vh;
+    top: -3vh;
     background-color: #F8FF13;
     padding: 10px;
     display: block;

@@ -1090,15 +1090,15 @@
                                 </div>
                                 <div class="row mt-2">
                                     <div class="col-2">
-                                        <a class="pt-2"
-                                            style="font-size: 12px;font-weight: 900; color: gray;text-decoration: none;cursor: pointer;">x
+                                        <a class="pt-2" id="uncheckButton"
+                                            style="font-size: 12px;font-weight: 900; white-space: nowrap; color: gray;text-decoration: none;cursor: pointer;">x
                                             Uncheck all</a>
                                     </div>
                                     <div class="col-7">
                                     </div>
                                     <div class="col-3 text-end">
-                                        <button class="btn btn-primary border-0"
-                                            style="background: transparent; padding: 0%; font-size: 12px; font-weight: 700;color: gray;"
+                                        <button class="btn btn-primary border-0" onclick="closeDivs()"
+                                            style="background: transparent; padding: 0%; white-space: nowrap; font-size: 12px; font-weight: 700;color: gray;"
                                             type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse"
                                             aria-expanded="false"
                                             aria-controls="multiCollapseExample multiCollapseExample1">x Unfold
@@ -1117,7 +1117,7 @@
                                                 style="cursor: pointer;"></i>
 
                                         </p>
-                                        <div id="myDIV" style="display: none;">
+                                        <div id="myDIV" class="showDiv style=" display: none;">
 
                                             <div class="row">
                                                 <div class="col-4">
@@ -1142,7 +1142,7 @@
                                                 style="cursor: pointer;"></i>
 
                                         </p>
-                                        <div id="mDIV" style="display: none;">
+                                        <div id="mDIV" class="showDiv style=" display: none;">
 
                                             <div class="row">
                                                 <div class="col-4">
@@ -1166,7 +1166,7 @@
                                                 style="cursor: pointer;"></i>
 
                                         </p>
-                                        <div id="InterDIV" style="display: none;">
+                                        <div id="InterDIV" class="showDiv style=" display: none;">
 
                                             <div class="row">
                                                 <div class="col-4">
@@ -1190,7 +1190,7 @@
                                                 style="cursor: pointer;"></i>
 
                                         </p>
-                                        <div id="France" style="display: none;">
+                                        <div id="France" class="showDiv style=" display: none;">
 
                                             <div class="row">
                                                 <div class="col-4">
@@ -1214,7 +1214,7 @@
                                                 style="cursor: pointer;"></i>
 
                                         </p>
-                                        <div id="Denmark" style="display: none;">
+                                        <div id="Denmark" class="showDiv style=" display: none;">
 
                                             <div class="row">
                                                 <div class="col-4">
@@ -1238,7 +1238,7 @@
                                                 style="cursor: pointer;"></i>
 
                                         </p>
-                                        <div id="Sweden" style="display: none;">
+                                        <div id="Sweden" class="showDiv style=" display: none;">
 
                                             <div class="row">
                                                 <div class="col-4">
@@ -1262,7 +1262,7 @@
                                                 style="cursor: pointer;"></i>
 
                                         </p>
-                                        <div id="Iceland" style="display: none;">
+                                        <div id="Iceland" class="showDiv style=" display: none;">
 
                                             <div class="row">
                                                 <div class="col-4">
@@ -1287,7 +1287,7 @@
                                                 style="cursor: pointer;"></i>
 
                                         </p>
-                                        <div id="Hungary" style="display: none;">
+                                        <div id="Hungary" class="showDiv style=" display: none;">
 
                                             <div class="row">
                                                 <div class="col-4">
@@ -1312,7 +1312,7 @@
                                                 style="cursor: pointer;"></i>
 
                                         </p>
-                                        <div id="Mexico" style="display: none;">
+                                        <div id="Mexico" class="showDiv style=" display: none;">
 
                                             <div class="row">
                                                 <div class="col-4">
@@ -1336,7 +1336,7 @@
                                                 style="cursor: pointer;"></i>
 
                                         </p>
-                                        <div id="Brazil" style="display: none;">
+                                        <div id="Brazil" class="showDiv style=" display: none;">
 
                                             <div class="row">
                                                 <div class="col-4">
@@ -1360,7 +1360,7 @@
                                                 style="cursor: pointer;"></i>
 
                                         </p>
-                                        <div id="Croatia" style="display: none;">
+                                        <div id="Croatia" class="showDiv style=" display: none;">
 
                                             <div class="row">
                                                 <div class="col-4">
@@ -1384,7 +1384,7 @@
                                                 style="cursor: pointer;"></i>
 
                                         </p>
-                                        <div id="Czech" style="display: none;">
+                                        <div id="Czech" class="showDiv style=" display: none;">
 
                                             <div class="row">
                                                 <div class="col-4">
@@ -1408,7 +1408,7 @@
                                                 style="cursor: pointer;"></i>
 
                                         </p>
-                                        <div id="Austria" style="display: none;">
+                                        <div id="Austria" class="showDiv style=" display: none;">
 
                                             <div class="row">
                                                 <div class="col-4">
@@ -1794,6 +1794,140 @@
 
     <script src="assets/js/client.js"></script>
     <script>
+        function myFunction() {
+            var x = document.getElementById("myDIV");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+        function mFunction() {
+            var x = document.getElementById("mDIV");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+        function interFunction() {
+
+            var x = document.getElementById("InterDIV");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+        function FranceFunction() {
+
+            var x = document.getElementById("France");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+        function DenmarkFunction() {
+
+            var x = document.getElementById("Denmark");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+        function SwedenFunction() {
+
+            var x = document.getElementById("Sweden");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+        function IcelandFunction() {
+
+            var x = document.getElementById("Iceland");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+        function HungaryFunction() {
+
+            var x = document.getElementById("Hungary");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+        function MexicoFunction() {
+
+            var x = document.getElementById("Mexico");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+        function BrazilFunction() {
+
+            var x = document.getElementById("Brazil");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+        function CroatiaFunction() {
+
+            var x = document.getElementById("Croatia");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+        function CzechFunction() {
+
+            var x = document.getElementById("Czech");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+        function AustriaFunction() {
+
+            var x = document.getElementById("Austria");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+        function closeDivs() {
+            var divs = document.getElementsByClassName("showDiv");
+            for (var i = 0; i < divs.length; i++) {
+                divs[i].style.display = "none";
+            }
+        }
+        window.addEventListener('DOMContentLoaded', function () {
+            var uncheckButton = document.getElementById('uncheckButton');
+
+            uncheckButton.addEventListener('click', function () {
+                var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+
+                checkboxes.forEach(function (checkbox) {
+                    if (checkbox.checked) {
+                        checkbox.checked = false;
+                    }
+                });
+            });
+        });
         function show22() {
 
             document.getElementById("msg").style.display = "inline"

@@ -2245,6 +2245,8 @@ height: 200px; */
     background-color: #27303a;
     height: 40vh;
     overflow-y: scroll;
+    overflow-x: hidden;
+    overflow-x: hidden;
     padding: 0px 10px;
     margin-top: 10px;
 }
@@ -2344,6 +2346,7 @@ height: 200px; */
         background-color: #27303a;
         height: 30vh;
         overflow-y: scroll;
+        overflow-x: hidden;
         padding: 0px 10px;
         margin-top: 10px;
     }
@@ -2381,6 +2384,7 @@ height: 200px; */
         background-color: #27303a;
         height: 25vh;
         overflow-y: scroll;
+        overflow-x: hidden;
         padding: 0px 10px;
         margin-top: 10px;
     }
@@ -2410,14 +2414,16 @@ height: 200px; */
         overflow: scroll;
     }
 }
-.leaguePopupCancel {
-    background-color: yellow;
-    width: 25px;
-    height: 25px;
-    display: flex;
-    justify-content: center;
+.leaguePopupCancel{
+    position: absolute;
+    right: 10px;
+    top: -3vh;
+    background-color: #F8FF13;
+    padding: 10px;
+    display: block;
+    width: 35px;
     cursor: pointer;
-    font-weight: 400;
+    z-index: 1;
 }
 @media (max-width:350px)
 {

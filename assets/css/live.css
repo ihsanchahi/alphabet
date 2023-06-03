@@ -1721,8 +1721,7 @@
         display: none;
     }
     
-    .noticeBody,
-    .noticeBodyNew {
+    .noticeBody {
         background-color: #1F262F;
         display: flex;
         flex-direction: column;
@@ -2186,13 +2185,13 @@
             display: flex !important;
         }
     }
-    .noticeBodyNew {
+    /* .noticeBodyNew {
         position: absolute;
         margin-top: 3pc;
         margin-left: 7pc;
        
-    }
-    @media (max-width: 480px){
+    } */
+    /* @media (max-width: 480px){
     .noticeBodyNew {
         font-size: 14px;
         width: 82%;
@@ -2200,5 +2199,4 @@
         position: fixed;
         top: 30vh;
         margin-left: 2px;
-    }
-}
+    } */
