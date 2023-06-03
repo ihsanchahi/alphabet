@@ -2075,3 +2075,165 @@ height: 200px; */
         top: 75vh !important;
     }
 }
+
+.close {
+    background-color: #F8FF13;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.noticeBodyMessages {
+    background-color: #1F262F;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 300;
+    padding: 10px;
+    width: 100%;
+    /* z-index: 1; */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#msg {
+    position: fixed;
+    background-color: #1f262f;
+    /* box-shadow: 0 0 10px #000; */
+    width: 40% !important;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+.msg-head {
+    text-align: center;
+    color: yellow;
+    font-size: 12px;
+    font-weight: normal;
+    border-bottom: 1px solid yellow;
+    padding: 10px;
+}
+.msg-details {
+    background-color: #27303a;
+    padding: 10px;
+    max-height: 200px;
+
+}
+.notfiction {
+    font-size: 10px;
+    font-weight: normal;
+}
+.date2 {
+    font-size: 10px;
+    border-bottom: 1px solid #313942;
+    padding-bottom: 5px;
+}
+.hlo {
+    font-size: 10px;
+    font-weight: normal;
+}
+.bet365 {
+    font-size: 10px;
+    font-weight: normal;
+}
+
+.back {
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+}
+button#bck-btn {
+    background-color: #27303a;
+    padding: 8px 16px;
+    font-size: 10px;
+    border-radius: 2px;
+    cursor: pointer;
+    border: none;
+}
+@media (min-width:1401px) {
+    .noticeBodyMessages {
+        font-size: 14px;
+        width: 50%;
+        z-index: 1;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    #msg {
+        position: fixed;
+        background-color: #1f262f;
+        width: 40% !important;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+    
+}
+}
+@media (max-width:1400px) {
+    .noticeBodyMessages {
+        font-size: 14px;
+        width: 50%;
+        z-index: 1;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    #msg {
+        position: fixed;
+        background-color: #1f262f;
+        width: 40% !important;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+    }
+}
+@media (max-width:768px) {
+    .noticeBodyMessages {
+        font-size: 14px;
+        width: 70%;
+        z-index: 1;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    #msg {
+        position: fixed;
+        background-color: #1f262f;
+        width: 60% !important;
+        z-index: 1;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        
+    }
+}
+@media (max-width:480px) {
+    .noticeBodyMessages {
+        font-size: 14px;
+        width: 100%;
+        z-index: 1;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    #msg {
+        position: fixed;
+        background-color: #1f262f;
+        width: 60% !important;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+    }
+}
