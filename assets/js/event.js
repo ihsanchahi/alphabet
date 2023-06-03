@@ -12,6 +12,24 @@ const custompopupcontainer = document.querySelector(".custompopupcontainer")
 const closepopup = document.querySelector(".closepopup")
 const submitReportBtn  = document.querySelector(".submitReportBtn")
 const changepopup1 = document.querySelector(".changepopup1")
+const messsagebtn = document.querySelector(".messsagebtn")
+const noticeBodyMessages = document.querySelector(".noticeBodyMessages")
+const close = document.querySelector(".close")
+
+
+noticeBodyMessages.style.display = "none"
+messsagebtn.addEventListener("click", function () {
+    if (noticeBodyMessages.style.display == "none") {
+        noticeBodyMessages.style.display = "flex";
+      sliderBackDrop.style.display = "none";
+      sliderMenu.classList.remove("sliderMenuActive");
+    } else {
+      sliderMenu1.style.display = "block";
+    }
+  });
+close.addEventListener("click",function(){
+    noticeBodyMessages.style.display = "none";
+})
 
 
 custompopupcontainer.style.display = "none";

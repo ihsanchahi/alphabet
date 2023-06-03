@@ -34,6 +34,49 @@ const mainHeaderBtn1 = document.querySelector('.depositeUpHeader1')
 
 
 const mainHeaderBtn2 = document.querySelector('.depositeUpHeader2')
+const messsagebtn = document.querySelector(".messsagebtn")
+const noticeBodyMessages = document.querySelector(".noticeBodyMessages")
+const close = document.querySelector(".close")
+const close2 = document.querySelector(".close2")
+const close3 = document.querySelector(".close3")
+
+
+const messagepopup = document.querySelector(".message-popup");
+const messagepopup2 = document.querySelector(".message-popup2");
+
+
+
+messagepopup.style.display = "none";
+messsagebtn.addEventListener("click", function () {
+  if (messagepopup.style.display == "none") {
+    messagepopup.style.display = "flex";
+    sliderBackDrop.style.display = "none";
+    sliderMenu.classList.remove("sliderMenuActive");
+  } else {
+    sliderMenu.style.display = "flex";
+  }
+})
+close.addEventListener("click",function(){
+    messagepopup.style.display = "none";
+})
+messagepopup2.style.display = "none";
+messsagebtn.addEventListener("click", function () {
+  if (messagepopup2.style.display == "none") {
+    messagepopup2.style.display = "flex";
+    sliderBackDrop.style.display = "none";
+    sliderMenu.classList.remove("sliderMenuActive");
+  } else {
+    sliderMenu.style.display = "flex";
+  }
+})
+close2.addEventListener("click",function(){
+    messagepopup2.style.display = "none";
+})
+
+close3.addEventListener("click",function(){
+    messagepopup.style.display = "none";
+})
+
 
 const ludo1 = document.querySelector('.ludo1')
 const ludo2 = document.querySelector('.ludo2')

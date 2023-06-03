@@ -26,7 +26,24 @@ const sliderBackDrop = document.querySelector('.sliderMenuBackDrop')
 const depositeDrop = document.querySelector('.depositeDrop')
 const slipCancel = document.querySelector('.slipCancel')
 
+const messsagebtn = document.querySelector(".messsagebtn")
+const noticeBodyMessages = document.querySelector(".noticeBodyMessages")
+const close = document.querySelector(".close")
 
+
+noticeBodyMessages.style.display = "none"
+messsagebtn.addEventListener("click", function () {
+    if (noticeBodyMessages.style.display == "none") {
+        noticeBodyMessages.style.display = "flex";
+      sliderBackDrop.style.display = "none";
+      sliderMenu.classList.remove("sliderMenuActive");
+    } else {
+      sliderMenu1.style.display = "block";
+    }
+  });
+close.addEventListener("click",function(){
+    noticeBodyMessages.style.display = "none";
+})
 
 
 
