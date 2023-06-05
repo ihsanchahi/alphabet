@@ -18,6 +18,10 @@
     <link rel="stylesheet" href="assets/css/messages.css">
     <link rel="stylesheet" href="assets/css/dualLudo.css">
     <link rel="stylesheet" href="assets/css/clients.css">
+    <link rel="stylesheet" href="assets/css/pointExchange.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="assets/vendor/aos/aos.css" rel="stylesheet">
     <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
@@ -351,6 +355,101 @@
             </div>
         </div>
         <!-- message popup end -->
+
+        <!-- point Exchange start -->
+        <div class="pointexchcontainer">
+            <div class="pointTrans">
+                <div class="noticeBodyExchange">
+                    <div class="infoCancel1211">
+                        <i class="bi bi-x-lg " style="color: black;"></i>
+                    </div>
+                    <div class="noticeHeader">
+                        <div class="historyUpHeader fontBlue">
+
+                            Point Transfer
+                        </div>
+                        <div class="depositeItem depositeBill">
+                            <div class="menuItem">
+                                <div class="dispIcon specDisp">Holding Point</div>
+                                <div class="dispIcon">200</div>
+                            </div>
+                            <div class="menuItem">
+                                <div class="dispIcon specDisp">Exchange Point</div>
+                                <div class="dispIcon inputSports"><input type="password" name="password1" id="22"
+                                        placeholder="Please type in the points you want to exchange"
+                                        class="inputLeague">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pagination">
+                            <div class="infoRules  pt-4">
+                                <i class="fa fa-question-circle holdingsbtn" aria-hidden="true"
+                                    style="cursor:pointer;"></i>
+                            </div>
+                            <div class="pageRight">
+                                <div class="ExchangeApplicationBtn">
+                                    <div class="noticeBtn" onclick="showpoint() "> Application For Exchange</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div id="exchangpoint" style="position: absolute; display: none;">
+            <div class="question">
+                <img src="./assets/images/questionMark.png" alt="#" width="70px" height="70px">
+            </div>
+            <p class="question-delete">Do you want to exchange points for cash?</p>
+            <div class="question-button">
+                <button id="yes-no" onclick="showpop()">Yes</button>
+                <button id="yes-no" onclick="closepoint()">No</button>
+            </div>
+            <div id="yespoint" style="display: none; ">
+                <div class="cancel">
+                    X
+                </div>
+                <p class="no-history">Please enter a valid amount.</p>
+                <div class="check">
+                    <button id="chk-btn" onclick="closechk ()">Check</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="holdings">
+            <div class="NoticeWrapper2">
+                <div class="noticeBodyNewpoint">
+                    <div class="depositeItem depositeBill pt-4">
+                        <div>
+                            <p style="color: rgb(239, 198, 49);font-weight: 400; font-size: 12px; text-align: center;">
+                                Points received by members can be converted into holdings.
+                            </p>
+                            <p
+                                style="color: rgb(239, 198, 49);font-weight: 400;font-size: 11px;padding-top: -5px; text-align: center;">
+                                The minimum amount for one-time conversion is 5,000 points, and it can be converted in
+                                increments of 1 won.
+                            </p>
+                            <p
+                                style="color: rgb(239, 198, 49);font-weight: 400;font-size: 11px;padding-top: -5px; text-align: center;">
+                                After entering the desired amount in the application point column , click Apply for
+                                Conversion .
+                            </p>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <div class="noticeBtn RulesBtn text-center closePointHoldings ">Close</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- point exchange end  -->
+
 
         <div class="my-backdrop depositeDrop">
             <div class="NoticeWrapper">
@@ -736,6 +835,102 @@
             </div>
         </div>
         <!-- message popup end -->
+
+        <!-- point Exchange start -->
+        <div class="pointexchcontainer pointexchcontainerludo2">
+            <div class="pointTrans">
+                <div class="noticeBodyExchange">
+                    <div class="infoCancel1211 infoCancel1211ludo2">
+                        <i class="bi bi-x-lg " style="color: black;"></i>
+                    </div>
+                    <div class="noticeHeader">
+                        <div class="historyUpHeader fontBlue">
+
+                            Point Transfer
+                        </div>
+                        <div class="depositeItem depositeBill">
+                            <div class="menuItem">
+                                <div class="dispIcon specDisp">Holding Point</div>
+                                <div class="dispIcon">200</div>
+                            </div>
+                            <div class="menuItem">
+                                <div class="dispIcon specDisp">Exchange Point</div>
+                                <div class="dispIcon inputSports"><input type="password" name="password1" id="22"
+                                        placeholder="Please type in the points you want to exchange"
+                                        class="inputLeague">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pagination">
+                            <div class="infoRules  pt-4">
+                                <i class="fa fa-question-circle holdingsbtn holdingsbtnludo2" aria-hidden="true"
+                                    style="cursor:pointer;"></i>
+                            </div>
+                            <div class="pageRight">
+                                <div class="ExchangeApplicationBtn">
+                                    <div class="noticeBtn" onclick="showpointludo2() "> Application For Exchange</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div id="exchangpointludo" style="position: absolute; display: none;">
+            <div class="question">
+                <img src="./assets/images/questionMark.png" alt="#" width="70px" height="70px">
+            </div>
+            <p class="question-delete">Do you want to exchange points for cash?</p>
+            <div class="question-button">
+                <button id="yes-no" onclick="showpopludo()">Yes</button>
+                <button id="yes-no" onclick="closepointludo()">No</button>
+            </div>
+            <div id="yespointludo" style="display: none; ">
+                <div class="cancel">
+                    X
+                </div>
+                <p class="no-history">Please enter a valid amount.</p>
+                <div class="check">
+                    <button id="chk-btn" onclick="closechkludo ()">Check</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="holdings holdingsludo2">
+            <div class="NoticeWrapper2">
+                <div class="noticeBodyNewpoint">
+                    <div class="depositeItem depositeBill pt-4">
+                        <div>
+                            <p style="color: rgb(239, 198, 49);font-weight: 400; font-size: 12px; text-align: center;">
+                                Points received by members can be converted into holdings.
+                            </p>
+                            <p
+                                style="color: rgb(239, 198, 49);font-weight: 400;font-size: 11px;padding-top: -5px; text-align: center;">
+                                The minimum amount for one-time conversion is 5,000 points, and it can be converted in
+                                increments of 1 won.
+                            </p>
+                            <p
+                                style="color: rgb(239, 198, 49);font-weight: 400;font-size: 11px;padding-top: -5px; text-align: center;">
+                                After entering the desired amount in the application point column , click Apply for
+                                Conversion .
+                            </p>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <div class="noticeBtn RulesBtn text-center closePointHoldings closePointHoldingsludo2 ">Close
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- point exchange end  -->
+
         <div class="my-backdrop depositeDrop">
             <div class="NoticeWrapper">
                 <div class="noticeBody">
@@ -1078,6 +1273,40 @@
         function show321() {
 
             document.getElementById("msg2").style.display = "none"
+        }
+        function showpoint() {
+
+            document.getElementById("exchangpoint").style.display = "inline"
+        }
+
+        function showpop() {
+            document.getElementById("yespoint").style.display = "inline"
+        }
+
+        function closepoint() {
+
+            document.getElementById("exchangpoint").style.display = "none"
+        }
+        function closechk() {
+
+            document.getElementById("yespoint").style.display = "none"
+        }
+        function showpointludo2() {
+
+            document.getElementById("exchangpointludo").style.display = "inline"
+        }
+
+        function showpopludo() {
+            document.getElementById("yespointludo").style.display = "inline"
+        }
+
+        function closepointludo() {
+
+            document.getElementById("exchangpointludo").style.display = "none"
+        }
+        function closechkludo() {
+
+            document.getElementById("yespointludo").style.display = "none"
         }
     </script>
 

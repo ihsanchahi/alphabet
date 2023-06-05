@@ -3601,7 +3601,7 @@ border-right: 1px solid #1e242c; */
 
     .withdrawaldrop {
         font-size: 14px;
-        width: 76%;
+        width: 100%;
         z-index: 2;
         /* position: fixed; */
         /* top: 20vh; */

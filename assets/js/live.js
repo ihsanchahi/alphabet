@@ -1,1041 +1,1047 @@
-const triggerSidebar = document.querySelector('.tooglebarSegment');
-const sidebar = document.querySelector('.sidebar');
-const backdrop = document.querySelector('.my-backdrop');
-const leagueTable = document.querySelector('.gamesTable');
-const handiOdds = document.querySelector('.nestedOdds');
-const betOdds = document.querySelector('.betOdds');
-const extraOdd = document.querySelector('.extraOdd');
-const cartItemsWrapper = document.querySelector('.cartItemsWrapper');
-const OddsNumber = document.querySelector('.OddsNumber');
-const emptyCart = document.querySelector('.emptyCart');
-const selectOptions = document.querySelector('.selectOptions');
-const col4 = document.querySelector('.column4');
-const ExtraOddsWrapper = document.querySelector('.ExtraOddsWrapper');
-const noticeCancelBtn = document.querySelector('.noticeCancel');
-const backDrop = document.querySelector('.my-backdrop');
-const noticeBody = document.querySelector('.noticeBody');
-const cartWrapper = document.querySelector('.cartWrapper');
-const cartBackdrop = document.querySelector('.cartBackdrop');
-const col3 = document.querySelector('.column3');
-const gamesContainer = document.querySelector('.gamesContainer')
-const slideDeposite = document.querySelector('.slideDeposite')
-const depositeDrop = document.querySelector('.depositeDrop')
-const slipCancel = document.querySelector('.slipCancel')
+const triggerSidebar = document.querySelector(".tooglebarSegment");
+const sidebar = document.querySelector(".sidebar");
+const backdrop = document.querySelector(".my-backdrop");
+const leagueTable = document.querySelector(".gamesTable");
+const handiOdds = document.querySelector(".nestedOdds");
+const betOdds = document.querySelector(".betOdds");
+const extraOdd = document.querySelector(".extraOdd");
+const cartItemsWrapper = document.querySelector(".cartItemsWrapper");
+const OddsNumber = document.querySelector(".OddsNumber");
+const emptyCart = document.querySelector(".emptyCart");
+const selectOptions = document.querySelector(".selectOptions");
+const col4 = document.querySelector(".column4");
+const ExtraOddsWrapper = document.querySelector(".ExtraOddsWrapper");
+const noticeCancelBtn = document.querySelector(".noticeCancel");
+const backDrop = document.querySelector(".my-backdrop");
+const noticeBody = document.querySelector(".noticeBody");
+const cartWrapper = document.querySelector(".cartWrapper");
+const cartBackdrop = document.querySelector(".cartBackdrop");
+const col3 = document.querySelector(".column3");
+const gamesContainer = document.querySelector(".gamesContainer");
+const slideDeposite = document.querySelector(".slideDeposite");
+const depositeDrop = document.querySelector(".depositeDrop");
+const slipCancel = document.querySelector(".slipCancel");
 
-
-const openpopup = document.querySelector(".changepopupsportslive")
-const inputfieldcontainer = document.querySelector(".inputfieldcontainer")
-const Attendancebtn = document.querySelector(".Attendancebtn")
-const custompopupcontainer = document.querySelector(".custompopupcontainer")
-const closepopup = document.querySelector(".closepopup")
-const submitReportBtn  = document.querySelector(".submitReportBtn")
-const changepopup1 = document.querySelector(".changepopupsportslive1")
-const  attandececontainer = document.querySelector(".attandececontainer")
-const closeicone =  document.querySelector(".closeicone")
-
+const openpopup = document.querySelector(".changepopupsportslive");
+const inputfieldcontainer = document.querySelector(".inputfieldcontainer");
+const Attendancebtn = document.querySelector(".Attendancebtn");
+const custompopupcontainer = document.querySelector(".custompopupcontainer");
+const closepopup = document.querySelector(".closepopup");
+const submitReportBtn = document.querySelector(".submitReportBtn");
+const changepopup1 = document.querySelector(".changepopupsportslive1");
+const attandececontainer = document.querySelector(".attandececontainer");
+const closeicone = document.querySelector(".closeicone");
 
 // start deposite & withdrwal js
 
-const depositeapplication1 = document.querySelector(".depositeapplication1")
-const withdrawldetailscontainer = document.querySelector(".withdrawldetailscontainer")
-const closeicone1 = document.querySelector(".closeiconeee")
-const NoticeWrapper2 = document.querySelector(".NoticeWrapper2")
-const mainHeaderBtn1 = document.querySelector(".mainHeaderBtn1")
-const mainHeaderBtn2 = document.querySelector(".mainHeaderBtn2")
-const deletebox = document.querySelector(".deletebox")
-const questionmarkbox = document.querySelector(".questionmarkbox")
-const nobtn = document.querySelector(".nobtn")
-const yesbtn = document.querySelector(".yesbtn")
-const checkbox = document.querySelector(".checkbox")
-const checkbtn = document.querySelector(".checkbtn")
-const depositdetails = document.querySelector(".depositdetails")
-const depositeUpHeader2 = document.querySelector(".depositeUpHeader3")
-const Withdrawformcontainer = document.querySelector(".Withdrawformcontainer")
-const deletebox1 = document.querySelector(".deletebox1")
-const questionmarkbox1 = document.querySelector(".questionmarkbox1")
-const nobtn1 = document.querySelector(".nobtn1")
-const yesbtn1 = document.querySelector(".yesbtn1")
-const checkbox1 = document.querySelector(".checkbox1")
-const checkbtn1 = document.querySelector(".checkbtn1")
-const depositeUpHeader3 = document.querySelector(".depositeUpHeader3")
-const removedrwalcontainer = document.querySelector(".removedrwalcontainer")
-const checkwithdrwal = document.querySelector(".checkwithdrwal")
-const withdrawaldrop = document.querySelector(".withdrawaldrop")
-const withdrawdetailebtn = document.querySelector(".withdrawdetailebtn")
-const WithdrawlApplicationformbtn = document.querySelector(".WithdrawlApplicationformbtn")
-const Depositebtn = document.querySelector(".Depositebtn")
+const depositeapplication1 = document.querySelector(".depositeapplication1");
+const withdrawldetailscontainer = document.querySelector(
+  ".withdrawldetailscontainer"
+);
+const closeicone1 = document.querySelector(".closeiconeee");
+const NoticeWrapper2 = document.querySelector(".NoticeWrapper2");
+const mainHeaderBtn1 = document.querySelector(".mainHeaderBtn1");
+const mainHeaderBtn2 = document.querySelector(".mainHeaderBtn2");
+const deletebox = document.querySelector(".deletebox");
+const questionmarkbox = document.querySelector(".questionmarkbox");
+const nobtn = document.querySelector(".nobtn");
+const yesbtn = document.querySelector(".yesbtn");
+const checkbox = document.querySelector(".checkbox");
+const checkbtn = document.querySelector(".checkbtn");
+const depositdetails = document.querySelector(".depositdetails");
+const depositeUpHeader2 = document.querySelector(".depositeUpHeader3");
+const Withdrawformcontainer = document.querySelector(".Withdrawformcontainer");
+const deletebox1 = document.querySelector(".deletebox1");
+const questionmarkbox1 = document.querySelector(".questionmarkbox1");
+const nobtn1 = document.querySelector(".nobtn1");
+const yesbtn1 = document.querySelector(".yesbtn1");
+const checkbox1 = document.querySelector(".checkbox1");
+const checkbtn1 = document.querySelector(".checkbtn1");
+const depositeUpHeader3 = document.querySelector(".depositeUpHeader3");
+const removedrwalcontainer = document.querySelector(".removedrwalcontainer");
+const checkwithdrwal = document.querySelector(".checkwithdrwal");
+const withdrawaldrop = document.querySelector(".withdrawaldrop");
+const withdrawdetailebtn = document.querySelector(".withdrawdetailebtn");
+const WithdrawlApplicationformbtn = document.querySelector(
+  ".WithdrawlApplicationformbtn"
+);
+const Depositebtn = document.querySelector(".Depositebtn");
 // const backwithdrawbtn = document.querySelector(".backwithdrawbtn")
-const withdrawnonshow = document.querySelector(".withdrawnonshow")
-const showcheckbox = document.querySelector(".showcheckbox")
-const checkbox3 = document.querySelector(".checkbox3")
-const deepositactivebtn = document.querySelector(".deepositactivebtn")
-const holdingsbtn1 = document.querySelector(".holdingsbtn1")
-const holingsbox = document.querySelector(".holingsbox")
-const holdingclose1 = document.querySelector(".holdingclose1")
-const holdingsbtn2 = document.querySelector(".holdingsbtn2")
-const holingsbox2 = document.querySelector(".holingsbox2")
-const holdingclose2 = document.querySelector(".holdingclose2")
-const noticeBtn = document.querySelector(".noticeBtn")
-const crosscheck = document.querySelector(".crosscheck")
-const checkbtn5 = document.querySelector(".checkbtn5")
-const applicationbtn = document.querySelector(".applicationbtn")
-const notbtn = document.querySelector(".notbtn")
-const checkboxwithin = document.querySelector(".checkboxwithin")
-const yesthisbtn = document.querySelector(".yesthisbtn")
-const crosscheck12 = document.querySelector(".crosscheck12")
-const checkbtn6 = document.querySelector(".checkbtn6")
-const withdrwalposition = document.querySelector(".withdrwalposition")
-const withdrawlbtn = document.querySelector(".withdrawlbtn")
-const backwithdrawbtn = document.querySelector(".backwithdrawbtn")
-const depositeCancel = document.querySelector(".depositeCancel")
-const messsagebtn = document.querySelector(".messsagebtn")
-const noticeBodyMessages = document.querySelector(".noticeBodyMessages")
-const close = document.querySelector(".close")
+const withdrawnonshow = document.querySelector(".withdrawnonshow");
+const showcheckbox = document.querySelector(".showcheckbox");
+const checkbox3 = document.querySelector(".checkbox3");
+const deepositactivebtn = document.querySelector(".deepositactivebtn");
+const holdingsbtn1 = document.querySelector(".holdingsbtn1");
+const holingsbox = document.querySelector(".holingsbox");
+const holdingclose1 = document.querySelector(".holdingclose1");
+const holdingsbtn2 = document.querySelector(".holdingsbtn2");
+const holingsbox2 = document.querySelector(".holingsbox2");
+const holdingclose2 = document.querySelector(".holdingclose2");
+const noticeBtn = document.querySelector(".noticeBtn");
+const crosscheck = document.querySelector(".crosscheck");
+const checkbtn5 = document.querySelector(".checkbtn5");
+const applicationbtn = document.querySelector(".applicationbtn");
+const notbtn = document.querySelector(".notbtn");
+const checkboxwithin = document.querySelector(".checkboxwithin");
+const yesthisbtn = document.querySelector(".yesthisbtn");
+const crosscheck12 = document.querySelector(".crosscheck12");
+const checkbtn6 = document.querySelector(".checkbtn6");
+const withdrwalposition = document.querySelector(".withdrwalposition");
+const withdrawlbtn = document.querySelector(".withdrawlbtn");
+const backwithdrawbtn = document.querySelector(".backwithdrawbtn");
+const depositeCancel = document.querySelector(".depositeCancel");
+const messsagebtn = document.querySelector(".messsagebtn");
+const noticeBodyMessages = document.querySelector(".noticeBodyMessages");
+const close = document.querySelector(".close");
+const pointbtn = document.querySelector(".pointbtn ");
+const holdingsbtn = document.querySelector(".holdingsbtn");
+const pointexchcontainer = document.querySelector(".pointexchcontainer");
+const holdings = document.querySelector(".holdings");
+const closePointHoldings = document.querySelector(".closePointHoldings");
+const infoCancel1211 = document.querySelector(".infoCancel1211");
 
 
+infoCancel1211.addEventListener("click", function () {
+    pointexchcontainer.style.display = "none";
+  });
+closePointHoldings.addEventListener("click", function () {
+    holdings.style.display = "none";
+  });
+//  point popup
+pointexchcontainer.style.display = "none";
+pointbtn.addEventListener("click", function () {
+  if (pointexchcontainer.style.display == "none") {
+    pointexchcontainer.style.display = "block";
+    sliderBackDrop.style.display = "none";
+    sliderMenu.classList.remove("sliderMenuActive");
+  } else {
+    sliderMenu1.style.display = "block";
+  }
+});
+
+//   Holding
+holdings.style.display = "none";
+holdingsbtn.addEventListener("click", function () {
+  if (holdings.style.display == "none") {
+    holdings.style.display = "flex";
+    exchangeBody.style.display = "none";
+    sliderBackDrop.style.display = "none";
+    sliderMenu.classList.remove("sliderMenuActive");
+  } else {
+    sliderMenu1.style.display = "block";
+  }
+});
 
 messsagebtn.addEventListener("click", function () {
-    if (noticeBodyMessages.style.display == "none") {
-        noticeBodyMessages.style.display = "flex";
-      sliderBackDrop.style.display = "none";
-      sliderMenu.classList.remove("sliderMenuActive");
-    } else {
-      sliderMenu1.style.display = "block";
-    }
-  });
-close.addEventListener("click",function(){
-    noticeBodyMessages.style.display = "none";
-})
+  if (noticeBodyMessages.style.display == "none") {
+    noticeBodyMessages.style.display = "flex";
+    sliderBackDrop.style.display = "none";
+    sliderMenu.classList.remove("sliderMenuActive");
+  } else {
+    sliderMenu1.style.display = "block";
+  }
+});
+close.addEventListener("click", function () {
+  noticeBodyMessages.style.display = "none";
+});
 
+depositeCancel.addEventListener("click", function () {
+  withdrawaldrop.style.display = "none";
+});
 
+backwithdrawbtn.addEventListener("click", function () {
+  withdrawldetailscontainer.style.display = "none";
+  withdrawnonshow.style.display = "none";
+});
 
-
-depositeCancel.addEventListener("click",function(){
-    withdrawaldrop.style.display = "none";
-})
-
-
-backwithdrawbtn.addEventListener("click",function(){
-    withdrawldetailscontainer.style.display = "none";
-    withdrawnonshow.style.display = "none";
-       
-})
-
-withdrwalposition.addEventListener("click",function(){
-    withdrawaldrop.style.position = "fixed"; 
-})
-
+withdrwalposition.addEventListener("click", function () {
+  withdrawaldrop.style.position = "fixed";
+});
 
 // withdrawlbtn.addEventListener("click",function(){
 //        console.log("Ali ajdhskjdhskhfdjk");
 // })
 
-
 checkbtn6.addEventListener("click", function () {
-    crosscheck12.style.display = "none";
-})
+  crosscheck12.style.display = "none";
+});
 yesthisbtn.addEventListener("click", function () {
-    checkboxwithin.style.display = "none";
-    crosscheck12.style.display = "block";
-    crosscheck12.style.display = "flex";
-})
+  checkboxwithin.style.display = "none";
+  crosscheck12.style.display = "block";
+  crosscheck12.style.display = "flex";
+});
 notbtn.addEventListener("click", function () {
-    checkboxwithin.style.display = "none";
-})
+  checkboxwithin.style.display = "none";
+});
 applicationbtn.addEventListener("click", function () {
-    checkboxwithin.style.display = "block";
-    checkboxwithin.style.display = "flex";
-})
+  checkboxwithin.style.display = "block";
+  checkboxwithin.style.display = "flex";
+});
 checkbtn5.addEventListener("click", function () {
-    crosscheck.style.display = "none";
-
-})
+  crosscheck.style.display = "none";
+});
 
 noticeBtn.addEventListener("click", function () {
-    crosscheck.style.display = "block";
-    crosscheck.style.display = "flex";
-})
+  crosscheck.style.display = "block";
+  crosscheck.style.display = "flex";
+});
 holdingclose2.addEventListener("click", function () {
-    holingsbox2.style.display = "none";
-})
+  holingsbox2.style.display = "none";
+});
 
 holdingsbtn2.addEventListener("click", function () {
-    holingsbox2.style.display = "block";
-})
-holdingclose1.addEventListener("click", function () {
-    holingsbox.style.display = "none";
-})
-holdingsbtn1.addEventListener("click", function () {
-    holingsbox.style.display = "block";
-})
+  holingsbox2.style.display = "block";
+});
+// holdingclose1.addEventListener("click", function () {
+//   holingsbox.style.display = "none";
+// });
+// holdingsbtn1.addEventListener("click", function () {
+//   holingsbox.style.display = "block";
+// });
 // deepositactivebtn.addEventListener("click", function () {
-    // mainHeaderBtn2.classList.remove('depositeActive')
+// mainHeaderBtn2.classList.remove('depositeActive')
 // })
 
 showcheckbox.addEventListener("click", function () {
-    checkbox3.style.display = "block";
-})
+  checkbox3.style.display = "block";
+});
 
 // backwithdrawbtn.addEventListener("click", function () {
 //   withdrawaldrop.style.display = "none";
 // })
 
 Depositebtn.addEventListener("click", function () {
-    NoticeWrapper2.style.display = "block";
-    withdrawaldrop.style.display = "none";
-})
+  NoticeWrapper2.style.display = "block";
+  withdrawaldrop.style.display = "none";
+});
 
-WithdrawlApplicationformbtn.addEventListener("click",function() {
-    withdrawaldrop.style.display = "block";
-    Withdrawformcontainer.style.display = "none";
-})
+WithdrawlApplicationformbtn.addEventListener("click", function () {
+  withdrawaldrop.style.display = "block";
+  Withdrawformcontainer.style.display = "none";
+});
 
 withdrawdetailebtn.addEventListener("click", function () {
-    Withdrawformcontainer.style.display = "block";
-    withdrawaldrop.style.display = "none";
-})
+  Withdrawformcontainer.style.display = "block";
+  withdrawaldrop.style.display = "none";
+});
 
 checkwithdrwal.addEventListener("click", function () {
-    withdrawaldrop.style.display = "block";
-
-})
+  withdrawaldrop.style.display = "block";
+});
 
 removedrwalcontainer.addEventListener("click", function () {
-    Withdrawformcontainer.style.display = "none";
-    NoticeWrapper2.style.display = "block";
-})
+  Withdrawformcontainer.style.display = "none";
+  NoticeWrapper2.style.display = "block";
+});
 
 depositeUpHeader3.addEventListener("click", function () {
-    Withdrawformcontainer.style.display = "none";
-    withdrawldetailscontainer.style.display = "none";
-})
+  Withdrawformcontainer.style.display = "none";
+  withdrawldetailscontainer.style.display = "none";
+});
 
 checkbtn1.addEventListener("click", function () {
-    checkbox1.style.display = "none";
-    questionmarkbox1.style.display = "none";
-})
+  checkbox1.style.display = "none";
+  questionmarkbox1.style.display = "none";
+});
 
 nobtn1.addEventListener("click", function () {
-    questionmarkbox1.style.display = "none";
-})
+  questionmarkbox1.style.display = "none";
+});
 yesbtn1.addEventListener("click", function () {
-    checkbox1.style.display = "block";
-    checkbox1.style.display = "flex";
-})
+  checkbox1.style.display = "block";
+  checkbox1.style.display = "flex";
+});
 
 deletebox1.addEventListener("click", function () {
-    questionmarkbox1.style.display = "block";
-    questionmarkbox1.style.display = "flex";
-})
+  questionmarkbox1.style.display = "block";
+  questionmarkbox1.style.display = "flex";
+});
 
 depositeUpHeader2.addEventListener("click", function () {
-    // Withdrawformcontainer.style.display = "block";
-    withdrawaldrop.style.display = "block";
-})
+  // Withdrawformcontainer.style.display = "block";
+  withdrawaldrop.style.display = "block";
+});
 
 deletebox.addEventListener("click", function () {
-    questionmarkbox.style.display = "block";
-    questionmarkbox.style.display = "flex";
-})
+  questionmarkbox.style.display = "block";
+  questionmarkbox.style.display = "flex";
+});
 
 depositeapplication1.addEventListener("click", function () {
-    withdrawldetailscontainer.style.display = "block";
-    // mainHeaderBtn2.classList.add('depositeActive')
+  withdrawldetailscontainer.style.display = "block";
+  // mainHeaderBtn2.classList.add('depositeActive')
 
-    // mainHeaderBtn1.classList.remove('depositeActive')
-})
+  // mainHeaderBtn1.classList.remove('depositeActive')
+});
 depositdetails.addEventListener("click", function () {
-    NoticeWrapper2.style.display = "block";
-    withdrawldetailscontainer.style.display = "none";
-})
+  NoticeWrapper2.style.display = "block";
+  withdrawldetailscontainer.style.display = "none";
+});
 // closeicone1.addEventListener("click", function () {
 //     withdrawldetailscontainer.style.display = "none";
 //     NoticeWrapper2.style.display = "none";
 // })
 nobtn.addEventListener("click", function () {
-    questionmarkbox.style.display = "none";
-})
+  questionmarkbox.style.display = "none";
+});
 yesbtn.addEventListener("click", function () {
-    checkbox.style.display = "block";
-    checkbox.style.display = "flex";
-})
+  checkbox.style.display = "block";
+  checkbox.style.display = "flex";
+});
 checkbtn.addEventListener("click", function () {
-    checkbox.style.display = "none";
-    questionmarkbox.style.display = "none";
-})
-
+  checkbox.style.display = "none";
+  questionmarkbox.style.display = "none";
+});
 
 //   Close deposite & withdrwal js
 
+custompopupcontainer.style.display = "none";
+openpopup.addEventListener("click", function () {
+  if (custompopupcontainer.style.display == "none") {
+    custompopupcontainer.style.display = "block";
+    inputfieldcontainer.style.display = "none";
+  }
+});
+closepopup.addEventListener("click", function () {
+  if (custompopupcontainer.style.display == "block") {
+    custompopupcontainer.style.display = "none";
+  }
+});
+
+submitReportBtn.addEventListener("click", function () {
+  inputfieldcontainer.style.display = "block";
+});
 
 custompopupcontainer.style.display = "none";
- openpopup.addEventListener("click",function(){
-     if(custompopupcontainer.style.display == "none"){
-        custompopupcontainer.style.display = "block";
-        inputfieldcontainer.style.display = "none";
-    }  
+changepopup1.addEventListener("click", function () {
+  if (custompopupcontainer.style.display == "none") {
+    custompopupcontainer.style.display = "block";
+    inputfieldcontainer.style.display = "none";
+  }
+});
 
+attandececontainer.style.display = "none";
+Attendancebtn.addEventListener("click", function () {
+  if (attandececontainer.style.display == "none") {
+    attandececontainer.style.display = "block";
+    sliderBackDrop.style.display = "none";
+    sliderMenu.classList.remove("sliderMenuActive");
+  } else {
+    sliderMenu1.style.display = "block";
+  }
+});
 
-  })
-  closepopup.addEventListener("click",function(){
-       if( custompopupcontainer.style.display == "block"){
-        custompopupcontainer.style.display = "none";
-       }
-       
-  })
-
-  submitReportBtn.addEventListener("click",function(){
-    inputfieldcontainer.style.display = "block";
-  })
-
-  
-  custompopupcontainer.style.display = "none";
-  changepopup1.addEventListener("click",function(){
-    if(custompopupcontainer.style.display == "none"){
-        custompopupcontainer.style.display = "block";
-        inputfieldcontainer.style.display = "none";
-    } 
-  })
-
+closeicone.addEventListener("click", function () {
   attandececontainer.style.display = "none";
-  Attendancebtn.addEventListener("click",function(){
-        if(attandececontainer.style.display == "none"){
-          attandececontainer.style.display = "block";
-          sliderBackDrop.style.display = 'none'
-          sliderMenu.classList.remove('sliderMenuActive')
-        }
-        else{
-          sliderMenu1.style.display = "block";
-        }
-  })
-
-  closeicone.addEventListener("click",function(){
-      attandececontainer.style.display = "none";
-  })
-
-
-
-
-
-
-
-
-
-
-
-
-
+});
 
 let miniGameData = [
+  {
+    gameName: "Pin ball",
+    gameImg: "game1",
+    Types: [
+      {
+        formatName: "Pinball 8 level",
+        allBets: [
+          {
+            title: "Total First",
 
-    {
-        gameName: 'Pin ball',
-        gameImg: 'game1',
-        Types: [
-
-            {
-                formatName: 'Pinball 8 level',
-                allBets: [{
-                        title: 'Total First',
-
-                        totalBlocks: [{
-                                oddName: 'Over 3.5',
-                                odds: 3.5
-                            },
-                            {
-                                oddName: 'Over 4.5',
-                                odds: 3.5
-                            },
-                            {
-                                oddName: 'Over 5.5',
-                                odds: 3.5
-                            },
-                            {
-                                oddName: 'Over 6.5',
-                                odds: 3.5
-                            },
-                        ]
-                    },
-
-
-                ]
-
-            },
-            {
-                formatName: 'Pinball 8 level',
-                allBets: [{
-                        title: 'Total First',
-
-                        totalBlocks: [{
-                                oddName: 'Over 3.5',
-                                odds: 3.5
-                            },
-                            {
-                                oddName: 'Over 4.5',
-                                odds: 3.5
-                            },
-                            {
-                                oddName: 'Over 5.5',
-                                odds: 3.5
-                            },
-                            {
-                                oddName: 'Over 6.5',
-                                odds: 3.5
-                            },
-                        ]
-                    },
-
-
-                ]
-
-            },
-
+            totalBlocks: [
+              {
+                oddName: "Over 3.5",
+                odds: 3.5,
+              },
+              {
+                oddName: "Over 4.5",
+                odds: 3.5,
+              },
+              {
+                oddName: "Over 5.5",
+                odds: 3.5,
+              },
+              {
+                oddName: "Over 6.5",
+                odds: 3.5,
+              },
+            ],
+          },
         ],
-    },
-    {
-        gameName: '8 ball',
-        gameImg: 'game2',
-        Types: [
+      },
+      {
+        formatName: "Pinball 8 level",
+        allBets: [
+          {
+            title: "Total First",
 
-            {
-                formatName: '8 pool losers out',
-                allBets: [{
-                        title: 'Total First',
-
-                        totalBlocks: [{
-                                oddName: 'Over 3.5',
-                                odds: 3.5
-                            },
-                            {
-                                oddName: 'Over 4.5',
-                                odds: 3.5
-                            },
-                            {
-                                oddName: 'Over 5.5',
-                                odds: 3.5
-                            },
-                            {
-                                oddName: 'Over 6.5',
-                                odds: 3.5
-                            },
-                        ]
-                    },
-
-
-                ]
-
-            },
-            {
-                formatName: ' 8 pool winners out',
-                allBets: [{
-                        title: 'Total First',
-
-                        totalBlocks: [{
-                                oddName: 'Over 3.5',
-                                odds: 3.5
-                            },
-                            {
-                                oddName: 'Over 4.5',
-                                odds: 3.5
-                            },
-                            {
-                                oddName: 'Over 5.5',
-                                odds: 3.5
-                            },
-                            {
-                                oddName: 'Over 6.5',
-                                odds: 3.5
-                            },
-                        ]
-                    },
-
-
-                ]
-
-            },
-
+            totalBlocks: [
+              {
+                oddName: "Over 3.5",
+                odds: 3.5,
+              },
+              {
+                oddName: "Over 4.5",
+                odds: 3.5,
+              },
+              {
+                oddName: "Over 5.5",
+                odds: 3.5,
+              },
+              {
+                oddName: "Over 6.5",
+                odds: 3.5,
+              },
+            ],
+          },
         ],
-    },
+      },
+    ],
+  },
+  {
+    gameName: "8 ball",
+    gameImg: "game2",
+    Types: [
+      {
+        formatName: "8 pool losers out",
+        allBets: [
+          {
+            title: "Total First",
 
-]
-let messageData = [{
-        msgType: 'notification',
-        title: 'Bank check Type Information',
-        message: ' 23: 30 ~ 00: 05 is bank check time, so charging is not possible.When depositing during bank inspection time (deposit account may change), it is difficult to check It may take a long time to confirm payment.If you make a linked deposit rather than a registered account, it will be cumbersome to check every time. Please make a deposit to the account you registered when you registered as a member.',
-        date: '2023-03-26 22:40:44',
-        status: 'Unread',
-        color: 'Red'
-    },
-    {
-        msgType: 'notification',
-        title: 'Bet Fraud',
-        message: ' 23: 30 ~ 00: 05 is bank check time, so charging is not possible.When depositing during bank inspection time (deposit account may change), it is difficult to check It may take a long time to confirm payment.If you make a linked deposit rather than a registered account, it will be cumbersome to check every time. Please make a deposit to the account you registered when you registered as a member.',
+            totalBlocks: [
+              {
+                oddName: "Over 3.5",
+                odds: 3.5,
+              },
+              {
+                oddName: "Over 4.5",
+                odds: 3.5,
+              },
+              {
+                oddName: "Over 5.5",
+                odds: 3.5,
+              },
+              {
+                oddName: "Over 6.5",
+                odds: 3.5,
+              },
+            ],
+          },
+        ],
+      },
+      {
+        formatName: " 8 pool winners out",
+        allBets: [
+          {
+            title: "Total First",
 
-        date: '2023-03-26 22:40:44',
-        status: 'Unread',
-        color: 'Red'
-    },
-    {
-        msgType: 'notification',
-        title: 'Barcelona wins another classico',
-        message: ' 23: 30 ~ 00: 05 is bank check time, so charging is not possible.When depositing during bank inspection time (deposit account may change), it is difficult to check It may take a long time to confirm payment.If you make a linked deposit rather than a registered account, it will be cumbersome to check every time. Please make a deposit to the account you registered when you registered as a member.',
+            totalBlocks: [
+              {
+                oddName: "Over 3.5",
+                odds: 3.5,
+              },
+              {
+                oddName: "Over 4.5",
+                odds: 3.5,
+              },
+              {
+                oddName: "Over 5.5",
+                odds: 3.5,
+              },
+              {
+                oddName: "Over 6.5",
+                odds: 3.5,
+              },
+            ],
+          },
+        ],
+      },
+    ],
+  },
+];
+let messageData = [
+  {
+    msgType: "notification",
+    title: "Bank check Type Information",
+    message:
+      " 23: 30 ~ 00: 05 is bank check time, so charging is not possible.When depositing during bank inspection time (deposit account may change), it is difficult to check It may take a long time to confirm payment.If you make a linked deposit rather than a registered account, it will be cumbersome to check every time. Please make a deposit to the account you registered when you registered as a member.",
+    date: "2023-03-26 22:40:44",
+    status: "Unread",
+    color: "Red",
+  },
+  {
+    msgType: "notification",
+    title: "Bet Fraud",
+    message:
+      " 23: 30 ~ 00: 05 is bank check time, so charging is not possible.When depositing during bank inspection time (deposit account may change), it is difficult to check It may take a long time to confirm payment.If you make a linked deposit rather than a registered account, it will be cumbersome to check every time. Please make a deposit to the account you registered when you registered as a member.",
 
-        date: '2023-03-26 22:40:44',
-        status: 'Read',
-        color: 'Blue'
-    },
-    {
-        msgType: 'notification',
-        title: 'Hello there!',
-        message: ' 23: 30 ~ 00: 05 is bank check time, so charging is not possible.When depositing during bank inspection time (deposit account may change), it is difficult to check It may take a long time to confirm payment.If you make a linked deposit rather than a registered account, it will be cumbersome to check every time. Please make a deposit to the account you registered when you registered as a member.',
+    date: "2023-03-26 22:40:44",
+    status: "Unread",
+    color: "Red",
+  },
+  {
+    msgType: "notification",
+    title: "Barcelona wins another classico",
+    message:
+      " 23: 30 ~ 00: 05 is bank check time, so charging is not possible.When depositing during bank inspection time (deposit account may change), it is difficult to check It may take a long time to confirm payment.If you make a linked deposit rather than a registered account, it will be cumbersome to check every time. Please make a deposit to the account you registered when you registered as a member.",
 
-        date: '2023-03-26 22:40:44',
-        status: 'Unread',
-        color: 'Red'
-    },
-]
+    date: "2023-03-26 22:40:44",
+    status: "Read",
+    color: "Blue",
+  },
+  {
+    msgType: "notification",
+    title: "Hello there!",
+    message:
+      " 23: 30 ~ 00: 05 is bank check time, so charging is not possible.When depositing during bank inspection time (deposit account may change), it is difficult to check It may take a long time to confirm payment.If you make a linked deposit rather than a registered account, it will be cumbersome to check every time. Please make a deposit to the account you registered when you registered as a member.",
+
+    date: "2023-03-26 22:40:44",
+    status: "Unread",
+    color: "Red",
+  },
+];
 
 let soccerData = [
-
-    {
-        League: {
-            leagueFlag: 'spain',
-            leagueName: 'La Liga',
-            Sports: 'Soccer',
-            leagueRank: 1,
-            Game: [
-
+  {
+    League: {
+      leagueFlag: "spain",
+      leagueName: "La Liga",
+      Sports: "Soccer",
+      leagueRank: 1,
+      Game: [
+        {
+          gameId: 55555,
+          home: "FC Barcelona",
+          away: "Real Madrid",
+          draw: "draw",
+          homeGoal: 2,
+          awayGoal: 2,
+          time: "7:00",
+          date: "03/10",
+          homeLogo: "team1",
+          awayLogo: "team2",
+          bets: [1.55, 2, 3.0],
+          handiBets: [-1.5, 2, 10, 1, 5, 1, 6, 1],
+          extra: "+78",
+          allBets: [
+            {
+              title: "Total First",
+              odd1Name: "over 3.5",
+              odd2Name: "under 3.5",
+              odd1: 2.0,
+              odd2: 1.65,
+              totalBlocks: [
                 {
-                    gameId: 55555,
-                    home: 'FC Barcelona',
-                    away: 'Real Madrid',
-                    draw: 'draw',
-                    homeGoal: 2,
-                    awayGoal: 2,
-                    time: '7:00',
-                    date: '03/10',
-                    homeLogo: 'team1',
-                    awayLogo: 'team2',
-                    bets: [1.55, 2, 3.00],
-                    handiBets: [-1.5, 2, 10, 1, 5, 1, 6, 1],
-                    extra: '+78',
-                    allBets: [{
-                            title: 'Total First',
-                            odd1Name: 'over 3.5',
-                            odd2Name: 'under 3.5',
-                            odd1: 2.0,
-                            odd2: 1.65,
-                            totalBlocks: [{
-                                    oddName: 'Over 3.5',
-                                    odds: 3.5
-                                },
-                                {
-                                    oddName: 'Over 4.5',
-                                    odds: 3.5
-                                },
-                                {
-                                    oddName: 'Over 5.5',
-                                    odds: 3.5
-                                },
-                                {
-                                    oddName: 'Over 6.5',
-                                    odds: 3.5
-                                },
-                            ]
-                        },
-                        {
-                            title: 'Home Total',
-                            odd1Name: 'over 3.5',
-                            odd2Name: 'under 3.5',
-                            odd1: 2.0,
-                            odd2: 1.65,
-                            totalBlocks: [{
-                                    oddName: 'Over 3.5',
-                                    odds: 3.5
-                                },
-                                {
-                                    oddName: 'Over 4.5',
-                                    odds: 3.5
-                                },
-                                {
-                                    oddName: 'Over 5.5',
-                                    odds: 3.5
-                                },
-                                {
-                                    oddName: 'Over 6.5',
-                                    odds: 3.5
-                                },
-                            ]
-                        },
-                        {
-                            title: ' Away Total',
-                            odd1Name: 'over 3.5',
-                            odd2Name: 'under 3.5',
-                            odd1: 2.0,
-                            odd2: 1.65,
-                            totalBlocks: [{
-                                    oddName: 'Over 3.5',
-                                    odds: 3.5
-                                },
-                                {
-                                    oddName: 'Over 4.5',
-                                    odds: 3.5
-                                },
-                                {
-                                    oddName: 'Over 5.5',
-                                    odds: 3.5
-                                },
-                                {
-                                    oddName: 'Over 6.5',
-                                    odds: 3.5
-                                },
-                            ]
-                        },
-                    ]
-
+                  oddName: "Over 3.5",
+                  odds: 3.5,
                 },
                 {
-                    gameId: 122222,
-                    home: 'Valencia',
-                    away: 'Ath. Madrid',
-                    draw: 'draw',
-                    homeGoal: 2,
-                    awayGoal: 2,
-                    time: '6:00',
-                    date: '03/10',
-                    homeLogo: 'team2',
-                    awayLogo: 'team4',
-                    bets: [3.5, 3.2, 3.00],
-                    handiBets: [-1.5, 2, 10, 1, 5, 1, 4, 4],
-                    extra: '+78',
-                    allBets: [{
-                            title: 'Away Wins',
-                            odd1Name: 'over 3.5',
-                            odd2Name: 'under 3.5',
-                            odd1: 2.0,
-                            odd2: 1.65,
-                            totalBlocks: [{
-                                    oddName: 'Over 3.5',
-                                    odds: 3.5
-                                },
-                                {
-                                    oddName: 'Over 4.5',
-                                    odds: 3.5
-                                },
-                                {
-                                    oddName: 'Over 5.5',
-                                    odds: 3.5
-                                },
-                                {
-                                    oddName: 'Over 6.5',
-                                    odds: 3.5
-                                },
-                                {
-                                    oddName: 'Over 4.5',
-                                    odds: 3.5
-                                },
-                                {
-                                    oddName: 'Over 5.5',
-                                    odds: 3.5
-                                },
-                                {
-                                    oddName: 'Over 6.5',
-                                    odds: 3.5
-                                },
-                                {
-                                    oddName: 'Over 4.5',
-                                    odds: 3.5
-                                },
-                                {
-                                    oddName: 'Over 5.5',
-                                    odds: 3.5
-                                },
-                                {
-                                    oddName: 'Over 6.5',
-                                    odds: 3.5
-                                },
-                            ]
-                        },
-                        {
-                            title: 'Handi Capped',
-                            odd1Name: 'over 3.5',
-                            odd2Name: 'under 3.5',
-                            odd1: 2.0,
-                            odd2: 1.65,
-                            totalBlocks: [{
-                                    oddName: 'Over 3.5',
-                                    odds: 3.5
-                                },
-                                {
-                                    oddName: 'Over 4.5',
-                                    odds: 3.5
-                                },
-                                {
-                                    oddName: 'Over 5.5',
-                                    odds: 3.5
-                                },
-                                {
-                                    oddName: 'Over 6.5',
-                                    odds: 3.5
-                                },
-                                {
-                                    oddName: 'Over 4.5',
-                                    odds: 3.5
-                                },
-                                {
-                                    oddName: 'Over 5.5',
-                                    odds: 3.5
-                                },
-                                {
-                                    oddName: 'Over 6.5',
-                                    odds: 3.5
-                                },
-                            ]
-                        },
-                        {
-                            title: ' Nice goals',
-                            odd1Name: 'over 3.5',
-                            odd2Name: 'under 3.5',
-                            odd1: 2.0,
-                            odd2: 1.65,
-                            totalBlocks: [{
-                                    oddName: 'Over 3.5',
-                                    odds: 3.5
-                                },
-                                {
-                                    oddName: 'Over 4.5',
-                                    odds: 3.5
-                                },
-                                {
-                                    oddName: 'Over 5.5',
-                                    odds: 3.5
-                                },
-
-                            ]
-                        },
-                    ]
+                  oddName: "Over 4.5",
+                  odds: 3.5,
                 },
-
-            ],
-        }
+                {
+                  oddName: "Over 5.5",
+                  odds: 3.5,
+                },
+                {
+                  oddName: "Over 6.5",
+                  odds: 3.5,
+                },
+              ],
+            },
+            {
+              title: "Home Total",
+              odd1Name: "over 3.5",
+              odd2Name: "under 3.5",
+              odd1: 2.0,
+              odd2: 1.65,
+              totalBlocks: [
+                {
+                  oddName: "Over 3.5",
+                  odds: 3.5,
+                },
+                {
+                  oddName: "Over 4.5",
+                  odds: 3.5,
+                },
+                {
+                  oddName: "Over 5.5",
+                  odds: 3.5,
+                },
+                {
+                  oddName: "Over 6.5",
+                  odds: 3.5,
+                },
+              ],
+            },
+            {
+              title: " Away Total",
+              odd1Name: "over 3.5",
+              odd2Name: "under 3.5",
+              odd1: 2.0,
+              odd2: 1.65,
+              totalBlocks: [
+                {
+                  oddName: "Over 3.5",
+                  odds: 3.5,
+                },
+                {
+                  oddName: "Over 4.5",
+                  odds: 3.5,
+                },
+                {
+                  oddName: "Over 5.5",
+                  odds: 3.5,
+                },
+                {
+                  oddName: "Over 6.5",
+                  odds: 3.5,
+                },
+              ],
+            },
+          ],
+        },
+        {
+          gameId: 122222,
+          home: "Valencia",
+          away: "Ath. Madrid",
+          draw: "draw",
+          homeGoal: 2,
+          awayGoal: 2,
+          time: "6:00",
+          date: "03/10",
+          homeLogo: "team2",
+          awayLogo: "team4",
+          bets: [3.5, 3.2, 3.0],
+          handiBets: [-1.5, 2, 10, 1, 5, 1, 4, 4],
+          extra: "+78",
+          allBets: [
+            {
+              title: "Away Wins",
+              odd1Name: "over 3.5",
+              odd2Name: "under 3.5",
+              odd1: 2.0,
+              odd2: 1.65,
+              totalBlocks: [
+                {
+                  oddName: "Over 3.5",
+                  odds: 3.5,
+                },
+                {
+                  oddName: "Over 4.5",
+                  odds: 3.5,
+                },
+                {
+                  oddName: "Over 5.5",
+                  odds: 3.5,
+                },
+                {
+                  oddName: "Over 6.5",
+                  odds: 3.5,
+                },
+                {
+                  oddName: "Over 4.5",
+                  odds: 3.5,
+                },
+                {
+                  oddName: "Over 5.5",
+                  odds: 3.5,
+                },
+                {
+                  oddName: "Over 6.5",
+                  odds: 3.5,
+                },
+                {
+                  oddName: "Over 4.5",
+                  odds: 3.5,
+                },
+                {
+                  oddName: "Over 5.5",
+                  odds: 3.5,
+                },
+                {
+                  oddName: "Over 6.5",
+                  odds: 3.5,
+                },
+              ],
+            },
+            {
+              title: "Handi Capped",
+              odd1Name: "over 3.5",
+              odd2Name: "under 3.5",
+              odd1: 2.0,
+              odd2: 1.65,
+              totalBlocks: [
+                {
+                  oddName: "Over 3.5",
+                  odds: 3.5,
+                },
+                {
+                  oddName: "Over 4.5",
+                  odds: 3.5,
+                },
+                {
+                  oddName: "Over 5.5",
+                  odds: 3.5,
+                },
+                {
+                  oddName: "Over 6.5",
+                  odds: 3.5,
+                },
+                {
+                  oddName: "Over 4.5",
+                  odds: 3.5,
+                },
+                {
+                  oddName: "Over 5.5",
+                  odds: 3.5,
+                },
+                {
+                  oddName: "Over 6.5",
+                  odds: 3.5,
+                },
+              ],
+            },
+            {
+              title: " Nice goals",
+              odd1Name: "over 3.5",
+              odd2Name: "under 3.5",
+              odd1: 2.0,
+              odd2: 1.65,
+              totalBlocks: [
+                {
+                  oddName: "Over 3.5",
+                  odds: 3.5,
+                },
+                {
+                  oddName: "Over 4.5",
+                  odds: 3.5,
+                },
+                {
+                  oddName: "Over 5.5",
+                  odds: 3.5,
+                },
+              ],
+            },
+          ],
+        },
+      ],
     },
-    {
-        League: {
-            leagueFlag: 'UEFA',
-            leagueName: 'UCL',
-            leagueRank: 1,
-            Sports: 'Soccer',
-            Game: [
-
+  },
+  {
+    League: {
+      leagueFlag: "UEFA",
+      leagueName: "UCL",
+      leagueRank: 1,
+      Sports: "Soccer",
+      Game: [
+        {
+          gameId: 11111,
+          home: "Arsenal FC",
+          away: "FC Bayern",
+          draw: "draw",
+          homeGoal: 0,
+          awayGoal: 1,
+          time: "6:00",
+          date: "03/10",
+          homeLogo: "team3",
+          awayLogo: "team1",
+          bets: [3.5, 3.2, 3.0],
+          handiBets: [-1.5, 2, 10, 1, 5, 1, 1, 7],
+          extra: "+78",
+          allBets: [
+            {
+              title: "Total",
+              odd1Name: "over 3.5",
+              odd2Name: "under 3.5",
+              odd1: 2.0,
+              odd2: 1.65,
+              totalBlocks: [
                 {
-                    gameId: 11111,
-                    home: 'Arsenal FC',
-                    away: 'FC Bayern',
-                    draw: 'draw',
-                    homeGoal: 0,
-                    awayGoal: 1,
-                    time: '6:00',
-                    date: '03/10',
-                    homeLogo: 'team3',
-                    awayLogo: 'team1',
-                    bets: [3.5, 3.2, 3.00],
-                    handiBets: [-1.5, 2, 10, 1, 5, 1, 1, 7],
-                    extra: '+78',
-                    allBets: [{
-                            title: 'Total',
-                            odd1Name: 'over 3.5',
-                            odd2Name: 'under 3.5',
-                            odd1: 2.0,
-                            odd2: 1.65,
-                            totalBlocks: [{
-                                    oddName: 'Over 3.5',
-                                    odds: 3.5
-                                },
-                                {
-                                    oddName: 'Over 4.5',
-                                    odds: 3.5
-                                },
-                                {
-                                    oddName: 'Over 5.5',
-                                    odds: 3.5
-                                },
-                                {
-                                    oddName: 'Over 6.5',
-                                    odds: 3.5
-                                },
-                            ]
-                        },
-                        {
-                            title: 'Home Total',
-                            odd1Name: 'over 3.5',
-                            odd2Name: 'under 3.5',
-                            odd1: 2.0,
-                            odd2: 1.65,
-                            totalBlocks: [{
-                                    oddName: 'Over 3.5',
-                                    odds: 3.5
-                                },
-                                {
-                                    oddName: 'Over 4.5',
-                                    odds: 3.5
-                                },
-                                {
-                                    oddName: 'Over 5.5',
-                                    odds: 3.5
-                                },
-                                {
-                                    oddName: 'Over 6.5',
-                                    odds: 3.5
-                                },
-                            ]
-                        },
-                        {
-                            title: ' Away Total',
-                            odd1Name: 'over 3.5',
-                            odd2Name: 'under 3.5',
-                            odd1: 2.0,
-                            odd2: 1.65,
-                            totalBlocks: [{
-                                    oddName: 'Over 3.5',
-                                    odds: 3.5
-                                },
-                                {
-                                    oddName: 'Over 4.5',
-                                    odds: 3.5
-                                },
-                                {
-                                    oddName: 'Over 5.5',
-                                    odds: 3.5
-                                },
-                                {
-                                    oddName: 'Over 6.5',
-                                    odds: 3.5
-                                },
-                            ]
-                        },
-                    ]
+                  oddName: "Over 3.5",
+                  odds: 3.5,
                 },
-
                 {
-                    gameId: 52134,
-                    home: 'Man. City',
-                    away: 'Napoli',
-                    draw: 'draw',
-                    homeGoal: 1,
-                    awayGoal: 7,
-                    time: '6:00',
-                    date: '03/10',
-                    homeLogo: 'team2',
-                    awayLogo: 'team3',
-                    bets: [3.5, 3.2, 3.00],
-                    handiBets: [-1.5, 2, 10, 1, 5, 1, 8, 7],
-                    extra: '+78',
-                    allBets: [{
-                            title: 'Total',
-                            odd1Name: 'over 3.5',
-                            odd2Name: 'under 3.5',
-                            odd1: 2.0,
-                            odd2: 1.65,
-                            totalBlocks: [{
-                                    oddName: 'Over 3.5',
-                                    odds: 3.5
-                                },
-                                {
-                                    oddName: 'Over 4.5',
-                                    odds: 3.5
-                                },
-                                {
-                                    oddName: 'Over 5.5',
-                                    odds: 3.5
-                                },
-                                {
-                                    oddName: 'Over 6.5',
-                                    odds: 3.5
-                                },
-                            ]
-
-                        },
-                        {
-                            title: 'not Total',
-                            odd1Name: 'over 3.5',
-                            odd2Name: 'under 3.5',
-                            odd1: 2.0,
-                            odd2: 1.65,
-                            totalBlocks: [{
-                                    oddName: 'Over here',
-                                    odds: 3.5
-                                },
-                                {
-                                    oddName: 'Over there',
-                                    odds: 3.5
-                                },
-                                {
-                                    oddName: 'Over and out',
-                                    odds: 3.5
-                                },
-                                {
-                                    oddName: ' its Over ',
-                                    odds: 3.5
-                                },
-                                {
-                                    oddName: 'Over there',
-                                    odds: 3.5
-                                },
-                                {
-                                    oddName: 'Over and out',
-                                    odds: 3.5
-                                },
-                                {
-                                    oddName: ' its Over ',
-                                    odds: 3.5
-                                },
-                                {
-                                    oddName: 'Over there',
-                                    odds: 3.5
-                                },
-                                {
-                                    oddName: 'Over and out',
-                                    odds: 3.5
-                                },
-                                {
-                                    oddName: ' its Over ',
-                                    odds: 3.5
-                                },
-                            ]
-
-                        },
-                        {
-                            title: 'Totally',
-                            odd1Name: 'over 3.5',
-                            odd2Name: 'under 3.5',
-                            odd1: 2.0,
-                            odd2: 1.65,
-                            totalBlocks: [{
-                                    oddName: ' here',
-                                    odds: 3.5
-                                },
-                                {
-                                    oddName: 'there',
-                                    odds: 3.5
-                                },
-                                // {
-                                //     oddName: 'out',
-                                //     odds: 3.5
-                                // },
-                                // {
-                                //     oddName: ' Over ',
-                                //     odds: 3.5
-                                // },
-                            ]
-
-                        },
-
-                        // {
-                        //     title: 'Home Total',
-                        //     odd1Name: 'over 3.5',
-                        //     odd2Name: 'under 3.5',
-                        //     odd1: 2.0,
-                        //     odd2: 1.65,
-                        // },
-                        // {
-                        //     title: 'Home Total',
-                        //     odd1Name: 'over 3.5',
-                        //     odd2Name: 'under 3.5',
-                        //     odd1: 2.0,
-                        //     odd2: 1.65,
-                        // },
-                        // {
-                        //     title: 'Home Total',
-                        //     odd1Name: 'over 3.5',
-                        //     odd2Name: 'under 3.5',
-                        //     odd1: 2.0,
-                        //     odd2: 1.65,
-                        // },
-                        // {
-                        //     title: ' Away Total',
-                        //     odd1Name: 'over 3.5',
-                        //     odd2Name: 'under 3.5',
-                        //     odd1: 2.0,
-                        //     odd2: 1.65,
-                        //     odd3: 2.4,
-                        //     odd4: 2.6,
-                        //     ood3Name: 'new Odd',
-                        //     odd4Name: 'next Odd',
-                        //     odd1Display: 'flex',
-                        //     odd1Display: 'flex',
-                        //     odd1Display: 'none',
-                        //     odd1Display: 'none',
-                        // },
-                    ]
+                  oddName: "Over 4.5",
+                  odds: 3.5,
                 },
+                {
+                  oddName: "Over 5.5",
+                  odds: 3.5,
+                },
+                {
+                  oddName: "Over 6.5",
+                  odds: 3.5,
+                },
+              ],
+            },
+            {
+              title: "Home Total",
+              odd1Name: "over 3.5",
+              odd2Name: "under 3.5",
+              odd1: 2.0,
+              odd2: 1.65,
+              totalBlocks: [
+                {
+                  oddName: "Over 3.5",
+                  odds: 3.5,
+                },
+                {
+                  oddName: "Over 4.5",
+                  odds: 3.5,
+                },
+                {
+                  oddName: "Over 5.5",
+                  odds: 3.5,
+                },
+                {
+                  oddName: "Over 6.5",
+                  odds: 3.5,
+                },
+              ],
+            },
+            {
+              title: " Away Total",
+              odd1Name: "over 3.5",
+              odd2Name: "under 3.5",
+              odd1: 2.0,
+              odd2: 1.65,
+              totalBlocks: [
+                {
+                  oddName: "Over 3.5",
+                  odds: 3.5,
+                },
+                {
+                  oddName: "Over 4.5",
+                  odds: 3.5,
+                },
+                {
+                  oddName: "Over 5.5",
+                  odds: 3.5,
+                },
+                {
+                  oddName: "Over 6.5",
+                  odds: 3.5,
+                },
+              ],
+            },
+          ],
+        },
 
+        {
+          gameId: 52134,
+          home: "Man. City",
+          away: "Napoli",
+          draw: "draw",
+          homeGoal: 1,
+          awayGoal: 7,
+          time: "6:00",
+          date: "03/10",
+          homeLogo: "team2",
+          awayLogo: "team3",
+          bets: [3.5, 3.2, 3.0],
+          handiBets: [-1.5, 2, 10, 1, 5, 1, 8, 7],
+          extra: "+78",
+          allBets: [
+            {
+              title: "Total",
+              odd1Name: "over 3.5",
+              odd2Name: "under 3.5",
+              odd1: 2.0,
+              odd2: 1.65,
+              totalBlocks: [
+                {
+                  oddName: "Over 3.5",
+                  odds: 3.5,
+                },
+                {
+                  oddName: "Over 4.5",
+                  odds: 3.5,
+                },
+                {
+                  oddName: "Over 5.5",
+                  odds: 3.5,
+                },
+                {
+                  oddName: "Over 6.5",
+                  odds: 3.5,
+                },
+              ],
+            },
+            {
+              title: "not Total",
+              odd1Name: "over 3.5",
+              odd2Name: "under 3.5",
+              odd1: 2.0,
+              odd2: 1.65,
+              totalBlocks: [
+                {
+                  oddName: "Over here",
+                  odds: 3.5,
+                },
+                {
+                  oddName: "Over there",
+                  odds: 3.5,
+                },
+                {
+                  oddName: "Over and out",
+                  odds: 3.5,
+                },
+                {
+                  oddName: " its Over ",
+                  odds: 3.5,
+                },
+                {
+                  oddName: "Over there",
+                  odds: 3.5,
+                },
+                {
+                  oddName: "Over and out",
+                  odds: 3.5,
+                },
+                {
+                  oddName: " its Over ",
+                  odds: 3.5,
+                },
+                {
+                  oddName: "Over there",
+                  odds: 3.5,
+                },
+                {
+                  oddName: "Over and out",
+                  odds: 3.5,
+                },
+                {
+                  oddName: " its Over ",
+                  odds: 3.5,
+                },
+              ],
+            },
+            {
+              title: "Totally",
+              odd1Name: "over 3.5",
+              odd2Name: "under 3.5",
+              odd1: 2.0,
+              odd2: 1.65,
+              totalBlocks: [
+                {
+                  oddName: " here",
+                  odds: 3.5,
+                },
+                {
+                  oddName: "there",
+                  odds: 3.5,
+                },
+                // {
+                //     oddName: 'out',
+                //     odds: 3.5
+                // },
+                // {
+                //     oddName: ' Over ',
+                //     odds: 3.5
+                // },
+              ],
+            },
 
-            ],
-        }
+            // {
+            //     title: 'Home Total',
+            //     odd1Name: 'over 3.5',
+            //     odd2Name: 'under 3.5',
+            //     odd1: 2.0,
+            //     odd2: 1.65,
+            // },
+            // {
+            //     title: 'Home Total',
+            //     odd1Name: 'over 3.5',
+            //     odd2Name: 'under 3.5',
+            //     odd1: 2.0,
+            //     odd2: 1.65,
+            // },
+            // {
+            //     title: 'Home Total',
+            //     odd1Name: 'over 3.5',
+            //     odd2Name: 'under 3.5',
+            //     odd1: 2.0,
+            //     odd2: 1.65,
+            // },
+            // {
+            //     title: ' Away Total',
+            //     odd1Name: 'over 3.5',
+            //     odd2Name: 'under 3.5',
+            //     odd1: 2.0,
+            //     odd2: 1.65,
+            //     odd3: 2.4,
+            //     odd4: 2.6,
+            //     ood3Name: 'new Odd',
+            //     odd4Name: 'next Odd',
+            //     odd1Display: 'flex',
+            //     odd1Display: 'flex',
+            //     odd1Display: 'none',
+            //     odd1Display: 'none',
+            // },
+          ],
+        },
+      ],
     },
-    // {
-    //     League: {
-    //         leagueFlag: 'italy',
-    //         leagueName: 'Series A',
+  },
+  // {
+  //     League: {
+  //         leagueFlag: 'italy',
+  //         leagueName: 'Series A',
 
-    //         leagueRank: 1,
+  //         leagueRank: 1,
 
-    //         Game: [
+  //         Game: [
 
-    //             {
-    //                 gameId: 23345,
-    //                 home: 'AC Milan',
-    //                 away: 'Inter Milan',
-    //                 draw: 'draw',
-    //                 time: '6:00',
-    //                 date: '03/10',
-    //                 homeLogo: 'team1',
-    //                 awayLogo: 'team4',
-    //                 bets: [3.5, 3.2, 3.00],
-    //                 handiBets: [-1.5, 2, 10, 1, 5, 1, 2, 7],
-    //                 extra: '+78'
-    //             },
-    //             {
-    //                 gameId: 12345,
-    //                 home: 'Juventus',
-    //                 away: 'AS Roma',
-    //                 draw: 'draw',
-    //                 time: '6:00',
-    //                 date: '03/10',
-    //                 homeLogo: 'team1',
-    //                 awayLogo: 'team3',
-    //                 bets: [3.5, 3.2, 3.00],
-    //                 handiBets: [-1.5, 2, 10, 1, 5, 1, 4, 7],
-    //                 extra: '+78'
-    //             },
+  //             {
+  //                 gameId: 23345,
+  //                 home: 'AC Milan',
+  //                 away: 'Inter Milan',
+  //                 draw: 'draw',
+  //                 time: '6:00',
+  //                 date: '03/10',
+  //                 homeLogo: 'team1',
+  //                 awayLogo: 'team4',
+  //                 bets: [3.5, 3.2, 3.00],
+  //                 handiBets: [-1.5, 2, 10, 1, 5, 1, 2, 7],
+  //                 extra: '+78'
+  //             },
+  //             {
+  //                 gameId: 12345,
+  //                 home: 'Juventus',
+  //                 away: 'AS Roma',
+  //                 draw: 'draw',
+  //                 time: '6:00',
+  //                 date: '03/10',
+  //                 homeLogo: 'team1',
+  //                 awayLogo: 'team3',
+  //                 bets: [3.5, 3.2, 3.00],
+  //                 handiBets: [-1.5, 2, 10, 1, 5, 1, 4, 7],
+  //                 extra: '+78'
+  //             },
 
-    //         ],
+  //         ],
 
-    //     }
-    // },
-
+  //     }
+  // },
 ];
 
 let listCards = [];
 let dataArray = [];
 let selectedAmount = 0;
 
-
 //renderSidebar is only to render the sidebar for the first time
 //then if a user clicks another game then instead of appending on the parent it should replace the current component
 //so replaceSidebar (another funtion) is used .
 function renderSidebar(leagueIndx, gameIndx) {
+  //get the index of the first game of the first League
 
-    //get the index of the first game of the first League
-
-    let gameObject = soccerData[leagueIndx].League.Game[gameIndx];
-    let leagueObject = soccerData[leagueIndx].League
-    let sport = soccerData[leagueIndx].League.Sports
-    let allBets = soccerData[leagueIndx].League.Game[gameIndx].allBets;
-    // console.log(gameObject)
-    let detailDiv = document.createElement('div');
-    detailDiv.classList.add('ExtraOddsWrapper');
-    detailDiv.innerHTML = `
+  let gameObject = soccerData[leagueIndx].League.Game[gameIndx];
+  let leagueObject = soccerData[leagueIndx].League;
+  let sport = soccerData[leagueIndx].League.Sports;
+  let allBets = soccerData[leagueIndx].League.Game[gameIndx].allBets;
+  // console.log(gameObject)
+  let detailDiv = document.createElement("div");
+  detailDiv.classList.add("ExtraOddsWrapper");
+  detailDiv.innerHTML = `
     <div class="ExtrasHeader">
     <div class="exitDetail">
     <i class="bi bi-chevron-left chevronLogo "></i>Back
@@ -1064,20 +1070,18 @@ function renderSidebar(leagueIndx, gameIndx) {
 <div class="gamePlaceHolder"></div>
 </div>
 <div class="extraOddsContainer"></div>
-    `
+    `;
 
-    // sidebar.replaceChild(detailDiv, detailDiv);
-    //remove this comment
-    col4.appendChild(detailDiv);
+  // sidebar.replaceChild(detailDiv, detailDiv);
+  //remove this comment
+  col4.appendChild(detailDiv);
 
-    let reps = allBets.length
+  let reps = allBets.length;
 
-    for (i = 0; i < reps; i++) {
-
-
-        let allBetsDiv = document.createElement('div');
-        allBetsDiv.classList.add('extraOddsBody');
-        allBetsDiv.innerHTML = `
+  for (i = 0; i < reps; i++) {
+    let allBetsDiv = document.createElement("div");
+    allBetsDiv.classList.add("extraOddsBody");
+    allBetsDiv.innerHTML = `
             
             <div class="oddsHeader fontBlue">${allBets[i].title}</div>
             <div class="oddsFooter">
@@ -1087,52 +1091,42 @@ function renderSidebar(leagueIndx, gameIndx) {
             </div>
         
        
-            `
-        const extraOddsContainer = document.querySelector('.extraOddsContainer');
+            `;
+    const extraOddsContainer = document.querySelector(".extraOddsContainer");
 
-        //remove this comment
-        extraOddsContainer.appendChild(allBetsDiv)
+    //remove this comment
+    extraOddsContainer.appendChild(allBetsDiv);
 
-        const totalOdds = allBets[i].totalBlocks
-            // console.log('all odds here', totalOdds)
-            // console.log('here again')
-        totalOdds.forEach((val, indx) => {
-            let allBetsDiv = document.createElement('div');
-            allBetsDiv.classList.add('finalOddWrapper');
-            allBetsDiv.innerHTML = `
+    const totalOdds = allBets[i].totalBlocks;
+    // console.log('all odds here', totalOdds)
+    // console.log('here again')
+    totalOdds.forEach((val, indx) => {
+      let allBetsDiv = document.createElement("div");
+      allBetsDiv.classList.add("finalOddWrapper");
+      allBetsDiv.innerHTML = `
             <div class="odds1" id="${leagueIndx}-${gameIndx}">${val.oddName}   <span class="highlightOdd">
             ${val.odds}
             </span>
             </div>
-        `
-            const oddsFooter = document.querySelectorAll('.oddsFooter');
-            for (let i = 0; i < oddsFooter.length; i++) {
-
-                oddsFooter[i].appendChild(allBetsDiv)
-            }
-            //remove this comment
-
-        })
-
-
-    }
-
-
-
-
-
+        `;
+      const oddsFooter = document.querySelectorAll(".oddsFooter");
+      for (let i = 0; i < oddsFooter.length; i++) {
+        oddsFooter[i].appendChild(allBetsDiv);
+      }
+      //remove this comment
+    });
+  }
 }
 
 function replaceSidebar(leagueIndx, gameIndx) {
-    let gameObject = soccerData[leagueIndx].League.Game[gameIndx];
-    let leagueObject = soccerData[leagueIndx].League
-    let allBets = soccerData[leagueIndx].League.Game[gameIndx].allBets;
+  let gameObject = soccerData[leagueIndx].League.Game[gameIndx];
+  let leagueObject = soccerData[leagueIndx].League;
+  let allBets = soccerData[leagueIndx].League.Game[gameIndx].allBets;
 
-
-    let oldComponent = document.querySelector('.ExtraOddsWrapper')
-    let newComponent = document.createElement('div');
-    newComponent.classList.add('ExtraOddsWrapper');
-    newComponent.innerHTML = `
+  let oldComponent = document.querySelector(".ExtraOddsWrapper");
+  let newComponent = document.createElement("div");
+  newComponent.classList.add("ExtraOddsWrapper");
+  newComponent.innerHTML = `
     <div class="ExtrasHeader">
     <div class="exitDetail">
     <i class="bi bi-chevron-left  ">
@@ -1165,18 +1159,15 @@ function replaceSidebar(leagueIndx, gameIndx) {
 
 </div>
 <div class="extraOddsContainer"></div>
-    `
-    col4.replaceChild(newComponent, oldComponent)
+    `;
+  col4.replaceChild(newComponent, oldComponent);
 
-    let reps = allBets.length
+  let reps = allBets.length;
 
-
-    for (i = 0; i < reps; i++) {
-
-
-        let allBetsDiv = document.createElement('div');
-        allBetsDiv.classList.add('extraOddsBody');
-        allBetsDiv.innerHTML = `
+  for (i = 0; i < reps; i++) {
+    let allBetsDiv = document.createElement("div");
+    allBetsDiv.classList.add("extraOddsBody");
+    allBetsDiv.innerHTML = `
             
             <div class="oddsHeader fontBlue">${allBets[i].title}</div>
             <div class="oddsFooter">
@@ -1186,19 +1177,19 @@ function replaceSidebar(leagueIndx, gameIndx) {
             </div>
         
        
-            `
-        const extraOddsContainer = document.querySelector('.extraOddsContainer');
+            `;
+    const extraOddsContainer = document.querySelector(".extraOddsContainer");
 
-        //remove this comment
-        extraOddsContainer.appendChild(allBetsDiv)
+    //remove this comment
+    extraOddsContainer.appendChild(allBetsDiv);
 
-        const totalOdds = allBets[i].totalBlocks
-            // console.log('all odds here', totalOdds)
-            // console.log('here again')
-        totalOdds.forEach((val, indx) => {
-            let allBetsDiv = document.createElement('div');
-            allBetsDiv.classList.add('finalOddWrapper');
-            allBetsDiv.innerHTML = `
+    const totalOdds = allBets[i].totalBlocks;
+    // console.log('all odds here', totalOdds)
+    // console.log('here again')
+    totalOdds.forEach((val, indx) => {
+      let allBetsDiv = document.createElement("div");
+      allBetsDiv.classList.add("finalOddWrapper");
+      allBetsDiv.innerHTML = `
 
 
 
@@ -1206,29 +1197,23 @@ function replaceSidebar(leagueIndx, gameIndx) {
             ${val.odds}
             </span>
             </div>
-        `
-            const oddsFooter = document.querySelectorAll('.oddsFooter');
-            for (let i = 0; i < oddsFooter.length; i++) {
-
-                oddsFooter[i].appendChild(allBetsDiv)
-            }
-            //remove this comment
-
-        })
-
-
-    }
-
-
+        `;
+      const oddsFooter = document.querySelectorAll(".oddsFooter");
+      for (let i = 0; i < oddsFooter.length; i++) {
+        oddsFooter[i].appendChild(allBetsDiv);
+      }
+      //remove this comment
+    });
+  }
 }
 
 function initApp() {
-    // console.log(soccerData)
+  // console.log(soccerData)
 
-    messageData.forEach((val, key) => {
-        let newsDiv = document.createElement('div')
-        newsDiv.classList.add('noticeItem')
-        newsDiv.innerHTML = `
+  messageData.forEach((val, key) => {
+    let newsDiv = document.createElement("div");
+    newsDiv.classList.add("noticeItem");
+    newsDiv.innerHTML = `
        
         <div class="upperItem" id="${key}">
             <div class="leftPart">
@@ -1247,18 +1232,16 @@ function initApp() {
             </div>
         </div>
     
-        `
-            //remove this
-        noticeBody.appendChild(newsDiv)
-    })
+        `;
+    //remove this
+    noticeBody.appendChild(newsDiv);
+  });
 
-    soccerData.forEach((value, key) => {
-
-
-        //For leagues
-        let newDiv = document.createElement('div');
-        newDiv.classList.add('leagueTable');
-        newDiv.innerHTML = `
+  soccerData.forEach((value, key) => {
+    //For leagues
+    let newDiv = document.createElement("div");
+    newDiv.classList.add("leagueTable");
+    newDiv.innerHTML = `
         <div class="leagueHeader bbcolor">
         <div class="leagueCol1">
 
@@ -1276,16 +1259,15 @@ function initApp() {
     </div>
    `;
 
-        leagueTable.appendChild(newDiv);
+    leagueTable.appendChild(newDiv);
 
-
-        let games = value.League.Game;
-        //  console.log(games)
-        games.forEach((val, indx) => {
-            // For Games
-            let gamesDiv = document.createElement('div');
-            gamesDiv.classList.add('leagueFooter');
-            gamesDiv.innerHTML = `
+    let games = value.League.Game;
+    //  console.log(games)
+    games.forEach((val, indx) => {
+      // For Games
+      let gamesDiv = document.createElement("div");
+      gamesDiv.classList.add("leagueFooter");
+      gamesDiv.innerHTML = `
             <div class="gameCol1" id='${indx}-${key}'>
 
             <div class="teamRow1" id='${indx}-${key}' >
@@ -1343,72 +1325,65 @@ function initApp() {
         <div class="gameOdds"></div>
    `;
 
+      leagueTable.appendChild(gamesDiv);
 
-            leagueTable.appendChild(gamesDiv);
+      //         let accorDiv = document.createElement('div')
+      //         accorDiv.setAttribute('id', `${indx}${key}`)
+      //         accorDiv.classList.add('accordionOdd');
 
-            //         let accorDiv = document.createElement('div')
-            //         accorDiv.setAttribute('id', `${indx}${key}`)
-            //         accorDiv.classList.add('accordionOdd');
+      //         accorDiv.innerHTML = `
+      // <div class="extraOddsContainer${indx}${key}">
+      // </div>
+      //             `
+      //         leagueTable.appendChild(accorDiv);
+      //         let allOdds = val.allBets;
 
-            //         accorDiv.innerHTML = `
-            // <div class="extraOddsContainer${indx}${key}">
-            // </div>
-            //             `
-            //         leagueTable.appendChild(accorDiv);
-            //         let allOdds = val.allBets;
+      //         let reps = allOdds.length
+      //         console.log('reps', reps)
+      //         for (i = 0; i < reps; i++) {
 
-            //         let reps = allOdds.length
-            //         console.log('reps', reps)
-            //         for (i = 0; i < reps; i++) {
+      //             let allBetsDiv = document.createElement('div');
+      //             allBetsDiv.classList.add('extraOddsBody');
+      //             allBetsDiv.innerHTML = `
 
+      //                 <div class="oddsHeader fontBlue">${allOdds[i].title}</div>
+      //                 <div class="oddsFooter">
+      //                 </div>
+      //                 `
+      //             const extraOddsContainer = document.querySelector(`.extraOddsContainer${indx}${key}`);
 
-            //             let allBetsDiv = document.createElement('div');
-            //             allBetsDiv.classList.add('extraOddsBody');
-            //             allBetsDiv.innerHTML = `
+      //             //remove this comment
+      //             extraOddsContainer.appendChild(allBetsDiv)
 
-            //                 <div class="oddsHeader fontBlue">${allOdds[i].title}</div>
-            //                 <div class="oddsFooter">
-            //                 </div>
-            //                 `
-            //             const extraOddsContainer = document.querySelector(`.extraOddsContainer${indx}${key}`);
+      //             const totalOdds = allOdds[i].totalBlocks
+      //                 // console.log('all odds here', totalOdds)
+      //                 // console.log('here again')
+      //             totalOdds.forEach((val, index) => {
+      //                 let allBetsDiv = document.createElement('div');
+      //                 allBetsDiv.classList.add('finalOddWrapper');
+      //                 allBetsDiv.innerHTML = `
+      //                     <div class="odds1" id="${indx}-${key}">${val.oddName}   <span class="highlightOdd">
+      //                     ${val.odds}
+      //                     </span>
+      //                     </div>
+      //                 `
+      //                 const oddsFooter = document.querySelectorAll('.oddsFooter');
+      //                 for (let i = 0; i < oddsFooter.length; i++) {
 
-            //             //remove this comment
-            //             extraOddsContainer.appendChild(allBetsDiv)
+      //                     oddsFooter[i].appendChild(allBetsDiv)
+      //                 }
 
-            //             const totalOdds = allOdds[i].totalBlocks
-            //                 // console.log('all odds here', totalOdds)
-            //                 // console.log('here again')
-            //             totalOdds.forEach((val, index) => {
-            //                 let allBetsDiv = document.createElement('div');
-            //                 allBetsDiv.classList.add('finalOddWrapper');
-            //                 allBetsDiv.innerHTML = `
-            //                     <div class="odds1" id="${indx}-${key}">${val.oddName}   <span class="highlightOdd">
-            //                     ${val.odds}
-            //                     </span>
-            //                     </div>
-            //                 `
-            //                 const oddsFooter = document.querySelectorAll('.oddsFooter');
-            //                 for (let i = 0; i < oddsFooter.length; i++) {
+      //             })
 
-            //                     oddsFooter[i].appendChild(allBetsDiv)
-            //                 }
+      //         }
+    });
+  });
 
-
-            //             })
-
-
-            //         }
-
-        })
-
-
-    })
-
-    // function selectOdds() {
-    //     handiOdds.classList.toggle('betActive');
-    // }
-    // console.log(handiOdds)
-    // handiOdds.addEventListener('click', selectOdds);
+  // function selectOdds() {
+  //     handiOdds.classList.toggle('betActive');
+  // }
+  // console.log(handiOdds)
+  // handiOdds.addEventListener('click', selectOdds);
 }
 initApp();
 renderSidebar(0, 0);
@@ -1422,27 +1397,26 @@ renderSidebar(0, 0);
 // }
 
 function reloadCard() {
-    cartItemsWrapper.innerHTML = ''
-    const cartNumber = document.querySelector('.cartNumber')
-    let totalPayout = document.querySelector('.OddsNumberAmnt')
-    let totalPrice = selectedAmount;
+  cartItemsWrapper.innerHTML = "";
+  const cartNumber = document.querySelector(".cartNumber");
+  let totalPayout = document.querySelector(".OddsNumberAmnt");
+  let totalPrice = selectedAmount;
 
+  cartNumber.innerHTML = dataArray.length;
+  if (dataArray.length > 0) {
+    emptyCart.style.display = "none";
+  } else {
+    emptyCart.style.display = "flex";
+  }
 
-    cartNumber.innerHTML = dataArray.length
-    if (dataArray.length > 0) {
-        emptyCart.style.display = 'none';
-    } else {
-        emptyCart.style.display = 'flex'
-    }
-
-    let totalOdds = 1;
-    dataArray.forEach((value, key) => {
-        totalOdds = totalOdds * parseFloat(value.odds);
-        // count = count + value.quantity;
-        if (value != null) {
-            let newDiv = document.createElement('div');
-            newDiv.classList.add('cartItem')
-            newDiv.innerHTML = `
+  let totalOdds = 1;
+  dataArray.forEach((value, key) => {
+    totalOdds = totalOdds * parseFloat(value.odds);
+    // count = count + value.quantity;
+    if (value != null) {
+      let newDiv = document.createElement("div");
+      newDiv.classList.add("cartItem");
+      newDiv.innerHTML = `
             <div class="line1">
         <div class="leftWrapper">
 
@@ -1466,16 +1440,13 @@ function reloadCard() {
 </div>
     </div>
                 `;
-            cartItemsWrapper.appendChild(newDiv);
-        }
-    })
-    OddsNumber.innerText = totalOdds.toLocaleString();
-    totalPayout.innerHTML = selectedAmount * totalOdds
-        // quantity.innerText = count;
+      cartItemsWrapper.appendChild(newDiv);
+    }
+  });
+  OddsNumber.innerText = totalOdds.toLocaleString();
+  totalPayout.innerHTML = selectedAmount * totalOdds;
+  // quantity.innerText = count;
 }
-
-
-
 
 // function moveElement() {
 //     sidebar.style.left = '0';
@@ -1484,207 +1455,195 @@ function reloadCard() {
 
 // }
 
-
-
 //Deposite popUp
 
-const loginBtn = document.querySelector('.loginBtn')
-const sliderMenu = document.querySelector('.sliderMenu')
-const sliderBackDrop = document.querySelector('.sliderMenuBackDrop')
+const loginBtn = document.querySelector(".loginBtn");
+const sliderMenu = document.querySelector(".sliderMenu");
+const sliderBackDrop = document.querySelector(".sliderMenuBackDrop");
 
-loginBtn.addEventListener('click', function() {
-    sliderMenu.classList.add('sliderMenuActive')
-    sliderBackDrop.style.display = 'block'
-})
+loginBtn.addEventListener("click", function () {
+  sliderMenu.classList.add("sliderMenuActive");
+  sliderBackDrop.style.display = "block";
+});
 
-sliderBackDrop.addEventListener('click', () => {
-    sliderMenu.classList.remove('sliderMenuActive')
-    sliderBackDrop.style.display = 'none'
-})
+sliderBackDrop.addEventListener("click", () => {
+  sliderMenu.classList.remove("sliderMenuActive");
+  sliderBackDrop.style.display = "none";
+});
 
-noticeCancelBtn.addEventListener('click', function() {
-    backDrop.style.display = 'none'
+noticeCancelBtn.addEventListener("click", function () {
+  backDrop.style.display = "none";
+});
 
-})
+cartWrapper.addEventListener("click", function () {
+  cartBackdrop.style.display = "flex";
+  col3.style.display = "flex";
+  col3.style.zIndex = 3;
 
+  slipCancel.addEventListener("click", () => {
+    cartBackdrop.style.display = "none";
+    col3.style.display = "";
+    col3.style.zIndex = 1;
+  });
+});
 
-cartWrapper.addEventListener('click', function() {
-    cartBackdrop.style.display = 'flex'
-    col3.style.display = 'flex'
-    col3.style.zIndex = 3
-
-    slipCancel.addEventListener('click', () => {
-        cartBackdrop.style.display = 'none'
-        col3.style.display = ''
-        col3.style.zIndex = 1
-    })
-
-})
-
-cartBackdrop.addEventListener('click', function() {
-    cartBackdrop.style.display = 'none'
-    col3.style.display = ''
-    col3.style.zIndex = 1
-})
-const accord = document.querySelectorAll('.accordionOdd')
+cartBackdrop.addEventListener("click", function () {
+  cartBackdrop.style.display = "none";
+  col3.style.display = "";
+  col3.style.zIndex = 1;
+});
+const accord = document.querySelectorAll(".accordionOdd");
 
 function setActiveButton(id) {
-    // remove active class from all buttons
+  // remove active class from all buttons
 
-    let accord = document.getElementById(`${id}`);
-    accord.classList.toggle('accordionActive')
-        // const accordionOdd = document.querySelectorAll('.accordionOdd')
-        // accordionOdd.forEach(btn => btn.classList.remove('accordionActive'));
+  let accord = document.getElementById(`${id}`);
+  accord.classList.toggle("accordionActive");
+  // const accordionOdd = document.querySelectorAll('.accordionOdd')
+  // accordionOdd.forEach(btn => btn.classList.remove('accordionActive'));
 
-    // // add active class to the clicked button
-    // accordi.classList.add('accordionActive');
+  // // add active class to the clicked button
+  // accordi.classList.add('accordionActive');
 }
 
-
-
 function setActiveOdd(button) {
-    // remove active class from all buttons
-    const buttons = document.querySelectorAll('.betOdds')
-    const buttons2 = document.querySelectorAll('.handiOdds')
-    const buttons3 = document.querySelectorAll('.ouOdds')
-    buttons.forEach(btn => btn.classList.remove('betActive'));
-    buttons2.forEach(btn => btn.classList.remove('betActive'));
-    buttons3.forEach(btn => btn.classList.remove('betActive'));
+  // remove active class from all buttons
+  const buttons = document.querySelectorAll(".betOdds");
+  const buttons2 = document.querySelectorAll(".handiOdds");
+  const buttons3 = document.querySelectorAll(".ouOdds");
+  buttons.forEach((btn) => btn.classList.remove("betActive"));
+  buttons2.forEach((btn) => btn.classList.remove("betActive"));
+  buttons3.forEach((btn) => btn.classList.remove("betActive"));
 
-    // add active class to the clicked button
-    button.classList.add('betActive');
+  // add active class to the clicked button
+  button.classList.add("betActive");
 }
 
 function setActiveOdd2(button) {
-    // remove active class from all buttons
-    const buttons = document.querySelectorAll('.betOdds')
+  // remove active class from all buttons
+  const buttons = document.querySelectorAll(".betOdds");
 
-    const buttons2 = document.querySelectorAll('.handiOdds')
-    const buttons3 = document.querySelectorAll('.ouOdds')
-    buttons.forEach(btn => btn.classList.remove('betActive'));
-    buttons2.forEach(btn => btn.classList.remove('betActive'));
-    buttons3.forEach(btn => btn.classList.remove('betActive'));
+  const buttons2 = document.querySelectorAll(".handiOdds");
+  const buttons3 = document.querySelectorAll(".ouOdds");
+  buttons.forEach((btn) => btn.classList.remove("betActive"));
+  buttons2.forEach((btn) => btn.classList.remove("betActive"));
+  buttons3.forEach((btn) => btn.classList.remove("betActive"));
 
-    // add active class to the clicked button
-    button.classList.add('betActive');
+  // add active class to the clicked button
+  button.classList.add("betActive");
 }
 
 function setActiveOdd3(button) {
-    // remove active class from all buttons
-    const buttons = document.querySelectorAll('.betOdds')
-    const buttons2 = document.querySelectorAll('.handiOdds')
-    const buttons3 = document.querySelectorAll('.ouOdds')
-    buttons.forEach(btn => btn.classList.remove('betActive'));
-    buttons2.forEach(btn => btn.classList.remove('betActive'));
-    buttons3.forEach(btn => btn.classList.remove('betActive'));
+  // remove active class from all buttons
+  const buttons = document.querySelectorAll(".betOdds");
+  const buttons2 = document.querySelectorAll(".handiOdds");
+  const buttons3 = document.querySelectorAll(".ouOdds");
+  buttons.forEach((btn) => btn.classList.remove("betActive"));
+  buttons2.forEach((btn) => btn.classList.remove("betActive"));
+  buttons3.forEach((btn) => btn.classList.remove("betActive"));
 
-    // add active class to the clicked button
-    button.classList.add('betActive');
+  // add active class to the clicked button
+  button.classList.add("betActive");
 }
-document.addEventListener('DOMContentLoaded', function() {
-    const buttons = document.querySelectorAll('.handiOdds');
-    const ouButtons = document.querySelectorAll('.ouOdds');
-    const betOdds = document.querySelectorAll('.betOdds');
-    const extraOdd = document.querySelectorAll('.extraOdd');
-    const leagueCol2 = document.querySelectorAll('.leagueCol2');
-    const leagueCol3 = document.querySelectorAll('.leagueCol3');
-    const leagueCol4 = document.querySelectorAll('.leagueCol4');
+document.addEventListener("DOMContentLoaded", function () {
+  const buttons = document.querySelectorAll(".handiOdds");
+  const ouButtons = document.querySelectorAll(".ouOdds");
+  const betOdds = document.querySelectorAll(".betOdds");
+  const extraOdd = document.querySelectorAll(".extraOdd");
+  const leagueCol2 = document.querySelectorAll(".leagueCol2");
+  const leagueCol3 = document.querySelectorAll(".leagueCol3");
+  const leagueCol4 = document.querySelectorAll(".leagueCol4");
 
-    const gameCol2 = document.querySelectorAll('.gameCol2');
-    const gameCol3 = document.querySelectorAll('.gameCol3');
-    const gameCol4 = document.querySelectorAll('.gameCol4');
-    const selectGame = document.querySelectorAll('.gameCol1');
-    const selectGame2 = document.querySelectorAll('.teamRow1');
-    const extraOddBtn = document.querySelectorAll('.odds1');
-    const col4 = document.querySelector('.column4');
-    const col2 = document.querySelector('.column2');
-    const col3 = document.querySelector('.column3');
-    const slipBody = document.querySelector('.slipBody')
-    const noticeDownHeader = document.querySelector('.noticeDownHeader');
-    const backBtn = document.querySelector('.msgBack');
-    const upperItem = document.querySelectorAll('.upperItem');
-    const noticeItem = document.querySelectorAll('.noticeItem');
-    const singleGame = document.querySelectorAll('.singleGame');
-    const empty = document.querySelector('.emptyAll');
+  const gameCol2 = document.querySelectorAll(".gameCol2");
+  const gameCol3 = document.querySelectorAll(".gameCol3");
+  const gameCol4 = document.querySelectorAll(".gameCol4");
+  const selectGame = document.querySelectorAll(".gameCol1");
+  const selectGame2 = document.querySelectorAll(".teamRow1");
+  const extraOddBtn = document.querySelectorAll(".odds1");
+  const col4 = document.querySelector(".column4");
+  const col2 = document.querySelector(".column2");
+  const col3 = document.querySelector(".column3");
+  const slipBody = document.querySelector(".slipBody");
+  const noticeDownHeader = document.querySelector(".noticeDownHeader");
+  const backBtn = document.querySelector(".msgBack");
+  const upperItem = document.querySelectorAll(".upperItem");
+  const noticeItem = document.querySelectorAll(".noticeItem");
+  const singleGame = document.querySelectorAll(".singleGame");
+  const empty = document.querySelector(".emptyAll");
 
-    const selectAmount = document.querySelectorAll('.amount1');
-    const maxAmnt = document.querySelector('.maxAmnt');
-    const resetAmnt = document.querySelector('.resetAmnt');
+  const selectAmount = document.querySelectorAll(".amount1");
+  const maxAmnt = document.querySelector(".maxAmnt");
+  const resetAmnt = document.querySelector(".resetAmnt");
 
+  maxAmnt.addEventListener("click", () => {
+    selectedAmount = 100;
+    reloadCard();
+  });
+  resetAmnt.addEventListener("click", () => {
+    selectedAmount = 0;
+    reloadCard();
+  });
+  selectAmount.forEach((amount) => {
+    amount.addEventListener("click", (event) => {
+      // Remove the commas from the string using the replace method
+      const numStr = event.target.textContent.replace(/,/g, "");
 
+      // Convert the string into an integer using the parseInt method
+      const num = parseInt(numStr);
+      selectedAmount = num;
+      console.log(selectedAmount);
+      reloadCard();
+    });
+  });
 
-    maxAmnt.addEventListener('click', () => {
-        selectedAmount = 100
-        reloadCard();
-    })
-    resetAmnt.addEventListener('click', () => {
-        selectedAmount = 0
-        reloadCard();
-    })
-    selectAmount.forEach((amount) => {
-        amount.addEventListener('click', (event) => {
-            // Remove the commas from the string using the replace method
-            const numStr = event.target.textContent.replace(/,/g, '');
+  empty.addEventListener("click", () => {
+    console.log("here");
+    let popup = document.querySelector(".limitPopUp");
+    let totalOdds = document.querySelector(".OddsNumber");
+    if (totalOdds > 100) {
+      popup.style.display = "flex";
+    }
+    popup.style.display = "none";
+    dataArray.splice(0, dataArray.length);
+    reloadCard();
+  });
 
-            // Convert the string into an integer using the parseInt method
-            const num = parseInt(numStr);
-            selectedAmount = num
-            console.log(selectedAmount)
-            reloadCard();
-        })
-    })
+  slipBody.addEventListener("click", (event) => {
+    if (event.target.parentNode.matches(".exitLogo")) {
+      let id = event.target.parentNode.id;
+      console.log("from here", id);
+      dataArray.splice(id, 1);
+      let popup = document.querySelector(".limitPopUp");
+      let totalOdds = document.querySelector(".OddsNumber");
+      if (totalOdds > 100) {
+        popup.style.display = "flex";
+      }
+      popup.style.display = "none";
+      reloadCard();
+    } else {
+      console.log("sad", event.target);
+    }
+  });
 
-    empty.addEventListener('click', () => {
-        console.log('here')
-        let popup = document.querySelector('.limitPopUp')
-        let totalOdds = document.querySelector('.OddsNumber')
-        if (totalOdds > 100) {
-            popup.style.display = 'flex'
-        }
-        popup.style.display = 'none'
-        dataArray.splice(0, dataArray.length)
-        reloadCard();
-    })
+  //Deposite Popup
+  slideDeposite.addEventListener("click", () => {
+    depositeDrop.style.display = "flex";
+    sliderBackDrop.style.display = "none";
+    sliderMenu.classList.remove("sliderMenuActive");
 
-    slipBody.addEventListener('click', (event) => {
+    const mainHeaderBtn1 = document.querySelector(".depositeUpHeader1");
+    const mainHeaderBtn2 = document.querySelector(".depositeUpHeader2");
 
-        if (event.target.parentNode.matches('.exitLogo')) {
-            let id = event.target.parentNode.id;
-            console.log('from here', id)
-            dataArray.splice(id, 1)
-            let popup = document.querySelector('.limitPopUp')
-            let totalOdds = document.querySelector('.OddsNumber')
-            if (totalOdds > 100) {
-                popup.style.display = 'flex'
-            }
-            popup.style.display = 'none'
-            reloadCard();
-        } else {
-            console.log('sad', event.target)
-        }
-    })
+    mainHeaderBtn1.addEventListener("click", function () {
+      mainHeaderBtn1.classList.add("depositeActive");
 
-    //Deposite Popup
-    slideDeposite.addEventListener('click', () => {
-        depositeDrop.style.display = 'flex';
-        sliderBackDrop.style.display = 'none'
-        sliderMenu.classList.remove('sliderMenuActive')
+      mainHeaderBtn2.classList.remove("depositeActive");
+      let noticeBody = document.querySelector(".noticeBodyNew");
+      let nextWindow = document.createElement("div");
+      nextWindow.classList.add("depositeItem");
+      let oldWindow = document.querySelector(".withdrawlItem");
 
-        const mainHeaderBtn1 = document.querySelector('.depositeUpHeader1')
-        const mainHeaderBtn2 = document.querySelector('.depositeUpHeader2')
-
-        mainHeaderBtn1.addEventListener('click', function() {
-
-            mainHeaderBtn1.classList.add('depositeActive')
-
-            mainHeaderBtn2.classList.remove('depositeActive')
-            let noticeBody = document.querySelector('.noticeBodyNew')
-            let nextWindow = document.createElement('div')
-            nextWindow.classList.add('depositeItem')
-            let oldWindow = document.querySelector('.withdrawlItem')
-
-
-            nextWindow.innerHTML = `
+      nextWindow.innerHTML = `
             <div class="menuItem">
                                 <div class="dispIcon specDisp">Type</div>
                                 <div class="dispIcon">
@@ -1740,23 +1699,20 @@ document.addEventListener('DOMContentLoaded', function() {
                             </div>
         
            
-            `
+            `;
 
-            noticeBody.replaceChild(nextWindow, oldWindow)
+      noticeBody.replaceChild(nextWindow, oldWindow);
+    });
+    mainHeaderBtn2.addEventListener("click", function () {
+      mainHeaderBtn2.classList.add("depositeActive");
 
-        })
-        mainHeaderBtn2.addEventListener('click', function() {
+      mainHeaderBtn1.classList.remove("depositeActive");
+      let noticeBody = document.querySelector(".noticeBodyNew");
+      let nextWindow = document.createElement("div");
+      nextWindow.classList.add("withdrawlItem");
+      let oldWindow = document.querySelector(".depositeItem");
 
-            mainHeaderBtn2.classList.add('depositeActive')
-
-            mainHeaderBtn1.classList.remove('depositeActive')
-            let noticeBody = document.querySelector('.noticeBodyNew')
-            let nextWindow = document.createElement('div')
-            nextWindow.classList.add('withdrawlItem')
-            let oldWindow = document.querySelector('.depositeItem')
-
-
-            nextWindow.innerHTML = `
+      nextWindow.innerHTML = `
             <div class="menuItem">
                 <div class="dispIcon specDisp">Balance</div>
                 <div class="dispIcon">
@@ -1807,148 +1763,122 @@ document.addEventListener('DOMContentLoaded', function() {
             </div>
         
            
-            `
+            `;
 
-            noticeBody.replaceChild(nextWindow, oldWindow)
-
-        })
-
-        let depositeCancelBtn = document.querySelector('.depositeCancel')
-        depositeCancelBtn.addEventListener('click', function() {
-            depositeDrop.style.display = 'none'
-
-        })
-
-    })
-
-
-    selectOptions.addEventListener('change', function() {
-        console.log('here')
-        if (selectOptions.value == 'winner') {
-
-            for (let i = 0; i < leagueCol3.length; i++) {
-                leagueCol3[i].style.display = 'none';
-                leagueCol4[i].style.display = 'none';
-                for (let i = 0; i < gameCol3.length; i++) {
-
-                    gameCol3[i].style.display = 'none';
-                    gameCol4[i].style.display = 'none';
-                }
-            }
-            for (let i = 0; i < leagueCol2.length; i++) {
-                leagueCol2[i].style.display = 'flex';
-
-                for (let i = 0; i < gameCol2.length; i++) {
-
-                    gameCol2[i].style.display = 'flex';
-
-                }
-            }
-        }
-        if (selectOptions.value == 'handicap') {
-
-            for (let i = 0; i < leagueCol2.length; i++) {
-                leagueCol2[i].style.display = 'none';
-                leagueCol4[i].style.display = 'none';
-                for (let i = 0; i < gameCol2.length; i++) {
-
-                    gameCol2[i].style.display = 'none';
-                    gameCol4[i].style.display = 'none';
-                }
-            }
-            for (let i = 0; i < leagueCol3.length; i++) {
-                leagueCol3[i].style.display = 'flex';
-
-                for (let i = 0; i < gameCol3.length; i++) {
-
-                    gameCol3[i].style.display = 'flex';
-
-                }
-            }
-
-        }
-        if (selectOptions.value == 'overUnder') {
-
-            for (let i = 0; i < leagueCol3.length; i++) {
-                leagueCol3[i].style.display = 'none';
-                leagueCol2[i].style.display = 'none';
-                for (let i = 0; i < gameCol3.length; i++) {
-
-                    gameCol3[i].style.display = 'none';
-                    gameCol2[i].style.display = 'none';
-                }
-            }
-            for (let i = 0; i < leagueCol4.length; i++) {
-                leagueCol4[i].style.display = 'flex';
-
-                for (let i = 0; i < gameCol4.length; i++) {
-
-                    gameCol4[i].style.display = 'flex';
-
-                }
-            }
-        }
-
+      noticeBody.replaceChild(nextWindow, oldWindow);
     });
 
-    selectGame.forEach(function(selectGame) {
-        selectGame.addEventListener('click', function(event) {
+    let depositeCancelBtn = document.querySelector(".depositeCancel");
+    depositeCancelBtn.addEventListener("click", function () {
+      depositeDrop.style.display = "none";
+    });
+  });
 
-            const gameIndex = event.target.parentNode.id.split('-')[0]
-            const leagueIndex = event.target.parentNode.id.split('-')[1]
-                //  console.log(gameIndex, leagueIndex)
-            replaceSidebar(leagueIndex, gameIndex);
+  selectOptions.addEventListener("change", function () {
+    console.log("here");
+    if (selectOptions.value == "winner") {
+      for (let i = 0; i < leagueCol3.length; i++) {
+        leagueCol3[i].style.display = "none";
+        leagueCol4[i].style.display = "none";
+        for (let i = 0; i < gameCol3.length; i++) {
+          gameCol3[i].style.display = "none";
+          gameCol4[i].style.display = "none";
+        }
+      }
+      for (let i = 0; i < leagueCol2.length; i++) {
+        leagueCol2[i].style.display = "flex";
 
-        })
-    })
-    selectGame2.forEach(function(selectGame) {
-        selectGame.addEventListener('click', function(event) {
+        for (let i = 0; i < gameCol2.length; i++) {
+          gameCol2[i].style.display = "flex";
+        }
+      }
+    }
+    if (selectOptions.value == "handicap") {
+      for (let i = 0; i < leagueCol2.length; i++) {
+        leagueCol2[i].style.display = "none";
+        leagueCol4[i].style.display = "none";
+        for (let i = 0; i < gameCol2.length; i++) {
+          gameCol2[i].style.display = "none";
+          gameCol4[i].style.display = "none";
+        }
+      }
+      for (let i = 0; i < leagueCol3.length; i++) {
+        leagueCol3[i].style.display = "flex";
 
-            const gameIndex = event.target.parentNode.id.split('-')[0]
-            const leagueIndex = event.target.parentNode.id.split('-')[1]
-                //  console.log(gameIndex, leagueIndex)
-            replaceSidebar(leagueIndex, gameIndex);
+        for (let i = 0; i < gameCol3.length; i++) {
+          gameCol3[i].style.display = "flex";
+        }
+      }
+    }
+    if (selectOptions.value == "overUnder") {
+      for (let i = 0; i < leagueCol3.length; i++) {
+        leagueCol3[i].style.display = "none";
+        leagueCol2[i].style.display = "none";
+        for (let i = 0; i < gameCol3.length; i++) {
+          gameCol3[i].style.display = "none";
+          gameCol2[i].style.display = "none";
+        }
+      }
+      for (let i = 0; i < leagueCol4.length; i++) {
+        leagueCol4[i].style.display = "flex";
 
-        })
-    })
-    console.log(upperItem)
-        // noticeItem.forEach(function(e) {
-        //     e.addEventListener('click', function(event) {
-        //         console.log(e.childNodes[1].id)
-        //         let renderComp = false
-        //         if(!renderComp){
-        //             //render
+        for (let i = 0; i < gameCol4.length; i++) {
+          gameCol4[i].style.display = "flex";
+        }
+      }
+    }
+  });
 
-    //             renderComp = true
-    //         }
+  selectGame.forEach(function (selectGame) {
+    selectGame.addEventListener("click", function (event) {
+      const gameIndex = event.target.parentNode.id.split("-")[0];
+      const leagueIndex = event.target.parentNode.id.split("-")[1];
+      //  console.log(gameIndex, leagueIndex)
+      replaceSidebar(leagueIndex, gameIndex);
+    });
+  });
+  selectGame2.forEach(function (selectGame) {
+    selectGame.addEventListener("click", function (event) {
+      const gameIndex = event.target.parentNode.id.split("-")[0];
+      const leagueIndex = event.target.parentNode.id.split("-")[1];
+      //  console.log(gameIndex, leagueIndex)
+      replaceSidebar(leagueIndex, gameIndex);
+    });
+  });
+  console.log(upperItem);
+  // noticeItem.forEach(function(e) {
+  //     e.addEventListener('click', function(event) {
+  //         console.log(e.childNodes[1].id)
+  //         let renderComp = false
+  //         if(!renderComp){
+  //             //render
 
-    //     })
-    // })
-    upperItem.forEach(function(upperItem) {
-        upperItem.addEventListener('click', function(event) {
+  //             renderComp = true
+  //         }
 
+  //     })
+  // })
+  upperItem.forEach(function (upperItem) {
+    upperItem.addEventListener("click", function (event) {
+      const msgIndex = event.target.id;
+      console.log(msgIndex);
+      for (let i = 0; i < noticeItem.length; i++) {
+        noticeItem[i].style.display = "none";
+      }
+      noticeDownHeader.style.display = "none";
 
-            const msgIndex = event.target.id;
-            console.log(msgIndex)
-            for (let i = 0; i < noticeItem.length; i++) {
-                noticeItem[i].style.display = 'none'
-            }
-            noticeDownHeader.style.display = 'none'
+      const msgContent = messageData[msgIndex].message;
+      const msgType = messageData[msgIndex].msgType;
+      const msgTitle = messageData[msgIndex].title;
+      const msgDate = messageData[msgIndex].date;
+      messageData[msgIndex].status = "Read";
+      messageData[msgIndex].color = "Blue";
 
+      console.log(messageData[msgIndex]);
 
-
-            const msgContent = messageData[msgIndex].message;
-            const msgType = messageData[msgIndex].msgType;
-            const msgTitle = messageData[msgIndex].title;
-            const msgDate = messageData[msgIndex].date;
-            messageData[msgIndex].status = 'Read'
-            messageData[msgIndex].color = 'Blue'
-
-            console.log(messageData[msgIndex])
-
-            let newDiv = document.createElement('div')
-            newDiv.classList.add('msgBody')
-            newDiv.innerHTML = `
+      let newDiv = document.createElement("div");
+      newDiv.classList.add("msgBody");
+      newDiv.innerHTML = `
             <div class="msgHeader bbcolor">
             <div class="up">[${msgType}] ${msgTitle}</div>
             <div class="down fontSecondary">
@@ -1959,381 +1889,370 @@ document.addEventListener('DOMContentLoaded', function() {
            ${msgContent}
         </div>
     
-            `
-                //remove this comment
-            noticeBody.appendChild(newDiv)
-
-
-        })
-    })
-    singleGame.forEach(function(game) {
-        game.addEventListener('click', function(event) {
-
-
-
-            const gameIndex = event.target.id;
-            console.log(miniGameData[gameIndex].Types)
-                // for (let i = 0; i < noticeItem.length; i++) {
-                //     noticeItem[i].style.display = 'none'
-                // }
-                // noticeDownHeader.style.display = 'none'
-
-
-
-            //     const msgContent = messageData[msgIndex].message;
-            //     const msgType = messageData[msgIndex].msgType;
-            //     const msgTitle = messageData[msgIndex].title;
-            //     const msgDate = messageData[msgIndex].date;
-            //     messageData[msgIndex].status = 'Read'
-            //     messageData[msgIndex].color = 'Blue'
-
-            //     console.log(messageData[msgIndex])
-
-            //     let newDiv = document.createElement('div')
-            //     newDiv.classList.add('msgBody')
-            //     newDiv.innerHTML = `
-            //     <div class="msgHeader bbcolor">
-            //     <div class="up">[${msgType}] ${msgTitle}</div>
-            //     <div class="down fontSecondary">
-            //         ${msgDate}
-            //     </div>
-            // </div>
-            // <div class="msgContent btcolor">
-            //    ${msgContent}
-            // </div>
-
-            //     `
-
-            //     noticeBody.appendChild(newDiv)
-
-
-        })
-    })
-
-
-
-    buttons.forEach(function(button) {
-        button.addEventListener('click', function(event) {
-            // Toggle the 'button-active' class on the clicked button element
-            setActiveOdd2(event.target)
-            const gameIndex = event.target.id.split('-')[0]
-            const leagueIndex = event.target.id.split('-')[1]
-            const oddIndex = event.target.id.split('-')[2]
-            console.log('odd Inddd', oddIndex)
-            const leagueName = soccerData[leagueIndex].League.leagueName;
-            const leagueLogo = soccerData[leagueIndex].League.leagueFlag;
-            const fullGame = soccerData[leagueIndex].League.Game[gameIndex].home + ' vs ' + soccerData[leagueIndex].League.Game[gameIndex].away;
-            const matchType = 'Handicap';
-            const matchTime = 'Live';
-            const rawContent = event.target.textContent.split(' ')
-            const cleanedArr = rawContent.filter(str => str.trim() !== '');
-            const selectedOdd = parseFloat(cleanedArr.pop());
-            const sameOdd = gameIndex + leagueIndex + event.target.id.split('-')[3]
-            const teamOdd = cleanedArr.join(' ');
-            const teamName = oddIndex == 1 ? soccerData[leagueIndex].League.Game[gameIndex].home : oddIndex == 2 ? soccerData[leagueIndex].League.Game[gameIndex].away : 'draw';
-            const finalName = `${teamName}  (${teamOdd})`
-            const id = gameIndex + leagueIndex + sameOdd + oddIndex + event.target.id.split('-')[4]
-            const uniqueIndex = gameIndex + leagueIndex + event.target.id.split('-')[4]
-            console.log(id)
-
-            let newObject = {
-                id: id, // generate unique id 
-                leagueLogo: leagueLogo,
-                sameOdd: uniqueIndex,
-                leagueName: leagueName,
-                odds: selectedOdd,
-                teamName: finalName,
-                fullGame: fullGame,
-                matchType: matchType,
-                matchTime: matchTime
-            };
-            let popup = document.querySelector('.limitPopUp')
-            let totalOdds = selectedOdd;
-
-            dataArray.forEach((value, key) => {
-                totalOdds = totalOdds * parseFloat(value.odds);
-
-            })
-            if (totalOdds < 100) {
-                popup.style.display = 'none'
-                if (dataArray.some(obj => obj.sameOdd === uniqueIndex)) {
-                    dataArray = dataArray.filter(obj => obj.sameOdd !== uniqueIndex);
-                    dataArray.push(newObject)
-                } else {
-                    dataArray.push(newObject)
-                }
-            } else {
-                popup.style.display = 'flex'
-            }
-
-            // if (dataArray.some(obj => obj.sameOdd === sameOdd)) {
-            //     dataArray = dataArray.filter(obj => obj.sameOdd !== sameOdd)
-            // }
-            reloadCard();
-
-
-
-
-        });
+            `;
+      //remove this comment
+      noticeBody.appendChild(newDiv);
     });
-    ouButtons.forEach(function(button) {
-        button.addEventListener('click', function(event) {
-            // Toggle the 'button-active' class on the clicked button element
-            setActiveOdd3(event.target)
-            const gameIndex = event.target.id.split('-')[0]
-            const leagueIndex = event.target.id.split('-')[1]
-            const oddIndex = event.target.id.split('-')[2]
-            console.log('odd Inddd', oddIndex)
-            const leagueName = soccerData[leagueIndex].League.leagueName;
-            const leagueLogo = soccerData[leagueIndex].League.leagueFlag;
-            const fullGame = soccerData[leagueIndex].League.Game[gameIndex].home + ' vs ' + soccerData[leagueIndex].League.Game[gameIndex].away;
-            const matchType = 'Over/Under';
-            const matchTime = 'Live';
-            const rawContent = event.target.textContent.split(' ')
-            const cleanedArr = rawContent.filter(str => str.trim() !== '');
-            const selectedOdd = parseFloat(cleanedArr.pop());
-            const sameOdd = gameIndex + leagueIndex + event.target.id.split('-')[3]
-            const teamOdd = cleanedArr.join(' ');
-            const teamName = oddIndex == 1 ? soccerData[leagueIndex].League.Game[gameIndex].home : oddIndex == 2 ? soccerData[leagueIndex].League.Game[gameIndex].away : 'draw';
-            const finalName = `${teamName}  (${teamOdd})`
-            const id = gameIndex + leagueIndex + sameOdd + oddIndex + event.target.id.split('-')[4]
-            const uniqueIndex = gameIndex + leagueIndex + event.target.id.split('-')[4]
-            console.log(id)
+  });
+  singleGame.forEach(function (game) {
+    game.addEventListener("click", function (event) {
+      const gameIndex = event.target.id;
+      console.log(miniGameData[gameIndex].Types);
+      // for (let i = 0; i < noticeItem.length; i++) {
+      //     noticeItem[i].style.display = 'none'
+      // }
+      // noticeDownHeader.style.display = 'none'
 
-            let newObject = {
-                id: id, // generate unique id 
-                leagueLogo: leagueLogo,
-                sameOdd: uniqueIndex,
-                leagueName: leagueName,
-                odds: selectedOdd,
-                teamName: finalName,
-                fullGame: fullGame,
-                matchType: matchType,
-                matchTime: matchTime
-            };
-            let popup = document.querySelector('.limitPopUp')
-            let totalOdds = selectedOdd;
+      //     const msgContent = messageData[msgIndex].message;
+      //     const msgType = messageData[msgIndex].msgType;
+      //     const msgTitle = messageData[msgIndex].title;
+      //     const msgDate = messageData[msgIndex].date;
+      //     messageData[msgIndex].status = 'Read'
+      //     messageData[msgIndex].color = 'Blue'
 
-            dataArray.forEach((value, key) => {
-                totalOdds = totalOdds * parseFloat(value.odds);
+      //     console.log(messageData[msgIndex])
 
-            })
-            if (totalOdds < 100) {
-                popup.style.display = 'none'
-                if (dataArray.some(obj => obj.sameOdd === uniqueIndex)) {
-                    dataArray = dataArray.filter(obj => obj.sameOdd !== uniqueIndex);
-                    dataArray.push(newObject)
-                } else {
-                    dataArray.push(newObject)
-                }
-            } else {
-                popup.style.display = 'flex'
-            }
+      //     let newDiv = document.createElement('div')
+      //     newDiv.classList.add('msgBody')
+      //     newDiv.innerHTML = `
+      //     <div class="msgHeader bbcolor">
+      //     <div class="up">[${msgType}] ${msgTitle}</div>
+      //     <div class="down fontSecondary">
+      //         ${msgDate}
+      //     </div>
+      // </div>
+      // <div class="msgContent btcolor">
+      //    ${msgContent}
+      // </div>
 
-            // if (dataArray.some(obj => obj.sameOdd === sameOdd)) {
-            //     dataArray = dataArray.filter(obj => obj.sameOdd !== sameOdd)
-            // }
-            reloadCard();
+      //     `
 
-
-
-
-        });
+      //     noticeBody.appendChild(newDiv)
     });
-    betOdds.forEach(function(betOdds) {
-        betOdds.addEventListener('click', function(event) {
-            // Toggle the 'button-active' class on the clicked button element
+  });
 
-            const gameIndex = event.target.id.split('-')[0]
-            const leagueIndex = event.target.id.split('-')[1]
-            const sameOdd = gameIndex + leagueIndex + event.target.id.split('-')[2]
-            const oddIndex = event.target.id.split('-')[3]
+  buttons.forEach(function (button) {
+    button.addEventListener("click", function (event) {
+      // Toggle the 'button-active' class on the clicked button element
+      setActiveOdd2(event.target);
+      const gameIndex = event.target.id.split("-")[0];
+      const leagueIndex = event.target.id.split("-")[1];
+      const oddIndex = event.target.id.split("-")[2];
+      console.log("odd Inddd", oddIndex);
+      const leagueName = soccerData[leagueIndex].League.leagueName;
+      const leagueLogo = soccerData[leagueIndex].League.leagueFlag;
+      const fullGame =
+        soccerData[leagueIndex].League.Game[gameIndex].home +
+        " vs " +
+        soccerData[leagueIndex].League.Game[gameIndex].away;
+      const matchType = "Handicap";
+      const matchTime = "Live";
+      const rawContent = event.target.textContent.split(" ");
+      const cleanedArr = rawContent.filter((str) => str.trim() !== "");
+      const selectedOdd = parseFloat(cleanedArr.pop());
+      const sameOdd = gameIndex + leagueIndex + event.target.id.split("-")[3];
+      const teamOdd = cleanedArr.join(" ");
+      const teamName =
+        oddIndex == 1
+          ? soccerData[leagueIndex].League.Game[gameIndex].home
+          : oddIndex == 2
+          ? soccerData[leagueIndex].League.Game[gameIndex].away
+          : "draw";
+      const finalName = `${teamName}  (${teamOdd})`;
+      const id =
+        gameIndex +
+        leagueIndex +
+        sameOdd +
+        oddIndex +
+        event.target.id.split("-")[4];
+      const uniqueIndex =
+        gameIndex + leagueIndex + event.target.id.split("-")[4];
+      console.log(id);
 
+      let newObject = {
+        id: id, // generate unique id
+        leagueLogo: leagueLogo,
+        sameOdd: uniqueIndex,
+        leagueName: leagueName,
+        odds: selectedOdd,
+        teamName: finalName,
+        fullGame: fullGame,
+        matchType: matchType,
+        matchTime: matchTime,
+      };
+      let popup = document.querySelector(".limitPopUp");
+      let totalOdds = selectedOdd;
 
-
-
-            const teamName = oddIndex == 1 ? soccerData[leagueIndex].League.Game[gameIndex].home : oddIndex == 3 ? soccerData[leagueIndex].League.Game[gameIndex].away : 'draw';
-            const leagueName = soccerData[leagueIndex].League.leagueName;
-            const leagueLogo = soccerData[leagueIndex].League.leagueFlag;
-            const fullGame = soccerData[leagueIndex].League.Game[gameIndex].home + ' vs ' + soccerData[leagueIndex].League.Game[gameIndex].away;
-            const matchType = '1x2';
-            const matchTime = 'Live';
-            const selectedOdd = betOdds.textContent
-
-            const id = gameIndex + leagueIndex + sameOdd + oddIndex + event.target.id.split('-')[4]
-            const uniqueIndex = gameIndex + leagueIndex + event.target.id.split('-')[4]
-
-
-            console.log(selectedOdd)
-            let newObject = {
-                id: id, // generate unique id 
-                sameOdd: uniqueIndex,
-                leagueLogo: leagueLogo,
-                leagueName: leagueName,
-                odds: selectedOdd,
-                teamName: teamName,
-                fullGame: fullGame,
-                matchType: matchType,
-                matchTime: matchTime
-            };
-            let popup = document.querySelector('.limitPopUp')
-            let totalOdds = selectedOdd;
-
-            dataArray.forEach((value, key) => {
-                totalOdds = totalOdds * parseFloat(value.odds);
-
-            })
-            if (totalOdds < 100) {
-                popup.style.display = 'none'
-                if (dataArray.some(obj => obj.sameOdd === uniqueIndex)) {
-                    dataArray = dataArray.filter(obj => obj.sameOdd !== uniqueIndex);
-                    dataArray.push(newObject)
-                } else {
-                    dataArray.push(newObject)
-                }
-            } else {
-                popup.style.display = 'flex'
-            }
-            reloadCard();
-            // push the new object into the array
-
-
-
-            // console.log('team', soccerData[leagueIndex].League.Game[gameIndex].team);
-
-
-
-        });
-    });
-
-    col4.addEventListener('click', (event) => {
-        // Check if the clicked element is a button with the desired class
-        if (event.target.classList.contains('odds1')) {
-            // Handle the button click here
-            console.log('Button clicked:', event.target);
-            // event.target.classList.toggle('betActive');
-            // Toggle the 'button-active' class on the clicked button element
-            event.target.classList.toggle('betActive');
-            const gameIndex = event.target.id.split('-')[1]
-            const leagueIndex = event.target.id.split('-')[0]
-            const oddIndex = event.target.id.split('-')[2]
-
-
-            // const teamName = oddIndex == 1 ? soccerData[leagueIndex].League.Game[gameIndex].home : oddIndex == 3 ? soccerData[leagueIndex].League.Game[gameIndex].away : 'draw';
-            const leagueName = soccerData[leagueIndex].League.leagueName;
-            const leagueLogo = soccerData[leagueIndex].League.leagueFlag;
-            const fullGame = soccerData[leagueIndex].League.Game[gameIndex].home + ' vs ' + soccerData[leagueIndex].League.Game[gameIndex].away;
-            const matchType = '1x2';
-            const matchTime = 'Live';
-            const rawContent = event.target.textContent.split(' ')
-            const cleanedArr = rawContent.filter(str => str.trim() !== '');
-            const selectedOdd = parseFloat(cleanedArr.pop());
-            const teamName = cleanedArr.join(' ');
-
-
-
-
-
-            const id = soccerData[leagueIndex].League.Game[gameIndex].gameId + selectedOdd + matchTime + matchType + teamName;
-
-
-
-            let newObject = {
-                id: id, // generate unique id 
-                leagueLogo: leagueLogo,
-                leagueName: leagueName,
-                odds: selectedOdd,
-                teamName: teamName,
-                fullGame: fullGame,
-                matchType: matchType,
-                matchTime: matchTime
-            };
-
-            let popup = document.querySelector('.limitPopUp')
-            let totalOdds = selectedOdd;
-
-            dataArray.forEach((value, key) => {
-                totalOdds = totalOdds * parseFloat(value.odds);
-
-            })
-            if (totalOdds < 100) {
-                popup.style.display = 'none'
-                if (dataArray.some(obj => obj.id === id)) {
-                    dataArray = dataArray.filter(obj => obj.id !== id);
-                } else {
-                    dataArray.push(newObject);
-                }
-
-            } else {
-                popup.style.display = 'flex'
-            }
-
-
-            reloadCard();
-            // push the new object into the array
-            console.log(dataArray)
-
-            // console.log('team', soccerData[leagueIndex].League.Game[gameIndex].team);
-
+      dataArray.forEach((value, key) => {
+        totalOdds = totalOdds * parseFloat(value.odds);
+      });
+      if (totalOdds < 100) {
+        popup.style.display = "none";
+        if (dataArray.some((obj) => obj.sameOdd === uniqueIndex)) {
+          dataArray = dataArray.filter((obj) => obj.sameOdd !== uniqueIndex);
+          dataArray.push(newObject);
+        } else {
+          dataArray.push(newObject);
         }
+      } else {
+        popup.style.display = "flex";
+      }
+
+      // if (dataArray.some(obj => obj.sameOdd === sameOdd)) {
+      //     dataArray = dataArray.filter(obj => obj.sameOdd !== sameOdd)
+      // }
+      reloadCard();
     });
+  });
+  ouButtons.forEach(function (button) {
+    button.addEventListener("click", function (event) {
+      // Toggle the 'button-active' class on the clicked button element
+      setActiveOdd3(event.target);
+      const gameIndex = event.target.id.split("-")[0];
+      const leagueIndex = event.target.id.split("-")[1];
+      const oddIndex = event.target.id.split("-")[2];
+      console.log("odd Inddd", oddIndex);
+      const leagueName = soccerData[leagueIndex].League.leagueName;
+      const leagueLogo = soccerData[leagueIndex].League.leagueFlag;
+      const fullGame =
+        soccerData[leagueIndex].League.Game[gameIndex].home +
+        " vs " +
+        soccerData[leagueIndex].League.Game[gameIndex].away;
+      const matchType = "Over/Under";
+      const matchTime = "Live";
+      const rawContent = event.target.textContent.split(" ");
+      const cleanedArr = rawContent.filter((str) => str.trim() !== "");
+      const selectedOdd = parseFloat(cleanedArr.pop());
+      const sameOdd = gameIndex + leagueIndex + event.target.id.split("-")[3];
+      const teamOdd = cleanedArr.join(" ");
+      const teamName =
+        oddIndex == 1
+          ? soccerData[leagueIndex].League.Game[gameIndex].home
+          : oddIndex == 2
+          ? soccerData[leagueIndex].League.Game[gameIndex].away
+          : "draw";
+      const finalName = `${teamName}  (${teamOdd})`;
+      const id =
+        gameIndex +
+        leagueIndex +
+        sameOdd +
+        oddIndex +
+        event.target.id.split("-")[4];
+      const uniqueIndex =
+        gameIndex + leagueIndex + event.target.id.split("-")[4];
+      console.log(id);
 
-    // extraOddBtn.forEach(function(betOdds) {
-    //     betOdds.addEventListener('click', function(event) {
+      let newObject = {
+        id: id, // generate unique id
+        leagueLogo: leagueLogo,
+        sameOdd: uniqueIndex,
+        leagueName: leagueName,
+        odds: selectedOdd,
+        teamName: finalName,
+        fullGame: fullGame,
+        matchType: matchType,
+        matchTime: matchTime,
+      };
+      let popup = document.querySelector(".limitPopUp");
+      let totalOdds = selectedOdd;
 
+      dataArray.forEach((value, key) => {
+        totalOdds = totalOdds * parseFloat(value.odds);
+      });
+      if (totalOdds < 100) {
+        popup.style.display = "none";
+        if (dataArray.some((obj) => obj.sameOdd === uniqueIndex)) {
+          dataArray = dataArray.filter((obj) => obj.sameOdd !== uniqueIndex);
+          dataArray.push(newObject);
+        } else {
+          dataArray.push(newObject);
+        }
+      } else {
+        popup.style.display = "flex";
+      }
 
-
-    //     });
-    // });
-    extraOdd.forEach(function(extraOdd) {
-        extraOdd.addEventListener('click', function(event) {
-            let p = 1
-
-
-
-            let leagueIndx = event.target.id.split('-').join('')[0]
-            let gameIndx = event.target.id.split('-').join('')[1]
-            replaceSidebar(gameIndx, leagueIndx)
-            col2.style.display = 'none'
-            col4.style.display = 'flex'
-            col4.classList.add('maxWidth');
-            const exitDetail = document.querySelector('.exitDetail');
-
-            exitDetail.addEventListener('click', () => {
-                p = p + 1
-                console.log('aa')
-                col2.style.display = ''
-                col4.style.display = 'none'
-                col4.classList.remove('maxWidth');
-
-
-
-            })
-
-            window.addEventListener('resize', () => {
-                if (window.innerWidth > 1008) {
-                    col4.style.display = 'flex'
-                    col2.style.display = ''
-
-                } else {
-                    col4.style.display = 'none'
-                    col2.style.display = ''
-                }
-            })
-
-
-
-
-
-
-
-        });
+      // if (dataArray.some(obj => obj.sameOdd === sameOdd)) {
+      //     dataArray = dataArray.filter(obj => obj.sameOdd !== sameOdd)
+      // }
+      reloadCard();
     });
+  });
+  betOdds.forEach(function (betOdds) {
+    betOdds.addEventListener("click", function (event) {
+      // Toggle the 'button-active' class on the clicked button element
 
+      const gameIndex = event.target.id.split("-")[0];
+      const leagueIndex = event.target.id.split("-")[1];
+      const sameOdd = gameIndex + leagueIndex + event.target.id.split("-")[2];
+      const oddIndex = event.target.id.split("-")[3];
+
+      const teamName =
+        oddIndex == 1
+          ? soccerData[leagueIndex].League.Game[gameIndex].home
+          : oddIndex == 3
+          ? soccerData[leagueIndex].League.Game[gameIndex].away
+          : "draw";
+      const leagueName = soccerData[leagueIndex].League.leagueName;
+      const leagueLogo = soccerData[leagueIndex].League.leagueFlag;
+      const fullGame =
+        soccerData[leagueIndex].League.Game[gameIndex].home +
+        " vs " +
+        soccerData[leagueIndex].League.Game[gameIndex].away;
+      const matchType = "1x2";
+      const matchTime = "Live";
+      const selectedOdd = betOdds.textContent;
+
+      const id =
+        gameIndex +
+        leagueIndex +
+        sameOdd +
+        oddIndex +
+        event.target.id.split("-")[4];
+      const uniqueIndex =
+        gameIndex + leagueIndex + event.target.id.split("-")[4];
+
+      console.log(selectedOdd);
+      let newObject = {
+        id: id, // generate unique id
+        sameOdd: uniqueIndex,
+        leagueLogo: leagueLogo,
+        leagueName: leagueName,
+        odds: selectedOdd,
+        teamName: teamName,
+        fullGame: fullGame,
+        matchType: matchType,
+        matchTime: matchTime,
+      };
+      let popup = document.querySelector(".limitPopUp");
+      let totalOdds = selectedOdd;
+
+      dataArray.forEach((value, key) => {
+        totalOdds = totalOdds * parseFloat(value.odds);
+      });
+      if (totalOdds < 100) {
+        popup.style.display = "none";
+        if (dataArray.some((obj) => obj.sameOdd === uniqueIndex)) {
+          dataArray = dataArray.filter((obj) => obj.sameOdd !== uniqueIndex);
+          dataArray.push(newObject);
+        } else {
+          dataArray.push(newObject);
+        }
+      } else {
+        popup.style.display = "flex";
+      }
+      reloadCard();
+      // push the new object into the array
+
+      // console.log('team', soccerData[leagueIndex].League.Game[gameIndex].team);
+    });
+  });
+
+  col4.addEventListener("click", (event) => {
+    // Check if the clicked element is a button with the desired class
+    if (event.target.classList.contains("odds1")) {
+      // Handle the button click here
+      console.log("Button clicked:", event.target);
+      // event.target.classList.toggle('betActive');
+      // Toggle the 'button-active' class on the clicked button element
+      event.target.classList.toggle("betActive");
+      const gameIndex = event.target.id.split("-")[1];
+      const leagueIndex = event.target.id.split("-")[0];
+      const oddIndex = event.target.id.split("-")[2];
+
+      // const teamName = oddIndex == 1 ? soccerData[leagueIndex].League.Game[gameIndex].home : oddIndex == 3 ? soccerData[leagueIndex].League.Game[gameIndex].away : 'draw';
+      const leagueName = soccerData[leagueIndex].League.leagueName;
+      const leagueLogo = soccerData[leagueIndex].League.leagueFlag;
+      const fullGame =
+        soccerData[leagueIndex].League.Game[gameIndex].home +
+        " vs " +
+        soccerData[leagueIndex].League.Game[gameIndex].away;
+      const matchType = "1x2";
+      const matchTime = "Live";
+      const rawContent = event.target.textContent.split(" ");
+      const cleanedArr = rawContent.filter((str) => str.trim() !== "");
+      const selectedOdd = parseFloat(cleanedArr.pop());
+      const teamName = cleanedArr.join(" ");
+
+      const id =
+        soccerData[leagueIndex].League.Game[gameIndex].gameId +
+        selectedOdd +
+        matchTime +
+        matchType +
+        teamName;
+
+      let newObject = {
+        id: id, // generate unique id
+        leagueLogo: leagueLogo,
+        leagueName: leagueName,
+        odds: selectedOdd,
+        teamName: teamName,
+        fullGame: fullGame,
+        matchType: matchType,
+        matchTime: matchTime,
+      };
+
+      let popup = document.querySelector(".limitPopUp");
+      let totalOdds = selectedOdd;
+
+      dataArray.forEach((value, key) => {
+        totalOdds = totalOdds * parseFloat(value.odds);
+      });
+      if (totalOdds < 100) {
+        popup.style.display = "none";
+        if (dataArray.some((obj) => obj.id === id)) {
+          dataArray = dataArray.filter((obj) => obj.id !== id);
+        } else {
+          dataArray.push(newObject);
+        }
+      } else {
+        popup.style.display = "flex";
+      }
+
+      reloadCard();
+      // push the new object into the array
+      console.log(dataArray);
+
+      // console.log('team', soccerData[leagueIndex].League.Game[gameIndex].team);
+    }
+  });
+
+  // extraOddBtn.forEach(function(betOdds) {
+  //     betOdds.addEventListener('click', function(event) {
+
+  //     });
+  // });
+  extraOdd.forEach(function (extraOdd) {
+    extraOdd.addEventListener("click", function (event) {
+      let p = 1;
+
+      let leagueIndx = event.target.id.split("-").join("")[0];
+      let gameIndx = event.target.id.split("-").join("")[1];
+      replaceSidebar(gameIndx, leagueIndx);
+      col2.style.display = "none";
+      col4.style.display = "flex";
+      col4.classList.add("maxWidth");
+      const exitDetail = document.querySelector(".exitDetail");
+
+      exitDetail.addEventListener("click", () => {
+        p = p + 1;
+        console.log("aa");
+        col2.style.display = "";
+        col4.style.display = "none";
+        col4.classList.remove("maxWidth");
+      });
+
+      window.addEventListener("resize", () => {
+        if (window.innerWidth > 1008) {
+          col4.style.display = "flex";
+          col2.style.display = "";
+        } else {
+          col4.style.display = "none";
+          col2.style.display = "";
+        }
+      });
+    });
+  });
 });
-
-
-
 
 // triggerSidebar.addEventListener('click', moveElement);
 

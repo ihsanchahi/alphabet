@@ -448,8 +448,8 @@
                                 <div class="depositeUpHeader2 depositeActive " style="color: #F8FF13;">Withdrawl</div>
                             </div>
                             <div class="depositebox">
-                                <div
-                                    class="depositeapplication  depositeapplication1 Withdrawldetailsbtn " style="color:#F8FF13 ;">
+                                <div class="depositeapplication  depositeapplication1 Withdrawldetailsbtn "
+                                    style="color:#F8FF13 ;">
                                     Withdrawl details</div>
                                 <div class="depositeapplication depositdetails WithdrawlApplicationformbtn withdrawText
                                     style=" color: white;">Withdrawl Application form</div>
@@ -619,8 +619,8 @@
                 </div>
                 <div class="depositebox">
 
-                    <div class="depositeapplication  depositeapplication1 withdrawdetailebtn"
-                        style="font-size: small;">Withdrawl details</div>
+                    <div class="depositeapplication  depositeapplication1 withdrawdetailebtn" style="font-size: small;">
+                        Withdrawl details</div>
                     <div class="depositeapplication" style="color: #F8FF13;">Withdrawl form</div>
                 </div>
             </div>
@@ -1302,8 +1302,8 @@
                     </div>
                     <div class="depositeItem depositeBill">
                         <div class="menuItem">
-                            <div class="dispIcon specDisp">Holding Point</div>
-                            <div class="dispIcon">200</div>
+                            <div class="dispIcon specDisp" >Holding Point</div>
+                            <div class="dispIcon" style="width: 60%;"> 200</div>
                         </div>
                         <div class="menuItem">
                             <div class="dispIcon specDisp">Exchange Point</div>
@@ -1432,7 +1432,7 @@
                 </div>
                 <div class="input-group rounded mt-4">
                     <input type="search" class="form-control bg-dark border-0" placeholder="Search" aria-label="Search"
-                        aria-describedby="search-addon" />
+                        aria-describedby="search-addon" style="color: white;" />
                     <span class="input-group-text border-0 bg-dark" id="search-addon">
                         <i class="fas fa-search"></i>
                     </span>
@@ -3029,13 +3029,13 @@
         }
 
         function show22() {
-         
-                document.getElementById("msg").style.display = "inline"
+
+            document.getElementById("msg").style.display = "inline"
         }
         var d;
         function show123() {
-          
-                document.getElementById("msg").style.display = "none"
+
+            document.getElementById("msg").style.display = "none"
         }
         var d;
         function showcancel() {
@@ -3130,76 +3130,45 @@
                 return d = 1;
             }
         }
-        var d;
         function showpoint() {
-            if (d == 1) {
-                document.getElementById("exchangpoint").style.display = "inline"
-                return d = 0;
-            }
-            else {
-                document.getElementById("exchangpoint").style.display = "none"
-                return d = 1;
-            }
+
+            document.getElementById("exchangpoint").style.display = "inline"
         }
-        var d;
         function closepoint() {
-            if (d == 1) {
-                document.getElementById("exchangpoint").style.display = "none"
 
-                return d = 0;
-            }
-            else {
-                document.getElementById("exchangpoint").style.display = "none"
-
-                return d = 1;
-            }
+            document.getElementById("exchangpoint").style.display = "none"
         }
-        var d;
+
         function showpop() {
-            if (d == 1) {
-                document.getElementById("yespoint").style.display = "inline"
-                return d = 0;
-            }
-            else {
-                document.getElementById("yespoint").style.display = "none"
-                return d = 1;
-            }
+            document.getElementById("yespoint").style.display = "inline"
         }
-        var d;
         function closechk() {
-            if (d == 1) {
+         
                 document.getElementById("yespoint").style.display = "none"
-                return d = 0;
-            }
-            else {
-                document.getElementById("yespoint").style.display = "none"
-
-                return d = 1;
-            }
         }
         function openFileGallery() {
             var fileInput = document.getElementById('fileInput');
             fileInput.click();
         }
-    function closeDivs() {
-      var divs = document.getElementsByClassName("showDiv");
-      for (var i = 0; i < divs.length; i++) {
-        divs[i].style.display = "none";
-      }
-    }
-    window.addEventListener('DOMContentLoaded', function() {
-    var uncheckButton = document.getElementById('uncheckButton');
-    
-    uncheckButton.addEventListener('click', function() {
-      var checkboxes = document.querySelectorAll('input[type="checkbox"]');
-      
-      checkboxes.forEach(function(checkbox) {
-        if (checkbox.checked) {
-          checkbox.checked = false;
+        function closeDivs() {
+            var divs = document.getElementsByClassName("showDiv");
+            for (var i = 0; i < divs.length; i++) {
+                divs[i].style.display = "none";
+            }
         }
-      });
-    });
-  });
+        window.addEventListener('DOMContentLoaded', function () {
+            var uncheckButton = document.getElementById('uncheckButton');
+
+            uncheckButton.addEventListener('click', function () {
+                var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+
+                checkboxes.forEach(function (checkbox) {
+                    if (checkbox.checked) {
+                        checkbox.checked = false;
+                    }
+                });
+            });
+        });
     </script>
 
 </body>

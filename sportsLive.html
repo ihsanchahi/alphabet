@@ -62,16 +62,16 @@
                         <div class="noticeInterface">
                             <div class="menuItem" id="messages">
                                 <div class="dispIcon specDisp messsagebtn"><i class="bi bi-envelope"></i></div>
-                                <div class="dispIcon">3</div>
+                                <div class="dispIcon" style="width: 60%;">3</div>
                             </div>
                             <div class="menuItem">
                                 <div class="dispIcon specDisp">Balance</div>
-                                <div class="dispIcon">14000</div>
+                                <div class="dispIcon" style="width: 60%;">14000</div>
                             </div>
 
                             <div class="menuItem">
                                 <div class="dispIcon specDisp pointbtn">Point</div>
-                                <div class="dispIcon">0</div>
+                                <div class="dispIcon" style="width: 60%;">0</div>
                             </div>
                         </div>
                         <div class="noticeMenus">
@@ -323,6 +323,94 @@
             </div>
         </div>
         <!-- message popup end -->
+
+        <!-- point Exchange start -->
+
+        <div class="pointexchcontainer">
+            <div class="pointTrans">
+                <div class="noticeBodyExchange">
+                    <div class="infoCancel1211">
+                        <i class="bi bi-x-lg " style="color: black;"></i>
+                    </div>
+                    <div class="noticeHeader">
+                        <div class="historyUpHeader fontBlue">
+
+                            Point Transfer
+                        </div>
+                        <div class="depositeItem depositeBill">
+                            <div class="menuItem">
+                                <div class="dispIcon specDisp" >Holding Point</div>
+                                <div class="dispIcon" style="width: 60%;">200</div>
+                            </div>
+                            <div class="menuItem">
+                                <div class="dispIcon specDisp">Exchange Point</div>
+                                <div class="dispIcon inputSports"><input type="password" name="password1" id="22"
+                                        placeholder="Please type in the points you want to exchange"
+                                        class="inputLeague">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pagination">
+                            <div class="infoRules  pt-4">
+                                <i class="fa fa-question-circle holdingsbtn" aria-hidden="true"
+                                    style="cursor:pointer;"></i>
+                            </div>
+                            <div class="pageRight">
+                                <div class="ExchangeApplicationBtn">
+                                    <div class="noticeBtn" onclick="showpoint() "> Application For Exchange</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="exchangpoint" style="position: absolute; display: none;">
+            <div class="question">
+                <img src="./assets/images/questionMark.png" alt="#" width="70px" height="70px">
+            </div>
+            <p class="question-delete">Do you want to exchange points for cash?</p>
+            <div class="question-button">
+                <button id="yes-no" onclick="showpop()">Yes</button>
+                <button id="yes-no" onclick="closepoint()">No</button>
+            </div>
+            <div id="yespoint" style="display: none; ">
+                <div class="cancel">
+                    X
+                </div>
+                <p class="no-history">Please enter a valid amount.</p>
+                <div class="check">
+                    <button id="chk-btn" onclick="closechk ()">Check</button>
+                </div>
+            </div>
+        </div>
+        <div class="holdings">
+            <div class="NoticeWrapper2">
+                <div class="noticeBodyNewpoint">
+                    <div class="depositeItem depositeBill pt-4">
+                        <div>
+                            <p style="color: rgb(239, 198, 49);font-weight: 400; font-size: 12px; text-align: center;">
+                                Points received by members can be converted into holdings. Umar
+                            </p>
+                            <p
+                                style="color: rgb(239, 198, 49);font-weight: 400;font-size: 11px;padding-top: -5px; text-align: center;">
+                                The minimum amount for one-time conversion is 5,000 points, and it can be converted in
+                                increments of 1 won.
+                            </p>
+                            <p
+                                style="color: rgb(239, 198, 49);font-weight: 400;font-size: 11px;padding-top: -5px; text-align: center;">
+                                After entering the desired amount in the application point column , click Apply for
+                                Conversion .
+                            </p>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <div class="noticeBtn RulesBtn text-center closePointHoldings ">Close</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- point exchange end  -->
         <div class="my-backdrop">
             <div class="NoticeWrapper">
                 <div class="noticeBody">
@@ -567,7 +655,7 @@
                                     </div>
                                 </div>
                                 <div class="d-flex justify-content-center">
-                                    <div class="noticeBtn RulesBtn text-center holdingclose1 ">Close</div>
+                                    <div class="noticeBtn RulesBtn text-center holdingclosepoint ">Close</div>
                                 </div>
                             </div>
                         </div>
@@ -1614,7 +1702,7 @@
                                 </div>
                                 <div class="input-group rounded mt-4">
                                     <input type="search" class="form-control bg-dark border-0" placeholder="Search"
-                                        aria-label="Search" aria-describedby="search-addon" />
+                                        aria-label="Search" aria-describedby="search-addon" style="color: white;" />
                                     <span class="input-group-text border-0 bg-dark" id="search-addon">
                                         <i class="fas fa-search"></i>
                                     </span>
@@ -2310,6 +2398,23 @@
                 divs[i].style.display = "none";
             }
         }
+        function showpoint() {
+
+            document.getElementById("exchangpoint").style.display = "inline"
+        }
+
+        function showpop() {
+            document.getElementById("yespoint").style.display = "inline"
+        }
+
+        function closepoint() {
+
+            document.getElementById("exchangpoint").style.display = "none"
+        }
+        function closechk() {
+         
+         document.getElementById("yespoint").style.display = "none"
+ }
         window.addEventListener('DOMContentLoaded', function () {
             var uncheckButton = document.getElementById('uncheckButton');
 

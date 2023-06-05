@@ -43,6 +43,48 @@ const leaguePopupCancel = document.querySelector('.leaguePopupCancel');
 const messsagebtn = document.querySelector(".messsagebtn")
 const noticeBodyMessages = document.querySelector(".noticeBodyMessages")
 const close = document.querySelector(".close")
+const pointbtn = document.querySelector(".pointbtn ");
+const holdingsbtn = document.querySelector(".holdingsbtn");
+const pointexchcontainer = document.querySelector(".pointexchcontainer");
+const holdings = document.querySelector(".holdings");
+const holdingclosepoint = document.querySelector(".holdingclosepoint");
+const infoCancel1211 = document.querySelector(".infoCancel1211");
+const closePointHoldings = document.querySelector(".closePointHoldings");
+
+
+
+
+
+//  point popup
+pointexchcontainer.style.display = "none";
+pointbtn.addEventListener("click", function () {
+  if (pointexchcontainer.style.display == "none") {
+    pointexchcontainer.style.display = "block";
+    sliderBackDrop.style.display = "none";
+    sliderMenu.classList.remove("sliderMenuActive");
+  } else {
+    sliderMenu1.style.display = "block";
+  }
+});
+
+//   Holding
+holdings.style.display = "none";
+holdingsbtn.addEventListener("click", function () {
+  if (holdings.style.display == "none") {
+    holdings.style.display = "flex";
+    exchangeBody.style.display = "none";
+    sliderBackDrop.style.display = "none";
+    sliderMenu.classList.remove("sliderMenuActive");
+  } else {
+    sliderMenu1.style.display = "block";
+  }
+});
+infoCancel1211.addEventListener("click", function () {
+    pointexchcontainer.style.display = "none";
+  });
+closePointHoldings.addEventListener("click", function () {
+    holdings.style.display = "none";
+  });
 
 
 
