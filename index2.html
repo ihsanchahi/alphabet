@@ -26,7 +26,7 @@
             <a class="navbar-brand" href="#"><img src="assets/images/logo (1).png" class="d-inline-block align-text-top"
                     width="200" height="23"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" style="display: none;">
                 <span class=" navBarToggler"><i class="bi bi-list"></i></span>
             </button>
             <!-- <div class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -80,7 +80,9 @@
             </ul>
 
             <div class="tab-content">
-                <div class="" id="afterSignUp">
+                <div class="" id="afterSignUp" style="overflow: auto;
+                display: block;
+                height: 400px;">
                     <h3>SAVE YOUR USERNAME AND PASSWORD</h3>
                     <div class="credDetails">
                         <div class="savedCred">
@@ -232,169 +234,169 @@
 
     </div>
 
-    <div class="form newForm" >
+    <div class="form newForm">
 
-    <div class="loginPopup" style="display: none;">
-        
-        <div class="close1">
-            <i class="bi bi-x-lg" style="color: black;"></i>
-        </div>
-        <div class="bottomController">
-            <h3>LOGIN</h3>
-            <form action="/" method="post">
-                <div class="loginForm formInput">
-                    <div class="usernameForm">
-                        <div class="formTitle">Username</div>
-                        <input type="text" name="username" id="">
-                    </div>
-                    <div class="passwordForm formInput">
-                        <div class="formTitle">Password</div>
-                        <input type="password" name="password" id="">
-                    </div>
-                </div>
+        <div class="loginPopup" style="display: none;">
 
-                <div class="field-wrap">
-                    <div class=" customLogin " id="registerBtn">LOGIN</div>
-
-                </div>
-            </form>
-        </div>
-        <div class="notes">
-            In the future the phone number and email address can be filled in the profile
-        </div>
-
-    </div>
-
-    <div class="signupPopup" style="display: none;">
-        <div class="close2">
-            <i class="bi bi-x-lg" style="color: black;"></i>
-        </div>
-        <h1 style="    margin-top: 4vh;">REGISTRATION</h1>
-        <div class="credInfo">
-
-            <form action="/" method="post">
-
-                <div class="top-row">
-                    <div class="field-wrap">
-                        <select class="form-select customFselect" id="autoSizingSelect">
-                            <option selected>Select Country</option>
-                            <option value="1">(🇳🇵)Nepal</option>
-                            <option value="2">(🇮🇳)India</option>
-                            <option value="3">(🇮🇹)Italy</option>
-                        </select>
-                    </div>
-
-                    <div class="field-wrap">
-                        <select class="form-select customFselect" id="autoSizingSelect">
-                            <option selected>Select Currency</option>
-                            <option value="1">(NPR)Nepal</option>
-                            <option value="2">(INR)India</option>
-                            <option value="3">(ITR)Italy</option>
-                        </select>
-                    </div>
-                </div>
-
-                <div class="top-row">
-                    <div class="field-wrap">
-                        <input type="text" autocomplete="off" placeholder="PROMOCODE" />
-                    </div>
-
-                    <div class="field-wrap">
-                        <div class=" registerCustomer" id="registerBtn1">REGISTER</div>
-
-                    </div>
-                </div>
-
-
-
-
-
-            </form>
-        </div>
-        <div class="terms">
-            By clicking this button you confirm that you have read and agree to the <span><a href="#">Terms
-                    and condition</a> and <a href="#">Privacy Policy</a></span> of the company and confirm
-            that you are of legal age
-        </div>
-        <br>
-
-    </div>
-    <div class="registerPopUp" style="display: none;">
-        <div class="close3">
-            <i class="bi bi-x-lg" style="color: black;"></i>
-        </div>
-        <h3 style="padding: 3vh 0vh;">SAVE YOUR USERNAME AND PASSWORD</h3>
-        <div class="credDetails">
-            <div class="savedCred">
-                <div class="credUsername"><i class="bi bi-person-circle"></i><span class="blueFont">
-
-                        username:
-
-                    </span> 9823423422
-
-                </div>
-                <div class="credPassword"><i class="bi bi-lock"></i><span class="blueFont">
-
-                        Password:
-
-                    </span>jJbKHk98900</div>
+            <div class="close1">
+                <i class="bi bi-x-lg" style="color: black;"></i>
             </div>
-            <div class="credControl">
-                <div class="credBtn"><i class="bi bi-download"></i> <span class="btnMrg">Download
-                        file</span></div>
-                <div class="credBtn"><i class="bi bi-clipboard-check"></i> Copy</div>
-            </div>
-        </div>
-        <div class="bottomController">
-            <h3>SEND USERNAME AND PASSWORD</h3>
-            <form action="/" method="post">
-                <div class="top-row">
-                    <div class="field-wrap customFieldWrap">
-                        <select class="form-select customFselectNumber" id="autoSizingSelect">
-
-                            <option value="1" selected>+977</option>
-                            <option value="2">+01</option>
-                            <option value="3">+044</option>
-                        </select>
-                        <input type="text" placeholder="XXX XXXXXXX">
+            <div class="bottomController">
+                <h3>LOGIN</h3>
+                <form action="/" method="post">
+                    <div class="loginForm formInput">
+                        <div class="usernameForm">
+                            <div class="formTitle">Username</div>
+                            <input type="text" name="username" id="">
+                        </div>
+                        <div class="passwordForm formInput">
+                            <div class="formTitle">Password</div>
+                            <input type="password" name="password" id="">
+                        </div>
                     </div>
 
                     <div class="field-wrap">
+                        <div class=" customLogin " id="registerBtn">LOGIN</div>
+
+                    </div>
+                </form>
+            </div>
+            <div class="notes">
+                In the future the phone number and email address can be filled in the profile
+            </div>
+
+        </div>
+
+        <div class="signupPopup" style="display: none;">
+            <div class="close2">
+                <i class="bi bi-x-lg" style="color: black;"></i>
+            </div>
+            <h1 style="    margin-top: 4vh;">REGISTRATION</h1>
+            <div class="credInfo">
+
+                <form action="/" method="post">
+
+                    <div class="top-row">
                         <div class="field-wrap">
-                            <div class=" customOtpBtn ">SEND TO PHONE</div>
+                            <select class="form-select customFselect" id="autoSizingSelect">
+                                <option selected>Select Country</option>
+                                <option value="1">(🇳🇵)Nepal</option>
+                                <option value="2">(🇮🇳)India</option>
+                                <option value="3">(🇮🇹)Italy</option>
+                            </select>
+                        </div>
+
+                        <div class="field-wrap">
+                            <select class="form-select customFselect" id="autoSizingSelect">
+                                <option selected>Select Currency</option>
+                                <option value="1">(NPR)Nepal</option>
+                                <option value="2">(INR)India</option>
+                                <option value="3">(ITR)Italy</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="top-row">
+                        <div class="field-wrap">
+                            <input type="text" autocomplete="off" placeholder="PROMOCODE" />
+                        </div>
+
+                        <div class="field-wrap">
+                            <div class=" registerCustomer" id="registerBtn1">REGISTER</div>
 
                         </div>
                     </div>
-                </div>
-                <div class="top-row">
-                    <div class="field-wrap">
-                        <input type="text" autocomplete="off" placeholder="Email" />
-                        </select>
+
+
+
+
+
+                </form>
+            </div>
+            <div class="terms">
+                By clicking this button you confirm that you have read and agree to the <span><a href="#">Terms
+                        and condition</a> and <a href="#">Privacy Policy</a></span> of the company and confirm
+                that you are of legal age
+            </div>
+            <br>
+
+        </div>
+        <div class="registerPopUp" style="display: none;">
+            <div class="close3">
+                <i class="bi bi-x-lg" style="color: black;"></i>
+            </div>
+            <h3 style="padding: 3vh 0vh;">SAVE YOUR USERNAME AND PASSWORD</h3>
+            <div class="credDetails">
+                <div class="savedCred">
+                    <div class="credUsername"><i class="bi bi-person-circle"></i><span class="blueFont">
+
+                            username:
+
+                        </span> 9823423422
 
                     </div>
+                    <div class="credPassword"><i class="bi bi-lock"></i><span class="blueFont">
 
-                    <div class="field-wrap">
+                            Password:
+
+                        </span>jJbKHk98900</div>
+                </div>
+                <div class="credControl">
+                    <div class="credBtn"><i class="bi bi-download"></i> <span class="btnMrg">Download
+                            file</span></div>
+                    <div class="credBtn"><i class="bi bi-clipboard-check"></i> Copy</div>
+                </div>
+            </div>
+            <div class="bottomController">
+                <h3>SEND USERNAME AND PASSWORD</h3>
+                <form action="/" method="post">
+                    <div class="top-row">
+                        <div class="field-wrap customFieldWrap">
+                            <select class="form-select customFselectNumber" id="autoSizingSelect">
+
+                                <option value="1" selected>+977</option>
+                                <option value="2">+01</option>
+                                <option value="3">+044</option>
+                            </select>
+                            <input type="text" placeholder="XXX XXXXXXX">
+                        </div>
+
                         <div class="field-wrap">
-                            <div class=" customOtpBtn ">SEND TO EMAIL</div>
+                            <div class="field-wrap">
+                                <div class=" customOtpBtn ">SEND TO PHONE</div>
 
+                            </div>
                         </div>
                     </div>
-                </div>
+                    <div class="top-row">
+                        <div class="field-wrap">
+                            <input type="text" autocomplete="off" placeholder="Email" />
+                            </select>
 
-            </form>
-        </div>
-        <div class="notes">
-            In the future the phone number and email address can be filled in the profile
-        </div>
+                        </div>
 
+                        <div class="field-wrap">
+                            <div class="field-wrap">
+                                <div class=" customOtpBtn ">SEND TO EMAIL</div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+            <div class="notes">
+                In the future the phone number and email address can be filled in the profile
+            </div>
+
+        </div>
     </div>
-    </div>
-    
-    
+
+
     <div class="tabContainer">
         <ul class="tab">
             <button id="signbtn" class="signbtn">Sign Up</button>
-            <button id="logbtn"  class="logbtn">Log In</button>
+            <button id="logbtn" class="logbtn">Log In</button>
         </ul>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"

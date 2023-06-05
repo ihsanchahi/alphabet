@@ -1216,10 +1216,10 @@ function myget(i) {
 function bankpage(i) {
   if (i == "Bank") {
     mainbankfieldcontainer.style.display = "block";
-    withdrawaldrop.style.top = "58vh";
+    // withdrawaldrop.style.top = "58vh";
   } else {
     mainbankfieldcontainer.style.display = "none";
-    withdrawaldrop.style.top = "50vh";
+    // withdrawaldrop.style.top = "50vh";
   }
 }
 

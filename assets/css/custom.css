@@ -3375,7 +3375,7 @@ border-right: 1px solid #1e242c; */
 
     .noticeBodyNew {
         font-size: 14px;
-        width: 60%;
+        width: 75%;
         z-index: 1;
         position: fixed;
         /* top: 20vh; */
@@ -3467,7 +3467,7 @@ border-right: 1px solid #1e242c; */
 
     .noticeBodyNew {
         font-size: 14px;
-        width: 75%;
+        width: 65%;
         z-index: 1;
         /* position: fixed; */
         /* top: 20vh; */
@@ -3479,7 +3479,7 @@ border-right: 1px solid #1e242c; */
 
     .withdrawaldrop {
         font-size: 14px;
-        width: 76%;
+        width: 66%;
         z-index: 2;
         /* position: fixed; */
         /* top: 20vh; */

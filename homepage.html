@@ -514,89 +514,93 @@
 
 
                     <div class="depositeItem depositeBill">
-                        <div class="menuItem">
-                            <div class="dispIcon specDisp depositebtn">Deposit method</div>
-                            <div class="dispIcon" style="width: 60%;">
-                                <select name="options" id="greet" class="selectOptions2" onchange="myget(this.value)"
-                                    style="width: 30%;">
-                                    <option value="Esewa">Esewa</option>
-                                    <option value="Bank">Bank</option>
-                                    <option value="Khalti">Khalti</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="bankpop"
-                            style="display: flex; justify-content: center; flex-direction: column; align-items: center; justify-content: space-evenly; display: none; background-color: #1f262f;">
-                            <h4>Bank</h4>
-                            <button class="closebtndeposite"
-                                style="padding: 10px 50px; color: black; font-size: 20px;background-color: #394552; color: white;">Close</button>
-                        </div>
-
-                        <div class="bankpop1"
-                            style="display: flex; justify-content: center; flex-direction: column; align-items: center; justify-content: space-evenly; display: none;  background-color: #1f262f">
-                            <h4>Khalti</h4>
-                            <button class="closebtndeposite1"
-                                style="padding: 10px 50px; color: black; font-size: 20px;background-color: #394552; color: white;">Close</button>
-                        </div>
-                        <div class="menuItem">
-                            <div class="dispIcon specDisp">Home of Depositor</div>
-                            <div class="dispIcon" style="text-align: center; width: 60%;">Helios Predator</div>
-                        </div>
-                        <div class="menuItem">
-                            <div class="dispIcon specDisp">Depositer Name</div>
-                            <div class="dispIcon inputSports"><input type="text" name="amount" id=""
-                                    placeholder="Please type Depositer Name" class="inputLeague"></div>
-                        </div>
-                        <div class="menuItem">
-                            <div class="dispIcon specDisp">Amount</div>
-                            <div class="dispIcon inputSports"><input type="text" name="amount" id=""
-                                    placeholder="Please type in the deposite amount" class="inputLeague"></div>
-                        </div>
-                        <div class="menuItem">
-                            <div class="dispIcon specDisp">upload Screenshot</div>
-                            <div class="dispIcon inputSports"> <input type="file" id="fileInput"
-                                    style="display: none;"><button class="inputLeague uploadBtn"
-                                    onclick="openFileGallery()">Upload</button>
-                            </div>
-                        </div>
-                        <div class="depositeBtn2">
-                            <div class="noticeBtn">Deposite Bill</div>
-
-                            <div class="crosscheck">
-                                <div class="circlebox">X</div>
-                                <p>Are you sure you want to delete your selections?</p>
-                                <div class="buttongroups">
-                                    <button class="checkbtn5">check</button>
+                        <div class="scrollbarmenu" style="overflow: auto; width: 100%; height: 200px;">
+                            <div class="menuItem">
+                                <div class="dispIcon specDisp depositebtn">Deposit method</div>
+                                <div class="dispIcon" style="width: 60%;">
+                                    <select name="options" id="greet" class="selectOptions2"
+                                        onchange="myget(this.value)" style="width: 30%;">
+                                        <option value="Esewa">Esewa</option>
+                                        <option value="Bank">Bank</option>
+                                        <option value="Khalti">Khalti</option>
+                                    </select>
                                 </div>
                             </div>
-
-                            <div>
-                                <i class="fa fa-question-circle holdingsbtn1" aria-hidden="true"
-                                    style="cursor:pointer;"></i>
+                            <div class="bankpop"
+                                style="display: flex; justify-content: center; flex-direction: column; align-items: center; justify-content: space-evenly; display: none; background-color: #1f262f;">
+                                <h4>Bank</h4>
+                                <button class="closebtndeposite"
+                                    style="padding: 10px 50px; color: black; font-size: 20px;background-color: #394552; color: white;">Close</button>
                             </div>
-                            <div class="holingsbox">
-                                <div class="depositeItem depositeBill pt-4">
-                                    <div>
-                                        <p
-                                            style="color: rgb(239, 198, 49);font-weight: 400; font-size: 12px; text-align: center;">
-                                            Points received by members can be converted into holdings.
-                                        </p>
-                                        <p
-                                            style="color: rgb(239, 198, 49);font-weight: 400;font-size: 11px;padding-top: -5px; text-align: center;">
-                                            The minimum amount for one-time conversion is 5,000 points, and it can be
-                                            converted in
-                                            increments of 1 won.
-                                        </p>
-                                        <p
-                                            style="color: rgb(239, 198, 49);font-weight: 400;font-size: 11px;padding-top: -5px; text-align: center;">
-                                            After entering the desired amount in the application point column , click
-                                            Apply for
-                                            Conversion .
-                                        </p>
+
+                            <div class="bankpop1"
+                                style="display: flex; justify-content: center; flex-direction: column; align-items: center; justify-content: space-evenly; display: none;  background-color: #1f262f">
+                                <h4>Khalti</h4>
+                                <button class="closebtndeposite1"
+                                    style="padding: 10px 50px; color: black; font-size: 20px;background-color: #394552; color: white;">Close</button>
+                            </div>
+                            <div class="menuItem">
+                                <div class="dispIcon specDisp">Home of Depositor</div>
+                                <div class="dispIcon" style="text-align: center; width: 60%;">Helios Predator</div>
+                            </div>
+                            <div class="menuItem">
+                                <div class="dispIcon specDisp">Depositer Name</div>
+                                <div class="dispIcon inputSports"><input type="text" name="amount" id=""
+                                        placeholder="Please type Depositer Name" class="inputLeague"></div>
+                            </div>
+                            <div class="menuItem">
+                                <div class="dispIcon specDisp">Amount</div>
+                                <div class="dispIcon inputSports"><input type="text" name="amount" id=""
+                                        placeholder="Please type in the deposite amount" class="inputLeague"></div>
+                            </div>
+                            <div class="menuItem">
+                                <div class="dispIcon specDisp">upload Screenshot</div>
+                                <div class="dispIcon inputSports"> <input type="file" id="fileInput"
+                                        style="display: none;"><button class="inputLeague uploadBtn"
+                                        onclick="openFileGallery()">Upload</button>
+                                </div>
+                            </div>
+                            <div class="depositeBtn2">
+                                <div class="noticeBtn">Deposite Bill</div>
+
+                                <div class="crosscheck">
+                                    <div class="circlebox">X</div>
+                                    <p>Are you sure you want to delete your selections?</p>
+                                    <div class="buttongroups">
+                                        <button class="checkbtn5">check</button>
                                     </div>
                                 </div>
-                                <div class="d-flex justify-content-center">
-                                    <div class="noticeBtn RulesBtn text-center holdingclose1 ">Close</div>
+
+                                <div>
+                                    <i class="fa fa-question-circle holdingsbtn1" aria-hidden="true"
+                                        style="cursor:pointer;"></i>
+                                </div>
+                                <div class="holingsbox">
+                                    <div class="depositeItem depositeBill pt-4">
+                                        <div>
+                                            <p
+                                                style="color: rgb(239, 198, 49);font-weight: 400; font-size: 12px; text-align: center;">
+                                                Points received by members can be converted into holdings.
+                                            </p>
+                                            <p
+                                                style="color: rgb(239, 198, 49);font-weight: 400;font-size: 11px;padding-top: -5px; text-align: center;">
+                                                The minimum amount for one-time conversion is 5,000 points, and it can
+                                                be
+                                                converted in
+                                                increments of 1 won.
+                                            </p>
+                                            <p
+                                                style="color: rgb(239, 198, 49);font-weight: 400;font-size: 11px;padding-top: -5px; text-align: center;">
+                                                After entering the desired amount in the application point column ,
+                                                click
+                                                Apply for
+                                                Conversion .
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <div class="noticeBtn RulesBtn text-center holdingclose1 ">Close</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -626,6 +630,8 @@
             </div>
 
             <div class="depositeItem depositeBill">
+                <div class="scrollbarmenu" style="overflow: auto; width: 100%; height: 200px;">
+
                 <div class="menuItem">
                     <div class="dispIcon specDisp">Balance</div>
                     <div class="dispIcon" style="width: 60%; text-align: center;">
@@ -742,6 +748,7 @@
 
                     </div>
                 </div>
+            </div>
             </div>
         </div>
 
@@ -1302,7 +1309,7 @@
                     </div>
                     <div class="depositeItem depositeBill">
                         <div class="menuItem">
-                            <div class="dispIcon specDisp" >Holding Point</div>
+                            <div class="dispIcon specDisp">Holding Point</div>
                             <div class="dispIcon" style="width: 60%;"> 200</div>
                         </div>
                         <div class="menuItem">
@@ -3143,8 +3150,8 @@
             document.getElementById("yespoint").style.display = "inline"
         }
         function closechk() {
-         
-                document.getElementById("yespoint").style.display = "none"
+
+            document.getElementById("yespoint").style.display = "none"
         }
         function openFileGallery() {
             var fileInput = document.getElementById('fileInput');
