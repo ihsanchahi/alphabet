@@ -210,8 +210,6 @@ body {
     right: 0;
     top: -20px;
     cursor: pointer;
-
-
 }
 
 .closeicone4 {
@@ -3699,7 +3697,6 @@ border-right: 1px solid #1e242c; */
 .infoCancel121,
 .customerCancel1,
 .customerCancel2,
-.CancelMyPage,
 .closeicone,
 .closeIconCustom {
     position: relative;
@@ -3712,7 +3709,18 @@ border-right: 1px solid #1e242c; */
     cursor: pointer;
     z-index: 1;
 }
-
+.CancelMyPage{
+    background-color: #F8FF13;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 1;
+    margin-left: auto;
+    margin-top: -3vh;
+}
 .leaguePopupCancel {
     position: absolute;
     right: 10px;

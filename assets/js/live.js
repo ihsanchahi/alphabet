@@ -99,7 +99,44 @@ const pointexchcontainer = document.querySelector(".pointexchcontainer");
 const holdings = document.querySelector(".holdings");
 const closePointHoldings = document.querySelector(".closePointHoldings");
 const infoCancel1211 = document.querySelector(".infoCancel1211");
+// mypage 
+const MyPage = document.querySelector(".Mypage");
+const myPage = document.querySelector(".my-backdropMyPage");
+const changePassword = document.querySelector(".Change-Password");
+const getMemberInfoBtn = document.getElementById("member-info");
+const getMemberInfoPage = document.getElementById("memberInfoPage");
+const getBettingLimitBtn = document.getElementById("bettingLimit");
+const getBettingLimitPage = document.getElementById("bettingLimitPage");
+const getChangePasswordBtn = document.getElementById("changePassword");
+const getChangePasswordPage = document.getElementById("changePasswordPage");
+const memberInfo = document.querySelector(".Member-Info");
+const bettingLimit = document.querySelector(".Betting-Limit");
 
+MyPage.addEventListener("click", () => {
+  sliderBackDrop.style.display = "none";
+  sliderMenu.classList.remove("sliderMenuActive");
+  myPage.style.display = "flex";
+  changeCancels = document.querySelector(".CancelMyPage");
+  changeCancels.addEventListener("click", () => {
+    myPage.style.display = "none";
+  });
+  
+});
+memberInfo.addEventListener("click", () => {
+  memberInfo.classList.add("historyUpHeaderActive");
+  changePassword.classList.remove("historyUpHeaderActive");
+  bettingLimit.classList.remove("historyUpHeaderActive");
+});
+changePassword.addEventListener("click", () => {
+  changePassword.classList.add("historyUpHeaderActive");
+  memberInfo.classList.remove("historyUpHeaderActive");
+  bettingLimit.classList.remove("historyUpHeaderActive");
+});
+bettingLimit.addEventListener("click", () => {
+  bettingLimit.classList.add("historyUpHeaderActive");
+  memberInfo.classList.remove("historyUpHeaderActive");
+  changePassword.classList.remove("historyUpHeaderActive");
+});
 
 infoCancel1211.addEventListener("click", function () {
     pointexchcontainer.style.display = "none";
@@ -1208,6 +1245,22 @@ function replaceSidebar(leagueIndx, gameIndx) {
 }
 
 function initApp() {
+
+  getMemberInfoBtn.addEventListener("click", function () {
+    getMemberInfoPage.style.display = "block";
+    getChangePasswordPage.style.display = "none";
+    getBettingLimitPage.style.display = "none";
+  });
+  getChangePasswordBtn.addEventListener("click", function () {
+    getChangePasswordPage.style.display = "block";
+    getMemberInfoPage.style.display = "none";
+    getBettingLimitPage.style.display = "none";
+  });
+  getBettingLimitBtn.addEventListener("click", function () {
+    getChangePasswordPage.style.display = "none";
+    getMemberInfoPage.style.display = "none";
+    getBettingLimitPage.style.display = "block";
+  });
   // console.log(soccerData)
 
   messageData.forEach((val, key) => {

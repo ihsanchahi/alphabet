@@ -404,10 +404,10 @@ input[type="password"] {
 }
 
 .loginPopup {
-    width: 70%;
+    width: 95%;
     height: auto;
     top: 45%;
-    left: 20%;
+    left: 2%;
     transform: translate(-20%, -20%);
     display: block;
     position: absolute;
@@ -428,10 +428,10 @@ input[type="password"] {
 }
 
 .signupPopup {
-    width: 70%;
+    width: 95%;
     height: auto;
     top: 45%;
-    left: 20%;
+    left: 2%;
     transform: translate(-20%, -20%);
     display: block;
     position: absolute;
@@ -440,10 +440,10 @@ input[type="password"] {
 }
 
 .registerPopUp {
-    width: 80%;
+    width: 95%;
     height: auto;
     top: 23%;
-    left: 14%;
+    left: 2%;
     transform: translate(-20%, -20%);
     display: block;
     position: absolute;
