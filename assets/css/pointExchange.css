@@ -30,13 +30,21 @@
 }
 
 .infoCancel1211 {
-    right: 15px;
+    /* right: 15px;
     margin-top: -28vh;
     position: absolute;
     background-color: #F8FF13;
     padding: 10px;
     display: block;
     width: 35px;
+    cursor: pointer;
+    z-index: 1; */
+    background-color: #F8FF13;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
     z-index: 1;
 }

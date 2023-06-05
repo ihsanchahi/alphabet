@@ -1152,7 +1152,7 @@ body {
     z-index: 1;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 }
 
 @media (min-width:1401px) {
@@ -1162,7 +1162,7 @@ body {
         z-index: 1;
         top: 50%;
         left: 50%;
-        transform: translate(-50%,-50%);
+        transform: translate(-50%, -50%);
     }
 }
 
@@ -1173,7 +1173,7 @@ body {
         z-index: 1;
         top: 50%;
         left: 50%;
-        transform: translate(-50%,-50%);
+        transform: translate(-50%, -50%);
     }
 }
 
@@ -1184,7 +1184,7 @@ body {
         z-index: 1;
         top: 50%;
         left: 50%;
-        transform: translate(-50%,-50%);
+        transform: translate(-50%, -50%);
     }
 }
 
@@ -1195,7 +1195,7 @@ body {
         z-index: 1;
         top: 50%;
         left: 50%;
-        transform: translate(-50%,-50%);
+        transform: translate(-50%, -50%);
     }
 }
 
@@ -1920,6 +1920,7 @@ body {
         transform: translate(-50%, -50%);
     }
 }
+
 @media (max-width:350px) {
     #exchangpoint {
 
@@ -1969,6 +1970,7 @@ body {
     padding: 0px 10px;
     margin-top: 10px;
 }
+
 @media (min-width:1401px) {
     .slectlea {
         background-color: #27303a;
@@ -1979,6 +1981,7 @@ body {
         margin-top: 10px;
     }
 }
+
 @media (max-width:1400px) {
     .slectlea {
         background-color: #27303a;
@@ -1989,6 +1992,7 @@ body {
         margin-top: 10px;
     }
 }
+
 @media (max-width:768px) {
     .slectlea {
         background-color: #27303a;
@@ -2723,13 +2727,20 @@ input.text.context {
 }
 
 .infoCancel1211 {
-    right: 15px;
+    /* right: 15px;
     margin-top: -28vh;
     position: absolute;
     background-color: #F8FF13;
     padding: 10px;
     display: block;
     width: 35px;
+    cursor: pointer; */
+    background-color: #F8FF13;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
     z-index: 1;
 }
@@ -3508,7 +3519,7 @@ border-right: 1px solid #1e242c; */
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        
+
     }
 
     .custompopupcontainer {
@@ -3701,7 +3712,8 @@ border-right: 1px solid #1e242c; */
     cursor: pointer;
     z-index: 1;
 }
-.leaguePopupCancel{
+
+.leaguePopupCancel {
     position: absolute;
     right: 10px;
     top: -3vh;
@@ -5104,20 +5116,24 @@ div#Titleval {
         margin-left: 5vh !important;
         width: 100%;
     }
-    .withdrawText{
+
+    .withdrawText {
         font-size: 10px !important;
     }
 }
-@media(max-width:350px){
-    .withdrawText{
+
+@media(max-width:350px) {
+    .withdrawText {
         font-size: 8px !important;
     }
 }
-@media(max-width:400px){
+
+@media(max-width:400px) {
     .dispIcon {
         font-size: 10px !important;
     }
 }
-.hideAll{
+
+.hideAll {
     display: none !important;
 }
