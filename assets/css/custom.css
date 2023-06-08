@@ -1780,6 +1780,8 @@ body {
 .betOdds:hover {
     background-color: #F8FF13;
     color: #000;
+    pointer-events: auto;
+    pointer-events: none;
 }
 
 .ouOdds:hover {

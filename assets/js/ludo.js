@@ -357,7 +357,7 @@ function generateHistoryTable2(number) {
       item.className = "oddsEven";
       item.innerHTML = `
             <div class='oddsCollector collectEven'>
-            
+            ${number}
             </div>
             `;
 
