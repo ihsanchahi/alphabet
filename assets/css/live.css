@@ -3,16 +3,16 @@
         margin: 0;
         color: #ffffff;
     }
-    
+
     body {
         font-family: 'Noto Sans', sans-serif;
         background-color: rgb(23, 28, 34);
     }
 
-     /* Start deposite & withdrwal css */
+    /* Start deposite & withdrwal css */
 
 
-    .checkboxwithin{
+    .checkboxwithin {
         width: 500px;
         height: 200px;
         background-color: #303A46;
@@ -25,245 +25,246 @@
         right: 120px;
         display: none;
     }
-    .crosscheck12{
-       width: 500px;
-       height: 200px;
-       background-color: #303A46;
-       position: absolute;
-       display: flex;
-       justify-content: center;
-       align-items: center;
-       flex-direction: column;
-       top: 40px;
-       right: 130px;
-       display: none;
+
+    .crosscheck12 {
+        width: 500px;
+        height: 200px;
+        background-color: #303A46;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        top: 40px;
+        right: 130px;
+        display: none;
     }
-    
+
     .crosscheck {
-       width: 480px;
-       height: 200px;
-       background-color: #303A46;
-       position: absolute;
-       display: flex;
-       justify-content: center;
-       align-items: center;
-       flex-direction: column;
-       top: 80px;
-       right: 150px;
-       display: none;
+        width: 480px;
+        height: 200px;
+        background-color: #303A46;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        top: 80px;
+        right: 150px;
+        display: none;
     }
-    
+
     .holingsbox {
-       width: 550px;
-       height: 200px;
-       background-color: #1F262F;
-       position: absolute;
-       right: 120px;
-       top: 70px;
-       display: none;
+        width: 550px;
+        height: 200px;
+        background-color: #1F262F;
+        position: absolute;
+        right: 120px;
+        top: 70px;
+        display: none;
     }
-    
+
     .holingsbox2 {
-       width: 550px;
-       height: 200px;
-       background-color: #1F262F;
-       position: absolute;
-       top: 50px;
-       left: 100px;
-       display: none;
-    
+        width: 550px;
+        height: 200px;
+        background-color: #1F262F;
+        position: absolute;
+        top: 50px;
+        left: 100px;
+        display: none;
+
     }
-    
+
     .withdrawaldrop {
-       width: 55%;
-       background-color: #1F262F;
-       position: absolute;
-       z-index: 100;
-       margin-top: 40px;
-       margin-right: -112px;
-       display: none;
-       position: fixed;
+        width: 55%;
+        background-color: #1F262F;
+        position: absolute;
+        z-index: 100;
+        margin-top: 40px;
+        margin-right: -112px;
+        display: none;
+        position: fixed;
     }
-    
+
     .depositeHistory {
-       display: none;
+        display: none;
     }
-    
+
     .depositebox {
-       width: 100%;
-       height: 30px;
-       /* border: 1px solid white; */
-       display: flex;
-       justify-content: center;
-       justify-content: space-around;
+        width: 100%;
+        height: 30px;
+        /* border: 1px solid white; */
+        display: flex;
+        justify-content: center;
+        justify-content: space-around;
     }
-    
+
     .depositeapplication {
-       width: 200px;
-       height: auto;
-       /* border: 1px solid; */
-       display: flex;
-       justify-content: center;
-       align-items: center;
-       color: #F8FF13;
-       cursor: pointer;
+        width: 200px;
+        height: auto;
+        /* border: 1px solid; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #F8FF13;
+        cursor: pointer;
     }
-    
+
     .depositeapplication1 {
-       color: #999987;
+        color: #999987;
     }
-    
+
     .depositeapplication1:hover {
-       color: #F8FF13;
+        color: #F8FF13;
     }
-    
+
     .withdrawldetailscontainer {
-       width: 100%;
-       height: 450px;
-       background-color: #1F262F;
-       position: absolute;
-       display: flex;
-       justify-content: center;
-       display: none;
-       top: -25px;
-       right: 2px;
-       /* left: 380px; */
+        width: 100%;
+        height: 450px;
+        background-color: #1F262F;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        display: none;
+        top: -25px;
+        right: 2px;
+        /* left: 380px; */
     }
-    
+
     .crossicone {
-       width: 35px;
-       height: 35px;
-       background-color: #F8FF13;
-       display: flex;
-       justify-content: center;
-       align-items: center;
-       position: absolute;
-       right: 0;
-       top: -20px;
-       cursor: pointer;
-    
-    
+        width: 35px;
+        height: 35px;
+        background-color: #F8FF13;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        right: 0;
+        top: -20px;
+        cursor: pointer;
+
+
     }
-    
+
     .closeicone4 {
-       width: 35px;
-       height: 35px;
-       background-color: #F8FF13;
-       display: flex;
-       justify-content: center;
-       align-items: center;
-       position: absolute;
-       right: 0;
-       top: -20px;
-       cursor: pointer;
-    
+        width: 35px;
+        height: 35px;
+        background-color: #F8FF13;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        right: 0;
+        top: -20px;
+        cursor: pointer;
+
     }
-    
+
     .depositeUpHeader10 {
-       color: #F8FF13;
-    
+        color: #F8FF13;
+
     }
-    
+
     .nodatabox {
-       width: 100%;
-       height: 5vh;
-       background-color: #232B34;
-       display: flex;
-       justify-content: center;
-       align-items: center;
-       /* margin-top: 10px; */
+        width: 100%;
+        height: 5vh;
+        background-color: #232B34;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* margin-top: 10px; */
     }
-    
+
     .nodatabox p {
-       margin-top: 7px;
+        margin-top: 7px;
     }
-    
+
     .deletebox {
-       width: 25%;
-       height: 5vh;
-       background-color: #394552;
-       position: absolute;
-       bottom: 60px;
-       display: flex;
-       justify-content: center;
-       align-items: center;
-       cursor: pointer;
-    
+        width: 25%;
+        height: 5vh;
+        background-color: #394552;
+        position: absolute;
+        bottom: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+
     }
-    
+
     .deletebox p {
-       align-items: center;
-       position: absolute;
-       top: 5px;
+        align-items: center;
+        position: absolute;
+        top: 5px;
     }
-    
+
     .pagination2 {
-       position: absolute;
-       bottom: 10px;
+        position: absolute;
+        bottom: 10px;
     }
-    
+
     .questionmarkbox {
-       width: 480px;
-       height: 300px;
-       background-color: #1F262F;
-       position: absolute;
-       top: 80px;
-       right: 120px;
-       display: flex;
-       justify-content: center;
-       align-items: center;
-       flex-direction: column;
-       display: none;
+        width: 480px;
+        height: 300px;
+        background-color: #1F262F;
+        position: absolute;
+        top: 80px;
+        right: 120px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        display: none;
     }
-    
+
     .buttongroups button {
-       padding: 10px 40px;
-       color: white;
-       background-color: #394552;
-       border: none;
-       font-size: 14px;
-    
+        padding: 10px 40px;
+        color: white;
+        background-color: #394552;
+        border: none;
+        font-size: 14px;
+
     }
-    
+
     .checkbox {
-       width: 480px;
-       height: 300px;
-       background-color: #1F262F;
-       position: absolute;
-       top: 80px;
-       right: 130px;
-       display: flex;
-       justify-content: center;
-       align-items: center;
-       flex-direction: column;
-       display: none;
+        width: 480px;
+        height: 300px;
+        background-color: #1F262F;
+        position: absolute;
+        top: 80px;
+        right: 130px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        display: none;
     }
-    
+
     .checkbox1 {
-       display: none;
+        display: none;
     }
-    
+
     .circlebox {
-       width: 80px;
-       height: 80px;
-       border: 2px solid #FF4646;
-       border-radius: 50%;
-       display: flex;
-       justify-content: center;
-       align-items: center;
-       font-size: 15px;
+        width: 80px;
+        height: 80px;
+        border: 2px solid #FF4646;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 15px;
     }
-    
+
     .Withdrawformcontainer {
-       display: none;
+        display: none;
     }
-    
+
     .questionmarkbox1 {
-       display: none;
+        display: none;
     }
 
     /* Close deposite & withdrwal css */
-    .attandececontainer{
+    .attandececontainer {
         width: 50%;
         height: auto;
         /* background-color: #1F262F; */
@@ -271,15 +272,17 @@
         position: absolute;
         top: 120px;
         display: none;
-   }
-   .scrollbarconatiner{
+    }
+
+    .scrollbarconatiner {
         width: 98%;
         height: 200px;
         /* border: 1px solid; */
         margin-left: 5px;
         overflow: auto;
-   }
-   .scrol1box{
+    }
+
+    .scrol1box {
         width: 100%;
         height: 8vh;
         border: 1px solid;
@@ -291,43 +294,49 @@
         border-top: none;
         border-left: none;
         border-right: none;
-   }
-   .attend{
-        background-color:#F8FF13;
+    }
+
+    .attend {
+        background-color: #F8FF13;
         color: #97999B;
-         
-   }
-   .monthbox{
+
+    }
+
+    .monthbox {
         width: 120px;
         height: 80%;
         /* border: 1px solid; */
         margin-top: 5px;
-   }
-   .monthbox p{
-         display: flex;
-         justify-content: center;
-         align-items: center;
-         margin-top: 10px;
-   }
-   .closeicone{
-        background-color:#F8FF13;
+    }
+
+    .monthbox p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .closeicone {
+        background-color: #F8FF13;
         position: absolute;
         top: -20px;
         right: 20px;
         padding: 10px 14px;
         cursor: pointer;
-   }
-   .headingbox{
-         width: 100%;
-         height: auto;
-         /* border: 1px solid; */
-         display: flex;
-         justify-content: center;
-         align-items: center;
-         color:#F8FF13;
-         margin-top: 20px;
-   }
-   .textcontainer{
+    }
+
+    .headingbox {
+        width: 100%;
+        height: auto;
+        /* border: 1px solid; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #F8FF13;
+        margin-top: 20px;
+    }
+
+    .textcontainer {
         width: 98%;
         /* height: 200px; */
         height: auto;
@@ -343,44 +352,48 @@
         align-items: center;
         flex-direction: column;
         position: relative;
-   }
-   .textcontainer p{
+    }
+
+    .textcontainer p {
         font-size: 14px;
         color: #97999B;
-   }
-   .paraline{
+    }
+
+    .paraline {
         /* margin-left: -200px; */
         position: absolute;
         margin: 3px;
         bottom: -2px;
         left: 0;
-       /* bottom: 0; */
-       /* left: 40px; */
-       /* margin-left: -230px; */
-   }
-   .paraline1{
+        /* bottom: 0; */
+        /* left: 40px; */
+        /* margin-left: -230px; */
+    }
+
+    .paraline1 {
         position: absolute;
         bottom: -14px;
         right: 20px;
-   }
-   
-   .yearmonth{
-       width: 98%;
-       background-color: #27303A;
-       margin-left: 5px;
-       display: flex;
-       justify-content: center;
-       padding: 10px;
-   }
-    .matchhistorybuttons button{
+    }
+
+    .yearmonth {
+        width: 98%;
+        background-color: #27303A;
+        margin-left: 5px;
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .matchhistorybuttons button {
         padding: 12px 30px;
         background-color: #394552;
         color: white;
         border: none;
         font-size: 12px;
     }
-    
-    
+
+
     .navBarToggler {
         display: inline-block;
         width: 1.5em;
@@ -391,9 +404,9 @@
         justify-content: center;
         align-items: center;
     }
-    
+
     .customNav {
-        background-color: rgb(31, 38, 47)!important;
+        background-color: rgb(31, 38, 47) !important;
         border-width: 1px 0;
         border-style: solid;
         border-color: rgb(64, 64, 68);
@@ -403,51 +416,51 @@
         border-right-width: 0;
         /* height: 70px */
     }
-    
+
     .customUl {
-        color: rgb(218, 218, 218)!important;
+        color: rgb(218, 218, 218) !important;
         font-size: 14px !important;
     }
-    
+
     .customUl1 {
-        color: #F8FF13!important
+        color: #F8FF13 !important
     }
-    
+
     .customUl1:hover {
-        color: rgb(218, 218, 218)!important;
+        color: rgb(218, 218, 218) !important;
         box-shadow: inset 0 0 0 1px #F8FF13;
     }
-    
+
     .customUl:hover {
-        color: #F8FF13!important
+        color: #F8FF13 !important
     }
-    
+
     .customDrop {
-        background-color: rgb(31, 38, 47)!important;
-        border: 1px solid rgb(64, 64, 68)!important;
+        background-color: rgb(31, 38, 47) !important;
+        border: 1px solid rgb(64, 64, 68) !important;
         border-radius: 0%;
     }
-    
+
     .customDropper {
-        color: rgb(218, 218, 218)!important;
+        color: rgb(218, 218, 218) !important;
     }
-    
+
     .customDropper:hover {
         color: #F8FF13 !important;
-        background-color: rgb(39, 48, 58)!important;
+        background-color: rgb(39, 48, 58) !important;
     }
-    
+
     .bodyWrapper {
         display: flex;
         justify-content: space-between;
         /* height: 100vh; */
     }
-    
+
     .column1 {
         background-color: rgb(31, 38, 47);
         flex-basis: 250px;
     }
-    
+
     .column2 {
         /* flex-basis: 912px; */
         flex-grow: 1;
@@ -456,19 +469,20 @@
         overflow-x: hidden;
         /* background-color: #F8FF13; */
     }
-    
+
     .column3 {
         background-color: rgb(31, 38, 47);
         flex-basis: 350px;
         flex-grow: 1;
     }
-    
+
+
     .column4 {
         flex-grow: 1;
         display: flex;
         max-width: 17%;
     }
-    
+
     .sidebar {
         background-color: rgb(31, 38, 47);
         position: fixed;
@@ -476,23 +490,23 @@
         height: 100vh;
         overflow: auto;
     }
-    
+
     .contentWrapper {
         margin-top: 0px;
     }
-    
+
     .logo {
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    
+
     .menu {
         display: flex;
         flex-direction: column;
         margin: 10px;
     }
-    
+
     .title {
         color: rgb(97, 102, 108);
         /* width: 45%;
@@ -503,13 +517,13 @@
         padding-left: 10px;
         font-size: 13px;
     }
-    
+
     .specLogo {
         position: absolute;
         left: 10px;
         color: rgb(97, 102, 108);
     }
-    
+
     .submenu {
         color: #ffffff;
         cursor: pointer;
@@ -517,21 +531,22 @@
         padding: 10px;
         font-weight: 400;
     }
-    
+
     .active {
-        color: #F8FF13!important;
+        color: #F8FF13 !important;
     }
-    
+
     .sportsMenu {
         padding: 10px;
         /* border-bottom: 1px solid linear-gradient(90deg, #313b46 48.96%, hsla(0, 0%, 100%, 0)); */
     }
-    
+
     .menuDivider {
         height: 1px;
         background-image: linear-gradient(90deg, #313b46 48.96%, hsla(0, 0%, 100%, 0));
         margin-top: 10px;
     }
+
     /* .navbar {
     position: sticky;
     top: 0;
@@ -541,11 +556,11 @@
     align-items: center;
     flex-direction: row-reverse;
 } */
-    
+
     .spanWord {
-        color: #F8FF13!important;
+        color: #F8FF13 !important;
     }
-    
+
     .rightSegment {
         display: flex;
         align-items: center;
@@ -553,7 +568,7 @@
         position: fixed;
         right: 0;
     }
-    
+
     .navWrapper {
         display: flex;
         flex-direction: row;
@@ -563,27 +578,27 @@
         padding-left: 15px;
         padding-right: 15px;
     }
-    
+
     .bi-power {
         margin-right: 5px;
     }
-    
+
     .bi-person-circle {
-        color: #F8FF13!important;
+        color: #F8FF13 !important;
         font-size: 25px;
         display: none;
     }
-    
+
     .logoSegment {
         display: none;
     }
-    
+
     .submenu:hover {
-        color: #F8FF13!important;
+        color: #F8FF13 !important;
     }
-    
+
     .signinBtn {
-        background-color: #F8FF13!important;
+        background-color: #F8FF13 !important;
         cursor: pointer;
         padding: 0 20px;
         border-radius: 2px;
@@ -595,12 +610,12 @@
         justify-content: space-between;
         align-items: center;
     }
-    
+
     .signupInfo {
         color: rgb(188, 190, 193);
         font-size: 12px;
     }
-    
+
     .my-backdrop {
         position: fixed;
         top: 0;
@@ -613,11 +628,11 @@
         justify-content: center;
         align-items: center;
     }
-    
+
     .bi-person {
         font-size: 15px;
     }
-    
+
     .cartBackdrop {
         position: fixed;
         top: 0;
@@ -630,7 +645,7 @@
         justify-content: center;
         align-items: center;
     }
-    
+
     .NoticeWrapper,
     .NoticeWrapper2 {
         display: flex;
@@ -638,16 +653,16 @@
         align-items: center;
         width: 600px;
     }
-    
+
     .noticeHeader {}
-    
+
     .noticeUpHeader {
         display: flex;
         padding: 10px;
         justify-content: center;
         border-bottom: 1px solid #F8FF13;
     }
-    
+
     .noticeDownHeader {
         font-size: 11px;
         font-weight: 500;
@@ -656,17 +671,17 @@
         justify-content: space-between;
         padding: 10px;
     }
-    
+
     .noticeBtn {
         background-color: rgb(39, 48, 58);
         padding: 5px;
         cursor: pointer;
     }
-    
+
     .depositeActive {
         border-bottom: 1px solid #F8FF13;
     }
-    
+
     .noticeDownHeader {
         font-size: 11px;
         font-weight: 500;
@@ -675,7 +690,7 @@
         justify-content: space-between;
         padding: 10px;
     }
-    
+
     .depositeBtn2 {
         font-size: 13px;
         font-weight: 500;
@@ -686,7 +701,7 @@
         flex-direction: row-reverse;
         margin-top: 10px;
     }
-    
+
     .depositeDownHeader {
         font-size: 11px;
         font-weight: 500;
@@ -695,18 +710,18 @@
         justify-content: space-around;
         padding: 10px;
     }
-    
+
     .depositeHistory {
         margin-top: 10px;
     }
-    
+
     .historyHeader {
         width: 100%;
         display: flex;
         justify-content: center;
         padding: 10px;
     }
-    
+
     .headerItem,
     .footerItem {
         background-color: #394552;
@@ -717,11 +732,11 @@
         cursor: pointer;
         display: flex;
     }
-    
+
     .footerItem {
         background-color: #232a32;
     }
-    
+
     .hd1,
     .hd3,
     .hd4,
@@ -730,13 +745,13 @@
         justify-content: center;
         display: flex;
     }
-    
+
     .hd2 {
         flex-grow: 3;
         justify-content: center;
         display: flex;
     }
-    
+
     .depositeBtn0,
     .depositeBtn1,
     .withdrawlBtn0,
@@ -744,21 +759,21 @@
         padding: 5px;
         cursor: pointer;
     }
-    
+
     .depositeBtn0:hover {
         color: #F8FF13;
     }
-    
+
     .depositeBtn1:hover {
         color: #F8FF13;
     }
-    
+
     .bi-list {
-        color: #F8FF13!important;
+        color: #F8FF13 !important;
         font-size: 25px;
         display: none;
     }
-    
+
     .noticeContainer {
         /* //padding: 10px; */
         height: 400px;
@@ -767,12 +782,12 @@
         overflow-y: auto;
         overflow-x: hidden;
     }
-    
+
     .fontSecondary {
         color: rgb(134, 140, 148);
-        font-weight: 500!important;
+        font-weight: 500 !important;
     }
-    
+
     .noticeItem {
         background-color: #1D232A;
         width: 100%;
@@ -781,19 +796,19 @@
         border-bottom: 1px solid #262d36;
         cursor: pointer;
     }
-    
+
     .noticeItem:hover {
         background-color: #222a33;
         box-shadow: inset 2px 0 #F8FF13;
         /* box-shadow: inset 0 0 0 2px #F8FF13; */
     }
-    
+
     .upperItem,
     .lowerItem {
         display: flex;
         justify-content: space-between;
     }
-    
+
     .betSlip {
         position: fixed;
         background-color: rgb(31, 38, 47);
@@ -804,7 +819,7 @@
         display: flex;
         justify-content: center;
     }
-    
+
     .slipWrapper {
         top: 0;
         width: 326px;
@@ -813,50 +828,50 @@
         flex-direction: column;
         height: 91%;
     }
-    
+
     .slipHeaderWrapper {
         display: flex;
         flex-direction: column;
         flex-grow: 1;
     }
-    
+
     .slipHeader {
         padding: 10px;
         display: flex;
         justify-content: center;
         align-items: center;
-        border-bottom: 1px solid #F8FF13!important;
+        border-bottom: 1px solid #F8FF13 !important;
     }
-    
+
     .HeaderTop {
-        color: #F8FF13!important;
+        color: #F8FF13 !important;
         font-size: 12px;
     }
-    
+
     .HeaderBottom {
         display: flex;
         justify-content: space-around;
         padding: 10px;
     }
-    
+
     .op1 {
         color: #ffffff;
         font-size: 12px;
         font-weight: 300;
         cursor: pointer;
     }
-    
+
     .op1:hover {
-        color: #F8FF13!important;
+        color: #F8FF13 !important;
     }
-    
+
     .slipBody {
         border-bottom: 1px solid #1e242c;
         flex-grow: 7;
         overflow-y: auto;
         overflow-x: hidden;
     }
-    
+
     .emptyCart {
         width: 100%;
         /* height: 450px; */
@@ -865,46 +880,46 @@
         align-items: center;
         flex-direction: column;
     }
-    
+
     .slipFooter {
         border-top: 1px solid #303a46;
         flex-grow: 1;
         display: flex;
         flex-direction: column;
     }
-    
+
     .bi-dash-circle {
         color: rgb(97, 102, 108);
         font-size: 30px;
     }
-    
+
     .infoEmpty {
         color: rgb(97, 102, 108);
         font-weight: 300;
     }
-    
+
     .bi-trash {
         margin-right: 5px;
     }
-    
+
     .emptyAll {
         padding: 10px;
         font-size: 12px;
         font-weight: 300;
         cursor: pointer;
     }
-    
+
     .emptyAll:hover {
-        color: #F8FF13!important;
+        color: #F8FF13 !important;
     }
-    
+
     .IncDec {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
     }
-    
+
     .ControlWrapper {
         background-color: rgb(48, 58, 70);
         height: 35px;
@@ -913,7 +928,7 @@
         flex-direction: row;
         align-items: center;
     }
-    
+
     .amount {
         flex-grow: 2;
         display: flex;
@@ -926,7 +941,7 @@
         align-items: center;
         padding-right: 10px;
     }
-    
+
     .erase {
         border-left: 1px solid #1e242c;
         padding-right: 15px;
@@ -935,24 +950,24 @@
         display: flex;
         align-items: center;
     }
-    
+
     .inc {
         padding: 10px;
     }
-    
+
     .odds1:hover {
         box-shadow: inset 0 0 0 2px #F8FF13;
     }
-    
+
     .highlightOdd {
         color: white;
     }
-    
+
     .totalOdds {
         font-size: 12px;
         font-weight: 300;
     }
-    
+
     .betControl {
         display: flex;
         justify-content: space-between;
@@ -960,23 +975,23 @@
         width: 95%;
         padding: 5px
     }
-    
+
     .OddsNumber,
     .OddsNumberAmnt {
         font-size: 12px;
         font-weight: 300;
-        color: #F8FF13!important;
+        color: #F8FF13 !important;
     }
-    
+
     .BetBtn {
         display: flex;
         justify-content: center;
         align-items: center;
         margin-top: 10px;
     }
-    
+
     .btnNew {
-        background-color: #F8FF13!important;
+        background-color: #F8FF13 !important;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -984,12 +999,12 @@
         width: 95%;
         font-weight: 300;
     }
-    
+
     .btnNew:hover {
-        background-color: rgb(29, 170, 222)!important;
+        background-color: rgb(29, 170, 222) !important;
         cursor: pointer;
     }
-    
+
     .chooseSports {
         display: flex;
         /* justify-content: center;
@@ -998,7 +1013,7 @@
         height: 90vh;
         align-items: center;
     }
-    
+
     .sportsWrapper {
         width: 99%;
         background-color: rgb(39, 48, 58);
@@ -1009,19 +1024,19 @@
         align-items: center;
         justify-content: space-between;
     }
-    
+
     .btcolor {
         border-top: 1px solid #262d36;
     }
-    
+
     .btSpecColor {
         border-top: 1px solid #2a333e;
     }
-    
+
     .bbcolor {
         border-bottom: 1px solid #1e242c;
     }
-    
+
     .topSideWrapper {
         display: flex;
         justify-content: center;
@@ -1029,7 +1044,7 @@
         height: 58%;
         width: 100%;
     }
-    
+
     .topSideSports {
         display: flex;
         overflow-y: hidden;
@@ -1038,11 +1053,11 @@
         align-items: center;
         height: 100%;
     }
-    
+
     .topSideSports::-webkit-scrollbar {
         height: 5px;
     }
-    
+
     .singleSport {
         margin: 10px;
         margin-left: 20px;
@@ -1052,27 +1067,27 @@
         justify-content: space-between;
         align-items: center;
     }
-    
+
     .singleSport:hover {
         cursor: pointer;
     }
-    
+
     .singleSport:hover .sportName {
         color: aqua;
         cursor: pointer;
     }
-    
+
     .sportName {
         margin-top: 5px;
         font-size: 12px;
     }
-    
+
     .bottomSideWrapper {
         width: 100%;
         height: 100%;
         display: flex;
     }
-    
+
     .downSideSports {
         display: flex;
         width: 96%;
@@ -1081,26 +1096,26 @@
         height: 100%;
         text-indent: 10px;
     }
-    
+
     .inputSports {
         width: 50%;
     }
-    
+
     .inputSports input {
         background-color: transparent;
         border: none;
         width: 100%;
         font-size: 12px;
     }
-    
+
     .inputSports input::placeholder {
         font-size: 12px;
     }
-    
+
     .inputSports input:focus {
         outline: none;
     }
-    
+
     .sortWrapper {
         display: flex;
         align-items: center;
@@ -1108,18 +1123,18 @@
         margin-top: 10px;
         justify-content: space-between;
     }
-    
+
     .sortButtons {
         display: flex;
     }
-    
+
     .btn1,
     .btn2,
     .btn3 {
         font-size: 12px;
         margin: 5px;
     }
-    
+
     .btn2,
     .btn3 {
         display: flex;
@@ -1130,11 +1145,11 @@
         height: 35px;
         cursor: pointer;
     }
-    
+
     .active {
         color: #F8FF13;
     }
-    
+
     .btn1 {
         display: flex;
         align-items: center;
@@ -1148,24 +1163,24 @@
         height: 35px;
         cursor: pointer;
     }
-    
+
     .gamesWrapper {
         background-color: rgb(23, 28, 34);
         width: 99%;
         margin-top: 10px;
     }
-    
+
     .gamesTable {
         display: flex;
         flex-direction: column;
     }
-    
+
     .leagueCol1 {
         display: flex;
         flex-grow: 2.65;
         align-items: center;
     }
-    
+
     .leagueCol2 {
         display: flex;
         flex-grow: 1;
@@ -1173,21 +1188,21 @@
         align-items: center;
         height: 100%;
     }
-    
+
     .leagueCol3 {
         display: none;
         flex-grow: 1;
         justify-content: space-around;
         align-items: center;
     }
-    
+
     .leagueCol4 {
         display: none;
         flex-grow: 1;
         justify-content: space-around;
         align-items: center;
     }
-    
+
     .leagueHeader {
         display: flex;
         font-size: 12px;
@@ -1195,10 +1210,11 @@
         background-color: rgb(39, 48, 58);
         padding: 10px;
     }
+
     /* .betHeader{
     padding: 5px;
 } */
-    
+
     .leagueFooter {
         display: flex;
         font-size: 12px;
@@ -1207,11 +1223,11 @@
         padding: 10px;
         height: 100px;
     }
-    
+
     .representLogo {
         margin-right: 5px;
     }
-    
+
     .betOdds {
         padding: 0 10px;
         display: flex;
@@ -1225,7 +1241,7 @@
         margin-left: 5px;
         cursor: pointer;
     }
-    
+
     .handiOdds,
     .ouOdds {
         display: flex;
@@ -1238,30 +1254,30 @@
         width: 100%;
         cursor: pointer;
     }
-    
+
     .nestedOdds {
         display: flex;
         height: 75px;
         align-items: center;
         background-color: inherit;
     }
-    
+
     .betOdds:hover {
         background-color: #F8FF13;
     }
-    
+
     .handiOdds:hover,
     .ouOdds:hover {
         /* border: 1px solid blue; */
         background-color: #F8FF13;
         ;
     }
-    
+
     .extraOdd:hover {
         background-color: #F8FF13;
         ;
     }
-    
+
     .extraOdd {
         display: flex;
         padding: 0 10px;
@@ -1274,7 +1290,7 @@
         cursor: pointer;
         display: none;
     }
-    
+
     .gameCol1 {
         display: flex;
         flex-grow: 2.7;
@@ -1282,26 +1298,26 @@
         flex-direction: column;
         cursor: pointer;
     }
-    
+
     .teamRow1 {
         display: flex;
         justify-content: space-between;
         width: 100%;
     }
-    
+
     .specWidth {
-        width: 40%!important;
-        display: flex!important;
-        justify-content: flex-start!important;
+        width: 40% !important;
+        display: flex !important;
+        justify-content: flex-start !important;
         padding-right: 20px;
     }
-    
+
     .betActive {
         /* box-shadow: inset 0 0 0 2px #F8FF13;
         /* background-color: #F8FF13; */
         /* color: white!important; */
     }
-    
+
     .amount1,
     .maxAmnt,
     .resetAmnt {
@@ -1316,13 +1332,13 @@
         align-items: center;
         cursor: pointer;
     }
-    
+
     .cartItemsWrapper {}
-    
+
     .fontGrey {
         color: rgb(48, 58, 70);
     }
-    
+
     .cartItem {
         background-color: rgb(48, 58, 70);
         padding: 10px;
@@ -1330,13 +1346,13 @@
         flex-direction: column;
         margin-bottom: 5px;
     }
-    
+
     .leftWrapper {
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    
+
     .line1,
     .line2,
     .line3,
@@ -1345,35 +1361,35 @@
         font-weight: 200;
         padding: 2px;
     }
-    
+
     .line1 {
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
-    
+
     .line4 {
         display: flex;
         justify-content: space-between;
     }
-    
+
     .bi-stopwatch {
         margin-right: 5 px;
     }
-    
+
     .nestedRow {
         padding: 5px;
         width: 30%;
         display: flex;
         justify-content: space-between;
     }
-    
+
     .nestedRow1 {
         padding: 5px;
         width: 30%;
         display: flex;
     }
-    
+
     .gameCol2 {
         display: flex;
         flex-grow: 1;
@@ -1381,28 +1397,28 @@
         align-items: center;
         /* height: 100%; */
     }
-    
+
     .gameCol3 {
         display: none;
         flex-grow: 1;
         justify-content: space-between;
         align-items: center;
     }
-    
+
     .gameCol4 {
         display: none;
         flex-grow: 1;
         justify-content: space-between;
         align-items: center;
     }
-    
+
     .gameCol5 {
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
 
-    
+
     .ExtraOddsWrapper {
         padding: 5px;
         overflow-y: auto;
@@ -1410,19 +1426,19 @@
         height: 100vh;
         width: 100%;
     }
-    
+
     .gameCol1:hover {
         background-color: rgb(39, 48, 58);
     }
-    
+
     .ExtraHeader {
         padding: 5px;
     }
-    
+
     .sports {
         display: flex;
     }
-    
+
     .upperHeader {
         width: 100%;
         background-color: rgb(39, 48, 58);
@@ -1432,7 +1448,7 @@
         justify-content: space-between;
         margin-top: 5px;
     }
-    
+
     .exitDetail {
         width: 15%;
         background-color: rgb(39, 48, 58);
@@ -1443,7 +1459,7 @@
         cursor: pointer;
         display: none;
     }
-    
+
     .LowerHeader {
         margin-top: 10px;
         margin-bottom: 10px;
@@ -1454,7 +1470,7 @@
         padding: 15px;
         justify-content: space-between;
     }
-    
+
     .gamePlaceHolder {
         margin-top: 5px;
         width: 100%;
@@ -1466,9 +1482,9 @@
         height: 300px;
         margin-bottom: 10px;
     }
-    
+
     .extraOddsContainer {}
-    
+
     .extraOddsBody {
         display: flex;
         flex-direction: column;
@@ -1476,14 +1492,15 @@
         font-size: 14px;
         font-weight: 300;
     }
-    .time{
+
+    .time {
         /* padding: 0 20px; */
         width: 100%;
         white-space: nowrap;
         font-size: 10px;
     }
-    
-    
+
+
     .fullGame {
         display: flex;
         justify-content: space-around;
@@ -1493,13 +1510,13 @@
         white-space: nowrap;
         font-size: 10px;
     }
-    
+
     .oddsHeader {
         background-color: rgb(39, 48, 58);
         padding: 10px;
         border-bottom: 1px solid #1e242c;
     }
-    
+
     .oddsFooter {
         display: flex;
         background-color: rgb(48, 59, 71);
@@ -1509,11 +1526,11 @@
         flex-wrap: wrap;
         width: 100%;
     }
-    
+
     .finalOddWrapper {
         width: 25%;
     }
-    
+
     .odds1 {
         width: 100%;
         display: flex;
@@ -1526,7 +1543,7 @@
     border-right: 1px solid #1e242c; */
         cursor: pointer;
     }
-    
+
     .msgBody {
         display: flex;
         flex-direction: column;
@@ -1534,20 +1551,20 @@
         margin-top: 10px;
         font-size: 12px;
     }
-    
+
     .msgContent {
         overflow-y: auto;
         overflow-x: hidden;
         height: 200px;
         padding: 10px;
     }
-    
+
     .msgHeader {
         display: flex;
         flex-direction: column;
         padding: 10px;
     }
-    
+
     .cartWrapper {
         background-color: rgba(26, 153, 199, 0.4);
         padding: 10px;
@@ -1558,7 +1575,7 @@
         cursor: pointer;
         display: none;
     }
-    
+
     .cartNumber {
         justify-content: center;
         display: flex;
@@ -1567,16 +1584,16 @@
         right: 5px;
         font-size: 14px;
     }
-    
+
     .exitLogo {
         cursor: pointer;
         padding: 10px;
     }
-    
+
     .bi-cart3 {
         font-size: 35px;
     }
-    
+
     .msgBack {
         background-color: #F8FF13;
         display: none;
@@ -1584,16 +1601,17 @@
         padding: 10px;
         cursor: pointer;
     }
-    
+
     .navMsgBar {
         display: flex;
-        background-color:#F8FF13;
+        background-color: #F8FF13;
         width: 60px;
         justify-content: space-between;
         height: 20px;
     }
+
     /* START::   Slider menu Point */
-    
+
     .sliderMenuBackDrop {
         position: fixed;
         top: 0;
@@ -1606,7 +1624,7 @@
         justify-content: center;
         align-items: center;
     }
-    
+
     .sliderMenu {
         position: absolute;
         height: 100vh;
@@ -1618,7 +1636,7 @@
         top: 0;
         border-left: 5px solid #262d36;
     }
-    
+
     .menuWrapper {
         display: flex;
         flex-direction: column;
@@ -1627,23 +1645,23 @@
         font-weight: 400;
         height: 100%;
     }
-    
+
     .menuHeader {
         display: flex;
         width: 60%;
     }
-    
+
     .menuBody {
         margin-top: 10px;
         height: 100%;
     }
-    
+
     .noticeMenus {
         display: flex;
         flex-wrap: wrap;
         margin-top: 5px;
     }
-    
+
     .impBtns {
         background-color: #303a46;
         display: flex;
@@ -1655,11 +1673,11 @@
         margin-bottom: 5px;
         cursor: pointer;
     }
-    
+
     .impBtns:hover {
-        color:#F8FF13;
+        color: #F8FF13;
     }
-    
+
     .specDisp {
         background-color: #303a46;
         display: flex;
@@ -1668,45 +1686,47 @@
         height: 100%;
         width: 40%;
     }
-    
+
     .bi-trophy {
         color: gold;
     }
-    
+
     .headerIcon {
         margin-right: 10px;
     }
-    
+
     .sliderMenuActive {
         width: 30%;
     }
+
     /* END point slider menu */
-    
+
     .navbar-collapse {
-        flex-direction: row-reverse!important;
+        flex-direction: row-reverse !important;
     }
-    
+
     .msgBack:hover {
-        background-color:#F8FF13;
+        background-color: #F8FF13;
     }
-    
+
     .fontOrange {
         color: orange;
     }
-    
+
     .fontRed {
         color: red;
     }
-    
+
     .fontBlue {
         color: #F8FF13;
     }
+
     /* START::Deposite and Withdraw Screen */
-    
+
     .depositeDrop {
         display: none;
     }
-    
+
     .my-backdrop2 {
         position: fixed;
         top: 0;
@@ -1720,7 +1740,7 @@
         align-items: center;
         display: none;
     }
-    
+
     .noticeBody {
         background-color: #1F262F;
         display: flex;
@@ -1729,9 +1749,9 @@
         font-weight: 300;
         padding: 10px;
         width: 100%;
-        display: none   ;
+        display: none;
     }
-    
+
     .noticeCancel,
     .depositeCancel,
     .historyCancel,
@@ -1747,7 +1767,7 @@
         width: 35px;
         cursor: pointer;
     }
-    
+
     .slipCancel {
         position: relative;
         left: 0;
@@ -1757,7 +1777,7 @@
         width: 35px;
         cursor: pointer;
     }
-    
+
     .depositeUpHeader1,
     .depositeUpHeader2,
     .historyUpHeader3,
@@ -1770,13 +1790,13 @@
         display: flex;
         justify-content: center;
     }
-    
+
     .depositeUpHeader,
     .historyUpHeader {
         display: flex;
         justify-content: space-around;
     }
-    
+
     .depositeItem,
     .withdrawlItem {
         width: 100%;
@@ -1784,7 +1804,7 @@
         border-bottom: 1px solid #262d36;
         cursor: pointer;
     }
-    
+
     .menuItem {
         background-color: #1F262F;
         /* #27303a; */
@@ -1796,11 +1816,11 @@
         width: 100%;
         cursor: pointer;
     }
-    
+
     .menuItem:hover {
-        color:#F8FF13;
+        color: #F8FF13;
     }
-    
+
     .dispIcon {
         display: flex;
         justify-content: center;
@@ -1808,7 +1828,7 @@
         height: 100%;
         width: 50%;
     }
-    
+
     .specDisp {
         background-color: #303a46;
         display: flex;
@@ -1817,7 +1837,7 @@
         height: 100%;
         width: 40%;
     }
-    
+
     .dispIcon {
         display: flex;
         justify-content: center;
@@ -1825,8 +1845,9 @@
         height: 100%;
         width: 50%;
     }
+
     /* here */
-    
+
     .selectOptions2 {
         background-color: rgb(34, 42, 51);
         border: none;
@@ -1835,30 +1856,30 @@
         margin-right: 5px;
         width: 100%;
     }
-    
+
     .selectOptions2:focus {
         outline: none;
     }
-    
+
     .inputSports {
         width: 50%;
     }
-    
+
     .inputSports input {
         background-color: transparent;
         border: none;
         width: 100%;
         font-size: 12px;
     }
-    
+
     .inputSports input::placeholder {
         font-size: 12px;
     }
-    
+
     .inputSports input:focus {
         outline: none;
     }
-    
+
     .depositeBtn2 {
         font-size: 13px;
         font-weight: 500;
@@ -1869,31 +1890,31 @@
         flex-direction: row-reverse;
         margin-top: 10px;
     }
-    
+
     .noticeBtn {
         background-color: rgb(39, 48, 58);
         padding: 5px;
         cursor: pointer;
     }
-    
+
     .depositeHistory {
         margin-top: 10px;
     }
-    
+
     .historyHeader {
         width: 100%;
         display: flex;
         justify-content: center;
         padding: 10px;
     }
-    
+
     .historyHeader {
         width: 100%;
         display: flex;
         justify-content: center;
         padding: 10px;
     }
-    
+
     .headerItem,
     .footerItem {
         background-color: #394552;
@@ -1904,11 +1925,11 @@
         cursor: pointer;
         display: flex;
     }
-    
+
     .footerItem {
         background-color: #232a32;
     }
-    
+
     .hd1,
     .hd3,
     .hd4,
@@ -1917,13 +1938,13 @@
         justify-content: center;
         display: flex;
     }
-    
+
     .hd2 {
         flex-grow: 3;
         justify-content: center;
         display: flex;
     }
-    
+
     .depositeBtn0,
     .depositeBtn1,
     .withdrawlBtn0,
@@ -1931,29 +1952,30 @@
         padding: 5px;
         cursor: pointer;
     }
-    
+
     .depositeBtn0:hover {
         color: #F8FF13;
     }
-    
+
     .depositeBtn1:hover {
         color: #F8FF13;
     }
-    
+
     .accordionOdd {
         width: 100%;
         height: 0;
         transition: 0.5s;
         overflow: hidden;
     }
-    
+
     .accordionActive {
         height: 200px;
         overflow-y: auto;
         overflow-x: hidden;
     }
+
     /* END::Deposite and Withdraw Screen */
-    
+
     .limitPopUp {
         font-size: 12px;
         background-color: red;
@@ -1962,30 +1984,34 @@
         justify-content: center;
         border-radius: 3px;
     }
-    
+
     .maxWidth {
         max-width: 100%;
     }
-    
-     ::-webkit-scrollbar {
+
+    ::-webkit-scrollbar {
         width: 5px;
         border-radius: 30px;
     }
-    
-     ::-webkit-scrollbar-thumb {
+
+    ::-webkit-scrollbar-thumb {
         background-color: rgb(54, 60, 68);
     }
+
     /* Styles for small screens (up to 576px) */
-    
+
     @media (max-width: 576px) {
+
         /* Add additional styles as needed */
         .credUsername {
             border: none;
             width: 50%;
         }
+
         .credPassword {
             width: 50%;
         }
+
         .savedCred {
             padding: 10;
             display: flex;
@@ -1996,7 +2022,7 @@
             height: 70px;
         }
     }
-    
+
     .selectOptions {
         background-color: rgb(34, 42, 51);
         border: none;
@@ -2004,11 +2030,11 @@
         padding: 10px;
         margin-right: 5px;
     }
-    
+
     .selectOptions:focus {
         outline: none;
     }
-    
+
     .selectOptions2 {
         background-color: rgb(34, 42, 51);
         border: none;
@@ -2017,12 +2043,13 @@
         margin-right: 5px;
         width: 100%;
     }
-    
+
     .selectOptions2:focus {
         outline: none;
     }
-    
+
     @media (max-width: 1500px) {
+
         /* Add additional styles as needed */
         /* .column2 {
         max-width: 76%;
@@ -2030,28 +2057,33 @@
         .leagueCol3 {
             display: none;
         }
+
         .leagueCol4 {
             display: none;
         }
+
         .gameCol3 {
             display: none;
         }
+
         .gameCol4 {
             display: none;
         }
+
         .column3 {
             display: flex;
         }
     }
-    
+
     @media (max-width: 1450px) {
         /* Add additional styles as needed */
         /* .column2 {
         max-width: 74%;
     } */
     }
-    
+
     @media (max-width: 1400px) {
+
         /* Add additional styles as needed */
         /* .column2 {
         max-width: 73%;
@@ -2059,61 +2091,77 @@
         .column3 {
             display: none;
             flex-basis: 0px;
+            flex-grow: 0;
         }
+
         .cartWrapper {
             display: block;
         }
+
         .column4 {
             max-width: 40%;
         }
+
         .maxWidth {
             max-width: 100%;
         }
+
         .column2 {
             max-width: 60%;
         }
+
         .maxWidth {
             max-width: 100%;
         }
+
         .slipHeader {
             justify-content: space-between;
         }
+
         .slipCancel {
             display: block;
         }
+
         .gameCol5 {
             display: none !important;
         }
-    
+
     }
+
     /* Add additional styles as needed */
-    
+
     @media (max-width: 1350px) {
         /* Add additional styles as needed */
         /* .column2 {
         max-width: 72%;
     } */
     }
-    
+
     @media (max-width: 1300px) {
         .logoSegment {
             display: block;
         }
+
         .sidebar {
             left: -100%;
         }
+
         .rightSegment {
             display: none;
         }
+
         .bi-person-circle {
             display: block;
         }
+
         .bi-list {
             display: block;
         }
+
         .betSlip {
             /* right: 100% */
         }
+
         /* .column2 {
         flex-basis: 1300px;
     } */
@@ -2121,25 +2169,31 @@
             display: none;
             flex-basis: 0px;
         }
+
         .customUl {
             font-size: 10px !important;
         }
+
         .customUl1 {
             font-size: 10px !important;
         }
+
         .tab-group li a {
             font-size: 16px;
         }
+
         h3,
         h1 {
             font-size: 16px;
         }
+
         /* .column2 {
         max-width: 100%;
     } */
         /* Add additional styles as needed */
         /* Styles for medium screens (up to 768px) */
         @media (max-width: 1008px) {
+
             /* Add additional styles as needed */
             /* .leagueCol3 {
             display: flex;
@@ -2156,35 +2210,43 @@
             .column2 {
                 max-width: 100%;
             }
+
             .column4 {
                 display: none;
             }
+
             .extraOdd {
                 display: flex;
             }
+
             .exitDetail {
                 display: flex;
             }
         }
+
         /* Styles for large screens (up to 992px) */
         @media (max-width: 852px) {
+
             /* Add additional styles as needed */
             .selectOptions {
                 display: block;
             }
+
             .sliderMenuActive {
                 width: 60%;
             }
         }
+
         /* Styles for extra large screens (up to 1200px) */
         /* Styles for screens larger than 1200px */
     }
 
-    @media (max-width:480px){
+    @media (max-width:480px) {
         .gameCol5 {
             display: flex !important;
         }
     }
+
     /* .noticeBodyNew {
         position: absolute;
         margin-top: 3pc;
@@ -2200,3 +2262,27 @@
         top: 30vh;
         margin-left: 2px;
     } */
+    @media (min-width: 1510px) {
+
+        /* Add additional styles as needed */
+        .betSlip {
+            position: fixed;
+            width: 350px;
+            /* left: 150vh !important; */
+            height: 90%;
+            z-index: 2;
+            /* right: 0; */
+    
+        }
+    }
+    @media (max-width: 1510px) {
+        .betSlip {
+            position: fixed;
+            width: 330px;
+            /* left: 150vh !important; */
+            height: 90%;
+            z-index: 2;
+            /* right: 0; */
+        }
+
+    }

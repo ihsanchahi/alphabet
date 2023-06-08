@@ -977,45 +977,103 @@ ddBtn4.addEventListener("click", () => {
   ddBtn4.classList.toggle("ddActive");
 });
 
+// cartWrapper.addEventListener("click", function () {
+//   cartBackdrop.style.display = "flex";
+//   col3.style.display = "flex";
+//   col3.style.zIndex = 3;
+
+//   slipCancel.addEventListener("click", () => {
+//     cartBackdrop.style.display = "none";
+//     col3.style.display = "";
+//     col3.style.zIndex = 1;
+//   });
+// });
+const betSlip = document.querySelector(".betSlip");
+const betSlip2 = document.querySelector("#betSlip2");
+
+
+let isBetSlipActive = false;
+
 cartWrapper.addEventListener("click", function () {
-  cartBackdrop.style.display = "flex";
-  col3.style.display = "flex";
-  col3.style.zIndex = 3;
+  if (!isBetSlipActive && window.innerWidth <= 1400) {
+    cartBackdrop.style.display = "flex";
+    col3.style.display = "flex";
+    col3.style.zIndex = 3;
+    setTimeout(() => {
+      betSlip.style.transform = "translateY(0%)";
+    }, 10);
+    isBetSlipActive = true;
+  }
+});
 
-  slipCancel.addEventListener("click", () => {
-    cartBackdrop.style.display = "none";
-    col3.style.display = "";
-    col3.style.zIndex = 1;
-  });
+slipCancel.addEventListener("click", () => {
+  if (isBetSlipActive) {
+    betSlip.style.transform = "translateY(100%)";
+    setTimeout(() => {
+      cartBackdrop.style.display = "none";
+      col3.style.display = "";
+      col3.style.zIndex = 1;
+    }, 500);
+    isBetSlipActive = false;
+  }
 });
 cartWrapper2.addEventListener("click", function () {
-  cartBackdrop2.style.display = "flex";
-  col32.style.display = "flex";
-  col32.style.zIndex = 3;
+  if (!isBetSlipActive && window.innerWidth <= 1400) {
+    cartBackdrop2.style.display = "flex";
+    col32.style.display = "flex";
+    col32.style.zIndex = 3;
+    setTimeout(() => {
+      betSlip2.style.transform = "translateY(0%)";
+    }, 10);
+    isBetSlipActive = true;
+  }
 });
 
-cartWrapper2.addEventListener("click", function () {
-  cartBackdrop2.style.display = "flex";
-  col32.style.display = "flex";
-  col32.style.zIndex = 3;
+slipCancel2.addEventListener("click", () => {
+  if (isBetSlipActive) {
+    betSlip2.style.transform = "translateY(100%)";
+    setTimeout(() => {
+      cartBackdrop2.style.display = "none";
+      col32.style.display = "";
+      col32.style.zIndex = 1;
+    }, 500);
+    isBetSlipActive = false;
+  }
+});
+if (window.innerWidth > 1400) {
+  betSlip.style.transform = "translateY(0%)";
+  isBetSlipActive = true;
+}
 
-  slipCancel2.addEventListener("click", () => {
-    cartBackdrop2.style.display = "none";
-    col32.style.display = "";
-    col32.style.zIndex = 1;
-  });
-});
+// cartWrapper2.addEventListener("click", function () {
+//   cartBackdrop2.style.display = "flex";
+//   col32.style.display = "flex";
+//   col32.style.zIndex = 3;
+// });
 
-cartBackdrop.addEventListener("click", function () {
-  cartBackdrop.style.display = "none";
-  col3.style.display = "";
-  col3.style.zIndex = 1;
-});
-cartBackdrop2.addEventListener("click", function () {
-  cartBackdrop2.style.display = "none";
-  col32.style.display = "";
-  col32.style.zIndex = 1;
-});
+// cartWrapper2.addEventListener("click", function () {
+//   cartBackdrop2.style.display = "flex";
+//   col32.style.display = "flex";
+//   col32.style.zIndex = 3;
+
+//   slipCancel2.addEventListener("click", () => {
+//     cartBackdrop2.style.display = "none";
+//     col32.style.display = "";
+//     col32.style.zIndex = 1;
+//   });
+// });
+
+
+// cartBackdrop.addEventListener("click", function () {
+//   cartBackdrop.style.display = "none";
+//   col3.style.display = "";
+//   col3.style.zIndex = 1;
+// });
+// cartBackdrop2.addEventListener("click", function () {
+//   cartBackdrop2.style.display = "none";
+//   col32.style.display = "";
+//   col32.style.zIndex = 1;
+// });
 ludo1.addEventListener("click", () => {
   wrapper1.style.display = "flex";
   wrapper2.style.display = "none";

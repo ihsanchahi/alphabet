@@ -901,25 +901,56 @@ noticeCancelBtn.addEventListener('click', function() {
 
 })
 
-cartWrapper.addEventListener('click', function() {
-    cartBackdrop.style.display = 'flex'
-    col3.style.display = 'flex'
-    col3.style.zIndex = 3
-    const betSlip = document.querySelector('.betSlip')
-    betSlip.classList.add('betSlipActive')
-    slipCancel.addEventListener('click', () => {
-        cartBackdrop.style.display = 'none'
-        col3.style.display = ''
-        col3.style.zIndex = 1
-    })
+// cartWrapper.addEventListener('click', function() {
+//     cartBackdrop.style.display = 'flex'
+//     col3.style.display = 'flex'
+//     col3.style.zIndex = 3
+//     const betSlip = document.querySelector('.betSlip')
+//     betSlip.classList.add('betSlipActive')
+//     slipCancel.addEventListener('click', () => {
+//         cartBackdrop.style.display = 'none'
+//         col3.style.display = ''
+//         col3.style.zIndex = 1
+//     })
 
-})
+// })
 
-cartBackdrop.addEventListener('click', function() {
-    cartBackdrop.style.display = 'none'
-    col3.style.display = ''
-    col3.style.zIndex = 1
-})
+// cartBackdrop.addEventListener('click', function() {
+//     cartBackdrop.style.display = 'none'
+//     col3.style.display = ''
+//     col3.style.zIndex = 1
+// })
+const betSlip = document.querySelector(".betSlip");
+
+let isBetSlipActive = false;
+
+cartWrapper.addEventListener("click", function () {
+  if (!isBetSlipActive && window.innerWidth <= 1400) {
+    cartBackdrop.style.display = "flex";
+    col3.style.display = "flex";
+    col3.style.zIndex = 3;
+    setTimeout(() => {
+      betSlip.style.transform = "translateY(0%)";
+    }, 10);
+    isBetSlipActive = true;
+  }
+});
+
+slipCancel.addEventListener("click", () => {
+  if (isBetSlipActive) {
+    betSlip.style.transform = "translateY(100%)";
+    setTimeout(() => {
+      cartBackdrop.style.display = "none";
+      col3.style.display = "";
+      col3.style.zIndex = 1;
+    }, 500);
+    isBetSlipActive = false;
+  }
+});
+if (window.innerWidth > 1400) {
+  betSlip.style.transform = "translateY(0%)";
+  isBetSlipActive = true;
+}
 
 function setActiveOdd(button) {
     // remove active class from all buttons

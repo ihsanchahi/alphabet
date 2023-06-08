@@ -1310,19 +1310,49 @@ sliderCancel.addEventListener("click", () => {
   sliderBackDrop.style.display = "none";
 });
 
+// cartWrapper.addEventListener("click", function () {
+//   cartBackdrop.style.display = "flex";
+//   col3.style.display = "flex";
+//   col3.style.zIndex = 3;
+//   const betSlip = document.querySelector(".betSlip");
+//   betSlip.classList.add("betSlipActive");
+//   slipCancel.addEventListener("click", () => {
+//     cartBackdrop.style.display = "none";
+//     col3.style.display = "";
+//     col3.style.zIndex = 1;
+//   });
+// });
+const betSlip = document.querySelector(".betSlip");
+
+let isBetSlipActive = false;
+
 cartWrapper.addEventListener("click", function () {
-  cartBackdrop.style.display = "flex";
-  col3.style.display = "flex";
-  col3.style.zIndex = 3;
-  const betSlip = document.querySelector(".betSlip");
-  betSlip.classList.add("betSlipActive");
-  slipCancel.addEventListener("click", () => {
-    cartBackdrop.style.display = "none";
-    col3.style.display = "";
-    col3.style.zIndex = 1;
-  });
+  if (!isBetSlipActive && window.innerWidth <= 1400) {
+    cartBackdrop.style.display = "flex";
+    col3.style.display = "flex";
+    col3.style.zIndex = 3;
+    setTimeout(() => {
+      betSlip.style.transform = "translateY(0%)";
+    }, 10);
+    isBetSlipActive = true;
+  }
 });
 
+slipCancel.addEventListener("click", () => {
+  if (isBetSlipActive) {
+    betSlip.style.transform = "translateY(100%)";
+    setTimeout(() => {
+      cartBackdrop.style.display = "none";
+      col3.style.display = "";
+      col3.style.zIndex = 1;
+    }, 500);
+    isBetSlipActive = false;
+  }
+});
+if (window.innerWidth > 1400) {
+  betSlip.style.transform = "translateY(0%)";
+  isBetSlipActive = true;
+}
 // selectTeam.addEventListener('click', function() {
 //     cartBackdrop.style.display = 'flex'
 //     col5.style.display = 'flex'
@@ -1338,11 +1368,11 @@ cartWrapper.addEventListener("click", function () {
 
 // })
 
-cartBackdrop.addEventListener("click", function () {
-  cartBackdrop.style.display = "none";
-  col3.style.display = "";
-  col3.style.zIndex = 1;
-});
+// cartBackdrop.addEventListener("click", function () {
+//   cartBackdrop.style.display = "none";
+//   col3.style.display = "";
+//   col3.style.zIndex = 1;
+// });
 
 const accord = document.querySelectorAll(".accordionOdd");
 
@@ -2058,7 +2088,23 @@ document.addEventListener("DOMContentLoaded", function () {
           dataArray.splice(index, 1);
           reloadCard();
           console.log(dataArray);
-          betOdds.classList.add("removeBorder");
+          let betoddsList = document.querySelectorAll(".betOdds");
+          let handiOddsList = document.querySelectorAll(".handiOdds");
+          let ouOddsList = document.querySelectorAll(".ouOdds ");
+
+          betoddsList.forEach((betodds) => {
+            betodds.style.backgroundColor = "#27303a";
+            betodds.style.border = "none";
+          });
+          handiOddsList.forEach((handiOdds) => {
+            handiOdds.style.backgroundColor = "#27303a";
+            handiOdds.style.border = "none";
+          });
+          ouOddsList.forEach((ouOdds) => {
+            ouOdds .style.backgroundColor = "#27303a";
+            ouOdds .style.border = "none";
+          });
+          // betOdds.classList.add("removeBorder");
 
           //   betOdds.style.border = 'none';
           //   handiOdds.style.border = 'none';
@@ -2146,7 +2192,23 @@ document.addEventListener("DOMContentLoaded", function () {
           dataArray.splice(index, 1);
           reloadCard();
           console.log(dataArray);
-          betOdds.classList.add("removeBorder");
+          let betoddsList = document.querySelectorAll(".betOdds");
+          let handiOddsList = document.querySelectorAll(".handiOdds");
+          let ouOddsList = document.querySelectorAll(".ouOdds ");
+
+          betoddsList.forEach((betodds) => {
+            betodds.style.backgroundColor = "#27303a";
+            betodds.style.border = "none";
+          });
+          handiOddsList.forEach((handiOdds) => {
+            handiOdds.style.backgroundColor = "#27303a";
+            handiOdds.style.border = "none";
+          });
+          ouOddsList.forEach((ouOdds) => {
+            ouOdds .style.backgroundColor = "#27303a";
+            ouOdds .style.border = "none";
+          });
+          // betOdds.classList.add("removeBorder");
         });
       });
     });
@@ -2233,7 +2295,25 @@ document.addEventListener("DOMContentLoaded", function () {
           reloadCard();
           console.log(dataArray);
           console.log("Hello Card");
-          betOdds.classList.add("removeBorder");
+
+          let betoddsList = document.querySelectorAll(".betOdds");
+          let handiOddsList = document.querySelectorAll(".handiOdds");
+          let ouOddsList = document.querySelectorAll(".ouOdds ");
+
+          betoddsList.forEach((betodds) => {
+            betodds.style.backgroundColor = "#27303a";
+            betodds.style.border = "none";
+          });
+          handiOddsList.forEach((handiOdds) => {
+            handiOdds.style.backgroundColor = "#27303a";
+            handiOdds.style.border = "none";
+          });
+          ouOddsList.forEach((ouOdds) => {
+            ouOdds .style.backgroundColor = "#27303a";
+            ouOdds .style.border = "none";
+          });
+
+          // betOdds.classList.add("removeBorder");
           //   ouOdds.classList.add("removeBorder");
         });
       });

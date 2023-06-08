@@ -1020,7 +1020,7 @@ function initApp() {
         loadGames.classList.add('singleGame');
         loadGames.innerHTML = `
         
-        <img src="assets/images/${val.gameImg}.png" class="d-inline-block align-text-top" width="225" height="130" id="${key}">
+        <img class="image1" src="assets/images/${val.gameImg}.png" class="d-inline-block align-text-top" width="225" height="130" id="${key}">
    
         `
         gamesContainer.appendChild(loadGames)
@@ -1989,7 +1989,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
 });
 
-
+window.onload=function(){
+    // document.getElementsByClassName("singleGame").click();
+    document.getElementsByClassName('image1')[0].click();
+    // console.log('active Click')
+  };
 
 
 // triggerSidebar.addEventListener('click', moveElement);

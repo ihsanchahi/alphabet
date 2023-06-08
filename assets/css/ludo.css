@@ -1995,3 +1995,31 @@ padding: 5px;
         top: 13px;
     }
 }
+@media (max-width:1400px) {
+
+    .cart-icon {
+        display: none !important;
+    }
+
+    .cartWrapper {
+        background-color: #f8ff13;
+        padding: 20px;
+        position: fixed;
+        border-radius: 10px;
+        bottom: 50px;
+        right: 15px;
+        cursor: pointer;
+        margin: auto !important;
+    }
+
+    .cartNumber {
+        justify-content: center;
+        display: flex;
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        font-size: 14px;
+        font-weight: 600;
+        color: black;
+    }
+}

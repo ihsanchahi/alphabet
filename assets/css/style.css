@@ -19,7 +19,7 @@ body {
 }
 
 .customNav {
-    background-color: rgb(31, 38, 47)!important;
+    background-color: rgb(31, 38, 47) !important;
     border-width: 1px 0;
     border-style: solid;
     border-color: rgb(64, 64, 68);
@@ -31,36 +31,36 @@ body {
 }
 
 .customUl {
-    color: rgb(218, 218, 218)!important;
+    color: rgb(218, 218, 218) !important;
     font-size: 14px !important;
 }
 
 .customUl1 {
-    color: #F8FF13!important
+    color: #F8FF13 !important
 }
 
 .customUl1:hover {
-    color: rgb(218, 218, 218)!important;
-    border: 1px solid #F8FF13!important;
+    color: rgb(218, 218, 218) !important;
+    border: 1px solid #F8FF13 !important;
 }
 
 .customUl:hover {
-    color: #F8FF13!important
+    color: #F8FF13 !important
 }
 
 .customDrop {
-    background-color: rgb(26, 25, 28)!important;
-    border: 1px solid rgb(64, 64, 68)!important;
+    background-color: rgb(26, 25, 28) !important;
+    border: 1px solid rgb(64, 64, 68) !important;
     border-radius: 0%;
 }
 
 .customDropper {
-    color: rgb(218, 218, 218)!important;
+    color: rgb(218, 218, 218) !important;
 }
 
 .customDropper:hover {
-    color: rgb(193, 138, 110)!important;
-    background-color: rgb(26, 25, 28)!important;
+    color: rgb(193, 138, 110) !important;
+    background-color: rgb(26, 25, 28) !important;
 }
 
 .customContainer {
@@ -70,8 +70,9 @@ body {
     justify-content: space-between;
     padding: 60px;
 }
-@media (max-width:768px){
-    .customContainer{
+
+@media (max-width:768px) {
+    .customContainer {
         display: none;
     }
 }
@@ -110,7 +111,7 @@ body {
 }
 
 .tab-group li a:hover {
-    background-color: rgb(34 42 51)!important;
+    background-color: rgb(34 42 51) !important;
     color: #ffffff;
 }
 
@@ -144,7 +145,7 @@ label {
 
 label .req {
     margin: 2px;
-    background-color: rgb(26, 25, 28)!important;
+    background-color: rgb(26, 25, 28) !important;
 }
 
 label.active {
@@ -179,7 +180,7 @@ textarea {
 input:focus,
 textarea:focus {
     outline: 0;
-    background-color: rgb(26, 25, 28)!important;
+    background-color: rgb(26, 25, 28) !important;
 }
 
 textarea {
@@ -217,7 +218,7 @@ textarea {
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: .1em;
-    background-color: rgb(26, 25, 28)!important;
+    background-color: rgb(26, 25, 28) !important;
     color: #ffffff;
     transition: all 0.5s ease;
     -webkit-appearance: none;
@@ -225,7 +226,7 @@ textarea {
 
 .button:hover,
 .button:focus {
-    background-color: #F8FF13!important
+    background-color: #F8FF13 !important
 }
 
 .button-block {
@@ -239,7 +240,7 @@ textarea {
 }
 
 .customFselect {
-    background-color: rgb(31, 38, 47)!important;
+    background-color: rgb(31, 38, 47) !important;
     color: #ffffff;
     border-radius: 0%;
 }
@@ -249,7 +250,7 @@ textarea {
 }
 
 .customFselectNumber {
-    background-color: rgb(31, 38, 47)!important;
+    background-color: rgb(31, 38, 47) !important;
     color: #ffffff;
     border-radius: 0%;
     width: 100px;
@@ -318,7 +319,7 @@ textarea {
 
 .customOtpBtn:hover {
     background-color: rgb(15, 101, 133) !important;
-    color:black;
+    color: black;
 }
 
 .bottomController {
@@ -414,17 +415,20 @@ textarea {
 /* Styles for small screens (up to 576px) */
 
 @media (max-width: 768px) {
+
     /* Add additional styles as needed */
     .credUsername {
         border-right: 1px solid rgb(41, 41, 41);
 
         width: 50%;
     }
+
     .credPassword {
         width: 50%;
         color: black;
         margin-left: 3vh;
     }
+
     .savedCred {
         padding: 0px 20px;
         display: flex;
@@ -440,6 +444,7 @@ textarea {
 /* Styles for medium screens (up to 768px) */
 
 @media (max-width: 768px) {
+
     /* Add additional styles as needed */
     .customUl {
         font-size: 10px !important;
@@ -450,6 +455,7 @@ textarea {
 /* Styles for large screens (up to 992px) */
 
 @media (max-width: 992px) {
+
     /* Add additional styles as needed */
     .customUl {
         font-size: 10px !important;
@@ -460,20 +466,41 @@ textarea {
 /* Styles for extra large screens (up to 1300px) */
 
 @media (max-width: 1300px) {
+
     /* Add additional styles as needed */
     .customUl {
         font-size: 10px !important;
     }
+
     .customUl1 {
         font-size: 10px !important;
     }
+
     .tab-group li a {
         font-size: 16px;
     }
+
     h3,
     h1 {
         font-size: 16px;
     }
+}
+
+#afterSignUp::-webkit-scrollbar {
+    width: 10px;
+    /* Width of the scrollbar */
+}
+
+#afterSignUp::-webkit-scrollbar-thumb {
+    background-color: #555;
+    /* Color of the scrollbar thumb */
+    border-radius: 5px;
+    /* Rounded corners of the thumb */
+}
+
+#afterSignUp::-webkit-scrollbar-thumb:hover {
+    background-color: #888;
+    /* Color of the scrollbar thumb on hover */
 }
 
 
